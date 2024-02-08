@@ -1,5 +1,5 @@
 ---
-title: 'Journey to Unraveling the Universe's Mysteries: The LHCb VELO Detector Launch'
+title: "Journey to Unraveling the Universe's Mysteries: The LHCb VELO Detector Launch"
 date: 2023-06-30  # Adjust to the actual date of the post
 permalink: /posts/2023/06/lhcb-velo-detector-launch/
 tags:
