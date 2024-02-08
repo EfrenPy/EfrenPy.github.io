@@ -20,6 +20,7 @@ words_per_minute         : 160
 future                   : true
 read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
 talkmap_link             : false #change to true to add link to talkmap on talks page
+search                   : true
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
   disqus:
@@ -29,7 +30,7 @@ comments:
   facebook:
     appid                :
     num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
+    colorscheme          : "dark" # "light" (default), "dark"
 staticman:
   allowedFields          : ['name', 'email', 'url', 'message']
   branch                 : "gh-pages" # "master", "gh-pages"
@@ -73,7 +74,7 @@ social:
 
 # Analytics
 analytics:
-  provider               :  "google-universal" # false (default), "google", "google-universal", "custom"
+  provider               :  "google" # false (default), "google", "google-universal", "custom"
   google:
     tracking_id          :
 
@@ -157,7 +158,7 @@ markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 markdown: kramdown
 highlighter: rouge
 lsi: false
-excerpt_separator: "\n\n"
+# excerpt_separator: "\n\n"
 incremental: false
 
 
@@ -227,6 +228,7 @@ defaults:
       author_profile: true
       share: true
       comments: true
+      related: true
   # _portfolio
   - scope:
       path: ""
@@ -265,7 +267,8 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-redirect-from
-  - jekyll-relative-links
+  - jemoji
+  - jekyll-twitter-plugin
 # mimic GitHub Pages with --safe
 whitelist:
   - jekyll-paginate
@@ -273,11 +276,9 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jemoji
+  - jekyll-twitter-plugin
 
 
-relative_links:
-  enabled:     false
-  collections: false
 
 # Archives
 #  Type
