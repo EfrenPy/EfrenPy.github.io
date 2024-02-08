@@ -6,7 +6,7 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-locale                   : "sp-SPAIN"
+locale                   : "es_ES"
 title                    : "Efrén Rodríguez Rodríguez"
 title_separator          : "-"
 name                     : &name "Efrén Rodríguez Rodríguez"
@@ -265,6 +265,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-redirect-from
+  - jekyll-relative-links
 # mimic GitHub Pages with --safe
 whitelist:
   - jekyll-paginate
@@ -273,6 +274,10 @@ whitelist:
   - jekyll-feed
   - jemoji
 
+
+relative_links:
+  enabled:     false
+  collections: false
 
 # Archives
 #  Type
