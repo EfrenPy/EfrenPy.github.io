@@ -85,9 +85,9 @@ author:
   avatar           : "profile.jpg"
   bio              : "PhD student in particle physics at the Galician Institute of High Energy Physics (IGFAE)"
   location         : "Santiago de Compostela, Spain"
-  employer         :
+  employer         : "University of Santiago de Compostela"
   pubmed           : 
-  googlescholar    : 
+  googlescholar    : "https://scholar.google.com/citations?user=pir4UaIAAAAJ&hl=en"
   email            : 
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
@@ -100,10 +100,10 @@ author:
   github           : "EfrenPy"
   google_plus      :
   keybase          :
-  instagram        :
+  instagram        : "https://www.instagram.com/efrenpics/"
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         :
+  linkedin         : "https://www.linkedin.com/in/efrenrguezrguez/"
   orcid            : "https://orcid.org/0000-0002-7973-8061"
   pinterest        :
   soundcloud       :
