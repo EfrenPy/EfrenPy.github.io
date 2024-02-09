@@ -7,6 +7,10 @@ tags:
   - CERN
   - LHCb VELO Detector
   - Research Innovation
+gallery1:
+  - url: velo_launch.gif
+    image_path: velo_launch.gif
+    alt: "placeholder image 1"
 ---
 
 **❓ Why is there more matter than antimatter in the universe?**
@@ -20,3 +24,5 @@ The IGFAE's involvement in the design and development of the VELO subdetector se
 This milestone not only signifies a leap forward in our understanding of the universe but also exemplifies the collaborative spirit that drives the global scientific community towards unraveling the mysteries that lie at the heart of existence.
 
 #ParticlePhysics #CERN #LHCbVELODetector #ResearchInnovation
+
+{% include gallery id="gallery1" caption=" " %}

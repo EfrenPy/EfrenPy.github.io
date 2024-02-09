@@ -7,7 +7,13 @@ tags:
   - LHCb VELO Detector
   - CERN
   - Conference
+gallery1:
+  - url: pisa_talk.gif
+    image_path: pisa_talk.gif
+    alt: "placeholder image 1"
 ---
+
+🌌 **At the edge of Particle Physics Detectors at the "Pisa Meeting"** 🌌
 
 Last week marked a significant milestone in my professional journey as I had the privilege to both present a talk and display a poster at a pivotal conference focusing on advanced detector technologies in the realm of particle physics. The core of my presentations revolved around the forthcoming upgrade of the LHCb Vertex Locator (VELO) at CERN, a project I am deeply involved in, particularly in the development of cutting-edge sensors and electronics.
 
@@ -20,3 +26,5 @@ Engaging with fellow researchers and professionals at the conference, sharing in
 As we stand on the brink of new discoveries and advancements, I am reminded of the incredible potential that lies in the intersection of technology and fundamental science. The journey ahead is filled with challenges, but also with the promise of contributing to our understanding of the cosmos in ways we have yet to imagine.
 
 #ParticlePhysics #LHCbVELODetector #CERN #Conference
+
+{% include gallery id="gallery1" caption=" " %}

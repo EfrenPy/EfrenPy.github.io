@@ -7,6 +7,10 @@ tags:
   - Certification
   - IT Specialist
   - Milestone Reached
+gallery1:
+  - url: python_certificado.jpg
+    image_path: python_certificado.jpg
+    alt: "placeholder image 1"
 ---
 
 🎉 **Achievement Unlocked!** 🎉
@@ -20,3 +24,5 @@ The journey to this achievement was filled with countless hours of learning, pra
 As I celebrate this accomplishment, I am excited to continue exploring the power of Python and applying my skills to new challenges and opportunities. Let's keep pushing the boundaries of what we can achieve with technology! 🚀
 
 #Python #Certification #ITSpecialist #MilestoneReached
+
+{% include gallery id="gallery1" caption=" " %}

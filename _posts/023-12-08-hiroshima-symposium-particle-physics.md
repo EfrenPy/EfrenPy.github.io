@@ -7,6 +7,10 @@ tags:
   - LHCb VELO Detector
   - Research Innovation
   - Semiconductor Detectors
+gallery1:
+  - url: talk_vancouver.jpg
+    image_path: talk_vancouver.jpg
+    alt: "placeholder image 1"
 ---
 
 🌌 **Exploring the Frontiers of Particle Physics at the Hiroshima Symposium** 🌌
@@ -20,3 +24,5 @@ The insights I shared today delve into the intricate details of the detector's d
 This symposium not only provided a platform to showcase the innovative developments in semiconductor tracking detectors but also fostered a vibrant exchange of ideas among leading scientists in the field. I am immensely proud to be part of this dynamic community, driving forward the frontiers of science and technology.
 
 #ScienceTalk #ParticlePhysics #LHCb #ResearchInnovation #SemiconductorDetectors
+
+{% include gallery id="gallery1" caption=" " %}
