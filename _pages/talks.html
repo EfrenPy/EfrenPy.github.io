@@ -3,7 +3,18 @@ layout: archive
 title: "Talks and presentations"
 permalink: /talks/
 author_profile: true
+gallery1:
+  - url: talk_vancouver.jpg
+    image_path: talk_vancouver.jpg
+    alt: "placeholder image 1"
 ---
+
+Here you have some slides, posters and videos.
+You can reuse them (with attribution) and ask me for other formarts.
+<!-- add empty line -->
+
+If you think I could give a talk, feel free to invite me! :blush:
+
 
 {% if site.talkmap_link == true %}
 
@@ -14,3 +25,5 @@ author_profile: true
 {% for post in site.talks reversed %}
   {% include archive-single-talk.html %}
 {% endfor %}
+
+{% include gallery id="gallery1" caption=" " %}
