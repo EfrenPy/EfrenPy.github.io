@@ -1,0 +1,18 @@
+---
+layout: archive
+title: "Get to know me better!"
+permalink: /personal/
+author_profile: true
+---
+
+{% include base_path %}
+
+Here you'll find some of my personal projects and hobbies. I'm always looking for new ideas and collaborations, so feel free to contact me if you want to work together!
+
+{% include gallery id="gallery1" caption=" " %}
+
+{% for post in site.personal %}
+  {% include archive-single.html %}
+{% endfor %}
+
+
