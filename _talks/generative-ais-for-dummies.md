@@ -5,7 +5,7 @@ type: "Workshop"
 permalink: /workshops/generative-ais-for-dummies
 excerpt: 'An introductory workshop on Generative Artificial Intelligences, tailored for beginners in the field, focusing on practical applications in academic research.'
 date: 2023-12-20  # The workshop date
-link: ''  # Registration link
+link: '/posts/2023/12/generative-ai-for-dummies/'  
 header:
   teaser: path-to-your-workshop-image.png  # Replace with the path to your teaser image if available
 venue: 'Instituto Galego de Física de Altas Enerxías (IGFAE)'
