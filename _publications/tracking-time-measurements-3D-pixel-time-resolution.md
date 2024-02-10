@@ -12,14 +12,14 @@ smallinfo: '(2023) Fernández Martínez, P., Coco, V., Gkougkousis, E.-L., et al
 location: "P. Fernandez Martínez, V. Coco, E.-L. Gkougkousis, M. Halvorsen Mahlum, G. Petrogiannis, G. Pellegrini, E. Rodríguez Rodríguez"  # Adjust if more authors are to be included
 paperurl: 'https://www.sciencedirect.com/science/article/pii/S0168900222010804'
 gallery1:
-  - url: your-figure1-url.png  # Replace with actual URLs and paths
-    image_path: your-figure1-path.png
-    alt: "placeholder image 1"  # Provide a short description
-    title: "Title for Figure 1"  # Provide a title for the figure
-  - url: your-figure2-url.png
-    image_path: your-figure2-path.png
-    alt: "placeholder image 2"
-    title: "Title for Figure 2"
+  - url: setup_3d.png  # Replace with actual URLs and paths
+    image_path: setup_3d.png
+    alt: "3D pixel testbeam setup"
+    title: "3D pixel testbeam setup"  # Provide a title for the figure
+  - url: 3D_sensor.png
+    image_path: 3D_sensor.png
+    alt: "3D pixel sensor diagram"
+    title: "3D pixel sensor diagram"
 ---
 
 [PDF](https://www.sciencedirect.com/science/article/pii/S0168900222010804){: .btn--research}
