@@ -16,8 +16,8 @@ gallery1:
     image_path: setup_3d.png
     alt: "3D pixel testbeam setup"
     title: "3D pixel testbeam setup"  # Provide a title for the figure
-  - url: 3D_sensor.png
-    image_path: 3D_sensor.png
+  - url: 3d_sensor.png
+    image_path: 3d_sensor.png
     alt: "3D pixel sensor diagram"
     title: "3D pixel sensor diagram"
 ---
