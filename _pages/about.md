@@ -17,7 +17,7 @@ Stay updated with my professional journey by checking out my [latest CV](http://
 - Keen to explore: Advanced applications of AI in particle physics and innovative technology solutions.
 
 ### Education
-:hatched_chick: PhD in Particle Physics, [_IGFAE_](https://igfae.usc.es/igfae/) (Galician Institute of High Energy Physics), _University of Santiago de compostela_, Spain
+:hatched_chick: PhD student in Particle Physics, [_IGFAE_](https://igfae.usc.es/igfae/) (Galician Institute of High Energy Physics), _University of Santiago de compostela_, Spain
       
 :hatching_chick: Master's in Particle and Nuclear Physics, _University of Santiago de compostela_
       
