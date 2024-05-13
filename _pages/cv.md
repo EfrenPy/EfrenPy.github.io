@@ -17,25 +17,22 @@ Education
 
 Work Experience
 ======
-* **Research Collaborator**, Nikhef, Jun 2022 - Present
+* **Invited Researcher**, Nikhef, Jun 2022 - Present
   * Characterization of Timepix4 ASICs for silicon sensor readout; development of a Timepix4-based telescope for test-beam campaigns.
+    * Timing analysis for Timepix4-based telescope, achieving a 90 picosecond track time resolution.
 
-* **Research Collaborator**, Instituto Galego de Física de Altas Enerxías (IGFAE), Jan 2021 - Present
-  * Key role in the characterization of Timepix4 ASICs and development of 3D silicon sensors for future high-energy physics experiments.
-
-* **Research Collaborator**, CERN, Feb 2022
+* **Invited Researcher**, CERN, Feb 2022
   * Commissioning of the upgraded LHCb VELO detector.
+  * 3D-column silicon pixel sesors research in testbeam campaings. 
 
-* **Senior Research Support Technician**, CERN, Sep 2021 - Dec 2021
-  * Critical role in commissioning the upgraded VELO detector for the LHCb experiment.
-
-* **Senior Research Support Technician**, Instituto Galego de Física de Altas Enerxías (IGFAE), Jul 2019 - Dec 2021
-  * Key contributions to the commissioning of the VELO detector for the LHCb experiment.
-
-* **Project Specialist**, Instituto Galego de Física de Altas Enerxías (IGFAE), Jan 2019 - Jun 2019
+* **PhD Student**, Instituto Galego de Física de Altas Enerxías (IGFAE), Jan 2019 - Present
   * Development and characterization of high-speed data transmission lines and high-voltage flat cables for the LHCb VELO upgrade.
+  * Commissioning of the upgraded LHCb VELO detector.
+  * 3D-column silicon pixel sesors development in testbeam campaings.
+  * Characterization of Timepix4 ASICs for silicon sensor readout; development of a Timepix4-based telescope for test-beam campaigns.
+  * Timing analysis for Timepix4-based telescope, achieving a 90 picosecond track time resolution.
 
-* **Intern**, Instituto Galego de Física de Altas Enerxías (IGFAE), Jun 2018 - Dec 2018
+* **Intern**, Instituto Galego de Física de Altas Enerxías (IGFAE), Jun 2018 - Sep  2020
   * Research project collaboration with CERN; development and characterization of a 3D X-ray mapping experiment.
 
 * **Leisure Time Monitor**, Altega, Jul 2013 - Aug 2013
@@ -43,8 +40,8 @@ Work Experience
 
 Skills
 ======
-* Python, WinCC, VHDL, FPGA, LabVIEW, Git
-* Sensors, Electronics, Analytical Skills, Linux
+* Python, C++, ROOT, WinCC, VHDL, FPGA, LabVIEW, Fortran, Git
+* Sensors,  Electronic design, Coordination and project management, Analytical Skills, Adaptability
 
 Publications
 ======
