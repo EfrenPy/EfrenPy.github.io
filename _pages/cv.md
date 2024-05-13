@@ -21,7 +21,7 @@ Work Experience
   * Characterization of Timepix4 ASICs for silicon sensor readout; development of a Timepix4-based telescope for test-beam campaigns.
     * Timing analysis for Timepix4-based telescope, achieving a 90 picosecond track time resolution.
 
-* **Invited Researcher**, CERN, Feb 2022
+* **Invited Researcher**, CERN, Aug 2021 - Feb 2022
   * Commissioning of the upgraded LHCb VELO detector.
   * 3D-column silicon pixel sesors research in testbeam campaings. 
 
