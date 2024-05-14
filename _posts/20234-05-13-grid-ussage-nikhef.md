@@ -7,8 +7,8 @@ tags:
   - AI Workshops
   - Research Innovation
 gallery1:
-  - url: grid_score_nikhef.jpg
-    image_path: grid_score_nikhef.jpg
+  - url: grid_score_nikhef.png
+    image_path: grid_score_nikhef.png
     alt: "grid score nikhef"
 ---
 
