@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-Welcome to my professional space! I’m Efrén Rodríguez Rodríguez, a physicist specializing in Nuclear and Particle Physics with over four years of experience in designing, building, and implementing advanced technologies in instrumentation and sensors. I have led and contributed to international high-tech projects such as the LHCb silicon pixel detector and the Timepix4 particle beam telescope. With a strong background in electronics, data analysis, project management, and solving complex problems, I am always seeking opportunities to apply my expertise to innovative and impactful projects in diverse fields.
+Welcome to my professional space! I’m Efrén Rodríguez Rodríguez, a physicist specializing in Nuclear and Particle Physics with over five years of experience in designing, building, and implementing advanced technologies in instrumentation and sensors. I have led and contributed to international high-tech projects such as the LHCb silicon pixel detector and the Timepix4 particle beam telescope. With a strong background in electronics, data analysis, project management, and solving complex problems, I am always seeking opportunities to apply my expertise to innovative and impactful projects in diverse fields.
 
 Stay updated with my professional journey by checking out my [latest CV](http://EfrenPy.github.io/files/Efren_Rodriguez_CV.pdf).
 
