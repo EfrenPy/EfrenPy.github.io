@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-Welcome to my personal space! I'm Efrén Rodríguez Rodríguez, a dedicated PhD candidate at the Galician Institute of High Energy Physics (IGFAE), University of Santiago de Compostela. My journey in particle physics is fueled by a profound passion for developing cutting-edge vertex detectors  in particle physics experiments. My expertise spans across experimental particle physics, where I've played pivotal roles in projects at prestigious institutions like Nikhef and CERN, focusing on the Timepix4 ASICs and silicon sensor technologies. I'm dedicated to pushing the boundaries of our understanding in high-energy physics with the latest research and technology.
+Welcome to my professional space! I’m Efrén Rodríguez Rodríguez, a physicist specializing in Nuclear and Particle Physics with over four years of experience in designing, building, and implementing advanced technologies in instrumentation and sensors. I have led and contributed to international high-tech projects such as the LHCb silicon pixel detector and the Timepix4 particle beam telescope. With a strong background in electronics, data analysis, project management, and solving complex problems, I am always seeking opportunities to apply my expertise to innovative and impactful projects in diverse fields.
 
 Stay updated with my professional journey by checking out my [latest CV](http://EfrenPy.github.io/files/Efren_Rodriguez_CV.pdf).
 
