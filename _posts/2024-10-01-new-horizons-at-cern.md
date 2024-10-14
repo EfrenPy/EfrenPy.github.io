@@ -9,8 +9,8 @@ tags:
   - Silicon Sensors
   - Timepix4
 gallery1:
-  - url: velo_team.gif
-    image_path: velo_team.gif
+  - url: velo_launch1.jpg
+    image_path: velo_launch1.jpg
     alt: "placeholder image 1"
 ---
 

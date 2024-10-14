@@ -10,7 +10,7 @@ locale                   : "es_ES"
 title                    : "Efrén Rodríguez Rodríguez"
 title_separator          : "-"
 name                     : &name "Efrén Rodríguez Rodríguez"
-description              : &description "PhD student in particle physics at the Galician Institute of High Energy Physics (IGFAE)"
+description              : &description "Postdoctoral Researcher in particle physics silicon detectors at CERN"
 url                      : https://EfrenPy.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "EfrenPy/EfrenPy.github.io"
@@ -83,9 +83,9 @@ analytics:
 author:
   name             : "Efrén Rodríguez Rodríguez"
   avatar           : "profile.jpg"
-  bio              : "PhD student in particle physics at the Galician Institute of High Energy Physics (IGFAE)"
-  location         : "Santiago de Compostela, Spain"
-  employer         : "University of Santiago de Compostela"
+  bio              : "Postdoctoral Researcher in particle physics silicon detectors at CERN"
+  location         : "Geneve, Switzerland"
+  employer         : "CERN"
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=pir4UaIAAAAJ&hl=en"
   email            : 
