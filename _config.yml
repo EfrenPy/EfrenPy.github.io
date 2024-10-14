@@ -10,7 +10,7 @@ locale                   : "es_ES"
 title                    : "Efrén Rodríguez Rodríguez"
 title_separator          : "-"
 name                     : &name "Efrén Rodríguez Rodríguez"
-description              : &description "Postdoctoral Researcher in particle physics silicon detectors at CERN"
+description              : &description "Postdoctoral Researcher in particle physics silicon detectors for the EP-R&D department at CERN"
 url                      : https://EfrenPy.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "EfrenPy/EfrenPy.github.io"
@@ -83,7 +83,7 @@ analytics:
 author:
   name             : "Efrén Rodríguez Rodríguez"
   avatar           : "profile.jpg"
-  bio              : "Postdoctoral Researcher in particle physics silicon detectors at CERN"
+  bio              : "Postdoctoral Researcher in particle physics silicon detectors for the EP-R&D department at CERN"
   location         : "Geneve, Switzerland"
   employer         : "CERN"
   pubmed           : 
