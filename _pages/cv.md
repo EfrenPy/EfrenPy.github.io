@@ -17,7 +17,13 @@ Education
 
 Work Experience
 ======
-* **Invited Researcher**, Nikhef, Jun 2022 - Present
+* **Postdoctoral Researcher**, CERN, Oct 2024 - Present
+  I lead a team responsible for three key projects in advanced particle detection technology:
+    * Simulation of 3D column silicon sensors: I oversee sensor simulation and optimization to enhance precision in high-energy experiments.
+    * Development of a Timepix4 telescope: I manage the construction, operation, and data analysis for a Timepix4-based telescope in test beam campaigns.
+    * Testing techniques: I coordinate innovative setups and techniques to validate new high-energy physics sensors."
+
+* **Invited Researcher**, Nikhef, Jun 2022 - Jun 2023
   * Characterization of Timepix4 ASICs for silicon sensor readout; development of a Timepix4-based telescope for test-beam campaigns.
     * Timing analysis for Timepix4-based telescope, achieving a 90 picosecond track time resolution.
 
