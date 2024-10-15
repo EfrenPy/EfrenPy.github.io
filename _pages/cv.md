@@ -18,6 +18,7 @@ Education
 Work Experience
 ======
 * **Postdoctoral Researcher**, CERN, Oct 2024 - Present
+
   I lead a team responsible for three key projects in advanced particle detection technology:
     * Simulation of 3D column silicon sensors: I oversee sensor simulation and optimization to enhance precision in high-energy experiments.
     * Development of a Timepix4 telescope: I manage the construction, operation, and data analysis for a Timepix4-based telescope in test beam campaigns.
