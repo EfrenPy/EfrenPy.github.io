@@ -86,9 +86,9 @@ author:
   bio              : "Postdoctoral Researcher in particle physics silicon detectors for the EP-R&D department at CERN"
   location         : "Geneve, Switzerland"
   employer         : "CERN"
-  pubmed           : 
+  pubmed           :
   googlescholar    : "https://scholar.google.com/citations?user=pir4UaIAAAAJ&hl=en"
-  email            : 
+  email            :
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -110,7 +110,7 @@ author:
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : 
+  twitter          :
   vine             :
   weibo            :
   xing             :
@@ -130,6 +130,8 @@ exclude:
   - .bundle
   - .jekyll-assets-cache
   - .sass-cache
+  - .git
+  - .github
   - CHANGELOG
   - Capfile
   - Gemfile
@@ -144,9 +146,21 @@ exclude:
   - gulpfile.js
   - log
   - node_modules
+  - node_modules/**
   - package.json
+  - package-lock.json
   - tmp
   - vendor
+  - vendor/**
+  - venv
+  - venv/**
+  - scripts
+  - "*.sh"
+  - SETUP.md
+  - IMPROVEMENTS.md
+  - CLAUDE.md
+  - requirements.txt
+  - .pre-commit-config.yaml
 keep_files:
   - .git
   - .svn

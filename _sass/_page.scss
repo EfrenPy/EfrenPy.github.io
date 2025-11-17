@@ -5,22 +5,57 @@
 #main {
   @include container;
   @include clearfix;
-  margin-top: 2em;
-  padding-left: 1em;
-  padding-right: 1em;
-  animation: intro 0.3s both;
-  animation-delay: 0.35s;
+  margin-top: 0;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 2em;
+  animation: intro 0.15s both;
+  animation-delay: 0s;
+  background: #ffffff;
+  min-height: 70vh;
+  max-width: 1400px;
+
+  @include breakpoint($medium) {
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+
+  @include breakpoint($large) {
+    padding-top: 3em;
+    display: flex;
+    gap: 3em;
+    align-items: flex-start;
+  }
 
   @include breakpoint($x-large) {
-    max-width: $x-large;
+    max-width: 1400px;
+    padding-left: 4em;
+    padding-right: 4em;
+    gap: 4em;
   }
 }
 
 .page {
+  background: white;
+  border-radius: 0;
+  padding: 2em 0;
+  margin-top: 2em;
+  margin-bottom: 4em;
+  box-shadow: none;
+  border: none;
+
   @include breakpoint($large) {
-    @include span(10 of 12 last);
-    @include prefix(0.5 of 12);
-    @include suffix(2 of 12);
+    @include span(9 of 12 last);
+    @include prefix(0 of 12);
+    @include suffix(0 of 12);
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 4em;
+  }
+
+  @include breakpoint($x-large) {
+    @include span(8.75 of 12 last);
+    max-width: 900px;
   }
 
   .page__inner-wrap {
@@ -36,7 +71,11 @@
 
 .page__title {
   margin-top: 0;
-  line-height: 1;
+  line-height: 1.2;
+  font-size: $type-size-1;
+  font-weight: 600;
+  color: $darker-gray;
+  letter-spacing: -0.025em;
 
   & + .page__meta {
     margin-top: -0.5em;
@@ -46,13 +85,28 @@
 .page__lead {
   font-family: $global-font-family;
   font-size: $type-size-4;
+  color: #718096;
 }
 
 .page__content {
 
   h2 {
-    padding-bottom: 0.5em;
-    border-bottom: 1px solid $border-color;
+    padding-bottom: 0;
+    margin-top: 3em;
+    margin-bottom: 1em;
+    border-bottom: none;
+    color: $darker-gray;
+    font-weight: 600;
+    font-size: $type-size-2;
+    letter-spacing: -0.02em;
+  }
+
+  h3 {
+    color: $darker-gray;
+    font-weight: 600;
+    margin-top: 2.5em;
+    margin-bottom: 0.75em;
+    font-size: $type-size-3;
   }
 
   p, li, dl {
@@ -73,13 +127,17 @@
   }
 
   a {
-    text-decoration: underline;
+    color: $link-color;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: $global-transition;
 
     &:hover {
-      text-decoration: underline;
+      color: $link-color-hover;
+      border-bottom-color: $link-color-hover;
 
       img {
-        box-shadow: 0 0 10px rgba(#000, 0.25);
+        box-shadow: $box-shadow-lg;
       }
     }
   }
@@ -227,16 +285,24 @@
 
 .page__meta {
   margin-top: 2em;
-  color: mix(#fff, $gray, 25%);
+  padding: 0.75em 1em;
+  color: $gray;
   font-family: $sans-serif;
-  font-size: $type-size-6;
+  font-size: $type-size-7;
+  background-color: $lighter-gray;
+  border-radius: $border-radius;
 
   p {
     margin: 0;
   }
 
   a {
-    color: inherit;
+    color: $link-color;
+    font-weight: 600;
+
+    &:hover {
+      color: $link-color-hover;
+    }
   }
 }
 
@@ -263,16 +329,23 @@
 
 .page__taxonomy-item {
   display: inline-block;
-  margin-right: 5px;
-  margin-bottom: 8px;
-  padding: 5px 10px;
+  margin-right: 8px;
+  margin-bottom: 10px;
+  padding: 8px 16px;
   text-decoration: none;
-  border: 1px solid $light-gray;
-  border-radius: $border-radius;
+  font-size: $type-size-7;
+  font-weight: 600;
+  background-color: $lighter-gray;
+  color: $dark-gray;
+  border-radius: 20px;
+  transition: $global-transition;
 
   &:hover {
     text-decoration: none;
-    color: $link-color-hover;
+    background-color: $link-color;
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: $box-shadow;
   }
 }
 
@@ -398,4 +471,55 @@
   margin-bottom: 10px;
   font-size: $type-size-6;
   text-transform: uppercase;
+}
+
+/* ==========================================================================
+   FLEXBOX LAYOUT FIX
+   ========================================================================== */
+
+@include breakpoint($large) {
+  #main {
+    > .sidebar {
+      flex-shrink: 0;
+      float: none;
+      width: calc((2.5 / 12) * 100%);
+    }
+
+    > .page {
+      flex: 1;
+      float: none;
+      width: auto;
+      max-width: 900px;
+    }
+  }
+}
+
+@include breakpoint($x-large) {
+  #main {
+    > .sidebar {
+      width: calc((2.75 / 12) * 100%);
+      max-width: 300px;
+    }
+
+    > .page {
+      max-width: 900px;
+    }
+  }
+}
+
+/* Archive pages without sidebar */
+.archive #main,
+.wide #main {
+  @include breakpoint($large) {
+    display: block;
+  }
+
+  .page {
+    @include breakpoint($large) {
+      float: none;
+      width: 100%;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+  }
 }

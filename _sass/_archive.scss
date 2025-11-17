@@ -10,8 +10,11 @@
   }
 
   @include breakpoint($large) {
-    @include span(10 of 12 last);
-    @include prefix(0.5 of 12);
+    flex: 1;
+    float: none;
+    width: auto;
+    max-width: 900px;
+    margin-top: 0;
   }
 
   a {
@@ -40,8 +43,23 @@
 }
 
 .archive__item-title {
-  margin-bottom: 0.25em;
-  font-family: $sans-serif-narrow;
+  margin-bottom: 0.5em;
+  font-family: $sans-serif;
+  font-size: $type-size-4;
+  font-weight: 600;
+  line-height: 1.4;
+  color: $darker-gray;
+  letter-spacing: -0.01em;
+
+  a {
+    color: $darker-gray;
+    transition: color 0.15s ease;
+    text-decoration: none;
+
+    &:hover {
+      color: $link-color;
+    }
+  }
 
   a + a {
     opacity: 0.5;
@@ -60,6 +78,8 @@
 .archive__item-excerpt {
   margin-top: 0;
   font-size: $type-size-6;
+  line-height: 1.7;
+  color: #718096;
 
   & + p {
     text-indent: 0;
@@ -67,20 +87,46 @@
 }
 
 .archive__item-teaser {
-  border-radius: $border-radius;
+  border-radius: 6px;
   overflow: hidden;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+  transition: all 0.2s ease;
+
   img {
     width: 100%;
+    transition: all 0.2s ease;
   }
 }
 
-.archive__item:hover {
-  .archive__item-teaser {
-    box-shadow: 0 0 10px rgba(#000, 0.25);
+.archive__item {
+  padding: 2em;
+  background: $body-color;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.04);
+  transition: all 0.2s ease;
+  margin-bottom: 1.5rem;
+
+  @include breakpoint($medium) {
+    padding: 2.5em;
   }
 
-  .archive__item-title {
-    text-decoration: underline;
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.08);
+    border-color: #cbd5e0;
+
+    .archive__item-teaser {
+      box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.12);
+
+      img {
+        transform: scale(1.02);
+      }
+    }
+
+    .archive__item-title a {
+      color: $link-color;
+    }
   }
 }
 
@@ -90,6 +136,18 @@
    ========================================================================== */
 
 .list__item {
+  margin-bottom: 1.5em;
+  padding: 1.25em;
+  background: $body-color;
+  border-radius: $border-radius;
+  border-left: 4px solid $link-color;
+  transition: $global-transition;
+
+  &:hover {
+    box-shadow: $box-shadow;
+    transform: translateX(4px);
+  }
+
   @include breakpoint($medium) {
     padding-right: $right-sidebar-width-narrow;
   }
@@ -103,7 +161,9 @@
   }
 
   .page__meta {
-    margin: 0 0 4px;
+    margin: 0 0 8px;
+    font-size: $type-size-7;
+    color: $gray;
   }
 }
 

@@ -14,22 +14,21 @@
   bottom: 0em;
   height: auto;
   /* sticky footer fix end */
-  margin-top: 3em;
-  color: mix(#fff, $gray, 25%);
-  -webkit-animation: intro 0.3s both;
-          animation: intro 0.3s both;
-  -webkit-animation-delay: 0.45s;
-          animation-delay: 0.45s;
-  background-color: $lighter-gray;
-  border-top: 1px solid $light-gray;
+  margin-top: 4em;
+  color: #718096;
+  -webkit-animation: none;
+          animation: none;
+  background: #f8f9fa;
+  border-top: 1px solid #e2e8f0;
+  box-shadow: none;
 
   footer {
     @include clearfix;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 2em;
+    margin-top: 0;
     max-width: 100%;
-    padding: 0 1em 2em;
+    padding: 3em 2em 2em;
 
     @include breakpoint($x-large) {
       max-width: $x-large;
@@ -37,11 +36,12 @@
   }
 
   a {
-    color: inherit;
+    color: #718096;
     text-decoration: none;
+    transition: all 0.15s ease;
 
     &:hover {
-      text-decoration: underline;
+      color: #1a202c;
     }
   }
 
@@ -49,7 +49,8 @@
   .fab,
   .far,
   .fal {
-    color: mix(#fff, $gray, 25%);
+    color: #718096;
+    transition: all 0.15s ease;
   }
 }
 
@@ -67,26 +68,58 @@
 
   li {
     display: inline-block;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    font-family: $sans-serif-narrow;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-family: $sans-serif;
     font-size: $type-size-6;
-    text-transform: uppercase;
+    margin-right: 1.5rem;
   }
 
   li + li:before {
     content: "";
-    padding-right: 5px;
+    padding-right: 0;
   }
 
   a {
-    padding-right: 10px;
-    font-weight: bold;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    border-radius: 6px;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.15s ease;
+
+    &:hover {
+      background: #e2e8f0;
+    }
   }
 
   .social-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1rem;
+
     a {
-      white-space: nowrap;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      background: white;
+      border: 1px solid #e2e8f0;
+      border-radius: 50%;
+      padding: 0;
+
+      &:hover {
+        background: #f7fafc;
+        border-color: #cbd5e0;
+        transform: translateY(-1px);
+      }
+
+      i {
+        font-size: 1rem;
+      }
     }
   }
 }

@@ -1,0 +1,28 @@
+# Configuration for BibTeX to Markdown converter
+# Copy this file to bibtex_config.yml and customize as needed
+
+# BibTeX files to process
+bib_files:
+  journal:
+    file: pubs.bib
+    venue_key: journal
+    venue_prefix: ""
+
+  conference:
+    file: proceedings.bib
+    venue_key: booktitle
+    venue_prefix: "In "
+
+  preprint:
+    file: preprints.bib
+    venue_key: journal
+    venue_prefix: "Preprint: "
+
+# Output directory for generated markdown files
+output_dir: ../_publications
+
+# Jekyll collection name
+collection: publications
+
+# Permalink base path
+permalink_base: /publication/

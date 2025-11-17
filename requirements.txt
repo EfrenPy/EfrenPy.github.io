@@ -1,0 +1,18 @@
+# Python dependencies for markdown generators and utilities
+
+# Jupyter notebook support
+jupyter>=1.0.0
+notebook>=7.0.0
+
+# Data manipulation
+pandas>=2.0.0
+
+# Geographic data for talk maps
+geopy>=2.4.0
+getorg>=0.3.1
+
+# BibTeX parsing
+bibtexparser>=1.4.0
+
+# YAML processing
+PyYAML>=6.0

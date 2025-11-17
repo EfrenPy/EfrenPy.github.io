@@ -1,0 +1,82 @@
+name: Optimize Images
+
+on:
+  workflow_dispatch:  # Manual trigger only
+    inputs:
+      commit_changes:
+        description: 'Automatically commit optimized images'
+        required: false
+        type: boolean
+        default: false
+
+jobs:
+  optimize:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: |
+          npm ci
+          # Install system dependencies for sharp
+          sudo apt-get update
+          sudo apt-get install -y libvips-dev
+
+      - name: Optimize images
+        run: npm run optimize-images
+
+      - name: Check for optimized images
+        id: check_images
+        run: |
+          if [ -d "images-optimized" ] && [ "$(ls -A images-optimized)" ]; then
+            echo "has_optimized=true" >> $GITHUB_OUTPUT
+            echo "Found optimized images"
+          else
+            echo "has_optimized=false" >> $GITHUB_OUTPUT
+            echo "No images were optimized"
+          fi
+
+      - name: Calculate size reduction
+        if: steps.check_images.outputs.has_optimized == 'true'
+        run: |
+          ORIGINAL_SIZE=$(du -sb images | cut -f1)
+          OPTIMIZED_SIZE=$(du -sb images-optimized | cut -f1)
+          REDUCTION=$((ORIGINAL_SIZE - OPTIMIZED_SIZE))
+          PERCENT=$(awk "BEGIN {printf \"%.2f\", ($REDUCTION/$ORIGINAL_SIZE)*100}")
+          echo "📊 Size reduction: ${PERCENT}% (${REDUCTION} bytes)"
+          echo "Original: ${ORIGINAL_SIZE} bytes"
+          echo "Optimized: ${OPTIMIZED_SIZE} bytes"
+
+      - name: Replace original images
+        if: steps.check_images.outputs.has_optimized == 'true' && inputs.commit_changes
+        run: |
+          cp -r images-optimized/* images/
+          rm -rf images-optimized
+
+      - name: Commit changes
+        if: steps.check_images.outputs.has_optimized == 'true' && inputs.commit_changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add images/
+          git commit -m "Optimize images
+
+          🤖 Generated with [Claude Code](https://claude.com/claude-code)
+
+          Co-Authored-By: Claude <noreply@anthropic.com>"
+          git push
+
+      - name: Upload optimized images as artifact
+        if: steps.check_images.outputs.has_optimized == 'true' && !inputs.commit_changes
+        uses: actions/upload-artifact@v4
+        with:
+          name: optimized-images
+          path: images-optimized/
+          retention-days: 7

@@ -1,0 +1,76 @@
+# Pre-commit hooks for academic website
+# Install with: pip install pre-commit
+# Setup with: pre-commit install
+
+repos:
+  # General file checks
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0
+    hooks:
+      - id: trailing-whitespace
+        exclude: '\.md$'  # Allow trailing spaces in markdown (for line breaks)
+      - id: end-of-file-fixer
+      - id: check-yaml
+        args: ['--allow-multiple-documents']
+      - id: check-json
+      - id: check-added-large-files
+        args: ['--maxkb=5000']
+      - id: mixed-line-ending
+      - id: check-merge-conflict
+      - id: detect-private-key
+
+  # YAML linting
+  - repo: https://github.com/adrienverge/yamllint
+    rev: v1.33.0
+    hooks:
+      - id: yamllint
+        args:
+          - '-d'
+          - '{extends: default, rules: {line-length: {max: 200}, document-start: disable, colons: disable, comments: disable, truthy: disable}}'
+        files: \.(yaml|yml)$
+
+  # Markdown linting
+  - repo: https://github.com/igorshubovych/markdownlint-cli
+    rev: v0.38.0
+    hooks:
+      - id: markdownlint
+        args: ['--fix', '--disable', 'MD013', 'MD033', 'MD041']
+        # MD013: Line length (disabled for academic writing)
+        # MD033: Inline HTML (needed for Jekyll)
+        # MD041: First line in file should be a top level heading (not always applicable)
+
+  # Python code formatting
+  - repo: https://github.com/psf/black
+    rev: 23.12.1
+    hooks:
+      - id: black
+        language_version: python3
+        files: \.py$
+
+  # Python linting
+  - repo: https://github.com/pycqa/flake8
+    rev: 7.0.0
+    hooks:
+      - id: flake8
+        args: ['--max-line-length=100', '--extend-ignore=E203,W503']
+        files: \.py$
+
+  # Check for debugging statements
+  - repo: https://github.com/pre-commit/pygrep-hooks
+    rev: v1.10.0
+    hooks:
+      - id: python-check-blanket-noqa
+      - id: python-check-mock-methods
+      - id: python-no-eval
+      - id: python-no-log-warn
+
+  # Validate YAML front matter in markdown files
+  - repo: local
+    hooks:
+      - id: validate-frontmatter
+        name: Validate YAML Front Matter
+        entry: python scripts/validate-frontmatter.py
+        language: python
+        files: '^_.*\.md$'
+        pass_filenames: true
+        additional_dependencies: ['pyyaml']

@@ -1,0 +1,58 @@
+name: Backup to TSV
+
+on:
+  # Run weekly on Sundays at 00:00 UTC
+  schedule:
+    - cron: '0 0 * * 0'
+
+  # Allow manual trigger
+  workflow_dispatch:
+
+  # Run after publications or talks are updated
+  push:
+    paths:
+      - '_publications/**'
+      - '_talks/**'
+
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Make backup script executable
+        run: chmod +x scripts/backup-to-tsv.py
+
+      - name: Run backup
+        run: python scripts/backup-to-tsv.py
+
+      - name: Check for changes
+        id: check_changes
+        run: |
+          git diff --quiet markdown_generator/*_backup.tsv || echo "has_changes=true" >> $GITHUB_OUTPUT
+
+      - name: Commit backup files
+        if: steps.check_changes.outputs.has_changes == 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add markdown_generator/*_backup.tsv
+          git commit -m "Automated TSV backup of publications and talks
+
+          🤖 Generated with [Claude Code](https://claude.com/claude-code)
+
+          Co-Authored-By: Claude <noreply@anthropic.com>"
+          git push
+
+      - name: Upload backup as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: tsv-backups-${{ github.run_number }}
+          path: markdown_generator/*_backup.tsv
+          retention-days: 90
