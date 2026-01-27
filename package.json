@@ -8,7 +8,7 @@
     "watch:js": "esbuild assets/js/_main.js --bundle --minify --outfile=assets/js/main.min.js --watch"
   },
   "devDependencies": {
-    "esbuild": "^0.20.0"
+    "esbuild": "^0.25.0"
   },
   "engines": {
     "node": ">=18.0.0"
