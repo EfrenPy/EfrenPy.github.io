@@ -22,7 +22,7 @@ read_more                : "disabled" # if enabled, adds "Read more" links to ex
 talkmap_link             : false #change to true to add link to talkmap on talks page
 search                   : true
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
+  provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "custom"
   disqus:
     shortname            :
   discourse:
@@ -53,7 +53,6 @@ atom_feed:
 # SEO Related
 google_site_verification :
 bing_site_verification   :
-alexa_site_verification  :
 yandex_site_verification :
 
 # Social Sharing
@@ -74,7 +73,7 @@ social:
 
 # Analytics
 analytics:
-  provider               :  "google" # false (default), "google", "google-universal", "custom"
+  provider               :  false # false (default), "google-gtag", "google", "google-universal", "custom"
   google:
     tracking_id          :
 
@@ -96,9 +95,7 @@ author:
   dribbble         :
   flickr           :
   facebook         :
-  foursquare       :
   github           : "EfrenPy"
-  google_plus      :
   keybase          :
   instagram        : "efrenpics"
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
@@ -111,7 +108,6 @@ author:
   steam            :
   tumblr           :
   twitter          : 
-  vine             :
   weibo            :
   xing             :
   youtube          :
@@ -283,15 +279,6 @@ plugins:
   - jekyll-redirect-from
   - jemoji
   - jekyll-twitter-plugin
-# mimic GitHub Pages with --safe
-whitelist:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jemoji
-  - jekyll-twitter-plugin
-
 
 relative_links:
   enabled:     false

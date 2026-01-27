@@ -1,98 +1,134 @@
 /* ==========================================================================
-   jQuery plugin settings and other scripts
+   Modern vanilla JavaScript - no jQuery dependencies
    ========================================================================== */
 
-$(document).ready(function(){
-   // Sticky footer
-  var bumpIt = function() {
-      $("body").css("margin-bottom", $(".page__footer").outerHeight(true));
-    },
-    didResize = false;
+document.addEventListener('DOMContentLoaded', function() {
 
-  bumpIt();
+  // Sticky footer - adjust body margin to account for footer height
+  const footer = document.querySelector('.page__footer');
+  if (footer) {
+    const updateFooterMargin = () => {
+      document.body.style.marginBottom = footer.offsetHeight + 'px';
+    };
 
-  $(window).resize(function() {
-    didResize = true;
-  });
-  setInterval(function() {
-    if (didResize) {
-      didResize = false;
-      bumpIt();
-    }
-  }, 250);
-  // FitVids init
-  $("#main").fitVids();
+    updateFooterMargin();
 
-  // init sticky sidebar
-  $(".sticky").Stickyfill();
-
-  var stickySideBar = function(){
-    var show = $(".author__urls-wrapper button").length === 0 ? $(window).width() > 1024 : !$(".author__urls-wrapper button").is(":visible");
-    // console.log("has button: " + $(".author__urls-wrapper button").length === 0);
-    // console.log("Window Width: " + windowWidth);
-    // console.log("show: " + show);
-    //old code was if($(window).width() > 1024)
-    if (show) {
-      // fix
-      Stickyfill.rebuild();
-      Stickyfill.init();
-      $(".author__urls").show();
+    // Use ResizeObserver for efficient resize handling
+    if (typeof ResizeObserver !== 'undefined') {
+      const resizeObserver = new ResizeObserver(updateFooterMargin);
+      resizeObserver.observe(footer);
     } else {
-      // unfix
-      Stickyfill.stop();
-      $(".author__urls").hide();
+      // Fallback for older browsers
+      window.addEventListener('resize', updateFooterMargin);
+    }
+  }
+
+  // Sidebar visibility logic
+  const authorUrlsWrapper = document.querySelector('.author__urls-wrapper');
+  const authorUrls = document.querySelector('.author__urls');
+  const followButton = document.querySelector('.author__urls-wrapper button');
+
+  const updateSidebarVisibility = () => {
+    if (!authorUrls) return;
+
+    const hasButton = followButton !== null;
+    const buttonVisible = hasButton && followButton.offsetParent !== null;
+    const show = !hasButton || (hasButton && !buttonVisible);
+
+    if (show) {
+      authorUrls.style.display = '';
+    } else {
+      authorUrls.style.display = 'none';
     }
   };
 
-  stickySideBar();
+  updateSidebarVisibility();
+  window.addEventListener('resize', updateSidebarVisibility);
 
-  $(window).resize(function(){
-    stickySideBar();
-  });
+  // Follow menu dropdown toggle
+  if (followButton && authorUrls) {
+    followButton.addEventListener('click', function() {
+      const isHidden = authorUrls.style.display === 'none' ||
+                       getComputedStyle(authorUrls).display === 'none';
 
-  // Follow menu drop down
+      authorUrls.style.display = isHidden ? 'block' : 'none';
+      this.classList.toggle('open');
+    });
+  }
 
-  $(".author__urls-wrapper button").on("click", function() {
-    $(".author__urls").fadeToggle("fast", function() {});
-    $(".author__urls-wrapper button").toggleClass("open");
-  });
+  // Simple image lightbox using native dialog
+  const imageLinks = document.querySelectorAll(
+    'a[href$=".jpg"], a[href$=".jpeg"], a[href$=".JPG"], a[href$=".png"], a[href$=".gif"], a[href$=".webp"]'
+  );
 
-  // init smooth scroll
-  $("a").smoothScroll({offset: -20});
+  if (imageLinks.length > 0) {
+    // Create lightbox dialog
+    const dialog = document.createElement('dialog');
+    dialog.className = 'image-lightbox';
+    dialog.innerHTML = `
+      <img src="" alt="Lightbox image">
+      <button class="lightbox-close" aria-label="Close">&times;</button>
+    `;
+    document.body.appendChild(dialog);
 
-  // add lightbox class to all image links
-  $("a[href$='.jpg'],a[href$='.jpeg'],a[href$='.JPG'],a[href$='.png'],a[href$='.gif']").addClass("image-popup");
+    const lightboxImg = dialog.querySelector('img');
+    const closeBtn = dialog.querySelector('.lightbox-close');
 
-  // Magnific-Popup options
-  $(".image-popup").magnificPopup({
-    // disableOn: function() {
-    //   if( $(window).width() < 500 ) {
-    //     return false;
-    //   }
-    //   return true;
-    // },
-    type: 'image',
-    tLoading: 'Loading image #%curr%...',
-    gallery: {
-      enabled: true,
-      navigateByImgClick: true,
-      preload: [0,1] // Will preload 0 - before current, and 1 after the current image
-    },
-    image: {
-      tError: '<a href="%url%">Image #%curr%</a> could not be loaded.',
-    },
-    removalDelay: 500, // Delay in milliseconds before popup is removed
-    // Class that is added to body when popup is open.
-    // make it unique to apply your CSS animations just to this exact popup
-    mainClass: 'mfp-zoom-in',
-    callbacks: {
-      beforeOpen: function() {
-        // just a hack that adds mfp-anim class to markup
-        this.st.image.markup = this.st.image.markup.replace('mfp-figure', 'mfp-figure mfp-with-anim');
+    // Add lightbox styles
+    const style = document.createElement('style');
+    style.textContent = `
+      .image-lightbox {
+        border: none;
+        padding: 0;
+        background: rgba(0, 0, 0, 0.9);
+        max-width: 95vw;
+        max-height: 95vh;
       }
-    },
-    closeOnContentClick: true,
-    midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
-  });
+      .image-lightbox::backdrop {
+        background: rgba(0, 0, 0, 0.8);
+      }
+      .image-lightbox img {
+        max-width: 90vw;
+        max-height: 90vh;
+        object-fit: contain;
+        display: block;
+      }
+      .image-lightbox .lightbox-close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: rgba(255, 255, 255, 0.9);
+        border: none;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        font-size: 24px;
+        cursor: pointer;
+        line-height: 1;
+      }
+      .image-lightbox .lightbox-close:hover {
+        background: #fff;
+      }
+    `;
+    document.head.appendChild(style);
+
+    // Attach click handlers to image links
+    imageLinks.forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        lightboxImg.src = this.href;
+        dialog.showModal();
+      });
+    });
+
+    // Close handlers
+    closeBtn.addEventListener('click', () => dialog.close());
+    dialog.addEventListener('click', (e) => {
+      if (e.target === dialog) dialog.close();
+    });
+  }
 
 });
+
+// Enable smooth scrolling via CSS (add to html element)
+document.documentElement.style.scrollBehavior = 'smooth';

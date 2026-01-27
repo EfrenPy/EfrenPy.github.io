@@ -160,7 +160,8 @@ body:hover .visually-hidden button {
 
 .full {
   @include breakpoint($large){
-    margin-right: -1 * span(2.5 of 12) !important;
+    // 2.5 / 12 = 20.8333% (replaces Susy span function)
+    margin-right: percentage(-2.5 / 12) !important;
   }
 }
 
@@ -204,19 +205,10 @@ body:hover .visually-hidden button {
     color: $flickr-color;
   }
 
-  .fa-foursquare {
-    color: $foursquare-color;
-  }
-
   .fa-github,
   .fa-github-alt,
   .fa-github-square {
     color: $github-color;
-  }
-
-  .fa-google-plus,
-  .fa-google-plus-square {
-    color: $google-plus-color;
   }
 
   .fa-instagram {
@@ -266,10 +258,6 @@ body:hover .visually-hidden button {
   .fa-vimeo,
   .fa-vimeo-square {
     color: $vimeo-color;
-  }
-
-  .fa-vine {
-    color: $vine-color;
   }
 
   .fa-youtube,
