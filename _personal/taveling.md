@@ -1,31 +1,31 @@
 ---
 title: "✈️ Global Wanderings 🌍"
-excerpt: "Journey through my travel tales as I explore the mosaic of cultures, landscapes, and histories our world offers. From bustling city streets to tranquil countryside, every destination has been a chapter in my book of adventures. <br/><img src='/images/traveling.jpg' alt='Glimpse of a Travel Destination' style='border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);'>"
+excerpt: "Journey through my travel tales as I explore the mosaic of cultures, landscapes, and histories our world offers. From bustling city streets to tranquil countryside, every destination has been a chapter in my book of adventures. <br/><img src='/images/webp/traveling.webp' alt='Glimpse of a Travel Destination' style='border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);'>"
 collection: personal
 
 gallery1:
-  - url: traveling.jpg
-    image_path: traveling.jpg
+  - url: webp/traveling.webp
+    image_path: webp/traveling.webp
     alt: "placeholder image 1"
 gallery2:
-  - url: swiss.jpg
-    image_path: swiss.jpg
+  - url: webp/swiss.webp
+    image_path: webp/swiss.webp
     alt: "placeholder image 1"
 gallery3:
-  - url: vancouver.jpg
-    image_path: vancouver.jpg
+  - url: webp/vancouver.webp
+    image_path: webp/vancouver.webp
     alt: "placeholder image 1"
 gallery4:
-  - url: italy.jpg
-    image_path: italy.jpg
+  - url: webp/italy.webp
+    image_path: webp/italy.webp
     alt: "placeholder image 1"
 gallery5:
-  - url: netherlands.jpg
-    image_path: netherlands.jpg
+  - url: webp/netherlands.webp
+    image_path: webp/netherlands.webp
     alt: "placeholder image 1"
 gallery6:
-  - url: paris.jpg
-    image_path: paris.jpg
+  - url: webp/paris.webp
+    image_path: webp/paris.webp
     alt: "placeholder image 1"
 ---
 

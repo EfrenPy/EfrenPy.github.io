@@ -81,7 +81,7 @@ analytics:
 # Site Author
 author:
   name             : "Efrén Rodríguez Rodríguez"
-  avatar           : "profile.jpg"
+  avatar           : "webp/profile.webp"
   bio              : "Postdoctoral Researcher in particle physics silicon detectors for the EP-R&D department at CERN"
   location         : "Geneve, Switzerland"
   employer         : "CERN"

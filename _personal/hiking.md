@@ -1,26 +1,26 @@
 ---
 title: "🥾 Hiking Adventures 🌲"
-excerpt: "Embark on a journey through my hiking escapades! From serene forest trails to majestic mountain peaks, each trek has been a tale of discovery and awe. Dive into the essence of nature's beauty with me. <br/><img src='/images/hiking_port1.jpg' alt='Hiking Trail Snapshot' style='border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);'>"
+excerpt: "Embark on a journey through my hiking escapades! From serene forest trails to majestic mountain peaks, each trek has been a tale of discovery and awe. Dive into the essence of nature's beauty with me. <br/><img src='/images/webp/hiking_port1.webp' alt='Hiking Trail Snapshot' style='border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);'>"
 collection: personal
 gallery1:
-  - url: shilthorn.jpg
-    image_path: shilthorn.jpg
+  - url: webp/shilthorn.webp
+    image_path: webp/shilthorn.webp
     alt: "placeholder image 1"
 gallery2:
-  - url: lake.jpg
-    image_path: lake.jpg
+  - url: webp/lake.webp
+    image_path: webp/lake.webp
     alt: "placeholder image 1"
 gallery3:
-  - url: Brig.jpg
-    image_path: Brig.jpg
+  - url: webp/Brig.webp
+    image_path: webp/Brig.webp
     alt: "placeholder image 1"
 gallery4:
-  - url: saleve.jpg
-    image_path: saleve.jpg
+  - url: webp/saleve.webp
+    image_path: webp/saleve.webp
     alt: "placeholder image 1"
 gallery5:
-  - url: eiger.jpg
-    image_path: eiger.jpg
+  - url: webp/eiger.webp
+    image_path: webp/eiger.webp
     alt: "placeholder image 1"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "🥾 Hiking Adventures 🌲"
-excerpt: "Embark on a journey through my hiking escapades! From serene forest trails to majestic mountain peaks, each trek has been a tale of discovery and awe. Dive into the essence of nature's beauty with me. <br/><img src='/images/hiking_port1.jpg' alt='Hiking Trail Snapshot' style='border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);'>"
+excerpt: "Embark on a journey through my hiking escapades! From serene forest trails to majestic mountain peaks, each trek has been a tale of discovery and awe. Dive into the essence of nature's beauty with me. <br/><img src='/images/webp/hiking_port1.webp' alt='Hiking Trail Snapshot' style='border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);'>"
 collection: personal
 ---
 

@@ -1,18 +1,18 @@
 ---
 title: "🌟 Fun-Filled Sports Adventures 🚴‍♂️"
-excerpt: "Embark on a lighthearted journey through my favorite sports, where fun reigns supreme! From casual volleyball matches on sun-kissed beaches to exhilarating wakeboard sessions and leisurely rollerblading in the park, discover the joy of staying active and embracing the spirit of play. <br/><img src='/images/volleyball.jpg' alt='Collage of Volleyball, Wakeboarding, and Rollerblading' style='border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);'>"
+excerpt: "Embark on a lighthearted journey through my favorite sports, where fun reigns supreme! From casual volleyball matches on sun-kissed beaches to exhilarating wakeboard sessions and leisurely rollerblading in the park, discover the joy of staying active and embracing the spirit of play. <br/><img src='/images/webp/volleyball.webp' alt='Collage of Volleyball, Wakeboarding, and Rollerblading' style='border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);'>"
 collection: personal
 gallery1:
-  - url: volleyball.jpg
-    image_path: volleyball.jpg
+  - url: webp/volleyball.webp
+    image_path: webp/volleyball.webp
     alt: "placeholder image 1"
 gallery2:
-  - url: wake.jpg
-    image_path: wake.jpg
+  - url: webp/wake.webp
+    image_path: webp/wake.webp
     alt: "placeholder image 1"
 gallery3:
-  - url: rollerblading.jpg
-    image_path: rollerblading.jpg
+  - url: webp/rollerblading.webp
+    image_path: webp/rollerblading.webp
     alt: "placeholder image 1"
 
 ---
