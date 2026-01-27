@@ -19,7 +19,9 @@
 
 <!-- Swup for SPA-like navigation (only swaps content, keeps sidebar) -->
 <script type="module">
-  import Swup from 'https://unpkg.com/swup@4?module';
+  import Swup from 'https://cdn.jsdelivr.net/npm/swup@4/+esm';
+
+  console.log('Swup loaded:', typeof Swup);
 
   const swup = new Swup({
     containers: ['#swup-content'],
@@ -27,7 +29,8 @@
     cache: true
   });
 
-  // Debug: log when Swup handles a navigation
+  console.log('Swup initialized');
+
   swup.hooks.on('page:view', () => {
     console.log('Swup: page loaded via AJAX');
   });
