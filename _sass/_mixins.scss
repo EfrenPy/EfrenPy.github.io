@@ -20,34 +20,125 @@
 
 
 /*
-   Bourbon clearfix
+   Clearfix (modern - for legacy float layouts)
    ========================================================================== */
 
-/*
-  * Provides an easy way to include a clearfix for containing floats.
-  * link http://cssmojo.com/latest_new_clearfix_so_far/
-  *
-  * example scss - Usage
-  *
-  * .element {
-  *   @include clearfix;
-  * }
-  *
-  * example css - CSS Output
-  *
-  * .element::after {
-  *   clear: both;
-  *   content: "";
-  *   display: table;
-  * }
-*/
-
 @mixin clearfix {
-  clear: both;
-
   &::after {
     clear: both;
     content: "";
-    display: table;
+    display: block;
+  }
+}
+
+
+/*
+   Modern Media Query Mixins (replacement for Breakpoint library)
+   ========================================================================== */
+
+@mixin breakpoint($size) {
+  // Handle list syntax like "max-width $small"
+  @if type-of($size) == list and length($size) == 2 {
+    $prop: nth($size, 1);
+    $val: nth($size, 2);
+    @media (#{$prop}: #{$val}) { @content; }
+  }
+  // Handle standard breakpoint variables
+  @else if $size == $small {
+    @media (min-width: #{$small}) { @content; }
+  } @else if $size == $medium {
+    @media (min-width: #{$medium}) { @content; }
+  } @else if $size == $medium-wide {
+    @media (min-width: #{$medium-wide}) { @content; }
+  } @else if $size == $large {
+    @media (min-width: #{$large}) { @content; }
+  } @else if $size == $x-large {
+    @media (min-width: #{$x-large}) { @content; }
+  } @else {
+    // Fallback for raw values
+    @media (min-width: #{$size}) { @content; }
+  }
+}
+
+
+/*
+   Modern Grid Mixins (replacement for Susy)
+   ========================================================================== */
+
+// Container mixin - centers content with max-width
+@mixin container {
+  max-width: $large;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Border box sizing
+@mixin border-box-sizing {
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+}
+
+// Span mixin - for backwards compatibility, uses percentage widths
+// Usage: @include span(10 of 12) -> 83.333% width
+// Supports: "last" (float right), "rtl" (float right for RTL layouts)
+@mixin span($span) {
+  // Parse "X of Y" or "X of Y last/rtl"
+  $cols: nth($span, 1);
+  $total: nth($span, 3);
+  $width: percentage($cols / $total);
+
+  float: left;
+  width: $width;
+
+  // Check for "last" or "rtl" keywords (both mean float right)
+  @if length($span) >= 4 {
+    $modifier: nth($span, 4);
+    @if $modifier == "last" or $modifier == "rtl" {
+      float: right;
+    }
+  }
+}
+
+// Full width
+@mixin full {
+  width: 100%;
+  float: none;
+}
+
+// Prefix (left margin)
+@mixin prefix($span) {
+  $cols: nth($span, 1);
+  $total: nth($span, 3);
+  margin-left: percentage($cols / $total);
+}
+
+// Suffix (right margin)
+@mixin suffix($span) {
+  $cols: nth($span, 1);
+  $total: nth($span, 3);
+  margin-right: percentage($cols / $total);
+}
+
+// Pre (same as prefix for Susy compatibility)
+@mixin pre($span) {
+  @include prefix($span);
+}
+
+// Gallery mixin - for grid layouts
+@mixin gallery($span) {
+  $cols: nth($span, 1);
+  $total: nth($span, 3);
+  $width: percentage($cols / $total);
+  $items-per-row: floor($total / $cols);
+  $gutter: 2%;
+
+  float: left;
+  width: calc(#{$width} - #{$gutter});
+  margin-right: $gutter;
+  margin-bottom: $gutter;
+
+  &:nth-child(#{$items-per-row}n) {
+    margin-right: 0;
   }
 }
