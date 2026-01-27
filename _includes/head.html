@@ -11,14 +11,14 @@
 <meta name="view-transition" content="same-origin">
 
 <!-- PWA manifest -->
-<link rel="manifest" href="{{ base_path }}/manifest.json">
+<link rel="manifest" href="/manifest.json">
 
 <script>
   document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
 </script>
 
 <!-- instant.page - prefetches pages on hover for instant navigation -->
-<script src="https://instant.page/5.2.0" type="module" integrity="sha384-jnZyxPjiipYXnSU0ber4hLYlVzrbzy3Q4tQD1megxlUlJJUyTzAW9w2tLH0XgGQl"></script>
+<script src="https://instant.page/5.2.0" type="module"></script>
 
 <!-- Preload critical CSS -->
 <link rel="preload" href="{{ base_path }}/assets/css/main.css" as="style">
