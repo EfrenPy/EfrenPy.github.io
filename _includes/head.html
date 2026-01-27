@@ -17,8 +17,16 @@
   document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
 </script>
 
-<!-- instant.page - prefetches pages on hover for instant navigation -->
-<script src="https://instant.page/5.2.0" type="module"></script>
+<!-- Swup for SPA-like navigation (only swaps content, keeps sidebar) -->
+<script src="https://unpkg.com/swup@4" defer></script>
+<script defer>
+  document.addEventListener('DOMContentLoaded', () => {
+    new Swup({
+      containers: ['#swup-content'],
+      animationSelector: '[class*="swup-transition-"]'
+    });
+  });
+</script>
 
 <!-- Preload critical CSS -->
 <link rel="preload" href="{{ base_path }}/assets/css/main.css" as="style">

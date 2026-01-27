@@ -16,7 +16,13 @@ layout: compress
     {% include browser-upgrade.html %}
     {% include masthead.html %}
 
-    {{ content }}
+    <div id="main" role="main">
+      {% include sidebar.html %}
+
+      <div id="swup-content" class="swup-transition-main">
+        {{ content }}
+      </div>
+    </div>
 
     <div class="page__footer">
       <footer>

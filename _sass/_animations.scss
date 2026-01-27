@@ -13,62 +13,22 @@
 
 
 /* ==========================================================================
-   VIEW TRANSITIONS (Modern Page Navigation)
+   SWUP PAGE TRANSITIONS
    ========================================================================== */
 
-/* Elements that persist visually across navigations */
-.masthead {
-  view-transition-name: masthead;
+/* Content container transition */
+.swup-transition-main {
+  transition: opacity 200ms ease-out, transform 200ms ease-out;
 }
 
-.sidebar {
-  view-transition-name: sidebar;
+/* Leaving state */
+html.is-animating .swup-transition-main {
+  opacity: 0;
+  transform: translateY(-10px);
 }
 
-.page__footer {
-  view-transition-name: footer;
-}
-
-/* Main content area that transitions */
-#main {
-  view-transition-name: main-content;
-}
-
-/* Smooth crossfade for the whole page */
-::view-transition-old(root),
-::view-transition-new(root) {
-  animation-duration: 200ms;
-}
-
-/* Persistent elements stay in place (no animation) */
-::view-transition-old(masthead),
-::view-transition-new(masthead),
-::view-transition-old(sidebar),
-::view-transition-new(sidebar),
-::view-transition-old(footer),
-::view-transition-new(footer) {
-  animation: none;
-}
-
-/* Main content has a subtle slide transition */
-::view-transition-old(main-content) {
-  animation: slide-out 200ms ease-out both;
-}
-
-::view-transition-new(main-content) {
-  animation: slide-in 200ms ease-out both;
-}
-
-@keyframes slide-out {
-  to {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-}
-
-@keyframes slide-in {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
+/* Entering state (after content swap) */
+html.is-rendering .swup-transition-main {
+  opacity: 0;
+  transform: translateY(10px);
 }
