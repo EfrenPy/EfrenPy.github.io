@@ -11,7 +11,7 @@ title                    : "Efrén Rodríguez Rodríguez"
 title_separator          : "-"
 name                     : &name "Efrén Rodríguez Rodríguez"
 description              : &description "Postdoctoral Researcher in particle physics silicon detectors for the EP-R&D department at CERN"
-url                      : https://EfrenPy.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://efrenrodriguezrodriguez.com # the base hostname & protocol for your site
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "EfrenPy/EfrenPy.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"

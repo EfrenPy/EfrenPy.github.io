@@ -7,8 +7,8 @@ tags:
   - AI Workshops
   - Research Innovation
 gallery1:
-  - url: generative_AI.gif
-    image_path: generative_AI.gif
+  - url: webp/generative_AI.webp
+    image_path: webp/generative_AI.webp
     alt: "placeholder image 1"
 ---
 
