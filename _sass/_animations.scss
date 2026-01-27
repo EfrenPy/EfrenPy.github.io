@@ -2,7 +2,7 @@
    ANIMATIONS
    ========================================================================== */
 
-@-webkit-keyframes intro {
+@keyframes intro {
   0% {
     opacity: 0;
   }
@@ -11,11 +11,68 @@
   }
 }
 
-@keyframes intro {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+
+/* ==========================================================================
+   VIEW TRANSITIONS (Modern Page Navigation)
+   ========================================================================== */
+
+/* Opt-in elements that persist across navigations */
+.masthead {
+  view-transition-name: masthead;
+}
+
+.sidebar,
+.author__avatar {
+  view-transition-name: sidebar;
+}
+
+/* Default page transition - smooth crossfade */
+@view-transition {
+  navigation: auto;
+}
+
+::view-transition-old(root) {
+  animation: fade-out 150ms ease-out;
+}
+
+::view-transition-new(root) {
+  animation: fade-in 150ms ease-in;
+}
+
+/* Persistent elements don't animate (they stay in place) */
+::view-transition-old(masthead),
+::view-transition-new(masthead),
+::view-transition-old(sidebar),
+::view-transition-new(sidebar) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+/* Content slides in smoothly */
+::view-transition-old(root):not(:has(~ ::view-transition-new(masthead))) {
+  animation: slide-out-left 200ms ease-out;
+}
+
+::view-transition-new(root):not(:has(~ ::view-transition-old(masthead))) {
+  animation: slide-in-right 200ms ease-out;
+}
+
+@keyframes fade-out {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slide-out-left {
+  from { opacity: 1; transform: translateX(0); }
+  to { opacity: 0; transform: translateX(-20px); }
+}
+
+@keyframes slide-in-right {
+  from { opacity: 0; transform: translateX(20px); }
+  to { opacity: 1; transform: translateX(0); }
 }
