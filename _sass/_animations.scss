@@ -10,25 +10,3 @@
     opacity: 1;
   }
 }
-
-
-/* ==========================================================================
-   SWUP PAGE TRANSITIONS
-   ========================================================================== */
-
-/* Content container transition */
-.swup-transition-main {
-  transition: opacity 200ms ease-out, transform 200ms ease-out;
-}
-
-/* Leaving state */
-html.is-animating .swup-transition-main {
-  opacity: 0;
-  transform: translateY(-10px);
-}
-
-/* Entering state (after content swap) */
-html.is-rendering .swup-transition-main {
-  opacity: 0;
-  transform: translateY(10px);
-}

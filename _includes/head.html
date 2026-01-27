@@ -23,7 +23,13 @@
 
   const swup = new Swup({
     containers: ['#swup-content'],
-    animationSelector: '[class*="swup-transition-"]'
+    animationSelector: false,
+    cache: true
+  });
+
+  // Debug: log when Swup handles a navigation
+  swup.hooks.on('page:view', () => {
+    console.log('Swup: page loaded via AJAX');
   });
 </script>
 
