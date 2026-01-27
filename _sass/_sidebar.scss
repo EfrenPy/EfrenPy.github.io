@@ -7,24 +7,13 @@
    ========================================================================== */
 
 .sidebar {
-  @include clearfix();
   margin-bottom: 1em;
 
   @include breakpoint($large) {
-    @include span(2 of 12);
     position: sticky;
     top: 2rem;
     height: fit-content;
-    opacity: 1;
-    transition: opacity 0.2s ease-in-out;
-
-    &:hover {
-      opacity: 1;
-    }
-  }
-
-  @include breakpoint($x-large) {
-    padding-right: 0;
+    // Width controlled by grid-template-columns in #main
   }
 
   h2, h3, h4, h5, h6 {
