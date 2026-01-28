@@ -456,3 +456,225 @@ a.reversefootnote {
   color: $danger-color;
   font-weight: bold;
 }
+
+
+/*
+   CV Styles
+   ========================================================================== */
+
+.cv-section {
+  margin-bottom: 2.5rem;
+}
+
+.cv-section-title {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 3px solid var(--color-primary, $info-color);
+  color: var(--color-text, $dark-gray);
+
+  i {
+    color: var(--color-primary, $info-color);
+    font-size: 1.5rem;
+  }
+}
+
+// Education cards
+.cv-education {
+  display: grid;
+  gap: 1rem;
+
+  @include breakpoint($medium) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.cv-edu-card {
+  padding: 1.25rem;
+  background: var(--color-card-bg, #fff);
+  border: 1px solid var(--color-border, $border-color);
+  border-radius: 12px;
+  border-left: 4px solid var(--color-primary, $info-color);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px var(--color-shadow, rgba(0,0,0,0.1));
+  }
+
+  .degree {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--color-text, $dark-gray);
+    margin-bottom: 0.25rem;
+  }
+
+  .institution {
+    color: var(--color-primary, $info-color);
+    font-size: 0.95rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .year {
+    color: var(--color-text-light, $gray);
+    font-size: 0.85rem;
+  }
+}
+
+// Timeline for experience
+.cv-timeline {
+  position: relative;
+  padding-left: 2rem;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: linear-gradient(to bottom, var(--color-primary, $info-color), var(--color-primary-dark, $primary-color));
+    border-radius: 2px;
+  }
+}
+
+.cv-timeline-item {
+  position: relative;
+  padding-bottom: 2rem;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: -2rem;
+    top: 0.5rem;
+    width: 14px;
+    height: 14px;
+    background: var(--color-primary, $info-color);
+    border: 3px solid var(--color-background, #fff);
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px var(--color-primary, $info-color);
+    transform: translateX(-5.5px);
+  }
+
+  .cv-position {
+    font-weight: 700;
+    font-size: 1.15rem;
+    color: var(--color-text, $dark-gray);
+    margin-bottom: 0.25rem;
+  }
+
+  .cv-company {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--color-primary, $info-color);
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+  }
+
+  .cv-date {
+    display: inline-block;
+    padding: 0.2rem 0.6rem;
+    background: var(--color-background-secondary, $lighter-gray);
+    color: var(--color-text-light, $gray);
+    font-size: 0.8rem;
+    border-radius: 4px;
+    margin-bottom: 0.75rem;
+  }
+
+  .cv-description {
+    color: var(--color-text, $dark-gray);
+    font-size: 0.95rem;
+    line-height: 1.6;
+
+    ul {
+      margin: 0.5rem 0 0 1rem;
+      padding: 0;
+
+      li {
+        margin-bottom: 0.25rem;
+      }
+    }
+  }
+}
+
+// Skills section
+.cv-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.cv-skill-category {
+  margin-bottom: 1.5rem;
+
+  h4 {
+    margin-bottom: 0.75rem;
+    color: var(--color-text-light, $gray);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+}
+
+.cv-skill-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 1rem;
+  background: linear-gradient(135deg, var(--color-primary, $info-color), var(--color-primary-dark, $primary-color));
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border-radius: 25px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(82, 173, 200, 0.4);
+  }
+
+  i {
+    font-size: 0.85rem;
+  }
+}
+
+.cv-skill-tag--secondary {
+  background: var(--color-background-secondary, $lighter-gray);
+  color: var(--color-text, $dark-gray);
+
+  &:hover {
+    box-shadow: 0 5px 15px var(--color-shadow, rgba(0,0,0,0.15));
+  }
+}
+
+// Download button
+.cv-download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(135deg, var(--color-primary, $info-color), var(--color-primary-dark, $primary-color));
+  color: #fff !important;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  margin-bottom: 2rem;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(82, 173, 200, 0.4);
+    color: #fff !important;
+  }
+
+  i {
+    font-size: 1.1rem;
+  }
+}
