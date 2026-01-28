@@ -1,5 +1,9 @@
 # Portfolio page translations
 
 title:
-  en: "Portfolio"
-  es: "Portafolio"
+  en: "Projects"
+  es: "Proyectos"
+
+intro:
+  en: "Selected projects showcasing my experience in hardware development, data analysis, and project leadership."
+  es: "Proyectos seleccionados que demuestran mi experiencia en desarrollo de hardware, análisis de datos y liderazgo de proyectos."

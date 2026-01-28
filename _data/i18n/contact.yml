@@ -1,0 +1,59 @@
+# Contact page translations
+
+title:
+  en: "Contact"
+  es: "Contacto"
+
+intro:
+  en: |
+    I'm always interested in discussing new opportunities in **research**, **R&D engineering**, and **data science**. Whether you're looking for expertise in particle physics instrumentation, data analysis, or project leadership, I'd be happy to connect.
+  es: |
+    Siempre estoy interesado en discutir nuevas oportunidades en **investigación**, **ingeniería I+D** y **ciencia de datos**. Si buscas experiencia en instrumentación de física de partículas, análisis de datos o liderazgo de proyectos, estaré encantado de conectar.
+
+reach_out_title:
+  en: "Get in Touch"
+  es: "Contactar"
+
+email_label:
+  en: "Email"
+  es: "Correo"
+
+connect:
+  en: "Connect with me"
+  es: "Conectar conmigo"
+
+see_code:
+  en: "See my code"
+  es: "Ver mi código"
+
+interests_title:
+  en: "What I'm Interested In"
+  es: "Lo que Me Interesa"
+
+interests_text:
+  en: |
+    I'm particularly interested in roles involving:
+
+    - **R&D Engineering** — Sensor development, electronics, instrumentation, hardware-software integration
+    - **Data Science & Engineering** — Scientific computing, data analysis pipelines, machine learning applications
+    - **Research Positions** — Particle physics, detector development, experimental physics
+    - **Technical Project Management** — Leading cross-functional teams on technology projects
+  es: |
+    Estoy particularmente interesado en roles que involucren:
+
+    - **Ingeniería I+D** — Desarrollo de sensores, electrónica, instrumentación, integración hardware-software
+    - **Ciencia e Ingeniería de Datos** — Computación científica, pipelines de análisis de datos, aplicaciones de machine learning
+    - **Posiciones de Investigación** — Física de partículas, desarrollo de detectores, física experimental
+    - **Gestión de Proyectos Técnicos** — Liderar equipos multifuncionales en proyectos tecnológicos
+
+location_title:
+  en: "Location & Availability"
+  es: "Ubicación y Disponibilidad"
+
+location_text:
+  en: "Open to opportunities worldwide, including remote positions. Currently based in Geneva, Switzerland."
+  es: "Abierto a oportunidades en todo el mundo, incluyendo posiciones remotas. Actualmente ubicado en Ginebra, Suiza."
+
+download_cv:
+  en: "Download Full CV"
+  es: "Descargar CV Completo"

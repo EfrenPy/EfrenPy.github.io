@@ -5,6 +5,11 @@ main:
     title_es: "Investigación"
     url: /publications/
 
+  - title: "Projects"
+    title_en: "Projects"
+    title_es: "Proyectos"
+    url: /portfolio/
+
   - title: "Talks"
     title_en: "Talks"
     title_es: "Charlas"
@@ -13,10 +18,7 @@ main:
   # - title: "Teaching"
   #   url: /teaching/
 
-  # - title: "Portfolio"
-  #   url: /portfolio/
-
-  - title: "Blog Posts"
+  - title: "Blog"
     title_en: "Blog"
     title_es: "Blog"
     url: /year-archive/
@@ -26,11 +28,12 @@ main:
     title_es: "CV"
     url: /cv/
 
+  - title: "Contact"
+    title_en: "Contact"
+    title_es: "Contacto"
+    url: /contact/
+
   - title: "Personal"
     title_en: "Personal"
     title_es: "Personal"
     url: /personal/
-
-
-  # - title: "Guide"
-  #   url: /markdown/

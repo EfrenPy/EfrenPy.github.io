@@ -137,6 +137,26 @@ redirect_from:
 </div>
 
 <div class="cv-section">
+  <h2 class="cv-section-title"><i class="fas fa-certificate"></i> {% include t.html page="cv" key="certifications_title" %}</h2>
+  <div class="certifications-grid">
+    <div class="cert-card">
+      <div class="cert-icon"><i class="fab fa-python"></i></div>
+      <div class="cert-info">
+        <div class="cert-name">{% include t.html page="cv" key="cert_python" %}</div>
+        <div class="cert-issuer">{% include t.html page="cv" key="cert_python_issuer" %} - 2023</div>
+      </div>
+    </div>
+    <div class="cert-card">
+      <div class="cert-icon"><i class="fas fa-shield-alt"></i></div>
+      <div class="cert-info">
+        <div class="cert-name">{% include t.html page="cv" key="cert_cern_safety" %}</div>
+        <div class="cert-issuer">{% include t.html page="cv" key="cert_cern_issuer" %} - 2021-2024</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="cv-section">
   <h2 class="cv-section-title"><i class="fas fa-book"></i> {% include t.html page="cv" key="publications_title" %}</h2>
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}

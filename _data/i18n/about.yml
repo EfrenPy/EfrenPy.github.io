@@ -2,9 +2,72 @@
 
 bio:
   en: |
-    Welcome to my professional space! I'm Efrén Rodríguez Rodríguez, a physicist specializing in Nuclear and Particle Physics with over five years of experience in designing, building, and implementing advanced technologies in instrumentation and sensors. I have led and contributed to international high-tech projects such as the LHCb silicon pixel detector and the Timepix4 particle beam telescope. With a strong background in electronics, data analysis, project management, and solving complex problems, I am always seeking opportunities to apply my expertise to innovative and impactful projects in diverse fields.
+    Welcome to my professional space! I'm a physicist specializing in Nuclear and Particle Physics with over five years of experience in designing, building, and implementing advanced technologies in instrumentation and sensors. I have led and contributed to international high-tech projects such as the LHCb silicon pixel detector and the Timepix4 particle beam telescope.
+
+    With a strong background in electronics, data analysis, project management, and solving complex problems, I am always seeking opportunities to apply my expertise to innovative and impactful projects in R&D, data science, and research.
   es: |
-    ¡Bienvenido a mi espacio profesional! Soy Efrén Rodríguez Rodríguez, físico especializado en Física Nuclear y de Partículas con más de cinco años de experiencia en el diseño, construcción e implementación de tecnologías avanzadas en instrumentación y sensores. He liderado y contribuido a proyectos internacionales de alta tecnología como el detector de píxeles de silicio LHCb y el telescopio de haces de partículas Timepix4. Con una sólida formación en electrónica, análisis de datos, gestión de proyectos y resolución de problemas complejos, siempre busco oportunidades para aplicar mi experiencia en proyectos innovadores e impactantes en diversos campos.
+    ¡Bienvenido a mi espacio profesional! Soy físico especializado en Física Nuclear y de Partículas con más de cinco años de experiencia en el diseño, construcción e implementación de tecnologías avanzadas en instrumentación y sensores. He liderado y contribuido a proyectos internacionales de alta tecnología como el detector de píxeles de silicio LHCb y el telescopio de haces de partículas Timepix4.
+
+    Con una sólida formación en electrónica, análisis de datos, gestión de proyectos y resolución de problemas complejos, siempre busco oportunidades para aplicar mi experiencia en proyectos innovadores e impactantes en I+D, ciencia de datos e investigación.
+
+# Highlight cards section
+highlights_title:
+  en: "What I Bring"
+  es: "Lo que Aporto"
+
+highlight_research_title:
+  en: "Research Leadership"
+  es: "Liderazgo en Investigación"
+
+highlight_research_desc:
+  en: "Leading projects at CERN EP-R&D including Timepix4 telescope development and 3D silicon sensor simulation. Experience coordinating international teams across multiple institutions."
+  es: "Liderando proyectos en CERN EP-R&D incluyendo desarrollo del telescopio Timepix4 y simulación de sensores de silicio 3D. Experiencia coordinando equipos internacionales en múltiples instituciones."
+
+highlight_tech_title:
+  en: "Technical Expertise"
+  es: "Experiencia Técnica"
+
+highlight_tech_desc:
+  en: "Python, C++, ROOT, VHDL/FPGA, LabVIEW. Strong skills in data analysis pipelines, electronics design, and hardware-software integration."
+  es: "Python, C++, ROOT, VHDL/FPGA, LabVIEW. Sólidas habilidades en pipelines de análisis de datos, diseño electrónico e integración hardware-software."
+
+highlight_collab_title:
+  en: "International Collaboration"
+  es: "Colaboración Internacional"
+
+highlight_collab_desc:
+  en: "Experience at CERN (Geneva), Nikhef (Amsterdam), and IGFAE (Spain). Published researcher and conference presenter in the particle physics community."
+  es: "Experiencia en CERN (Ginebra), Nikhef (Ámsterdam) e IGFAE (España). Investigador publicado y presentador en conferencias de la comunidad de física de partículas."
+
+# Key achievements section
+achievements_title:
+  en: "Key Achievements"
+  es: "Logros Clave"
+
+achievements:
+  en: |
+    - **90 picosecond** track time resolution achieved - a breakthrough in particle timing detection
+    - Contributed to the successful launch of the **LHCb VELO upgrade detector**
+    - Developed high-speed data transmission lines handling **5 Gbps** per channel
+    - Published in top-tier journals including *Nuclear Instruments and Methods*
+  es: |
+    - Resolución temporal de trazas de **90 picosegundos** lograda - un avance en detección temporal de partículas
+    - Contribución al exitoso lanzamiento del **detector LHCb VELO actualizado**
+    - Desarrollo de líneas de transmisión de datos de alta velocidad manejando **5 Gbps** por canal
+    - Publicaciones en revistas de primer nivel incluyendo *Nuclear Instruments and Methods*
+
+# Certifications section
+certifications_title:
+  en: "Certifications"
+  es: "Certificaciones"
+
+cert_python:
+  en: "Python IT Specialist (INF-303)"
+  es: "Especialista IT en Python (INF-303)"
+
+cert_python_issuer:
+  en: "Certiport / Pearson VUE - 2023"
+  es: "Certiport / Pearson VUE - 2023"
 
 cv_link:
   en: "Stay updated with my professional journey by checking out my"
@@ -13,6 +76,10 @@ cv_link:
 cv_label:
   en: "latest CV"
   es: "CV actualizado"
+
+cv_download:
+  en: "Download CV"
+  es: "Descargar CV"
 
 interests_title:
   en: "Interests"
@@ -47,5 +114,5 @@ explore_publications:
   es: "No dudes en explorar mis contribuciones al campo a través de la lista de publicaciones disponibles en este sitio."
 
 publications_title:
-  en: "Publications"
-  es: "Publicaciones"
+  en: "Featured Publications"
+  es: "Publicaciones Destacadas"

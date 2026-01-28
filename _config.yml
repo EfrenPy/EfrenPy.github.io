@@ -10,7 +10,7 @@ locale                   : "es_ES"
 title                    : "Efrén Rodríguez Rodríguez"
 title_separator          : "-"
 name                     : &name "Efrén Rodríguez Rodríguez"
-description              : &description "Postdoctoral Researcher in particle physics silicon detectors for the EP-R&D department at CERN"
+description              : &description "Efrén Rodríguez - CERN Researcher | Silicon Detectors | Python | Data Analysis | Open to Opportunities"
 url                      : https://efrenrodriguezrodriguez.com # the base hostname & protocol for your site
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "EfrenPy/EfrenPy.github.io"
@@ -91,7 +91,7 @@ author:
   employer         : "CERN"
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=pir4UaIAAAAJ&hl=en"
-  email            : 
+  email            : "efren.rodriguez.rodriguez@cern.ch" 
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :

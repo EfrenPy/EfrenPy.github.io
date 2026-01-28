@@ -169,6 +169,27 @@ problem_solving:
   en: "Problem Solving"
   es: "Resolución de Problemas"
 
+# Certifications section
+certifications_title:
+  en: "Certifications"
+  es: "Certificaciones"
+
+cert_python:
+  en: "Python IT Specialist (INF-303)"
+  es: "Especialista IT en Python (INF-303)"
+
+cert_python_issuer:
+  en: "Certiport / Pearson VUE"
+  es: "Certiport / Pearson VUE"
+
+cert_cern_safety:
+  en: "CERN Radiation & Safety Certifications"
+  es: "Certificaciones de Radiación y Seguridad del CERN"
+
+cert_cern_issuer:
+  en: "CERN"
+  es: "CERN"
+
 # Publications & Talks sections
 publications_title:
   en: "Publications"
