@@ -1,0 +1,186 @@
+# Blog posts translations
+
+# Post: New Horizons at CERN (2024-10)
+new_horizons_title:
+  en: "New Horizons in Particle Physics: My Role at CERN with the VELO Group"
+  es: "Nuevos Horizontes en Física de Partículas: Mi Rol en el CERN con el Grupo VELO"
+
+new_horizons_intro:
+  en: "**Embarking on a New Journey with CERN's VELO Group**"
+  es: "**Embarcándome en un Nuevo Viaje con el Grupo VELO del CERN**"
+
+new_horizons_text:
+  en: |
+    As of October, I've officially embarked on an exciting new chapter in my career as part of the VELO (Vertex Locator) group at CERN, where I am thrilled to contribute to pioneering research and cutting-edge technologies. The VELO detector is a vital component of the LHCb experiment, and I'll be playing a central role in advancing its performance and capabilities.
+
+    My current work focuses on several key projects, including the **simulation of 3D column silicon sensors** for the VELO, the **development of the Timepix4 telescope**, and creating **innovative testing techniques for high-energy physics sensors**. These projects are at the intersection of particle physics, sensor technology, and data analysis, and they promise to push the boundaries of what is possible in our understanding of the universe.
+
+    The Timepix4 telescope is one of the highlights of my work. This sophisticated tool will provide unparalleled precision in detecting particles, contributing to our ongoing efforts to improve sensor accuracy and performance. Leading test beam campaigns, ensuring smooth operations, and overseeing its construction are some of the responsibilities I'm excited to tackle. Additionally, I'm working on refining **data analysis techniques** that will enhance the overall output of experiments at CERN.
+
+    Joining the VELO group has been a thrilling challenge. Every day presents an opportunity to dive deeper into complex simulations, test new ideas, and collaborate with brilliant minds across CERN and the global physics community. It's a truly unique environment where technology and science come together to break new ground.
+
+    As I look ahead, I'm filled with excitement for the discoveries to come, not only in terms of particle physics but also in the development of technologies that will support these scientific advancements. The future is bright, and I am proud to contribute to shaping it.
+  es: |
+    Desde octubre, he comenzado oficialmente un nuevo y emocionante capítulo en mi carrera como parte del grupo VELO (Vertex Locator) en el CERN, donde estoy encantado de contribuir a investigaciones pioneras y tecnologías de vanguardia. El detector VELO es un componente vital del experimento LHCb, y tendré un papel central en el avance de su rendimiento y capacidades.
+
+    Mi trabajo actual se centra en varios proyectos clave, incluyendo la **simulación de sensores de silicio 3D columnares** para el VELO, el **desarrollo del telescopio Timepix4**, y la creación de **técnicas innovadoras de prueba para sensores de física de altas energías**. Estos proyectos están en la intersección de la física de partículas, la tecnología de sensores y el análisis de datos, y prometen superar los límites de lo posible en nuestra comprensión del universo.
+
+    El telescopio Timepix4 es uno de los aspectos más destacados de mi trabajo. Esta sofisticada herramienta proporcionará una precisión sin precedentes en la detección de partículas. Liderar campañas de haces de prueba, asegurar operaciones fluidas y supervisar su construcción son algunas de las responsabilidades que me emociona abordar.
+
+    Unirme al grupo VELO ha sido un desafío emocionante. Cada día presenta una oportunidad para profundizar en simulaciones complejas, probar nuevas ideas y colaborar con mentes brillantes del CERN y la comunidad física global.
+
+# Post: VELO Detector Launch (2023-06)
+velo_launch_title:
+  en: "Journey to Unraveling the Universe's Mysteries: The LHCb VELO Detector Launch"
+  es: "Viaje para Desentrañar los Misterios del Universo: El Lanzamiento del Detector LHCb VELO"
+
+velo_launch_question:
+  en: "**Why is there more matter than antimatter in the universe?**"
+  es: "**¿Por qué hay más materia que antimateria en el universo?**"
+
+velo_launch_text:
+  en: |
+    In pursuit of answers to some of the most profound questions in physics, our researchers from the Instituto Galego de Física de Altas Enerxías (IGFAE), including Edgar Lemos Cid, Antonio Fernández Prieto, and Efrén Rodríguez Rodríguez, embarked on a significant mission to CERN. Their objective: to install and commission the new VELO detector for the LHCb experiment, marking a pivotal moment in the journey towards understanding our cosmos.
+
+    This Tuesday, July 5th, marks a momentous occasion as the VELO detector goes live with the commencement of #LHCRun3 at the Large Hadron Collider (LHC) following an extensive period of enhancements and upgrades. The VELO detector, a result of IGFAE's dedication since 2008, stands at the forefront of technological advancement in particle physics. Designed to measure b mesons with unparalleled precision, this detector is a critical tool in our quest to explore physics beyond the Standard Model.
+
+    The IGFAE's involvement in the design and development of the VELO subdetector sensors underscores our commitment to pushing the boundaries of scientific discovery. As we stand on the brink of potentially groundbreaking insights into the imbalance between matter and antimatter, we celebrate the ingenuity and perseverance of our team.
+
+    This milestone not only signifies a leap forward in our understanding of the universe but also exemplifies the collaborative spirit that drives the global scientific community towards unraveling the mysteries that lie at the heart of existence.
+  es: |
+    En busca de respuestas a algunas de las preguntas más profundas de la física, nuestros investigadores del Instituto Galego de Física de Altas Enerxías (IGFAE), incluyendo a Edgar Lemos Cid, Antonio Fernández Prieto y Efrén Rodríguez Rodríguez, emprendieron una misión significativa al CERN. Su objetivo: instalar y poner en marcha el nuevo detector VELO para el experimento LHCb, marcando un momento crucial en el camino hacia la comprensión de nuestro cosmos.
+
+    Este martes 5 de julio marca una ocasión memorable cuando el detector VELO entra en funcionamiento con el comienzo del #LHCRun3 en el Gran Colisionador de Hadrones (LHC) tras un extenso período de mejoras y actualizaciones. El detector VELO, resultado de la dedicación del IGFAE desde 2008, está a la vanguardia del avance tecnológico en física de partículas. Diseñado para medir mesones b con una precisión sin igual, este detector es una herramienta crítica en nuestra búsqueda de explorar la física más allá del Modelo Estándar.
+
+    Este hito no solo significa un salto adelante en nuestra comprensión del universo, sino que también ejemplifica el espíritu colaborativo que impulsa a la comunidad científica global hacia desentrañar los misterios que yacen en el corazón de la existencia.
+
+# Post: Python Certification (2023-11)
+python_cert_title:
+  en: "Achievement Unlocked: INF-303 Python IT Specialist Certification"
+  es: "Logro Desbloqueado: Certificación INF-303 Python IT Specialist"
+
+python_cert_text:
+  en: |
+    **Achievement Unlocked!**
+
+    In a world where continuous learning and skill enhancement are keys to staying ahead in the tech realm, I am thrilled to share a recent milestone in my professional journey. I have successfully earned the INF-303: Python IT Specialist certification, marking a significant achievement in my pursuit of mastering Python.
+
+    This certification is not just a testament to my proficiency in Python but also a step forward in my commitment to leveraging this powerful programming language to solve complex problems, automate tasks, and implement innovative solutions in the field of information technology.
+
+    The journey to this achievement was filled with countless hours of learning, practice, and perseverance. It was driven by a passion for exploring the endless possibilities that Python offers and a desire to enhance my skill set to better serve the tech community.
+
+    As I celebrate this accomplishment, I am excited to continue exploring the power of Python and applying my skills to new challenges and opportunities. Let's keep pushing the boundaries of what we can achieve with technology!
+  es: |
+    **¡Logro Desbloqueado!**
+
+    En un mundo donde el aprendizaje continuo y la mejora de habilidades son claves para mantenerse a la vanguardia en el ámbito tecnológico, estoy encantado de compartir un hito reciente en mi trayectoria profesional. He obtenido con éxito la certificación INF-303: Python IT Specialist, marcando un logro significativo en mi búsqueda de dominar Python.
+
+    Esta certificación no es solo un testimonio de mi competencia en Python, sino también un paso adelante en mi compromiso de aprovechar este poderoso lenguaje de programación para resolver problemas complejos, automatizar tareas e implementar soluciones innovadoras en el campo de la tecnología de la información.
+
+    El camino hacia este logro estuvo lleno de incontables horas de aprendizaje, práctica y perseverancia. Fue impulsado por una pasión por explorar las infinitas posibilidades que ofrece Python y un deseo de mejorar mis habilidades para servir mejor a la comunidad tecnológica.
+
+# Post: Hiroshima Symposium (2023-12)
+hiroshima_title:
+  en: "Exploring the Frontiers of Particle Physics at the Hiroshima Symposium"
+  es: "Explorando las Fronteras de la Física de Partículas en el Simposio de Hiroshima"
+
+hiroshima_text:
+  en: |
+    **Exploring the Frontiers of Particle Physics at the Hiroshima Symposium**
+
+    Today marked a significant milestone in my journey through the realms of particle physics, as I had the privilege of presenting at the esteemed "Hiroshima" Symposium on the Development and Application of Semiconductor Tracking Detectors, held in Vancouver, Canada.
+
+    The focus of my presentation was the LHCb VELO detector, a marvel of modern physics and engineering that stands at the forefront of advanced pixel detector technology. The VELO detector is instrumental in pushing the boundaries of impact parameter resolution and tracking capabilities, particularly in the challenging conditions presented by high-luminosity environments.
+
+    The insights I shared today delve into the intricate details of the detector's design and functionality, highlighting its pivotal role in the LHCb experiment's quest to unravel the mysteries of the universe. It's an honor to contribute to this groundbreaking work in particle physics, advancing our understanding of the fundamental constituents of matter.
+
+    This symposium not only provided a platform to showcase the innovative developments in semiconductor tracking detectors but also fostered a vibrant exchange of ideas among leading scientists in the field. I am immensely proud to be part of this dynamic community, driving forward the frontiers of science and technology.
+  es: |
+    **Explorando las Fronteras de la Física de Partículas en el Simposio de Hiroshima**
+
+    Hoy marcó un hito significativo en mi viaje por los reinos de la física de partículas, ya que tuve el privilegio de presentar en el prestigioso Simposio "Hiroshima" sobre Desarrollo y Aplicación de Detectores de Seguimiento de Semiconductores, celebrado en Vancouver, Canadá.
+
+    El enfoque de mi presentación fue el detector LHCb VELO, una maravilla de la física e ingeniería modernas que está a la vanguardia de la tecnología avanzada de detectores de píxeles. El detector VELO es fundamental para superar los límites de la resolución del parámetro de impacto y las capacidades de seguimiento, particularmente en las condiciones desafiantes presentadas por entornos de alta luminosidad.
+
+    Las ideas que compartí hoy profundizan en los intrincados detalles del diseño y funcionalidad del detector, destacando su papel fundamental en la búsqueda del experimento LHCb de desentrañar los misterios del universo.
+
+    Este simposio no solo proporcionó una plataforma para mostrar los desarrollos innovadores en detectores de seguimiento de semiconductores, sino que también fomentó un vibrante intercambio de ideas entre científicos líderes en el campo.
+
+# Post: Grid Usage Nikhef (2024-05)
+grid_title:
+  en: "I Think I Broke the Grid: 3rd Place in Grid Usage at Nikhef!"
+  es: "¡Creo que Rompí el Grid: 3er Puesto en Uso del Grid en Nikhef!"
+
+grid_text:
+  en: |
+    **Unveiling the Potential in Academic Research!**
+
+    Guess who's been keeping the grid busy?
+
+    That's right, I managed to snag the 3rd place in grid usage at Nikhef for my timing analysis of the Timepix4 telescope!
+
+    With over 185,849 jobs, I might have given the grid a bit of a workout. Maybe it's time to get it a gym membership?
+
+    Big shoutout to my amazing team and colleagues for all the support and fun along the way. Here's to more data crunching and less grid hogging in the future!
+  es: |
+    **¡Desvelando el Potencial en la Investigación Académica!**
+
+    ¿Adivina quién ha mantenido el grid ocupado?
+
+    ¡Así es, conseguí el 3er puesto en uso del grid en Nikhef por mi análisis temporal del telescopio Timepix4!
+
+    Con más de 185.849 trabajos, puede que le haya dado al grid un buen entrenamiento. ¿Quizás es hora de conseguirle una membresía de gimnasio?
+
+    Un gran saludo a mi increíble equipo y colegas por todo el apoyo y diversión en el camino. ¡Por más procesamiento de datos y menos acaparamiento del grid en el futuro!
+
+# Post: Pisa Conference (2022-06)
+pisa_title:
+  en: "Shaping the Future of Particle Physics: Insights from the Advanced Detector Technologies Conference"
+  es: "Dando Forma al Futuro de la Física de Partículas: Perspectivas de la Conferencia de Tecnologías Avanzadas de Detectores"
+
+pisa_text:
+  en: |
+    **At the edge of Particle Physics Detectors at the "Pisa Meeting"**
+
+    Last week marked a significant milestone in my professional journey as I had the privilege to both present a talk and display a poster at a pivotal conference focusing on advanced detector technologies in the realm of particle physics. The core of my presentations revolved around the forthcoming upgrade of the LHCb Vertex Locator (VELO) at CERN, a project I am deeply involved in, particularly in the development of cutting-edge sensors and electronics.
+
+    The conference served as a vibrant platform for exchange and dialogue among experts and enthusiasts in the specialized fields of detectors and electronics for high-energy physics. It was an enriching experience to delve into discussions about the challenges, innovations, and collaborative efforts shaping the future of particle physics research.
+
+    The LHCb VELO upgrade stands at the confluence of technology and science, aiming to enhance the detector's capabilities to withstand the demanding conditions of high-luminosity environments while improving the precision of measurements. My work, which contributes to this ambitious endeavor, focuses on pushing the boundaries of current technologies to create sensors and electronics that can offer unprecedented levels of performance and reliability.
+
+    Engaging with fellow researchers and professionals at the conference, sharing insights, and receiving valuable feedback was not only intellectually stimulating but also reinforced the collaborative spirit that propels our field forward.
+  es: |
+    **En la vanguardia de los Detectores de Física de Partículas en el "Pisa Meeting"**
+
+    La semana pasada marcó un hito significativo en mi trayectoria profesional ya que tuve el privilegio de presentar una charla y exhibir un póster en una conferencia fundamental centrada en tecnologías avanzadas de detectores en el ámbito de la física de partículas. El núcleo de mis presentaciones giró en torno a la próxima actualización del Localizador de Vértices (VELO) del LHCb en el CERN, un proyecto en el que estoy profundamente involucrado, particularmente en el desarrollo de sensores y electrónica de vanguardia.
+
+    La conferencia sirvió como una vibrante plataforma para el intercambio y el diálogo entre expertos y entusiastas en los campos especializados de detectores y electrónica para física de altas energías. Fue una experiencia enriquecedora profundizar en discusiones sobre los desafíos, innovaciones y esfuerzos colaborativos que dan forma al futuro de la investigación en física de partículas.
+
+    La actualización del LHCb VELO se encuentra en la confluencia de la tecnología y la ciencia, con el objetivo de mejorar las capacidades del detector para soportar las exigentes condiciones de entornos de alta luminosidad mientras mejora la precisión de las mediciones.
+
+# Post: Generative AI Workshop (2023-12)
+genai_title:
+  en: "Generative AI for Dummies"
+  es: "IA Generativa para Principiantes"
+
+genai_text:
+  en: |
+    **Unveiling the Potential in Academic Research!**
+
+    In a recent workshop titled "Generative AI for Dummies," which I co-conducted with my esteemed colleague Victor Lopez Pardo, we embarked on a mission to demystify the complex world of Generative AI for a diverse audience. Our attendees ranged from Ph.D. students to experienced researchers, all keen on understanding how Generative AI can be a game-changer in their respective fields.
+
+    Generative AI, with its capability to create new, previously unseen data, holds immense potential for revolutionizing research methodologies. During the workshop, we delved into the practical applications of these AI systems, emphasizing their role in enhancing research productivity and fostering innovation. Participants had the opportunity to get hands-on experience with cutting-edge tools like ChatGPT, gaining insights into how these technologies can transform the landscape of academic and professional research.
+
+    The workshop was met with enthusiastic participation, leading to thought-provoking discussions and a palpable excitement about integrating AI tools into daily research activities. The positive feedback from the participants underscored the growing interest in leveraging AI to push the boundaries of traditional research paradigms.
+
+    For organizations and teams eager to explore the integration of AI into their workflows, I am more than willing to facilitate this transition. Whether it's a tailored workshop or a collaborative project, I am excited to contribute to your journey towards embracing AI-driven innovation. Let's connect and explore how we can harness the power of Generative AI to meet your unique needs and objectives.
+  es: |
+    **¡Desvelando el Potencial en la Investigación Académica!**
+
+    En un taller reciente titulado "IA Generativa para Principiantes", que co-dirigí con mi estimado colega Víctor López Pardo, nos embarcamos en una misión para desmitificar el complejo mundo de la IA Generativa para una audiencia diversa. Nuestros asistentes iban desde estudiantes de doctorado hasta investigadores experimentados, todos interesados en entender cómo la IA Generativa puede ser un cambio revolucionario en sus respectivos campos.
+
+    La IA Generativa, con su capacidad de crear datos nuevos nunca antes vistos, tiene un inmenso potencial para revolucionar las metodologías de investigación. Durante el taller, profundizamos en las aplicaciones prácticas de estos sistemas de IA, enfatizando su papel en la mejora de la productividad de la investigación y el fomento de la innovación. Los participantes tuvieron la oportunidad de obtener experiencia práctica con herramientas de vanguardia como ChatGPT.
+
+    El taller fue recibido con una participación entusiasta, lo que llevó a discusiones estimulantes y una emoción palpable sobre la integración de herramientas de IA en las actividades de investigación diarias.
+
+    Para organizaciones y equipos ansiosos por explorar la integración de la IA en sus flujos de trabajo, estoy más que dispuesto a facilitar esta transición.

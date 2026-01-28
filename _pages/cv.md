@@ -1,6 +1,8 @@
 ---
 layout: archive
 title: "Curriculum Vitae"
+title_en: "Curriculum Vitae"
+title_es: "Currículum Vitae"
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -10,97 +12,97 @@ redirect_from:
 {% include base_path %}
 
 <a href="{{ base_path }}/files/Efren_Rodriguez_CV.pdf" class="cv-download-btn">
-  <i class="fas fa-download"></i> Download Full CV (PDF)
+  <i class="fas fa-download"></i> {% include t.html page="cv" key="download_btn" %}
 </a>
 
 <div class="cv-section">
-  <h2 class="cv-section-title"><i class="fas fa-graduation-cap"></i> Education</h2>
+  <h2 class="cv-section-title"><i class="fas fa-graduation-cap"></i> {% include t.html page="cv" key="education_title" %}</h2>
   <div class="cv-education">
     <div class="cv-edu-card">
-      <div class="degree">Ph.D. in Particle Physics</div>
-      <div class="institution">University of Santiago de Compostela</div>
+      <div class="degree">{% include t.html page="cv" key="phd_degree" %}</div>
+      <div class="institution">{% include t.html page="cv" key="usc" %}</div>
       <div class="year">2020 - 2024</div>
     </div>
     <div class="cv-edu-card">
-      <div class="degree">M.S. in Physics</div>
-      <div class="institution">University of Santiago de Compostela</div>
+      <div class="degree">{% include t.html page="cv" key="ms_degree" %}</div>
+      <div class="institution">{% include t.html page="cv" key="usc" %}</div>
       <div class="year">2019 - 2020</div>
     </div>
     <div class="cv-edu-card">
-      <div class="degree">B.S. in Physics</div>
-      <div class="institution">University of Santiago de Compostela</div>
+      <div class="degree">{% include t.html page="cv" key="bs_degree" %}</div>
+      <div class="institution">{% include t.html page="cv" key="usc" %}</div>
       <div class="year">2015 - 2019</div>
     </div>
   </div>
 </div>
 
 <div class="cv-section">
-  <h2 class="cv-section-title"><i class="fas fa-briefcase"></i> Work Experience</h2>
+  <h2 class="cv-section-title"><i class="fas fa-briefcase"></i> {% include t.html page="cv" key="experience_title" %}</h2>
   <div class="cv-timeline">
     <div class="cv-timeline-item">
-      <div class="cv-position">Postdoctoral Researcher</div>
+      <div class="cv-position">{% include t.html page="cv" key="postdoc_position" %}</div>
       <div class="cv-company"><i class="fas fa-building"></i> CERN</div>
-      <div class="cv-date">Oct 2024 - Present</div>
+      <div class="cv-date"><span class="lang-en">Oct 2024 - Present</span><span class="lang-es">Oct 2024 - Actualidad</span></div>
       <div class="cv-description">
-        Leading a team responsible for three key projects in advanced particle detection technology:
+        {% include t.html page="cv" key="cern_postdoc_intro" %}
         <ul>
-          <li><strong>Simulation of 3D column silicon sensors:</strong> Overseeing sensor simulation and optimization to enhance precision in high-energy experiments</li>
-          <li><strong>Development of a Timepix4 telescope:</strong> Managing construction, operation, and data analysis for test beam campaigns</li>
-          <li><strong>Testing techniques:</strong> Coordinating innovative setups and techniques to validate new high-energy physics sensors</li>
+          <li>{% include t.html page="cv" key="cern_postdoc_item1" md=true %}</li>
+          <li>{% include t.html page="cv" key="cern_postdoc_item2" md=true %}</li>
+          <li>{% include t.html page="cv" key="cern_postdoc_item3" md=true %}</li>
         </ul>
       </div>
     </div>
     <div class="cv-timeline-item">
-      <div class="cv-position">Invited Researcher</div>
+      <div class="cv-position">{% include t.html page="cv" key="invited_researcher" %}</div>
       <div class="cv-company"><i class="fas fa-building"></i> Nikhef</div>
-      <div class="cv-date">Jun 2022 - Jun 2023</div>
+      <div class="cv-date"><span class="lang-en">Jun 2022 - Jun 2023</span><span class="lang-es">Jun 2022 - Jun 2023</span></div>
       <div class="cv-description">
         <ul>
-          <li>Characterization of Timepix4 ASICs for silicon sensor readout</li>
-          <li>Development of a Timepix4-based telescope for test-beam campaigns</li>
-          <li>Achieved <strong>90 picosecond track time resolution</strong> through timing analysis</li>
+          <li>{% include t.html page="cv" key="nikhef_item1" %}</li>
+          <li>{% include t.html page="cv" key="nikhef_item2" %}</li>
+          <li>{% include t.html page="cv" key="nikhef_item3" md=true %}</li>
         </ul>
       </div>
     </div>
     <div class="cv-timeline-item">
-      <div class="cv-position">Invited Researcher</div>
+      <div class="cv-position">{% include t.html page="cv" key="invited_researcher" %}</div>
       <div class="cv-company"><i class="fas fa-building"></i> CERN</div>
-      <div class="cv-date">Aug 2021 - Feb 2022</div>
+      <div class="cv-date"><span class="lang-en">Aug 2021 - Feb 2022</span><span class="lang-es">Ago 2021 - Feb 2022</span></div>
       <div class="cv-description">
         <ul>
-          <li>Commissioning of the upgraded LHCb VELO detector</li>
-          <li>3D-column silicon pixel sensors research in test beam campaigns</li>
+          <li>{% include t.html page="cv" key="cern2021_item1" %}</li>
+          <li>{% include t.html page="cv" key="cern2021_item2" %}</li>
         </ul>
       </div>
     </div>
     <div class="cv-timeline-item">
-      <div class="cv-position">PhD Researcher</div>
+      <div class="cv-position">{% include t.html page="cv" key="phd_researcher" %}</div>
       <div class="cv-company"><i class="fas fa-university"></i> IGFAE</div>
-      <div class="cv-date">Jan 2019 - Sep 2024</div>
+      <div class="cv-date"><span class="lang-en">Jan 2019 - Sep 2024</span><span class="lang-es">Ene 2019 - Sep 2024</span></div>
       <div class="cv-description">
         <ul>
-          <li>Development and characterization of high-speed data transmission lines and high-voltage flat cables for the LHCb VELO upgrade</li>
-          <li>Commissioning of the upgraded LHCb VELO detector</li>
-          <li>3D-column silicon pixel sensors development in test beam campaigns</li>
-          <li>Characterization of Timepix4 ASICs for silicon sensor readout</li>
+          <li>{% include t.html page="cv" key="igfae_phd_item1" %}</li>
+          <li>{% include t.html page="cv" key="igfae_phd_item2" %}</li>
+          <li>{% include t.html page="cv" key="igfae_phd_item3" %}</li>
+          <li>{% include t.html page="cv" key="igfae_phd_item4" %}</li>
         </ul>
       </div>
     </div>
     <div class="cv-timeline-item">
-      <div class="cv-position">Research Intern</div>
+      <div class="cv-position">{% include t.html page="cv" key="research_intern" %}</div>
       <div class="cv-company"><i class="fas fa-university"></i> IGFAE</div>
-      <div class="cv-date">Jun 2018 - Sep 2020</div>
+      <div class="cv-date"><span class="lang-en">Jun 2018 - Sep 2020</span><span class="lang-es">Jun 2018 - Sep 2020</span></div>
       <div class="cv-description">
-        Research project collaboration with CERN; development and characterization of a 3D X-ray mapping experiment.
+        {% include t.html page="cv" key="igfae_intern_desc" %}
       </div>
     </div>
   </div>
 </div>
 
 <div class="cv-section">
-  <h2 class="cv-section-title"><i class="fas fa-code"></i> Technical Skills</h2>
+  <h2 class="cv-section-title"><i class="fas fa-code"></i> {% include t.html page="cv" key="skills_title" %}</h2>
   <div class="cv-skill-category">
-    <h4>Programming & Software</h4>
+    <h4>{% include t.html page="cv" key="programming_software" %}</h4>
     <div class="cv-skills">
       <span class="cv-skill-tag"><i class="fab fa-python"></i> Python</span>
       <span class="cv-skill-tag">C++</span>
@@ -114,35 +116,35 @@ redirect_from:
     </div>
   </div>
   <div class="cv-skill-category">
-    <h4>Hardware & Research</h4>
+    <h4>{% include t.html page="cv" key="hardware_research" %}</h4>
     <div class="cv-skills">
-      <span class="cv-skill-tag cv-skill-tag--secondary">Silicon Sensors</span>
-      <span class="cv-skill-tag cv-skill-tag--secondary">Electronic Design</span>
-      <span class="cv-skill-tag cv-skill-tag--secondary">Detector Development</span>
-      <span class="cv-skill-tag cv-skill-tag--secondary">Test Beam Campaigns</span>
-      <span class="cv-skill-tag cv-skill-tag--secondary">Data Analysis</span>
+      <span class="cv-skill-tag cv-skill-tag--secondary">{% include t.html page="cv" key="silicon_sensors" %}</span>
+      <span class="cv-skill-tag cv-skill-tag--secondary">{% include t.html page="cv" key="electronic_design" %}</span>
+      <span class="cv-skill-tag cv-skill-tag--secondary">{% include t.html page="cv" key="detector_development" %}</span>
+      <span class="cv-skill-tag cv-skill-tag--secondary">{% include t.html page="cv" key="test_beam_campaigns" %}</span>
+      <span class="cv-skill-tag cv-skill-tag--secondary">{% include t.html page="cv" key="data_analysis" %}</span>
     </div>
   </div>
   <div class="cv-skill-category">
-    <h4>Soft Skills</h4>
+    <h4>{% include t.html page="cv" key="soft_skills" %}</h4>
     <div class="cv-skills">
-      <span class="cv-skill-tag cv-skill-tag--secondary">Project Management</span>
-      <span class="cv-skill-tag cv-skill-tag--secondary">Team Leadership</span>
-      <span class="cv-skill-tag cv-skill-tag--secondary">Scientific Communication</span>
-      <span class="cv-skill-tag cv-skill-tag--secondary">Problem Solving</span>
+      <span class="cv-skill-tag cv-skill-tag--secondary">{% include t.html page="cv" key="project_management" %}</span>
+      <span class="cv-skill-tag cv-skill-tag--secondary">{% include t.html page="cv" key="team_leadership" %}</span>
+      <span class="cv-skill-tag cv-skill-tag--secondary">{% include t.html page="cv" key="scientific_communication" %}</span>
+      <span class="cv-skill-tag cv-skill-tag--secondary">{% include t.html page="cv" key="problem_solving" %}</span>
     </div>
   </div>
 </div>
 
 <div class="cv-section">
-  <h2 class="cv-section-title"><i class="fas fa-book"></i> Publications</h2>
+  <h2 class="cv-section-title"><i class="fas fa-book"></i> {% include t.html page="cv" key="publications_title" %}</h2>
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
 </div>
 
 <div class="cv-section">
-  <h2 class="cv-section-title"><i class="fas fa-chalkboard-teacher"></i> Talks & Presentations</h2>
+  <h2 class="cv-section-title"><i class="fas fa-chalkboard-teacher"></i> {% include t.html page="cv" key="talks_title" %}</h2>
   <ul>{% for post in site.talks reversed %}
     {% include archive-single-talk-cv.html %}
   {% endfor %}</ul>

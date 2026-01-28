@@ -1,64 +1,64 @@
 ---
-title: "✈️ Global Wanderings 🌍"
-excerpt: "Journey through my travel tales as I explore the mosaic of cultures, landscapes, and histories our world offers. From bustling city streets to tranquil countryside, every destination has been a chapter in my book of adventures. <br/><img src='/images/webp/traveling.webp' alt='Glimpse of a Travel Destination' style='border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);'>"
+title: "Global Wanderings"
+title_en: "Global Wanderings"
+title_es: "Andanzas Globales"
+excerpt_en: "Journey through my travel tales as I explore the mosaic of cultures, landscapes, and histories our world offers."
+excerpt_es: "Viaja a través de mis relatos de viaje mientras exploro el mosaico de culturas, paisajes e historias que nuestro mundo ofrece."
 collection: personal
-
 gallery1:
   - url: webp/traveling.webp
     image_path: webp/traveling.webp
-    alt: "placeholder image 1"
+    alt: "Egypt pyramids"
 gallery2:
   - url: webp/swiss.webp
     image_path: webp/swiss.webp
-    alt: "placeholder image 1"
+    alt: "Switzerland Alps"
 gallery3:
   - url: webp/vancouver.webp
     image_path: webp/vancouver.webp
-    alt: "placeholder image 1"
+    alt: "Vancouver skyline"
 gallery4:
   - url: webp/italy.webp
     image_path: webp/italy.webp
-    alt: "placeholder image 1"
+    alt: "Venice and Pisa"
 gallery5:
   - url: webp/netherlands.webp
     image_path: webp/netherlands.webp
-    alt: "placeholder image 1"
+    alt: "Netherlands windmills"
 gallery6:
   - url: webp/paris.webp
     image_path: webp/paris.webp
-    alt: "placeholder image 1"
+    alt: "Paris Eiffel Tower"
 ---
 
-🌐🛄 Welcome to my Travel Portfolio! Here, I unfold the stories of diverse cultures, breathtaking landscapes, and the indelible marks they've left on my heart. Each destination has been a unique blend of experiences, from the architectural wonders of ancient cities to the pristine natural beauty of secluded beaches. Embark on this visual and narrative journey with me, as we traverse the globe together, one amazing place at a time. 🏰🏞️
+{% include t-block.html page="traveling" key="intro" %}
 
-### Egypt: Land of Pharaohs
-Walking through the sands of time in Egypt was like living through the pages of history. From the awe-inspiring Pyramids of Giza to the mystical Sphinx and the vast treasures of the Egyptian Museum in Cairo, each moment was a step back into ancient civilization. Cruising down the Nile, I was captivated by the timeless beauty of the temples at Luxor and Karnak, under the spell of Egypt's ancient allure.
+### {% include t.html page="traveling" key="egypt_title" %}
+{% include t-block.html page="traveling" key="egypt_text" %}
 {% include gallery id="gallery1" caption=" " %}
 
-### Switzerland: Alpine Majesty
-Switzerland was a symphony of nature's best, with its picturesque villages, lush green valleys, and the majestic Alps. Hiking the trails of Interlaken, experiencing the serene beauty of Lake Geneva, and the breathtaking views from Shilthorn, provided a unique blend of adventure and tranquility. The harmony between nature and the Swiss way of life made every moment spent here a serene escape.
+### {% include t.html page="traveling" key="switzerland_title" %}
+{% include t-block.html page="traveling" key="switzerland_text" %}
 <div style="max-width: 75%; margin: auto;">
 {% include gallery id="gallery2" caption=" " %}
 </div>
 
-### Vancouver: Urban Nature
-Vancouver offered a seamless blend of urban life and natural splendor. Strolling through the vibrant streets of Gastown, relaxing in the peaceful expanse of Stanley Park, and the panoramic vistas from Grouse Mountain were highlights of my visit. The city's multicultural vibe and its proximity to natural wonders like the Capilano Suspension Bridge and Whistler made it an unforgettable urban adventure.
+### {% include t.html page="traveling" key="vancouver_title" %}
+{% include t-block.html page="traveling" key="vancouver_text" %}
 {% include gallery id="gallery3" caption=" " %}
 
-### Italy: Venice and Pisa Highlights
-In Venice, the allure of its winding canals and historic architecture was mesmerizing. A gondola ride through the Grand Canal offered a unique perspective of the city's grandeur, while the lively Piazza San Marco was a testament to Venice's vibrant cultural heart.
-
-Pisa presented the iconic Leaning Tower, standing as a marvel in the Piazza dei Miracoli. This architectural wonder, alongside the stunning Cathedral and Baptistery, showcased the city's rich historical tapestry in a compact, yet unforgettable experience.
+### {% include t.html page="traveling" key="italy_title" %}
+{% include t-block.html page="traveling" key="italy_text" %}
 <div style="max-width: 75%; margin: auto;">
 {% include gallery id="gallery4" caption=" " %}
 </div>
 
-### The Netherlands: Dutch Delights
-The Netherlands was a delightful exploration of culture, history, and innovation. Cycling through the tulip-filled landscapes and iconic windmills, exploring the historic canals of Amsterdam, and experiencing the vibrant art scene, including the masterpieces of Van Gogh and Rembrandt, showcased the country's rich heritage and forward-thinking.
+### {% include t.html page="traveling" key="netherlands_title" %}
+{% include t-block.html page="traveling" key="netherlands_text" %}
 <div style="max-width: 75%; margin: auto;">
 {% include gallery id="gallery5" caption=" " %}
 </div>
 
-### Paris: A City of Light and Love
-Paris was an enchanting journey through the heart of romance and sophistication. The majestic Eiffel Tower, the artistic treasures of the Louvre, and the charming cafes lining the Seine offered a glimpse into the Parisian art de vivre. Each corner of the city, from the bohemian streets of Montmartre to the grand Champs-Élysées, was a testament to the timeless allure of Paris.
+### {% include t.html page="traveling" key="paris_title" %}
+{% include t-block.html page="traveling" key="paris_text" %}
 {% include gallery id="gallery6" caption=" " %}

@@ -1,0 +1,63 @@
+# Traveling page translations
+
+title:
+  en: "Global Wanderings"
+  es: "Andanzas Globales"
+
+intro:
+  en: "Welcome to my Travel Portfolio! Here, I unfold the stories of diverse cultures, breathtaking landscapes, and the indelible marks they've left on my heart. Each destination has been a unique blend of experiences, from the architectural wonders of ancient cities to the pristine natural beauty of secluded beaches. Embark on this visual and narrative journey with me, as we traverse the globe together, one amazing place at a time."
+  es: "¡Bienvenido a mi Portfolio de Viajes! Aquí despliego las historias de culturas diversas, paisajes impresionantes y las marcas indelebles que han dejado en mi corazón. Cada destino ha sido una mezcla única de experiencias, desde las maravillas arquitectónicas de ciudades antiguas hasta la prístina belleza natural de playas apartadas. Embárcate en este viaje visual y narrativo conmigo, mientras recorremos el mundo juntos."
+
+egypt_title:
+  en: "Egypt: Land of Pharaohs"
+  es: "Egipto: Tierra de Faraones"
+
+egypt_text:
+  en: "Walking through the sands of time in Egypt was like living through the pages of history. From the awe-inspiring Pyramids of Giza to the mystical Sphinx and the vast treasures of the Egyptian Museum in Cairo, each moment was a step back into ancient civilization. Cruising down the Nile, I was captivated by the timeless beauty of the temples at Luxor and Karnak, under the spell of Egypt's ancient allure."
+  es: "Caminar por las arenas del tiempo en Egipto fue como vivir las páginas de la historia. Desde las impresionantes Pirámides de Giza hasta la mística Esfinge y los vastos tesoros del Museo Egipcio de El Cairo, cada momento fue un paso atrás hacia la civilización antigua. Navegando por el Nilo, quedé cautivado por la belleza atemporal de los templos de Luxor y Karnak, bajo el hechizo del antiguo encanto de Egipto."
+
+switzerland_title:
+  en: "Switzerland: Alpine Majesty"
+  es: "Suiza: Majestuosidad Alpina"
+
+switzerland_text:
+  en: "Switzerland was a symphony of nature's best, with its picturesque villages, lush green valleys, and the majestic Alps. Hiking the trails of Interlaken, experiencing the serene beauty of Lake Geneva, and the breathtaking views from Shilthorn, provided a unique blend of adventure and tranquility. The harmony between nature and the Swiss way of life made every moment spent here a serene escape."
+  es: "Suiza fue una sinfonía de lo mejor de la naturaleza, con sus pintorescos pueblos, exuberantes valles verdes y los majestuosos Alpes. Recorrer los senderos de Interlaken, experimentar la serena belleza del Lago Lemán y las impresionantes vistas desde el Shilthorn, proporcionaron una mezcla única de aventura y tranquilidad."
+
+vancouver_title:
+  en: "Vancouver: Urban Nature"
+  es: "Vancouver: Naturaleza Urbana"
+
+vancouver_text:
+  en: "Vancouver offered a seamless blend of urban life and natural splendor. Strolling through the vibrant streets of Gastown, relaxing in the peaceful expanse of Stanley Park, and the panoramic vistas from Grouse Mountain were highlights of my visit. The city's multicultural vibe and its proximity to natural wonders like the Capilano Suspension Bridge and Whistler made it an unforgettable urban adventure."
+  es: "Vancouver ofreció una mezcla perfecta de vida urbana y esplendor natural. Pasear por las vibrantes calles de Gastown, relajarse en la pacífica extensión de Stanley Park y las vistas panorámicas desde Grouse Mountain fueron los puntos destacados de mi visita. El ambiente multicultural de la ciudad y su proximidad a maravillas naturales como el Puente Colgante de Capilano y Whistler la convirtieron en una aventura urbana inolvidable."
+
+italy_title:
+  en: "Italy: Venice and Pisa Highlights"
+  es: "Italia: Lo Mejor de Venecia y Pisa"
+
+italy_text:
+  en: |
+    In Venice, the allure of its winding canals and historic architecture was mesmerizing. A gondola ride through the Grand Canal offered a unique perspective of the city's grandeur, while the lively Piazza San Marco was a testament to Venice's vibrant cultural heart.
+
+    Pisa presented the iconic Leaning Tower, standing as a marvel in the Piazza dei Miracoli. This architectural wonder, alongside the stunning Cathedral and Baptistery, showcased the city's rich historical tapestry in a compact, yet unforgettable experience.
+  es: |
+    En Venecia, el encanto de sus sinuosos canales y su arquitectura histórica era hipnotizante. Un paseo en góndola por el Gran Canal ofreció una perspectiva única de la grandeza de la ciudad, mientras que la animada Piazza San Marco era un testimonio del vibrante corazón cultural de Venecia.
+
+    Pisa presentó la icónica Torre Inclinada, alzándose como una maravilla en la Piazza dei Miracoli. Esta maravilla arquitectónica, junto con la impresionante Catedral y el Baptisterio, mostró el rico tapiz histórico de la ciudad en una experiencia compacta pero inolvidable.
+
+netherlands_title:
+  en: "The Netherlands: Dutch Delights"
+  es: "Países Bajos: Delicias Holandesas"
+
+netherlands_text:
+  en: "The Netherlands was a delightful exploration of culture, history, and innovation. Cycling through the tulip-filled landscapes and iconic windmills, exploring the historic canals of Amsterdam, and experiencing the vibrant art scene, including the masterpieces of Van Gogh and Rembrandt, showcased the country's rich heritage and forward-thinking."
+  es: "Los Países Bajos fueron una deliciosa exploración de cultura, historia e innovación. Recorrer en bicicleta los paisajes llenos de tulipanes y los icónicos molinos de viento, explorar los históricos canales de Ámsterdam y experimentar la vibrante escena artística, incluyendo las obras maestras de Van Gogh y Rembrandt, mostraron el rico patrimonio y la mentalidad innovadora del país."
+
+paris_title:
+  en: "Paris: A City of Light and Love"
+  es: "París: Ciudad de la Luz y el Amor"
+
+paris_text:
+  en: "Paris was an enchanting journey through the heart of romance and sophistication. The majestic Eiffel Tower, the artistic treasures of the Louvre, and the charming cafes lining the Seine offered a glimpse into the Parisian art de vivre. Each corner of the city, from the bohemian streets of Montmartre to the grand Champs-Élysées, was a testament to the timeless allure of Paris."
+  es: "París fue un viaje encantador por el corazón del romance y la sofisticación. La majestuosa Torre Eiffel, los tesoros artísticos del Louvre y los encantadores cafés a lo largo del Sena ofrecieron una visión del art de vivre parisino. Cada rincón de la ciudad, desde las calles bohemias de Montmartre hasta los grandes Campos Elíseos, fue un testimonio del encanto atemporal de París."

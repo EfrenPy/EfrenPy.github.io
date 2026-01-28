@@ -1,0 +1,179 @@
+# CV page translations
+
+title:
+  en: "Curriculum Vitae"
+  es: "Currículum Vitae"
+
+download_btn:
+  en: "Download Full CV (PDF)"
+  es: "Descargar CV completo (PDF)"
+
+# Education section
+education_title:
+  en: "Education"
+  es: "Educación"
+
+phd_degree:
+  en: "Ph.D. in Particle Physics"
+  es: "Doctorado en Física de Partículas"
+
+ms_degree:
+  en: "M.S. in Physics"
+  es: "Máster en Física"
+
+bs_degree:
+  en: "B.S. in Physics"
+  es: "Grado en Física"
+
+usc:
+  en: "University of Santiago de Compostela"
+  es: "Universidad de Santiago de Compostela"
+
+# Work Experience section
+experience_title:
+  en: "Work Experience"
+  es: "Experiencia Laboral"
+
+postdoc_position:
+  en: "Postdoctoral Researcher"
+  es: "Investigador Postdoctoral"
+
+invited_researcher:
+  en: "Invited Researcher"
+  es: "Investigador Visitante"
+
+phd_researcher:
+  en: "PhD Researcher"
+  es: "Investigador Predoctoral"
+
+research_intern:
+  en: "Research Intern"
+  es: "Becario de Investigación"
+
+present:
+  en: "Present"
+  es: "Actualidad"
+
+# CERN Postdoc description
+cern_postdoc_intro:
+  en: "Leading a team responsible for three key projects in advanced particle detection technology:"
+  es: "Liderando un equipo responsable de tres proyectos clave en tecnología avanzada de detección de partículas:"
+
+cern_postdoc_item1:
+  en: "**Simulation of 3D column silicon sensors:** Overseeing sensor simulation and optimization to enhance precision in high-energy experiments"
+  es: "**Simulación de sensores de silicio 3D columnares:** Supervisando la simulación y optimización de sensores para mejorar la precisión en experimentos de alta energía"
+
+cern_postdoc_item2:
+  en: "**Development of a Timepix4 telescope:** Managing construction, operation, and data analysis for test beam campaigns"
+  es: "**Desarrollo de un telescopio Timepix4:** Gestionando la construcción, operación y análisis de datos para campañas de haces de prueba"
+
+cern_postdoc_item3:
+  en: "**Testing techniques:** Coordinating innovative setups and techniques to validate new high-energy physics sensors"
+  es: "**Técnicas de prueba:** Coordinando configuraciones y técnicas innovadoras para validar nuevos sensores de física de altas energías"
+
+# Nikhef description
+nikhef_item1:
+  en: "Characterization of Timepix4 ASICs for silicon sensor readout"
+  es: "Caracterización de ASICs Timepix4 para lectura de sensores de silicio"
+
+nikhef_item2:
+  en: "Development of a Timepix4-based telescope for test-beam campaigns"
+  es: "Desarrollo de un telescopio basado en Timepix4 para campañas de haces de prueba"
+
+nikhef_item3:
+  en: "Achieved **90 picosecond track time resolution** through timing analysis"
+  es: "Logró una **resolución temporal de trazas de 90 picosegundos** mediante análisis temporal"
+
+# CERN 2021 description
+cern2021_item1:
+  en: "Commissioning of the upgraded LHCb VELO detector"
+  es: "Puesta en marcha del detector LHCb VELO actualizado"
+
+cern2021_item2:
+  en: "3D-column silicon pixel sensors research in test beam campaigns"
+  es: "Investigación de sensores de píxeles de silicio 3D columnares en campañas de haces de prueba"
+
+# IGFAE PhD description
+igfae_phd_item1:
+  en: "Development and characterization of high-speed data transmission lines and high-voltage flat cables for the LHCb VELO upgrade"
+  es: "Desarrollo y caracterización de líneas de transmisión de datos de alta velocidad y cables planos de alto voltaje para la actualización del LHCb VELO"
+
+igfae_phd_item2:
+  en: "Commissioning of the upgraded LHCb VELO detector"
+  es: "Puesta en marcha del detector LHCb VELO actualizado"
+
+igfae_phd_item3:
+  en: "3D-column silicon pixel sensors development in test beam campaigns"
+  es: "Desarrollo de sensores de píxeles de silicio 3D columnares en campañas de haces de prueba"
+
+igfae_phd_item4:
+  en: "Characterization of Timepix4 ASICs for silicon sensor readout"
+  es: "Caracterización de ASICs Timepix4 para lectura de sensores de silicio"
+
+# IGFAE Intern description
+igfae_intern_desc:
+  en: "Research project collaboration with CERN; development and characterization of a 3D X-ray mapping experiment."
+  es: "Colaboración en proyecto de investigación con CERN; desarrollo y caracterización de un experimento de mapeo 3D de rayos X."
+
+# Skills section
+skills_title:
+  en: "Technical Skills"
+  es: "Habilidades Técnicas"
+
+programming_software:
+  en: "Programming & Software"
+  es: "Programación y Software"
+
+hardware_research:
+  en: "Hardware & Research"
+  es: "Hardware e Investigación"
+
+soft_skills:
+  en: "Soft Skills"
+  es: "Habilidades Blandas"
+
+# Skill tags
+silicon_sensors:
+  en: "Silicon Sensors"
+  es: "Sensores de Silicio"
+
+electronic_design:
+  en: "Electronic Design"
+  es: "Diseño Electrónico"
+
+detector_development:
+  en: "Detector Development"
+  es: "Desarrollo de Detectores"
+
+test_beam_campaigns:
+  en: "Test Beam Campaigns"
+  es: "Campañas de Haces de Prueba"
+
+data_analysis:
+  en: "Data Analysis"
+  es: "Análisis de Datos"
+
+project_management:
+  en: "Project Management"
+  es: "Gestión de Proyectos"
+
+team_leadership:
+  en: "Team Leadership"
+  es: "Liderazgo de Equipos"
+
+scientific_communication:
+  en: "Scientific Communication"
+  es: "Comunicación Científica"
+
+problem_solving:
+  en: "Problem Solving"
+  es: "Resolución de Problemas"
+
+# Publications & Talks sections
+publications_title:
+  en: "Publications"
+  es: "Publicaciones"
+
+talks_title:
+  en: "Talks & Presentations"
+  es: "Charlas y Presentaciones"

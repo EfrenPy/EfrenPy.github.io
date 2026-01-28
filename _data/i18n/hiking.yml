@@ -1,0 +1,55 @@
+# Hiking page translations
+
+title:
+  en: "Hiking Adventures"
+  es: "Aventuras de Senderismo"
+
+intro:
+  en: |
+    Welcome to my Hiking Portfolio! Here, I share the exhilarating experiences and unforgettable vistas encountered on my hiking journeys. Each trail tells a story, each summit holds a memory. Join me as I recount the adventures that have not only challenged me but also enriched my soul with the tranquil beauty of the great outdoors.
+
+    Join me as we continue to explore the vast, untamed beauty of the mountains, each hike a new chapter in the adventure that is life.
+  es: |
+    ¡Bienvenido a mi Portfolio de Senderismo! Aquí comparto las experiencias emocionantes y las vistas inolvidables encontradas en mis travesías. Cada sendero cuenta una historia, cada cumbre guarda un recuerdo. Acompáñame mientras relato las aventuras que no solo me han desafiado, sino que también han enriquecido mi alma con la tranquila belleza de la naturaleza.
+
+    Únete a mí mientras continuamos explorando la vasta e indómita belleza de las montañas, cada caminata un nuevo capítulo en la aventura que es la vida.
+
+schilthorn_title:
+  en: "Schilthorn: The Panoramic Peak"
+  es: "Schilthorn: La Cumbre Panorámica"
+
+schilthorn_text:
+  en: "My ascent to the Schilthorn was nothing short of breathtaking. Standing at the summit, I was surrounded by a 360-degree panorama of the Swiss skyline, with views of the Eiger, Mönch, and Jungfrau peaks. Winding through alpine meadows and rocky paths. Reaching Piz Gloria at the top, the sun broke through the clouds, illuminating the surrounding peaks in a golden glow. This hike was not just a physical challenge but a moment of profound connection with the majesty of the Alps."
+  es: "Mi ascenso al Schilthorn fue simplemente impresionante. De pie en la cumbre, estaba rodeado por un panorama de 360 grados del horizonte suizo, con vistas de los picos Eiger, Mönch y Jungfrau. Serpenteando por prados alpinos y senderos rocosos. Al llegar a Piz Gloria en la cima, el sol atravesó las nubes, iluminando los picos circundantes con un resplandor dorado. Esta caminata no fue solo un desafío físico, sino un momento de profunda conexión con la majestuosidad de los Alpes."
+
+oeschinen_title:
+  en: "Oeschinen Lake: Alpine Serenity"
+  es: "Lago Oeschinen: Serenidad Alpina"
+
+oeschinen_text:
+  en: "Nestled in the Swiss Alps, Oeschinen Lake was an enchanting discovery on my hiking trail. The trek to this pristine glacial lake was filled with the vibrant colors of wildflowers and the melodious sounds of nature. As the path unfolded, the turquoise waters of Oeschinen Lake appeared, set against the dramatic backdrop of towering peaks. The serenity of the lake, with its crystal-clear waters, was a perfect spot for reflection and relaxation. Surrounded by nature's grandeur, the time spent by Oeschinen Lake was a testament to the peaceful tranquility that can only be found in the heart of the mountains."
+  es: "Enclavado en los Alpes suizos, el lago Oeschinen fue un descubrimiento encantador en mi ruta de senderismo. La caminata hasta este prístino lago glacial estaba llena de los vibrantes colores de las flores silvestres y los melodiosos sonidos de la naturaleza. A medida que el camino se desplegaba, aparecieron las aguas turquesas del lago Oeschinen, enmarcadas por el dramático telón de fondo de imponentes picos. La serenidad del lago, con sus aguas cristalinas, era un lugar perfecto para la reflexión y el descanso."
+
+brig_title:
+  en: "Brig: Gateway to Alpine Adventures"
+  es: "Brig: Puerta a las Aventuras Alpinas"
+
+brig_text:
+  en: "Brig, nestled in the heart of the Valais, was my starting point for several expeditions into the surrounding mountains. This charming town, with its historic streets and vibrant culture, was the perfect backdrop for my hiking adventures. The trails around Brig are diverse, offering everything from gentle walks through vineyards to more strenuous climbs up rugged paths. Each hike provided a unique perspective of the Swiss landscape, from the verdant valleys to the snow-capped peaks that define this region."
+  es: "Brig, enclavado en el corazón del Valais, fue mi punto de partida para varias expediciones a las montañas circundantes. Esta encantadora ciudad, con sus calles históricas y vibrante cultura, era el telón de fondo perfecto para mis aventuras de senderismo. Los senderos alrededor de Brig son diversos, ofreciendo desde paseos suaves por viñedos hasta ascensos más exigentes por caminos escarpados. Cada caminata proporcionó una perspectiva única del paisaje suizo."
+
+saleve_title:
+  en: "Salève: Overlooking Geneva"
+  es: "Salève: Con Vistas a Ginebra"
+
+saleve_text:
+  en: "Just a stone's throw from Geneva, the Salève offered an easily accessible escape into nature. This mountain, often referred to as Geneva's backyard, provided panoramic views of the city against the backdrop of Lake Geneva and the distant Jura mountains. The ascent was a mix of leisurely walks and steep climbs, leading to the summit where paragliders took flight, adding a splash of color to the blue skies. Hiking the Salève was a reminder of the serene beauty that lies just beyond the hustle and bustle of city life."
+  es: "A un paso de Ginebra, el Salève ofrecía un escape fácilmente accesible a la naturaleza. Esta montaña, a menudo llamada el patio trasero de Ginebra, proporcionaba vistas panorámicas de la ciudad con el telón de fondo del lago Lemán y las distantes montañas del Jura. El ascenso era una mezcla de paseos tranquilos y subidas empinadas. Hacer senderismo en el Salève fue un recordatorio de la serena belleza que se encuentra más allá del ajetreo de la vida urbana."
+
+eiger_title:
+  en: "Eiger: The Iconic North Face"
+  es: "Eiger: La Icónica Cara Norte"
+
+eiger_text:
+  en: "Approaching the Eiger, its imposing North Face loomed ahead, a testament to the mountain's storied history and the climbers who have dared to challenge it. My route skirted the base of this mighty peak, through the picturesque landscapes of the Bernese Oberland. The trail meandered through lush meadows, past crystal-clear streams, and under the watchful gaze of the Eiger's towering presence. While I did not attempt the North Face itself, the journey provided an up-close look at one of the most famous mountains in the world, and a deep appreciation for the climbers who have braved its heights."
+  es: "Al acercarme al Eiger, su imponente Cara Norte se alzaba ante mí, un testimonio de la legendaria historia de la montaña y de los escaladores que se han atrevido a desafiarla. Mi ruta bordeaba la base de este poderoso pico, a través de los pintorescos paisajes del Oberland Bernés. El sendero serpenteaba por exuberantes prados, junto a arroyos cristalinos, bajo la vigilante mirada de la imponente presencia del Eiger."

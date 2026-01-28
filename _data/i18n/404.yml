@@ -1,0 +1,13 @@
+# 404 page translations
+
+title:
+  en: "Page Not Found"
+  es: "Página No Encontrada"
+
+excerpt:
+  en: "Page not found. Your pixels are in another canvas."
+  es: "Página no encontrada. Tus píxeles están en otro lienzo."
+
+message:
+  en: "Sorry, but the page you were trying to view does not exist."
+  es: "Lo sentimos, pero la página que intentabas ver no existe."
