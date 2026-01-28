@@ -26,25 +26,27 @@
   })();
 </script>
 
-<!-- Swup for SPA-like navigation with animations -->
-<script type="module">
-  import Swup from 'https://cdn.jsdelivr.net/npm/swup@4/+esm';
+<!-- Swup for SPA-like navigation (self-hosted for reliability) -->
+<script src="{{ base_path }}/assets/js/swup.min.js?v={{ site.time | date: '%s' }}"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    if (typeof Swup !== 'undefined') {
+      const swup = new Swup({
+        containers: ['#swup-content'],
+        animationSelector: '[class*="swup-transition-"]',
+        cache: true,
+        animateHistoryBrowsing: true
+      });
 
-  const swup = new Swup({
-    containers: ['#swup-content'],
-    animationSelector: '[class*="swup-transition-"]',
-    cache: true,
-    animateHistoryBrowsing: true
-  });
-
-  // Re-initialize scroll reveals after page change
-  swup.hooks.on('page:view', () => {
-    if (typeof initScrollReveal === 'function') {
-      initScrollReveal();
-    }
-    // Update active nav link
-    if (typeof updateActiveNav === 'function') {
-      updateActiveNav();
+      // Re-initialize scroll reveals after page change
+      swup.hooks.on('page:view', function() {
+        if (typeof initScrollReveal === 'function') {
+          initScrollReveal();
+        }
+        if (typeof updateActiveNav === 'function') {
+          updateActiveNav();
+        }
+      });
     }
   });
 </script>
