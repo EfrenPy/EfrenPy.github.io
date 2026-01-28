@@ -4,26 +4,67 @@
 
 document.addEventListener('DOMContentLoaded', function() {
 
-  // Sticky footer - adjust body margin to account for footer height
+  // Initialize global features (masthead-level, don't need reinit on navigation)
+  initDarkMode();
+  initLanguage();
+
+  // Initialize per-page features
+  initPageFeatures();
+
+});
+
+// Enable smooth scrolling via CSS (add to html element)
+document.documentElement.style.scrollBehavior = 'smooth';
+
+/* ==========================================================================
+   Per-Page Feature Initialization
+   Called on initial load AND after each Swup page transition
+   ========================================================================== */
+
+function initPageFeatures() {
+  // Sticky footer
   const footer = document.querySelector('.page__footer');
   if (footer) {
     const updateFooterMargin = () => {
       document.body.style.marginBottom = footer.offsetHeight + 'px';
     };
-
     updateFooterMargin();
 
-    // Use ResizeObserver for efficient resize handling
     if (typeof ResizeObserver !== 'undefined') {
       const resizeObserver = new ResizeObserver(updateFooterMargin);
       resizeObserver.observe(footer);
     } else {
-      // Fallback for older browsers
       window.addEventListener('resize', updateFooterMargin);
     }
   }
 
   // Sidebar visibility logic
+  initSidebar();
+
+  // Image lightbox
+  initLightbox();
+
+  // Scroll reveal animations
+  initScrollReveal();
+
+  // Scroll progress bar
+  initScrollProgress();
+
+  // Active nav link highlighting
+  updateActiveNav();
+
+  // Scroll to top on new page
+  window.scrollTo(0, 0);
+}
+
+// Make globally available for Swup
+window.initPageFeatures = initPageFeatures;
+
+/* ==========================================================================
+   Sidebar Visibility
+   ========================================================================== */
+
+function initSidebar() {
   const authorUrlsWrapper = document.querySelector('.author__urls-wrapper');
   const authorUrls = document.querySelector('.author__urls');
   const followButton = document.querySelector('.author__urls-wrapper button');
@@ -55,15 +96,23 @@ document.addEventListener('DOMContentLoaded', function() {
       this.classList.toggle('open');
     });
   }
+}
 
-  // Simple image lightbox using native dialog
+/* ==========================================================================
+   Image Lightbox
+   ========================================================================== */
+
+function initLightbox() {
   const imageLinks = document.querySelectorAll(
     'a[href$=".jpg"], a[href$=".jpeg"], a[href$=".JPG"], a[href$=".png"], a[href$=".gif"], a[href$=".webp"]'
   );
 
-  if (imageLinks.length > 0) {
-    // Create lightbox dialog
-    const dialog = document.createElement('dialog');
+  if (imageLinks.length === 0) return;
+
+  // Reuse existing dialog or create new one
+  let dialog = document.querySelector('.image-lightbox');
+  if (!dialog) {
+    dialog = document.createElement('dialog');
     dialog.className = 'image-lightbox';
     dialog.innerHTML = `
       <img src="" alt="Lightbox image">
@@ -71,10 +120,7 @@ document.addEventListener('DOMContentLoaded', function() {
     `;
     document.body.appendChild(dialog);
 
-    const lightboxImg = dialog.querySelector('img');
-    const closeBtn = dialog.querySelector('.lightbox-close');
-
-    // Add lightbox styles
+    // Add lightbox styles once
     const style = document.createElement('style');
     style.textContent = `
       .image-lightbox {
@@ -112,33 +158,25 @@ document.addEventListener('DOMContentLoaded', function() {
     `;
     document.head.appendChild(style);
 
-    // Attach click handlers to image links
-    imageLinks.forEach(link => {
-      link.addEventListener('click', function(e) {
-        e.preventDefault();
-        lightboxImg.src = this.href;
-        dialog.showModal();
-      });
-    });
-
-    // Close handlers
+    // Close handlers (only bind once)
+    const closeBtn = dialog.querySelector('.lightbox-close');
     closeBtn.addEventListener('click', () => dialog.close());
     dialog.addEventListener('click', (e) => {
       if (e.target === dialog) dialog.close();
     });
   }
 
-  // Initialize all modern features
-  initScrollReveal();
-  initScrollProgress();
-  initDarkMode();
-  initLanguage();
-  updateActiveNav();
+  const lightboxImg = dialog.querySelector('img');
 
-});
-
-// Enable smooth scrolling via CSS (add to html element)
-document.documentElement.style.scrollBehavior = 'smooth';
+  // Attach click handlers to image links
+  imageLinks.forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      lightboxImg.src = this.href;
+      dialog.showModal();
+    });
+  });
+}
 
 /* ==========================================================================
    Scroll Reveal Animations
@@ -183,9 +221,6 @@ function initScrollReveal() {
     revealOnScroll.observe(el);
   });
 }
-
-// Make it globally available for Swup
-window.initScrollReveal = initScrollReveal;
 
 /* ==========================================================================
    Scroll Progress Bar
@@ -291,9 +326,6 @@ function updateActiveNav() {
     }
   });
 }
-
-// Make it globally available for Swup
-window.updateActiveNav = updateActiveNav;
 
 /* ==========================================================================
    Animated Counters (for stats section if added)

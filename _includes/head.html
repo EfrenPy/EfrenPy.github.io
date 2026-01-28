@@ -47,13 +47,10 @@
         animateHistoryBrowsing: true
       });
 
-      // Re-initialize scroll reveals after page change
+      // Re-initialize all per-page features after navigation
       swup.hooks.on('page:view', function() {
-        if (typeof initScrollReveal === 'function') {
-          initScrollReveal();
-        }
-        if (typeof updateActiveNav === 'function') {
-          updateActiveNav();
+        if (typeof initPageFeatures === 'function') {
+          initPageFeatures();
         }
       });
     }
