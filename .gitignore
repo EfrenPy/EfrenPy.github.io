@@ -4,3 +4,4 @@ node_modules/
 .bundle/
 vendor/
 package-lock.json
+CLAUDE.md
