@@ -83,7 +83,11 @@ author:
   name             : "Efrén Rodríguez Rodríguez"
   avatar           : "webp/profile.webp"
   bio              : "Postdoctoral Researcher in particle physics silicon detectors for the EP-R&D department at CERN"
-  location         : "Geneve, Switzerland"
+  bio_en           : "Postdoctoral Researcher in particle physics silicon detectors for the EP-R&D department at CERN"
+  bio_es           : "Investigador Postdoctoral en detectores de silicio para física de partículas en el departamento EP-R&D del CERN"
+  location         : "Geneva, Switzerland"
+  location_en      : "Geneva, Switzerland"
+  location_es      : "Ginebra, Suiza"
   employer         : "CERN"
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=pir4UaIAAAAJ&hl=en"

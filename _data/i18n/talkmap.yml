@@ -1,0 +1,9 @@
+# Talk map page translations
+
+title:
+  en: "Talk map"
+  es: "Mapa de charlas"
+
+description:
+  en: "This map is generated from a Jupyter Notebook file, which mines the location fields in the .md files in _talks/."
+  es: "Este mapa se genera a partir de un archivo Jupyter Notebook, que extrae los campos de ubicación de los archivos .md en _talks/."
