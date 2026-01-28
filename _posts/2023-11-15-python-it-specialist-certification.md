@@ -8,9 +8,9 @@ tags:
   - IT Specialist
   - Milestone Reached
 gallery1:
-  - url: python_certificado.jpg
-    image_path: python_certificado.jpg
-    alt: "placeholder image 1"
+  - url: webp/python_certificado.webp
+    image_path: webp/python_certificado.webp
+    alt: "Python IT Specialist certification"
 ---
 
 🎉 **Achievement Unlocked!** 🎉

@@ -8,9 +8,9 @@ tags:
   - Research Innovation
   - Semiconductor Detectors
 gallery1:
-  - url: talk_vancouver.jpg
-    image_path: talk_vancouver.jpg
-    alt: "placeholder image 1"
+  - url: webp/talk_vancouver.webp
+    image_path: webp/talk_vancouver.webp
+    alt: "Hiroshima Symposium Vancouver talk"
 ---
 
 🌌 **Exploring the Frontiers of Particle Physics at the Hiroshima Symposium** 🌌

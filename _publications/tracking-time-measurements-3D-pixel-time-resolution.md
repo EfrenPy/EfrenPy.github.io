@@ -12,12 +12,12 @@ smallinfo: '(2023) Fernández Martínez, P., Coco, V., Gkougkousis, E.-L., et al
 location: "P. Fernandez Martínez, V. Coco, E.-L. Gkougkousis, M. Halvorsen Mahlum, G. Petrogiannis, G. Pellegrini, E. Rodríguez Rodríguez"  # Adjust if more authors are to be included
 paperurl: 'https://www.sciencedirect.com/science/article/pii/S0168900222010804'
 gallery1:
-  - url: setup_3d.png  # Replace with actual URLs and paths
-    image_path: setup_3d.png
+  - url: webp/setup_3d.webp
+    image_path: webp/setup_3d.webp
     alt: "3D pixel testbeam setup"
-    title: "3D pixel testbeam setup"  # Provide a title for the figure
-  - url: 3d_sensor.png
-    image_path: 3d_sensor.png
+    title: "3D pixel testbeam setup"
+  - url: webp/3d_sensor.webp
+    image_path: webp/3d_sensor.webp
     alt: "3D pixel sensor diagram"
     title: "3D pixel sensor diagram"
 ---

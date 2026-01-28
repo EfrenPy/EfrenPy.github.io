@@ -9,9 +9,9 @@ tags:
   - Silicon Sensors
   - Timepix4
 gallery1:
-  - url: velo_launch1.jpg
-    image_path: velo_launch1.jpg
-    alt: "placeholder image 1"
+  - url: webp/velo_launch1.webp
+    image_path: webp/velo_launch1.webp
+    alt: "VELO detector at CERN"
 ---
 
 🚀 **Embarking on a New Journey with CERN’s VELO Group** 🚀

@@ -12,12 +12,12 @@ smallinfo: '(2023) LHCb collaboration, et al. <b><i>arXiv:2305.10515 [hep-ex]</i
 location: "LHCb collaboration"  # Adjust if more authors are to be included
 paperurl: 'https://arxiv.org/pdf/2305.10515.pdf'
 gallery1:
-  - url: lhcb_upgrade.png  # Replace with actual URLs and paths
-    image_path: lhcb_upgrade.png
+  - url: webp/lhcb_upgrade.webp
+    image_path: webp/lhcb_upgrade.webp
     alt: "LHCb upgrade I"
-    title: "LHCb upgrade I"  # Provide a title for the figure
-  - url: velo_launch1.jpg
-    image_path: velo_launch1.jpg
+    title: "LHCb upgrade I"
+  - url: webp/velo_launch1.webp
+    image_path: webp/velo_launch1.webp
     alt: "VELO subdetector at CERN"
     title: "VELO subdetector at CERN"
 ---

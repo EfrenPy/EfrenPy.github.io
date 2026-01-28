@@ -10,7 +10,7 @@ tags:
 gallery1:
   - url: velo_launch.gif
     image_path: velo_launch.gif
-    alt: "placeholder image 1"
+    alt: "LHCb VELO detector launch"
 ---
 
 **❓ Why is there more matter than antimatter in the universe?**

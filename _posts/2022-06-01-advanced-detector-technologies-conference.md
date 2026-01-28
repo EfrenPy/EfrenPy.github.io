@@ -10,7 +10,7 @@ tags:
 gallery1:
   - url: pisa_talk.gif
     image_path: pisa_talk.gif
-    alt: "placeholder image 1"
+    alt: "Pisa conference talk"
 ---
 
 🌌 **At the edge of Particle Physics Detectors at the "Pisa Meeting"** 🌌

@@ -12,12 +12,12 @@ smallinfo: '(2023) Rodríguez Rodríguez, E. <b><i>Nuclear Instruments and Metho
 location: "Efrén Rodríguez Rodríguez"  # Adjust if more authors are to be included
 paperurl: 'https://www.sciencedirect.com/science/article/pii/S0168900222012578'
 gallery1:
-  - url: upgradeII.png  # Replace with actual URLs and paths
-    image_path: upgradeII.png
+  - url: webp/upgradeII.webp
+    image_path: webp/upgradeII.webp
     alt: "LHCb Upgrade II"
-    title: "LHCb Upgrade II"  # Provide a title for the figure
-  - url: 4d_plot.png
-    image_path: 4d_plot.png
+    title: "LHCb Upgrade II"
+  - url: webp/4d_plot.webp
+    image_path: webp/4d_plot.webp
     alt: "Representation for PV efficiency"
     title: "Representation for PV efficiency"
 ---
