@@ -128,7 +128,187 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
+  // Initialize all modern features
+  initScrollReveal();
+  initScrollProgress();
+  initDarkMode();
+  updateActiveNav();
+
 });
 
 // Enable smooth scrolling via CSS (add to html element)
 document.documentElement.style.scrollBehavior = 'smooth';
+
+/* ==========================================================================
+   Scroll Reveal Animations
+   ========================================================================== */
+
+function initScrollReveal() {
+  // Skip if user prefers reduced motion
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    return;
+  }
+
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+  };
+
+  const revealOnScroll = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        revealOnScroll.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  // Select elements to animate
+  const revealElements = document.querySelectorAll(
+    '.archive__item, .page__content > h2, .page__content > h3, ' +
+    '.page__content > p, .page__content > ul, .page__content > ol, ' +
+    '.author__urls li, .feature__item'
+  );
+
+  revealElements.forEach((el, index) => {
+    // Don't re-add if already has reveal class
+    if (!el.classList.contains('reveal')) {
+      el.classList.add('reveal');
+      // Add staggered delay for items in lists
+      if (el.matches('.archive__item, .author__urls li')) {
+        el.style.transitionDelay = `${index * 0.05}s`;
+      }
+    }
+    revealOnScroll.observe(el);
+  });
+}
+
+// Make it globally available for Swup
+window.initScrollReveal = initScrollReveal;
+
+/* ==========================================================================
+   Scroll Progress Bar
+   ========================================================================== */
+
+function initScrollProgress() {
+  const progressBar = document.querySelector('.scroll-progress');
+  const masthead = document.querySelector('.masthead');
+
+  if (!progressBar) return;
+
+  let ticking = false;
+
+  const updateProgress = () => {
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+
+    progressBar.style.width = `${progress}%`;
+
+    // Add shadow to masthead when scrolled
+    if (masthead) {
+      masthead.classList.toggle('is-scrolled', scrollTop > 10);
+    }
+
+    ticking = false;
+  };
+
+  window.addEventListener('scroll', () => {
+    if (!ticking) {
+      requestAnimationFrame(updateProgress);
+      ticking = true;
+    }
+  }, { passive: true });
+
+  // Initial call
+  updateProgress();
+}
+
+/* ==========================================================================
+   Dark Mode Toggle
+   ========================================================================== */
+
+function initDarkMode() {
+  const toggle = document.querySelector('.theme-toggle');
+  if (!toggle) return;
+
+  const setTheme = (theme) => {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
+  };
+
+  toggle.addEventListener('click', () => {
+    const current = document.documentElement.getAttribute('data-theme');
+    const next = current === 'dark' ? 'light' : 'dark';
+    setTheme(next);
+  });
+
+  // Listen for system preference changes
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+    if (!localStorage.getItem('theme')) {
+      setTheme(e.matches ? 'dark' : 'light');
+    }
+  });
+}
+
+/* ==========================================================================
+   Active Navigation Link
+   ========================================================================== */
+
+function updateActiveNav() {
+  const currentPath = window.location.pathname;
+  const navLinks = document.querySelectorAll('.nav-links a');
+
+  navLinks.forEach(link => {
+    link.classList.remove('active');
+    const linkPath = new URL(link.href).pathname;
+
+    // Exact match or starts with (for sub-pages)
+    if (currentPath === linkPath ||
+        (linkPath !== '/' && currentPath.startsWith(linkPath))) {
+      link.classList.add('active');
+    }
+  });
+}
+
+// Make it globally available for Swup
+window.updateActiveNav = updateActiveNav;
+
+/* ==========================================================================
+   Animated Counters (for stats section if added)
+   ========================================================================== */
+
+function initCounters() {
+  const counters = document.querySelectorAll('[data-counter]');
+  if (counters.length === 0) return;
+
+  const animateCounter = (element, target) => {
+    const duration = 2000;
+    const start = 0;
+    const increment = target / (duration / 16);
+    let current = start;
+
+    const animate = () => {
+      current += increment;
+      if (current < target) {
+        element.textContent = Math.floor(current);
+        requestAnimationFrame(animate);
+      } else {
+        element.textContent = target;
+      }
+    };
+    animate();
+  };
+
+  const counterObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const target = parseInt(entry.target.dataset.counter);
+        animateCounter(entry.target, target);
+        counterObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.5 });
+
+  counters.forEach(counter => counterObserver.observe(counter));
+}

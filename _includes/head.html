@@ -17,22 +17,35 @@
   document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
 </script>
 
-<!-- Swup for SPA-like navigation (only swaps content, keeps sidebar) -->
+<!-- Dark mode - prevent flash -->
+<script>
+  (function() {
+    const theme = localStorage.getItem('theme') ||
+      (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-theme', theme);
+  })();
+</script>
+
+<!-- Swup for SPA-like navigation with animations -->
 <script type="module">
   import Swup from 'https://cdn.jsdelivr.net/npm/swup@4/+esm';
 
-  console.log('Swup loaded:', typeof Swup);
-
   const swup = new Swup({
     containers: ['#swup-content'],
-    animationSelector: false,
-    cache: true
+    animationSelector: '[class*="swup-transition-"]',
+    cache: true,
+    animateHistoryBrowsing: true
   });
 
-  console.log('Swup initialized');
-
+  // Re-initialize scroll reveals after page change
   swup.hooks.on('page:view', () => {
-    console.log('Swup: page loaded via AJAX');
+    if (typeof initScrollReveal === 'function') {
+      initScrollReveal();
+    }
+    // Update active nav link
+    if (typeof updateActiveNav === 'function') {
+      updateActiveNav();
+    }
   });
 </script>
 

@@ -3,13 +3,76 @@
    ========================================================================== */
 
 .masthead {
-  position: relative;
-  border-bottom: 1px solid $border-color;
+  position: sticky;
+  top: 0;
+  background: var(--color-background, #fff);
+  border-bottom: 1px solid var(--color-border, $border-color);
   -webkit-animation: intro 0.3s both;
           animation: intro 0.3s both;
   -webkit-animation-delay: 0.15s;
           animation-delay: 0.15s;
   z-index: 20;
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+
+  // Blur effect when scrolled
+  &.is-scrolled {
+    box-shadow: 0 2px 20px var(--color-shadow, rgba(0, 0, 0, 0.1));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+}
+
+// Scroll progress bar
+.scroll-progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background: linear-gradient(90deg, var(--color-primary, $info-color), var(--color-primary-dark, $primary-color));
+  z-index: 100;
+  transition: width 0.1s linear;
+}
+
+// Dark mode toggle button
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  background: transparent;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  color: var(--color-text-light, $gray);
+  transition: color 0.2s ease, background-color 0.2s ease, transform 0.2s ease;
+
+  &:hover {
+    color: var(--color-primary, $info-color);
+    background: var(--color-background-secondary, $lighter-gray);
+    transform: rotate(15deg);
+  }
+
+  .sun-icon {
+    display: none;
+  }
+
+  .moon-icon {
+    display: block;
+  }
+
+  [data-theme="dark"] & {
+    .sun-icon {
+      display: block;
+    }
+
+    .moon-icon {
+      display: none;
+    }
+  }
+}
+
+.masthead {
 
   &__inner-wrap {
     @include container;

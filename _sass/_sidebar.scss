@@ -60,8 +60,7 @@
   display: table-cell;
   vertical-align: top;
   width: 36px;
-  // set width only, for non-square avatars
-  // height: 36px;
+  position: relative;
 
   @include breakpoint($large) {
     display: block;
@@ -69,13 +68,49 @@
     height: auto;
   }
 
+  // Gradient ring on hover
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100% + 8px);
+    height: calc(100% + 8px);
+    max-width: 185px;
+    max-height: 185px;
+    background: linear-gradient(135deg, var(--color-primary, $info-color), #8B5CF6, var(--color-primary-dark, $primary-color));
+    border-radius: 50%;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+
+    @include breakpoint(0 $large) {
+      display: none;
+    }
+  }
+
+  &:hover::before {
+    opacity: 1;
+    animation: pulse-ring 2s ease-in-out infinite;
+  }
+
   img {
     max-width: 175px;
     border-radius: 50%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    z-index: 1;
 
     @include breakpoint($large) {
       padding: 5px;
-      border: 1px solid $border-color;
+      border: 1px solid var(--color-border, $border-color);
+      background: var(--color-background, #fff);
+    }
+
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 30px var(--color-shadow-strong, rgba(0, 0, 0, 0.15));
     }
   }
 }
@@ -205,6 +240,11 @@
 
   li {
     white-space: nowrap;
+    transition: transform 0.2s ease;
+
+    &:hover {
+      transform: translateX(5px);
+    }
   }
 
   a {
@@ -213,12 +253,27 @@
     padding-right: 5px;
     padding-top: 2px;
     padding-bottom: 2px;
-    color: inherit;
+    color: var(--color-text, inherit);
     font-size: $type-size-5;
     text-decoration: none;
+    transition: color 0.2s ease;
 
     &:hover {
-      text-decoration: underline;
+      color: var(--color-primary, $info-color);
+      text-decoration: none;
+    }
+
+    i, .fab, .fas, .far, .ai {
+      transition: transform 0.2s ease, color 0.2s ease;
+    }
+
+    &:hover i,
+    &:hover .fab,
+    &:hover .fas,
+    &:hover .far,
+    &:hover .ai {
+      transform: scale(1.2);
+      color: var(--color-primary, $info-color);
     }
   }
 }

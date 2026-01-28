@@ -36,6 +36,24 @@
 .page__title {
   margin-top: 0;
   line-height: 1;
+  color: var(--color-text, inherit);
+
+  // Animated gradient title variant
+  &--animated {
+    background: linear-gradient(
+      90deg,
+      var(--color-text, #494e52) 0%,
+      var(--color-primary, #52adc8) 25%,
+      var(--color-primary-dark, #7a8288) 50%,
+      var(--color-primary, #52adc8) 75%,
+      var(--color-text, #494e52) 100%
+    );
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient-flow 4s ease infinite;
+  }
 
   & + .page__meta {
     margin-top: -0.5em;

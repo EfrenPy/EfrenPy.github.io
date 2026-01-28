@@ -74,13 +74,62 @@
   }
 }
 
-.archive__item:hover {
-  .archive__item-teaser {
-    box-shadow: 0 0 10px rgba(#000, 0.25);
+// Modern card styling
+.archive__item {
+  position: relative;
+  padding: 1.25rem;
+  margin-bottom: 1.5rem;
+  border-radius: 12px;
+  background: var(--color-card-bg, #fff);
+  border: 1px solid var(--color-border, $border-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+
+  // Gradient overlay on hover
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 12px;
+    background: linear-gradient(135deg, rgba(82, 173, 200, 0.05), transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
   }
 
-  .archive__item-title {
-    text-decoration: underline;
+  // Glow effect behind card
+  &::after {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, var(--color-primary, $info-color), var(--color-primary-dark, $primary-color));
+    z-index: -1;
+    opacity: 0;
+    filter: blur(10px);
+    transition: opacity 0.3s ease;
+  }
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px var(--color-shadow, rgba(0, 0, 0, 0.1));
+    border-color: var(--color-primary, $info-color);
+
+    &::before {
+      opacity: 1;
+    }
+
+    &::after {
+      opacity: 0.2;
+    }
+
+    .archive__item-teaser {
+      box-shadow: 0 0 15px var(--color-shadow, rgba(#000, 0.2));
+    }
+
+    .archive__item-title {
+      color: var(--color-primary, $info-color);
+      text-decoration: none;
+    }
   }
 }
 
