@@ -37,25 +37,7 @@
 
 <!-- Swup for SPA-like navigation (self-hosted for reliability) -->
 <script src="{{ base_path }}/assets/js/swup.min.js?v={{ site.time | date: '%s' }}"></script>
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    if (typeof Swup !== 'undefined') {
-      const swup = new Swup({
-        containers: ['#swup-sidebar', '#swup-content'],
-        animationSelector: '[class*="swup-transition-"]',
-        cache: true,
-        animateHistoryBrowsing: true
-      });
-
-      // Re-initialize all per-page features after navigation
-      swup.hooks.on('page:view', function() {
-        if (typeof initPageFeatures === 'function') {
-          initPageFeatures();
-        }
-      });
-    }
-  });
-</script>
+<script>document.addEventListener('DOMContentLoaded',function(){if(typeof Swup!=='undefined'){var swup=new Swup({containers:['#swup-sidebar','#swup-content'],animationSelector:'[class*="swup-transition-"]',cache:true,animateHistoryBrowsing:true});swup.hooks.on('page:view',function(){if(typeof initPageFeatures==='function'){initPageFeatures();}});}});</script>
 
 <!-- Preload critical CSS -->
 <link rel="preload" href="{{ base_path }}/assets/css/main.css?v={{ site.time | date: '%s' }}" as="style">
