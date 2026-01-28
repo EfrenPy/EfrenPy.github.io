@@ -26,6 +26,15 @@
   })();
 </script>
 
+<!-- Language - prevent flash and auto-detect -->
+<script>
+  (function() {
+    const lang = localStorage.getItem('lang') ||
+      (navigator.language.startsWith('es') ? 'es' : 'en');
+    document.documentElement.setAttribute('data-lang', lang);
+  })();
+</script>
+
 <!-- Swup for SPA-like navigation (self-hosted for reliability) -->
 <script src="{{ base_path }}/assets/js/swup.min.js?v={{ site.time | date: '%s' }}"></script>
 <script>

@@ -132,6 +132,7 @@ document.addEventListener('DOMContentLoaded', function() {
   initScrollReveal();
   initScrollProgress();
   initDarkMode();
+  initLanguage();
   updateActiveNav();
 
 });
@@ -248,6 +249,26 @@ function initDarkMode() {
     if (!localStorage.getItem('theme')) {
       setTheme(e.matches ? 'dark' : 'light');
     }
+  });
+}
+
+/* ==========================================================================
+   Language Toggle
+   ========================================================================== */
+
+function initLanguage() {
+  const toggle = document.querySelector('.lang-toggle');
+  if (!toggle) return;
+
+  const setLang = (lang) => {
+    document.documentElement.setAttribute('data-lang', lang);
+    localStorage.setItem('lang', lang);
+  };
+
+  toggle.addEventListener('click', () => {
+    const current = document.documentElement.getAttribute('data-lang');
+    const next = current === 'en' ? 'es' : 'en';
+    setLang(next);
   });
 }
 

@@ -1,26 +1,36 @@
 # main links links
 main:
   - title: "Research"
+    title_en: "Research"
+    title_es: "Investigación"
     url: /publications/
 
   - title: "Talks"
-    url: /talks/    
+    title_en: "Talks"
+    title_es: "Charlas"
+    url: /talks/
 
   # - title: "Teaching"
-  #   url: /teaching/    
-    
+  #   url: /teaching/
+
   # - title: "Portfolio"
   #   url: /portfolio/
 
   - title: "Blog Posts"
+    title_en: "Blog"
+    title_es: "Blog"
     url: /year-archive/
-    
+
   - title: "CV"
+    title_en: "CV"
+    title_es: "CV"
     url: /cv/
 
   - title: "Personal"
+    title_en: "Personal"
+    title_es: "Personal"
     url: /personal/
-        
-    
+
+
   # - title: "Guide"
   #   url: /markdown/

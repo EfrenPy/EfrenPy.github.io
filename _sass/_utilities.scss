@@ -23,6 +23,39 @@
   opacity: 0;
 }
 
+/*
+   Language Content Switching
+   ========================================================================== */
+
+/* Hide all language content by default */
+.lang-en,
+.lang-es {
+  display: none;
+}
+
+/* Show content based on current language */
+[data-lang="en"] .lang-en {
+  display: block;
+}
+
+[data-lang="es"] .lang-es {
+  display: block;
+}
+
+/* For inline elements (spans in navigation, titles, etc.) */
+span.lang-en,
+span.lang-es {
+  display: none;
+}
+
+[data-lang="en"] span.lang-en {
+  display: inline;
+}
+
+[data-lang="es"] span.lang-es {
+  display: inline;
+}
+
 /* https://developer.yahoo.com/blogs/ydn/clip-hidden-content-better-accessibility-53456.html */
 
 .visually-hidden,
