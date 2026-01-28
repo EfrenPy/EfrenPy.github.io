@@ -1,0 +1,21 @@
+# Talks page translations
+
+title:
+  en: "Talks and presentations"
+  es: "Charlas y presentaciones"
+
+intro:
+  en: |
+    Here you have some slides, posters and videos.
+    You can reuse them (with attribution) and ask me for other formats.
+  es: |
+    Aquí tienes algunas diapositivas, pósters y vídeos.
+    Puedes reutilizarlos (con atribución) y pedirme otros formatos.
+
+invite:
+  en: "If you think I could give a talk, feel free to invite me!"
+  es: "Si crees que podría dar una charla, ¡no dudes en invitarme!"
+
+map_link:
+  en: "See a map of all the places I've given a talk!"
+  es: "¡Mira un mapa de todos los lugares donde he dado charlas!"

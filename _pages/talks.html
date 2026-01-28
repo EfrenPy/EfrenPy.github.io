@@ -1,6 +1,8 @@
 ---
 layout: archive
 title: "Talks and presentations"
+title_en: "Talks and presentations"
+title_es: "Charlas y presentaciones"
 permalink: /talks/
 author_profile: true
 gallery1:
@@ -9,16 +11,15 @@ gallery1:
     alt: "placeholder image 1"
 ---
 
-Here you have some slides, posters and videos.
-You can reuse them (with attribution) and ask me for other formarts.
+{% include t-block.html page="talks" key="intro" %}
 <!-- add empty line -->
 
-If you think I could give a talk, feel free to invite me! :blush:
+{% include t.html page="talks" key="invite" %} :blush:
 
 
 {% if site.talkmap_link == true %}
 
-<p style="text-decoration:underline;"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
+<p style="text-decoration:underline;"><a href="/talkmap.html">{% include t.html page="talks" key="map_link" %}</a></p>
 
 {% endif %}
 
