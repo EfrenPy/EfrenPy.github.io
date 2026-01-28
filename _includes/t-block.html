@@ -1,0 +1,9 @@
+{%- comment -%}
+  Block translation helper: for paragraphs and longer content
+  Usage: {% include t-block.html page="about" key="bio" %}
+{%- endcomment -%}
+{%- assign translations = site.data.i18n[include.page][include.key] -%}
+{%- if translations -%}
+<div class="lang-en">{{ translations.en | markdownify }}</div>
+<div class="lang-es">{{ translations.es | markdownify }}</div>
+{%- endif -%}

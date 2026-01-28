@@ -1,0 +1,9 @@
+{%- comment -%}
+  Translation helper: outputs both language versions (inline)
+  Usage: {% include t.html page="about" key="welcome" %}
+  For markdown: {% include t.html page="about" key="bio" md=true %}
+{%- endcomment -%}
+{%- assign translations = site.data.i18n[include.page][include.key] -%}
+{%- if translations -%}
+<span class="lang-en">{%- if include.md -%}{{ translations.en | markdownify | remove: '<p>' | remove: '</p>' }}{%- else -%}{{ translations.en }}{%- endif -%}</span><span class="lang-es">{%- if include.md -%}{{ translations.es | markdownify | remove: '<p>' | remove: '</p>' }}{%- else -%}{{ translations.es }}{%- endif -%}</span>
+{%- endif -%}
