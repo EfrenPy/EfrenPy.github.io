@@ -11,9 +11,9 @@ author_profile: true
 
 <p>{% include t.html page="portfolio" key="intro" %}</p>
 
----
+<hr>
 
-### {% include t.html page="portfolio" key="github_title" %}
+<h3>{% include t.html page="portfolio" key="github_title" %}</h3>
 
 <div class="github-note">
   <i class="fas fa-info-circle"></i>
@@ -35,9 +35,9 @@ author_profile: true
   </a>
 </div>
 
----
+<hr>
 
-### {% include t.html page="portfolio" key="projects_title" %}
+<h3>{% include t.html page="portfolio" key="projects_title" %}</h3>
 
 {% for post in site.portfolio %}
   {% include archive-single.html %}
