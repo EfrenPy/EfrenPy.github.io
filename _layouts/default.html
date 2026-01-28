@@ -17,8 +17,11 @@ layout: compress
     {% include masthead.html %}
 
     <div id="main" role="main">
-      <div id="swup-content" class="swup-transition-main">
+      <div id="swup-sidebar">
         {% include sidebar.html %}
+      </div>
+
+      <div id="swup-content" class="swup-transition-main">
         {{ content }}
       </div>
     </div>
