@@ -1,0 +1,99 @@
+# Common UI translations used across includes and layouts
+# Note: Most translations are now inline in the templates using span.lang-en/span.lang-es
+# This file documents the translations for reference
+
+published_in:
+  en: "Published in"
+  es: "Publicado en"
+
+read_more:
+  en: "Read more"
+  es: "Leer más"
+
+recommended_citation:
+  en: "Recommended citation:"
+  es: "Citación recomendada:"
+
+download:
+  en: "Download"
+  es: "Descargar"
+
+here:
+  en: "here"
+  es: "aquí"
+
+date_label:
+  en: "Date:"
+  es: "Fecha:"
+
+published:
+  en: "Published:"
+  es: "Publicado:"
+
+direct_link:
+  en: "Direct Link"
+  es: "Enlace Directo"
+
+you_may_also_enjoy:
+  en: "You May Also Enjoy"
+  es: "También Te Puede Interesar"
+
+at:
+  en: "at"
+  es: "en"
+
+previous:
+  en: "Previous"
+  es: "Anterior"
+
+next:
+  en: "Next"
+  es: "Siguiente"
+
+tags:
+  en: "Tags:"
+  es: "Etiquetas:"
+
+categories:
+  en: "Categories:"
+  es: "Categorías:"
+
+home:
+  en: "Home"
+  es: "Inicio"
+
+website:
+  en: "Website"
+  es: "Sitio Web"
+
+email:
+  en: "Email"
+  es: "Correo"
+
+share_on:
+  en: "Share on"
+  es: "Compartir en"
+
+learn_more:
+  en: "Learn More"
+  es: "Saber Más"
+
+page:
+  en: "Page"
+  es: "Página"
+
+follow:
+  en: "Follow:"
+  es: "Seguir:"
+
+less_than_minute:
+  en: "less than 1 minute read"
+  es: "menos de 1 minuto de lectura"
+
+minute_read:
+  en: "minute read"
+  es: "minuto de lectura"
+
+minutes_read:
+  en: "minutes read"
+  es: "minutos de lectura"

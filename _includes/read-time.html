@@ -6,12 +6,12 @@
 
 {% if site.words_per_minute %}
   {% if words < 180 %}
-	  {{ site.data.ui-text[site.locale].less_than | default: "less than" }} 1 {{ site.data.ui-text[site.locale].minute_read | default: "minute read" }}
+	  <span class="lang-en">less than 1 minute read</span><span class="lang-es">menos de 1 minuto de lectura</span>
 	{% elsif words < 360 %}
-	  1 {{ site.data.ui-text[site.locale].minute_read | default: "minute read" }}
+	  1 <span class="lang-en">minute read</span><span class="lang-es">minuto de lectura</span>
 	{% else %}
-	  {{ words | divided_by:site.words_per_minute }} {{ site.data.ui-text[site.locale].minute_read | default: "minute read" }}
+	  {{ words | divided_by:site.words_per_minute }} <span class="lang-en">minute read</span><span class="lang-es">minutos de lectura</span>
 	{% endif %}
 {% else %}
-  {{ site.data.ui-text[site.locale].undefined_wpm | "Undefined parameter words_per_minute at _config.yml" }}
+  Undefined parameter words_per_minute at _config.yml
 {% endif %}
