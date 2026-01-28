@@ -7,3 +7,15 @@ title:
 intro:
   en: "Selected projects showcasing my experience in hardware development, data analysis, and project leadership."
   es: "Proyectos seleccionados que demuestran mi experiencia en desarrollo de hardware, análisis de datos y liderazgo de proyectos."
+
+github_title:
+  en: "GitHub Activity"
+  es: "Actividad en GitHub"
+
+github_note:
+  en: "Note: Most of my work is on internal CERN GitLab repositories for proprietary detector software. The stats below reflect only my public contributions."
+  es: "Nota: La mayoría de mi trabajo está en repositorios internos de GitLab del CERN para software propietario de detectores. Las estadísticas a continuación reflejan solo mis contribuciones públicas."
+
+projects_title:
+  en: "Project Highlights"
+  es: "Proyectos Destacados"

@@ -1,14 +1,43 @@
 ---
 layout: archive
-title: "Portfolio"
-title_en: "Portfolio"
-title_es: "Portafolio"
+title: "Projects"
+title_en: "Projects"
+title_es: "Proyectos"
 permalink: /portfolio/
 author_profile: true
 ---
 
 {% include base_path %}
 
+<p>{% include t.html page="portfolio" key="intro" %}</p>
+
+---
+
+### {% include t.html page="portfolio" key="github_title" %}
+
+<div class="github-note">
+  <i class="fas fa-info-circle"></i>
+  {% include t.html page="portfolio" key="github_note" %}
+</div>
+
+<div class="github-stats">
+  <a href="https://github.com/EfrenPy" target="_blank" rel="noopener">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=EfrenPy&show_icons=true&theme=dark&hide_border=true">
+      <img src="https://github-readme-stats.vercel.app/api?username=EfrenPy&show_icons=true&theme=default&hide_border=true" alt="GitHub Stats">
+    </picture>
+  </a>
+  <a href="https://github.com/EfrenPy" target="_blank" rel="noopener">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=EfrenPy&layout=compact&theme=dark&hide_border=true">
+      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=EfrenPy&layout=compact&theme=default&hide_border=true" alt="Top Languages">
+    </picture>
+  </a>
+</div>
+
+---
+
+### {% include t.html page="portfolio" key="projects_title" %}
 
 {% for post in site.portfolio %}
   {% include archive-single.html %}

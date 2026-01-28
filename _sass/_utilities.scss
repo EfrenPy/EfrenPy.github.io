@@ -888,3 +888,50 @@ a.reversefootnote {
     font-size: 1.1rem;
   }
 }
+
+/*
+   GitHub Stats Section
+   ========================================================================== */
+
+.github-note {
+  background: var(--color-background-secondary, $lighter-gray);
+  border-left: 4px solid var(--color-primary, $info-color);
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.5rem;
+  border-radius: 0 8px 8px 0;
+  font-size: 0.9rem;
+  color: var(--color-text-light, $gray);
+
+  i {
+    color: var(--color-primary, $info-color);
+    margin-right: 0.5rem;
+  }
+}
+
+.github-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+
+  a {
+    display: block;
+    transition: transform 0.2s ease;
+
+    &:hover {
+      transform: translateY(-3px);
+    }
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  // Responsive: stack on mobile
+  @media (max-width: 600px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
