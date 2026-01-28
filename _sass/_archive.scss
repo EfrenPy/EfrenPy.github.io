@@ -84,6 +84,37 @@
   }
 }
 
+// Remove bullets from lists containing archive items
+// Uses :has() for modern browsers
+ul, ol {
+  &:has(.archive__item) {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+  }
+}
+
+// Fallback: target li elements containing archive items
+li:has(.archive__item) {
+  list-style: none;
+}
+
+// Additional fallback for .page__content area
+.page__content {
+  // Remove bullets from any list that contains list__item divs
+  > ul, > ol {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+  // Target nested li elements within archive structure
+  .list__item li,
+  .archive__item li {
+    list-style: none;
+  }
+}
+
 // Modern card styling
 .archive__item {
   position: relative;
