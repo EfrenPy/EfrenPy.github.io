@@ -53,6 +53,6 @@ author_profile: true
 
 ---
 
-<a href="{{ site.baseurl }}/files/Efren_Rodriguez_CV.pdf" class="cv-download-btn">
+<a href="{{ site.baseurl }}/files/Efren_Rodriguez_CV.pdf" class="cv-download-btn" data-no-swup target="_blank" rel="noopener">
   <i class="fas fa-download"></i> {% include t.html page="contact" key="download_cv" %}
 </a>

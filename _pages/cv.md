@@ -11,7 +11,7 @@ redirect_from:
 
 {% include base_path %}
 
-<a href="{{ base_path }}/files/Efren_Rodriguez_CV.pdf" class="cv-download-btn">
+<a href="{{ base_path }}/files/Efren_Rodriguez_CV.pdf" class="cv-download-btn" data-no-swup target="_blank" rel="noopener">
   <i class="fas fa-download"></i> {% include t.html page="cv" key="download_btn" %}
 </a>
 
