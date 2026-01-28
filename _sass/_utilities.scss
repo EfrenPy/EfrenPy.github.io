@@ -464,6 +464,13 @@ a.reversefootnote {
 
 .cv-section {
   margin-bottom: 2.5rem;
+
+  // Remove bullet points from all lists in CV
+  ul, ol {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+  }
 }
 
 .cv-section-title {
@@ -594,11 +601,21 @@ a.reversefootnote {
     line-height: 1.6;
 
     ul {
-      margin: 0.5rem 0 0 1rem;
-      padding: 0;
+      margin: 0.5rem 0 0 0;
 
       li {
-        margin-bottom: 0.25rem;
+        margin-bottom: 0.5rem;
+        padding-left: 1.25rem;
+        position: relative;
+
+        // Custom dash instead of bullet
+        &::before {
+          content: '—';
+          position: absolute;
+          left: 0;
+          color: var(--color-primary, $info-color);
+          font-weight: 600;
+        }
       }
     }
   }
