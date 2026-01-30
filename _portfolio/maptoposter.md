@@ -17,6 +17,8 @@ tags:
   - Matplotlib
 ---
 
+![Tokyo map poster in japanese ink style](/images/webp/maptoposter_tokyo.webp){: .align-center}
+
 ## Project Overview
 
 **Role:** Developer | **Type:** Personal Project | [GitHub Repository](https://github.com/EfrenPy/maptoposter)

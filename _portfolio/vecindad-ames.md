@@ -9,12 +9,14 @@ collection: portfolio
 category: personal
 link: https://bertamirans.efrenrodriguezrodriguez.com/
 header:
-  teaser: webp/generative_AI.webp
+  teaser: webp/bertamirans.webp
 tags:
   - Civic Tech
   - Web Development
   - Community Engagement
 ---
+
+![Vecindad Ames platform preview](/images/webp/bertamirans.webp){: .align-center}
 
 ## Project Overview
 

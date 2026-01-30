@@ -7,13 +7,15 @@ excerpt_en: "Led development of a precision particle tracking system achieving 9
 excerpt_es: "Lideré el desarrollo de un sistema de seguimiento de partículas de precisión logrando 90 picosegundos de resolución temporal"
 collection: portfolio
 header:
-  teaser: webp/velo_launch1.webp
+  teaser: webp/setup_3d.webp
 tags:
   - Python
   - Data Analysis
   - Hardware Integration
   - Project Management
 ---
+
+![Timepix4 beam telescope setup](/images/webp/setup_3d.webp){: .align-center}
 
 ## Project Overview
 

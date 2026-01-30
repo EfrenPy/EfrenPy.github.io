@@ -7,13 +7,15 @@ excerpt_en: "Contributed to a major particle physics detector upgrade at CERN's 
 excerpt_es: "Contribuí a una importante actualización de detector de física de partículas en el Gran Colisionador de Hadrones del CERN"
 collection: portfolio
 header:
-  teaser: webp/velo_launch1.webp
+  teaser: webp/lhcb_upgrade.webp
 tags:
   - Electronics Design
   - Quality Assurance
   - International Collaboration
   - System Integration
 ---
+
+![LHCb detector side view](/images/webp/lhcb_upgrade.webp){: .align-center}
 
 ## Project Overview
 

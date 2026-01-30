@@ -7,7 +7,7 @@ excerpt_en: "Built automated data processing system for particle physics experim
 excerpt_es: "Construí sistema automatizado de procesamiento de datos para experimentos de física de partículas"
 collection: portfolio
 header:
-  teaser: webp/velo_launch1.webp
+  teaser: webp/grid_score_nikhef.webp
 tags:
   - Python
   - Data Engineering
@@ -15,6 +15,8 @@ tags:
   - Automation
   - GRID Computing
 ---
+
+![GRID computing usage statistics](/images/webp/grid_score_nikhef.webp){: .align-center}
 
 ## Project Overview
 

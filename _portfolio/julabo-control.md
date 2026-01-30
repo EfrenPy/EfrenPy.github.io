@@ -17,6 +17,8 @@ tags:
   - TCP Server
 ---
 
+![Python development](/images/webp/python_certificado.webp){: .align-center}
+
 ## Project Overview
 
 **Role:** Developer | **Type:** Personal Project | [GitHub Repository](https://github.com/EfrenPy/JulaboFL1703-control)

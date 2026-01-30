@@ -7,13 +7,15 @@ excerpt_en: "Developing simulation framework for next-generation radiation-hard 
 excerpt_es: "Desarrollando framework de simulación para detectores de partículas resistentes a radiación de próxima generación"
 collection: portfolio
 header:
-  teaser: webp/velo_launch1.webp
+  teaser: webp/3d_sensor.webp
 tags:
   - Python
   - Simulation
   - Scientific Computing
   - Optimization
 ---
+
+![3D Silicon Sensor cross-section](/images/webp/3d_sensor.webp){: .align-center}
 
 ## Project Overview
 
