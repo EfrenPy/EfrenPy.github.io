@@ -26,6 +26,7 @@ jobs:
             "https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=EfrenPy&layout=compact&theme=default&hide_border=true"
 
       - name: Commit and push if changed
+        id: commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -34,4 +35,11 @@ jobs:
           if ! git diff --cached --quiet; then
             git commit -m "Update cached GitHub stats cards"
             git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
+
+      - name: Trigger site rebuild
+        if: steps.commit.outputs.changed == 'true'
+        run: gh workflow run jekyll.yml --ref master
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
