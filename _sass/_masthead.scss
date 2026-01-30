@@ -16,9 +16,14 @@
 
   // Blur effect when scrolled
   &.is-scrolled {
-    box-shadow: 0 2px 20px var(--color-shadow, rgba(0, 0, 0, 0.1));
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px var(--color-shadow, rgba(0, 0, 0, 0.08));
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background: rgba(255, 255, 255, 0.85);
+
+    [data-theme="dark"] & {
+      background: rgba(15, 23, 42, 0.85);
+    }
   }
 }
 
@@ -29,7 +34,7 @@
   left: 0;
   width: 0%;
   height: 3px;
-  background: linear-gradient(90deg, var(--color-primary, $info-color), var(--color-primary-dark, $primary-color));
+  background: var(--gradient-primary, linear-gradient(135deg, #52adc8, #8B5CF6));
   z-index: 100;
   transition: width 0.1s linear;
 }

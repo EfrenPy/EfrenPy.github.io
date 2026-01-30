@@ -79,7 +79,7 @@
     height: calc(100% + 8px);
     max-width: 185px;
     max-height: 185px;
-    background: linear-gradient(135deg, var(--color-primary, $info-color), #8B5CF6, var(--color-primary-dark, $primary-color));
+    background: linear-gradient(135deg, var(--color-primary, $info-color), var(--color-accent, #8B5CF6), var(--color-primary-dark, $primary-color));
     border-radius: 50%;
     opacity: 0;
     z-index: -1;

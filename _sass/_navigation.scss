@@ -250,6 +250,9 @@
     &.active {
       color: var(--color-primary, $info-color);
       font-weight: 600;
+      background: var(--gradient-subtle, linear-gradient(135deg, rgba(82, 173, 200, 0.08), rgba(139, 92, 246, 0.08)));
+      border-radius: 6px;
+      padding: 0.4rem 0.6rem;
 
       &:before {
         transform: scaleX(1);

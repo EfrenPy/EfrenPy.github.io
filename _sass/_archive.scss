@@ -118,12 +118,16 @@ li:has(.archive__item) {
 // Modern card styling
 .archive__item {
   position: relative;
-  padding: 1.25rem;
+  padding: 1.5rem;
   margin-bottom: 1.5rem;
   border-radius: 12px;
   background: var(--color-card-bg, #fff);
   border: 1px solid var(--color-border, $border-color);
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+              box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+              border-color 0.3s ease;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 
   // Gradient overlay on hover
   &::before {
@@ -131,7 +135,7 @@ li:has(.archive__item) {
     position: absolute;
     inset: 0;
     border-radius: 12px;
-    background: linear-gradient(135deg, rgba(82, 173, 200, 0.05), transparent);
+    background: var(--gradient-subtle, linear-gradient(135deg, rgba(82, 173, 200, 0.05), rgba(139, 92, 246, 0.05)));
     opacity: 0;
     transition: opacity 0.3s ease;
     pointer-events: none;
@@ -143,16 +147,16 @@ li:has(.archive__item) {
     position: absolute;
     inset: -2px;
     border-radius: 14px;
-    background: linear-gradient(135deg, var(--color-primary, $info-color), var(--color-primary-dark, $primary-color));
+    background: var(--gradient-primary, linear-gradient(135deg, #52adc8, #8B5CF6));
     z-index: -1;
     opacity: 0;
-    filter: blur(10px);
+    filter: blur(15px);
     transition: opacity 0.3s ease;
   }
 
   &:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 20px 40px var(--color-shadow, rgba(0, 0, 0, 0.1));
+    transform: translateY(-6px);
+    box-shadow: 0 25px 50px var(--color-shadow-strong, rgba(0, 0, 0, 0.12));
     border-color: var(--color-primary, $info-color);
 
     &::before {
@@ -160,7 +164,7 @@ li:has(.archive__item) {
     }
 
     &::after {
-      opacity: 0.2;
+      opacity: 0.25;
     }
 
     .archive__item-teaser {

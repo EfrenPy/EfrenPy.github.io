@@ -19,11 +19,11 @@
   font-weight: bold;
   text-align: center;
   text-decoration: none;
-  background-color: var(--color-primary, $info-color);
+  background: var(--gradient-primary, linear-gradient(135deg, #52adc8, #8B5CF6));
   border: 0 !important;
   border-radius: $border-radius;
   cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
 
   // Shine effect
   &::before {
@@ -39,9 +39,9 @@
   }
 
   &:hover {
-    background-color: var(--color-primary-dark, mix(#000, $info-color, 20%));
-    transform: translateY(-2px);
-    box-shadow: 0 5px 20px var(--color-shadow-strong, rgba(0, 0, 0, 0.2));
+    filter: brightness(1.1);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px var(--color-shadow-strong, rgba(0, 0, 0, 0.2));
 
     &::before {
       left: 150%;
