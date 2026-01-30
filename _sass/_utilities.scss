@@ -866,6 +866,8 @@ a.reversefootnote {
   }
 
   .contact-info {
+    min-width: 0;
+
     .contact-label {
       font-weight: 600;
       color: var(--color-text, $dark-gray);
@@ -876,6 +878,7 @@ a.reversefootnote {
       color: var(--color-text-light, $gray);
       font-size: 0.85rem;
       margin-top: 0.2rem;
+      word-break: break-all;
     }
   }
 }

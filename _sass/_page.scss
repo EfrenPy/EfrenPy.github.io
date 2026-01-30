@@ -90,7 +90,7 @@
     }
   }
 
-  a:not(.btn):not(.pagination--pager) {
+  a:not(.btn):not(.pagination--pager):not(.cv-download-btn):not(.contact-card):not(.error-page__btn) {
     text-decoration: none;
     background-image: linear-gradient(
       var(--color-primary, $info-color),
