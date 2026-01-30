@@ -81,21 +81,26 @@ function initMobileNav() {
     document.body.classList.toggle('overflow--hidden', isOpen);
   });
 
+  // Helper to close the mobile nav
+  function closeMenu() {
+    siteNav.classList.remove('is-open');
+    toggle.setAttribute('aria-expanded', 'false');
+    toggle.classList.remove('close');
+    document.body.classList.remove('overflow--hidden');
+  }
+
+  // Close nav when a nav link is clicked
+  var navLinks = siteNav.querySelectorAll('.nav-links a');
+  navLinks.forEach(function(link) {
+    link.addEventListener('click', closeMenu);
+  });
+
   // Close nav when resizing to desktop
   var mql = window.matchMedia('(min-width: 768px)');
-  var closeNav = function() {
-    if (mql.matches) {
-      siteNav.classList.remove('is-open');
-      toggle.setAttribute('aria-expanded', 'false');
-      toggle.classList.remove('close');
-      document.body.classList.remove('overflow--hidden');
-    }
-  };
-
   if (mql.addEventListener) {
-    mql.addEventListener('change', closeNav);
+    mql.addEventListener('change', function() { if (mql.matches) closeMenu(); });
   } else if (mql.addListener) {
-    mql.addListener(closeNav);
+    mql.addListener(function() { if (mql.matches) closeMenu(); });
   }
 }
 
