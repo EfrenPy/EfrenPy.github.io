@@ -9,7 +9,7 @@ collection: portfolio
 category: personal
 link: https://github.com/EfrenPy/JulaboFL1703-control
 header:
-  teaser: webp/python_certificado.webp
+  teaser: webp/julabo.webp
 tags:
   - Python
   - Serial Communication
@@ -33,7 +33,7 @@ A comprehensive Python control suite for operating a Julabo FL1703 recirculating
 - TCP JSON server for remote network-based control with companion GUI client
 - Auto-detection of USB serial adapters on Linux and Windows
 
-![Python development](/images/webp/python_certificado.webp){: .align-center}
+![Julabo FL1703 recirculating chiller](/images/webp/julabo.webp){: .align-center}
 
 ### Technical Stack
 
