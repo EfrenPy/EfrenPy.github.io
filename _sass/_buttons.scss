@@ -177,4 +177,21 @@
   &--small {
     font-size: $type-size-7;
   }
+
+  /* outline button */
+
+  &--outline {
+    background: transparent;
+    border: 2px solid var(--color-primary, $info-color) !important;
+    color: var(--color-primary, $info-color) !important;
+
+    &::before {
+      display: none;
+    }
+
+    &:hover {
+      background: var(--color-primary, $info-color);
+      color: #fff !important;
+    }
+  }
 }

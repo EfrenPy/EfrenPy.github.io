@@ -741,6 +741,22 @@ a.reversefootnote {
   color: var(--color-text-light, $gray);
   margin-bottom: 2rem;
   font-weight: 400;
+
+  // Override block display for language spans inside hero
+  .lang-en,
+  .lang-es {
+    display: none;
+    text-align: center;
+  }
+}
+
+// Show correct language span as block (centered) inside hero
+[data-lang="en"] .homepage-hero__tagline .lang-en {
+  display: block;
+}
+
+[data-lang="es"] .homepage-hero__tagline .lang-es {
+  display: block;
 }
 
 .homepage-hero__cta {
@@ -750,20 +766,7 @@ a.reversefootnote {
   flex-wrap: wrap;
 }
 
-.btn--outline {
-  background: transparent !important;
-  border: 2px solid var(--color-primary, $info-color) !important;
-  color: var(--color-primary, $info-color) !important;
-
-  &::before {
-    display: none;
-  }
-
-  &:hover {
-    background: var(--color-primary, $info-color) !important;
-    color: #fff !important;
-  }
-}
+// btn--outline moved to _buttons.scss for correct specificity
 
 .homepage-hero__mesh {
   position: absolute;
