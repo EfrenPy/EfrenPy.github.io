@@ -1,0 +1,37 @@
+name: Update GitHub Stats Cards
+
+on:
+  schedule:
+    - cron: '0 0 * * 1' # Every Monday at midnight UTC
+  workflow_dispatch:
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download stats cards
+        run: |
+          mkdir -p images
+          curl -fsSL -o images/github-stats-dark.svg \
+            "https://github-profile-summary-cards.vercel.app/api/cards/stats?username=EfrenPy&theme=github_dark"
+          curl -fsSL -o images/github-stats-light.svg \
+            "https://github-profile-summary-cards.vercel.app/api/cards/stats?username=EfrenPy&theme=github"
+          curl -fsSL -o images/github-langs-dark.svg \
+            "https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=EfrenPy&layout=compact&theme=dark&hide_border=true"
+          curl -fsSL -o images/github-langs-light.svg \
+            "https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=EfrenPy&layout=compact&theme=default&hide_border=true"
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add images/github-stats-dark.svg images/github-stats-light.svg \
+                 images/github-langs-dark.svg images/github-langs-light.svg
+          if ! git diff --cached --quiet; then
+            git commit -m "Update cached GitHub stats cards"
+            git push
+          fi
