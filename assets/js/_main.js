@@ -138,6 +138,7 @@ function initSidebar() {
 
       authorUrls.style.display = isHidden ? 'block' : 'none';
       this.classList.toggle('open');
+      this.setAttribute('aria-expanded', String(isHidden));
     });
   }
 }
