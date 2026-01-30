@@ -2,19 +2,19 @@
 title: "MapToPoster"
 title_en: "MapToPoster — City Map Poster Generator"
 title_es: "MapToPoster — Generador de Pósters de Mapas Urbanos"
-excerpt: "Transform your favorite cities into beautiful, minimalist map poster designs"
-excerpt_en: "Transform your favorite cities into beautiful, minimalist map poster designs"
-excerpt_es: "Transforma tus ciudades favoritas en diseños de pósters de mapas minimalistas y elegantes"
+excerpt: "Python tool that transforms any city into minimalist map posters using OpenStreetMap data"
+excerpt_en: "Python tool that transforms any city into minimalist map posters using OpenStreetMap data"
+excerpt_es: "Herramienta Python que transforma cualquier ciudad en pósters de mapas minimalistas usando datos de OpenStreetMap"
 collection: portfolio
 category: personal
 link: https://github.com/EfrenPy/maptoposter
 header:
-  teaser: webp/maptoposter_tokyo.png
+  teaser: webp/maptoposter_tokyo.webp
 tags:
   - Python
-  - Maps
-  - Design
+  - OpenStreetMap
   - Data Visualization
+  - Matplotlib
 ---
 
 ## Project Overview
@@ -23,13 +23,16 @@ tags:
 
 ### Description
 
-Transform your favorite cities into beautiful, minimalist designs. A tool to create and export visually striking map posters with code.
+A Python tool that transforms any city into beautiful, minimalist map posters using OpenStreetMap data. Generate print-ready artwork from code with full control over style, layout, and typography.
 
 ### Features
 
-- Create and export visually striking map posters with code
-- Customizable city map layouts and styles
+- 17 built-in themes including noir, blueprint, neon cyberpunk, and japanese ink
+- Multilingual support with Google Fonts for non-Latin scripts (Japanese, Korean, Arabic, etc.)
+- Paper size presets (A0–A4) with configurable DPI
+- Multiple output formats: PNG, SVG, PDF
+- Layered rendering: background, water, green areas, streets, buildings, and labels
 
 ### Technical Stack
 
-`Python` `Maps` `Data Visualization` `Design`
+`Python` `OSMnx` `Matplotlib` `OpenStreetMap` `SVG` `PDF`
