@@ -15,8 +15,6 @@ tags:
   - Project Management
 ---
 
-![Timepix4 beam telescope setup](/images/webp/setup_3d.webp){: .align-center}
-
 ## Project Overview
 
 **Role:** Project Lead | **Duration:** 2022-Present | **Organization:** CERN/Nikhef
@@ -32,6 +30,8 @@ Design and build a particle tracking telescope capable of sub-100 picosecond tim
 - Developed Python-based data acquisition and analysis pipeline
 - Implemented cooling system achieving stable -30°C operation
 - Coordinated test beam campaigns at CERN SPS facility
+
+![Timepix4 beam telescope setup](/images/webp/setup_3d.webp){: .align-center}
 
 ### Technical Stack
 

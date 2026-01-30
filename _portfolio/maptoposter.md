@@ -17,8 +17,6 @@ tags:
   - Matplotlib
 ---
 
-![Tokyo map poster in japanese ink style](/images/webp/maptoposter_tokyo.webp){: .align-center}
-
 ## Project Overview
 
 **Role:** Developer | **Type:** Personal Project | [GitHub Repository](https://github.com/EfrenPy/maptoposter)
@@ -34,6 +32,8 @@ A Python tool that transforms any city into beautiful, minimalist map posters us
 - Paper size presets (A0–A4) with configurable DPI
 - Multiple output formats: PNG, SVG, PDF
 - Layered rendering: background, water, green areas, streets, buildings, and labels
+
+![Tokyo map poster in japanese ink style](/images/webp/maptoposter_tokyo.webp){: .align-center}
 
 ### Technical Stack
 

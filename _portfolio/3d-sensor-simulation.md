@@ -15,8 +15,6 @@ tags:
   - Optimization
 ---
 
-![3D Silicon Sensor cross-section](/images/webp/3d_sensor.webp){: .align-center}
-
 ## Project Overview
 
 **Role:** Lead Developer | **Duration:** 2024-Present | **Organization:** CERN EP-R&D
@@ -31,6 +29,8 @@ Optimize 3D columnar silicon sensor geometry for extreme radiation environments 
 - Built Python-based parameter optimization pipeline
 - Automated analysis of charge collection efficiency
 - Created visualization tools for electric field distributions
+
+![3D Silicon Sensor cross-section](/images/webp/3d_sensor.webp){: .align-center}
 
 ### Technical Stack
 

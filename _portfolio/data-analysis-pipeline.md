@@ -16,8 +16,6 @@ tags:
   - GRID Computing
 ---
 
-![GRID computing usage statistics](/images/webp/grid_score_nikhef.webp){: .align-center}
-
 ## Project Overview
 
 **Role:** Developer & Analyst | **Duration:** 2021-Present | **Data Volume:** TB-scale per campaign
@@ -34,6 +32,8 @@ Developed an automated analysis pipeline featuring:
 - **Parallel processing:** Distributed computing on GRID infrastructure
 - **Automated reporting:** Daily summaries and visualizations
 - **Version control:** Reproducible analysis framework
+
+![GRID computing usage statistics](/images/webp/grid_score_nikhef.webp){: .align-center}
 
 ### Technical Stack
 

@@ -17,8 +17,6 @@ tags:
   - TCP Server
 ---
 
-![Python development](/images/webp/python_certificado.webp){: .align-center}
-
 ## Project Overview
 
 **Role:** Developer | **Type:** Personal Project | [GitHub Repository](https://github.com/EfrenPy/JulaboFL1703-control)
@@ -34,6 +32,8 @@ A comprehensive Python control suite for operating a Julabo FL1703 recirculating
 - Desktop GUI with live temperature chart via Matplotlib
 - TCP JSON server for remote network-based control with companion GUI client
 - Auto-detection of USB serial adapters on Linux and Windows
+
+![Python development](/images/webp/python_certificado.webp){: .align-center}
 
 ### Technical Stack
 

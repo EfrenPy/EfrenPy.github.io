@@ -16,8 +16,6 @@ tags:
   - Community Engagement
 ---
 
-![Vecindad Ames platform preview](/images/webp/bertamirans.webp){: .align-center}
-
 ## Project Overview
 
 **Role:** Developer | **Type:** Personal Project | [Website](https://bertamirans.efrenrodriguezrodriguez.com/)
@@ -32,6 +30,8 @@ A collaborative civic engagement platform empowering residents of Ames, Spain to
 - Collaborative co-design workshops for public spaces
 - Transparent participatory budgeting tools
 - Active initiatives: safe pedestrian routes and dog park improvements
+
+![Vecindad Ames platform preview](/images/webp/bertamirans.webp){: .align-center}
 
 ### Technical Stack
 

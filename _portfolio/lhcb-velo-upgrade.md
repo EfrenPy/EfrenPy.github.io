@@ -15,8 +15,6 @@ tags:
   - System Integration
 ---
 
-![LHCb detector side view](/images/webp/lhcb_upgrade.webp){: .align-center}
-
 ## Project Overview
 
 **Role:** PhD Researcher & Electronics Developer | **Duration:** 2019-2024 | **Scale:** Multi-million EUR international project
@@ -32,6 +30,8 @@ Upgrade the LHCb vertex detector (VELO) to handle 5x higher data rates and opera
 - Performed quality assurance testing on 1000+ electronic components
 - Participated in detector commissioning at CERN
 - Contributed to integration and installation procedures
+
+![LHCb detector side view](/images/webp/lhcb_upgrade.webp){: .align-center}
 
 ### Technical Stack
 
