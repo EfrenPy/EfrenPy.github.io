@@ -42,5 +42,17 @@ author_profile: true
 <h3>{% include t.html page="portfolio" key="projects_title" %}</h3>
 
 {% for post in site.portfolio %}
-  {% include archive-single.html %}
+  {% unless post.category == "personal" %}
+    {% include archive-single.html %}
+  {% endunless %}
+{% endfor %}
+
+<hr>
+
+<h3>{% include t.html page="portfolio" key="personal_title" %}</h3>
+
+{% for post in site.portfolio %}
+  {% if post.category == "personal" %}
+    {% include archive-single.html %}
+  {% endif %}
 {% endfor %}
