@@ -67,14 +67,16 @@
     padding: 0;
     list-style-type: none;
     font-family: $sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35em;
   }
 
   li {
     display: block;
-    float: left;
-    margin-left: -1px;
 
     a {
+      display: inline-block;
       margin-bottom: 0.25em;
       padding: 0.5em 1em;
       font-family: $sans-serif;
@@ -83,39 +85,27 @@
       line-height: 1.5;
       text-align: center;
       text-decoration: none;
-      color: mix(#fff, $gray, 25%);
-      border: 1px solid $light-gray;
-      border-radius: 0;
+      color: var(--color-text-light, mix(#fff, $gray, 25%));
+      border: 1px solid var(--color-border, $light-gray);
+      border-radius: 50px;
+      transition: all 0.2s ease;
 
       &:hover {
-        color: $link-color-hover;
+        color: var(--color-primary, $link-color-hover);
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px var(--color-shadow, rgba(0,0,0,0.1));
       }
 
       &.current {
         color: #fff;
-        background: $primary-color;
+        background: var(--gradient-primary, linear-gradient(135deg, #52adc8, #8B5CF6));
+        border-color: transparent;
       }
 
       &.disabled {
         color: mix(#fff, $gray, 75%);
         pointer-events: none;
         cursor: not-allowed;
-      }
-    }
-
-    &:first-child {
-      margin-left: 0;
-
-      a {
-        border-top-left-radius: $border-radius;
-        border-bottom-left-radius: $border-radius;
-      }
-    }
-
-    &:last-child {
-      a {
-        border-top-right-radius: $border-radius;
-        border-bottom-right-radius: $border-radius;
       }
     }
   }
@@ -131,12 +121,15 @@
     font-weight: bold;
     text-align: center;
     text-decoration: none;
-    color: mix(#fff, $gray, 50%);
-    border: 1px solid $light-gray;
-    border-radius: $border-radius;
+    color: var(--color-text-light, mix(#fff, $gray, 50%));
+    border: 1px solid var(--color-border, $light-gray);
+    border-radius: 10px;
+    transition: all 0.2s ease;
 
     &:hover {
-      color: $link-color-hover;
+      color: var(--color-primary, $link-color-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px var(--color-shadow, rgba(0,0,0,0.1));
     }
 
     &:first-child {

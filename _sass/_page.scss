@@ -90,11 +90,19 @@
     }
   }
 
-  a {
-    text-decoration: underline;
+  a:not(.btn):not(.pagination--pager) {
+    text-decoration: none;
+    background-image: linear-gradient(
+      var(--color-primary, $info-color),
+      var(--color-accent, #8B5CF6)
+    );
+    background-size: 100% 2px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.3s ease, color 0.2s ease;
 
     &:hover {
-      text-decoration: underline;
+      background-size: 100% 3px;
 
       img {
         box-shadow: 0 0 10px rgba(#000, 0.25);

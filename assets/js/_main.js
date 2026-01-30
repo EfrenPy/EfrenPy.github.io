@@ -53,6 +53,9 @@ function initPageFeatures() {
   // Active nav link highlighting
   updateActiveNav();
 
+  // Scroll-to-top button
+  initScrollToTop();
+
   // Scroll to top on new page
   window.scrollTo(0, 0);
 }
@@ -258,6 +261,41 @@ function initScrollProgress() {
 
   // Initial call
   updateProgress();
+}
+
+/* ==========================================================================
+   Scroll-to-Top Button
+   ========================================================================== */
+
+function initScrollToTop() {
+  var btn = document.querySelector('.scroll-to-top');
+  if (!btn) return;
+
+  var scrollThreshold = 300;
+  var ticking = false;
+
+  var updateVisibility = function() {
+    if (window.scrollY > scrollThreshold) {
+      btn.classList.add('is-visible');
+    } else {
+      btn.classList.remove('is-visible');
+    }
+    ticking = false;
+  };
+
+  window.addEventListener('scroll', function() {
+    if (!ticking) {
+      requestAnimationFrame(updateVisibility);
+      ticking = true;
+    }
+  }, { passive: true });
+
+  btn.addEventListener('click', function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  // Initial check
+  updateVisibility();
 }
 
 /* ==========================================================================

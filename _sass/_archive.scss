@@ -201,6 +201,27 @@ li:has(.archive__item) {
   }
 }
 
+/* Metadata badges for archive items */
+.archive__item .page__meta,
+.list__item .page__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4em;
+
+  span, time, .page__meta-sep {
+    display: inline-block;
+    padding: 0.15em 0.6em;
+    font-size: $type-size-7;
+    background: var(--color-background-secondary, $lighter-gray);
+    border-radius: 50px;
+    color: var(--color-text-light, $gray);
+  }
+
+  .page__meta-sep {
+    display: none;
+  }
+}
+
 
 /*
    Grid view

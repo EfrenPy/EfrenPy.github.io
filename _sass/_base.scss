@@ -1,6 +1,18 @@
 /* ==========================================================================
    BASE ELEMENTS
    ========================================================================== */
+
+/* Selection highlight */
+::selection {
+  background: rgba(82, 173, 200, 0.3);
+  color: var(--color-text, #1e293b);
+}
+
+[data-theme="dark"] ::selection {
+  background: rgba(103, 212, 241, 0.3);
+  color: var(--color-text, #e2e8f0);
+}
+
 html {
   /* sticky footer fix */
   position: relative;

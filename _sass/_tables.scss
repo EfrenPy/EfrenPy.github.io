@@ -2,13 +2,21 @@
    TABLES
    ========================================================================== */
 
-table {
+.table-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
   margin-bottom: 1em;
+  border-radius: 10px;
+  border: 1px solid var(--color-border, $border-color);
+}
+
+table {
+  margin-bottom: 0;
   width: 100%;
   font-family: $global-font-family;
   font-size: $type-size-6;
   border-collapse: collapse;
-  border: 1px solid $light-gray;
+  border: none;
 
   & + table {
     margin-top: 1em;
@@ -16,21 +24,36 @@ table {
 }
 
 thead {
-  background-color: $lighter-gray;
-  border-bottom: 1px solid $light-gray;
+  background: var(--color-card-bg, rgba(255, 255, 255, 0.7));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 2px solid transparent;
+  border-image: var(--gradient-primary, linear-gradient(135deg, #52adc8, #8B5CF6)) 1;
 }
 
 th {
-  padding: 0.5em;
-  font-weight: bold;
+  padding: 0.75em 1em;
+  font-weight: 700;
   text-align: left;
-  border-right: 1px solid $light-gray;
+  color: var(--color-text, $text-color);
+  letter-spacing: 0.02em;
 }
 
 td {
-  padding: 0.5em;
-  border-bottom: 1px solid $light-gray;
-  border-right: 1px solid $light-gray;
+  padding: 0.75em 1em;
+  border-bottom: 1px solid var(--color-border, $border-color);
+}
+
+tr {
+  transition: background-color 0.2s ease;
+}
+
+tbody tr:nth-child(even) {
+  background-color: var(--color-background-secondary, rgba(0, 0, 0, 0.02));
+}
+
+tbody tr:hover {
+  background-color: var(--gradient-subtle, rgba(82, 173, 200, 0.06));
 }
 
 tr, td, th {

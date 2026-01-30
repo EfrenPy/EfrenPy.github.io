@@ -943,6 +943,120 @@ a.reversefootnote {
   }
 }
 
+/*
+   Error Page (404)
+   ========================================================================== */
+
+.error-page {
+  text-align: center;
+  padding: 4rem 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.error-page__code {
+  font-size: 8rem;
+  font-weight: 900;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+  background: var(--gradient-primary, linear-gradient(135deg, #52adc8, #8B5CF6));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: -0.05em;
+}
+
+.error-page__message {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-text, $dark-gray);
+  margin-bottom: 0.75rem;
+}
+
+.error-page__description {
+  font-size: 1.1rem;
+  color: var(--color-text-light, $gray);
+  margin-bottom: 2rem;
+}
+
+.error-page__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.75rem;
+  background: var(--gradient-primary, linear-gradient(135deg, #52adc8, #8B5CF6));
+  color: #fff !important;
+  font-weight: 600;
+  border-radius: 10px;
+  text-decoration: none !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(82, 173, 200, 0.35);
+    color: #fff !important;
+    background-size: 100% 0 !important;
+  }
+}
+
+
+/*
+   Scroll to Top Button
+   ========================================================================== */
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 50%;
+  background: var(--gradient-primary, linear-gradient(135deg, #52adc8, #8B5CF6));
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 15px var(--color-shadow, rgba(0,0,0,0.15));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &.is-visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  &:hover {
+    box-shadow: 0 8px 25px rgba(82, 173, 200, 0.4);
+    transform: translateY(-3px);
+  }
+
+  &.is-visible:hover {
+    transform: translateY(-3px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scroll-to-top {
+    transition: opacity 0.1s ease, visibility 0.1s ease;
+
+    &:hover {
+      transform: none;
+    }
+
+    &.is-visible {
+      transform: none;
+    }
+  }
+}
+
+
 .github-stats {
   display: flex;
   flex-wrap: wrap;

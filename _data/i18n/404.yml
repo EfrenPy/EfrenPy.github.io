@@ -9,5 +9,5 @@ excerpt:
   es: "Página no encontrada. Tus píxeles están en otro lienzo."
 
 message:
-  en: "Sorry, but the page you were trying to view does not exist."
-  es: "Lo sentimos, pero la página que intentabas ver no existe."
+  en: "Oops! The page you're looking for doesn't exist."
+  es: "La página que buscas no existe."

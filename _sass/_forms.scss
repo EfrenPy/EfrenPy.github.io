@@ -57,8 +57,9 @@ textarea {
 
 label {
   display: block;
-  margin-bottom: 0.25em;
-  color: $text-color;
+  margin-bottom: 0.35em;
+  color: var(--color-text, $text-color);
+  font-weight: 600;
   cursor: pointer;
 
   small {
@@ -77,16 +78,16 @@ textarea,
 select {
   display: inline-block;
   width: 100%;
-  padding: 0.25em;
+  padding: 0.6em 0.75em;
   margin-bottom: 0.5em;
-  color: $text-color;
-  background-color: #fff;
-  border: 1px solid mix(#fff, #000, 80%);
+  color: var(--color-text, $text-color);
+  background-color: var(--color-background, #fff);
+  border: 1px solid var(--color-border, mix(#fff, #000, 80%));
   border-radius: $border-radius;
-  box-shadow: $box-shadow;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
 
   &:hover {
-    border-color: mix(#fff, $primary-color, 50%);
+    border-color: var(--color-primary, mix(#fff, $primary-color, 50%));
   }
 }
 
@@ -164,6 +165,7 @@ textarea {
   height: auto;
   overflow: auto;
   vertical-align: top;
+  min-height: 120px;
 }
 
 input[type="hidden"] {
@@ -221,9 +223,9 @@ textarea[readonly] {
 
 input:focus,
 textarea:focus {
-  border-color: $primary-color;
+  border-color: var(--color-primary, $primary-color);
   outline: 0;
-  outline: thin dotted \9;
+  box-shadow: 0 0 0 3px rgba(82, 173, 200, 0.25);
 }
 
 input[type="file"]:focus,
