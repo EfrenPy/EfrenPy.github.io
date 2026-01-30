@@ -253,7 +253,7 @@ function initScrollReveal() {
     '.author__urls li, .feature__item, ' +
     '.highlight-card, .cert-card, .contact-card, ' +
     '.cv-timeline-item, .cv-edu-card, .cv-skill-tag, ' +
-    '.github-badges > a, .bento-grid > *'
+    '.github-stats > a, .bento-grid > *'
   );
 
   // Track card indices per parent for stagger
