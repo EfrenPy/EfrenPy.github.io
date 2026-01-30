@@ -2,11 +2,12 @@
 title: "Vecindad Ames"
 title_en: "Vecindad Ames — Civic Engagement Platform"
 title_es: "Vecindad Ames — Plataforma de Participación Ciudadana"
-excerpt: "A collaborative civic engagement platform empowering residents of Ames, Spain"
-excerpt_en: "A collaborative civic engagement platform empowering residents of Ames, Spain"
-excerpt_es: "Una plataforma colaborativa de participación ciudadana para los vecinos de Ames, España"
+excerpt: "A collaborative civic engagement platform empowering residents of Ames, Spain to propose and implement community-driven solutions"
+excerpt_en: "A collaborative civic engagement platform empowering residents of Ames, Spain to propose and implement community-driven solutions"
+excerpt_es: "Una plataforma colaborativa de participación ciudadana que permite a los vecinos de Ames, España proponer e implementar soluciones comunitarias"
 collection: portfolio
 category: personal
+link: https://bertamirans.efrenrodriguezrodriguez.com/
 header:
   teaser: webp/generative_AI.webp
 tags:
@@ -17,7 +18,7 @@ tags:
 
 ## Project Overview
 
-**Role:** Developer | **Type:** Personal Project | [Website](https://vecindadames.org)
+**Role:** Developer | **Type:** Personal Project | [Website](https://bertamirans.efrenrodriguezrodriguez.com/)
 
 ### Description
 

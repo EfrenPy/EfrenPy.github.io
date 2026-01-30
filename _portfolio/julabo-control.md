@@ -7,6 +7,7 @@ excerpt_en: "Comprehensive Python utilities for operating a Julabo recirculating
 excerpt_es: "Utilidades completas en Python para operar un enfriador recirculante Julabo"
 collection: portfolio
 category: personal
+link: https://github.com/EfrenPy/JulaboFL1703-control
 header:
   teaser: webp/python_certificado.webp
 tags:
