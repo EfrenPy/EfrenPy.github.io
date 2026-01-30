@@ -5,6 +5,7 @@
 document.addEventListener('DOMContentLoaded', function() {
 
   // Initialize global features (masthead-level, don't need reinit on navigation)
+  initMobileNav();
   initDarkMode();
   initLanguage();
   initColorCustomization();
@@ -63,6 +64,40 @@ function initPageFeatures() {
 
 // Make globally available for Swup
 window.initPageFeatures = initPageFeatures;
+
+/* ==========================================================================
+   Mobile Navigation Toggle
+   ========================================================================== */
+
+function initMobileNav() {
+  var toggle = document.querySelector('.nav-toggle');
+  var siteNav = document.querySelector('.site-nav');
+  if (!toggle || !siteNav) return;
+
+  toggle.addEventListener('click', function() {
+    var isOpen = siteNav.classList.toggle('is-open');
+    toggle.setAttribute('aria-expanded', String(isOpen));
+    toggle.classList.toggle('close', isOpen);
+    document.body.classList.toggle('overflow--hidden', isOpen);
+  });
+
+  // Close nav when resizing to desktop
+  var mql = window.matchMedia('(min-width: 768px)');
+  var closeNav = function() {
+    if (mql.matches) {
+      siteNav.classList.remove('is-open');
+      toggle.setAttribute('aria-expanded', 'false');
+      toggle.classList.remove('close');
+      document.body.classList.remove('overflow--hidden');
+    }
+  };
+
+  if (mql.addEventListener) {
+    mql.addEventListener('change', closeNav);
+  } else if (mql.addListener) {
+    mql.addListener(closeNav);
+  }
+}
 
 /* ==========================================================================
    Sidebar Visibility

@@ -7,6 +7,9 @@
     <div class="masthead__menu">
       <nav id="site-nav" class="site-nav">
         <a class="site-title" href="{{ base_path }}/">{{ site.title }}</a>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span class="navicon"></span>
+        </button>
         <ul class="nav-links">
           {% for link in site.data.navigation.main %}
             {% if link.url contains 'http' %}

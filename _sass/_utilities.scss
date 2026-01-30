@@ -526,6 +526,10 @@ a.reversefootnote {
   display: grid;
   gap: 1rem;
 
+  @include breakpoint($small) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   @include breakpoint($medium) {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -714,9 +718,13 @@ a.reversefootnote {
 
 .homepage-hero {
   position: relative;
-  padding: 4rem 1.5rem;
+  padding: 2.5rem 1rem;
   text-align: center;
   overflow: hidden;
+
+  @include breakpoint($small) {
+    padding: 4rem 1.5rem;
+  }
 
   @include breakpoint($medium) {
     padding: 6rem 2rem;
@@ -831,7 +839,7 @@ a.reversefootnote {
 
 .homepage-highlights {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
   gap: 1.5rem;
   margin: 1.5rem 0;
 }
@@ -887,7 +895,7 @@ a.reversefootnote {
 
 .certifications-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
   gap: 1rem;
 }
 
@@ -946,7 +954,7 @@ a.reversefootnote {
 
 .contact-methods {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
   gap: 1rem;
   margin: 1.5rem 0;
 }
