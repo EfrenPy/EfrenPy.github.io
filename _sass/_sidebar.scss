@@ -309,14 +309,6 @@
       &:hover {
         transform: none;
       }
-
-      // Staggered entrance animation
-      animation: sidebar-item-in 0.4s ease both;
-      @for $i from 1 through 20 {
-        &:nth-child(#{$i}) {
-          animation-delay: #{$i * 0.05}s;
-        }
-      }
     }
   }
 
@@ -385,17 +377,3 @@
   }
 }
 
-/*
-   Sidebar entrance animation
-   ========================================================================== */
-
-@keyframes sidebar-item-in {
-  from {
-    opacity: 0;
-    transform: translateY(8px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
