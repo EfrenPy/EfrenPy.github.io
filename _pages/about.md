@@ -10,18 +10,36 @@ redirect_from:
   - /about.html
 ---
 
-{% include t-block.html page="about" key="bio" %}
+<section class="homepage-hero">
+  <div class="homepage-hero__content">
+    <h1 class="homepage-hero__name gradient-text">Efrén Rodríguez</h1>
+    <p class="homepage-hero__tagline">
+      <span class="lang-en">Particle Physics Researcher · Silicon Detector Expert · CERN</span>
+      <span class="lang-es">Investigador en Física de Partículas · Experto en Detectores de Silicio · CERN</span>
+    </p>
+    <div class="homepage-hero__cta">
+      <a href="{{ site.baseurl }}/files/Efren_Rodriguez_CV.pdf" class="btn btn--large cv-download-btn" data-no-swup target="_blank" rel="noopener">
+        <i class="fas fa-download"></i> <span class="lang-en">Download CV</span><span class="lang-es">Descargar CV</span>
+      </a>
+      <a href="{{ site.baseurl }}/portfolio/" class="btn btn--large btn--outline">
+        <span class="lang-en">View Projects</span><span class="lang-es">Ver Proyectos</span>
+      </a>
+    </div>
+  </div>
+  <div class="homepage-hero__mesh" aria-hidden="true">
+    <div class="hero-orb hero-orb--1"></div>
+    <div class="hero-orb hero-orb--2"></div>
+  </div>
+</section>
 
-<a href="{{ site.baseurl }}/files/Efren_Rodriguez_CV.pdf" class="cv-download-btn" data-no-swup target="_blank" rel="noopener">
-  <i class="fas fa-download"></i> {% include t.html page="about" key="cv_download" %}
-</a>
+{% include t-block.html page="about" key="bio" %}
 
 ---
 
 ### {% include t.html page="about" key="highlights_title" %}
 
-<div class="homepage-highlights">
-  <div class="highlight-card">
+<div class="bento-grid">
+  <div class="highlight-card bento-span-2">
     <i class="fas fa-users"></i>
     <h4>{% include t.html page="about" key="highlight_research_title" %}</h4>
     <p>{% include t.html page="about" key="highlight_research_desc" %}</p>

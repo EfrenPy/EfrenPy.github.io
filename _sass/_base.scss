@@ -29,36 +29,6 @@ body {
   line-height: 1.5;
   transition: background-color 0.3s ease, color 0.3s ease;
 
-  // Subtle gradient background orbs
-  &::before,
-  &::after {
-    content: '';
-    position: fixed;
-    border-radius: 50%;
-    filter: blur(100px);
-    opacity: 0.5;
-    pointer-events: none;
-    z-index: -1;
-    animation: float 20s ease-in-out infinite;
-  }
-
-  &::before {
-    width: 500px;
-    height: 500px;
-    background: rgba(82, 173, 200, 0.1);
-    top: -200px;
-    left: -200px;
-  }
-
-  &::after {
-    width: 400px;
-    height: 400px;
-    background: rgba(139, 92, 246, 0.08);
-    bottom: -150px;
-    right: -150px;
-    animation-delay: -10s;
-  }
-
   &.overflow--hidden {
     /* when primary navigation is visible, the content in the background won't scroll */
     overflow: hidden;
@@ -362,4 +332,51 @@ nav {
 b, i, strong, em, blockquote, p, q, span, figure, img, h1, h2, header, input, a, tr, td, form button, input[type="submit"], .btn, .highlight, .archive__item-teaser {
   -webkit-transition: $global-transition;
   transition: $global-transition;
+}
+
+/*
+   Gradient Mesh Background
+   ========================================================================== */
+
+.gradient-mesh {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.gradient-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.4;
+}
+
+.gradient-orb--1 {
+  width: 600px;
+  height: 600px;
+  background: rgba(var(--color-primary-rgb, 82, 173, 200), 0.15);
+  top: -200px;
+  left: -150px;
+  animation: float 20s ease-in-out infinite;
+}
+
+.gradient-orb--2 {
+  width: 500px;
+  height: 500px;
+  background: rgba(var(--color-accent-rgb, 139, 92, 246), 0.12);
+  bottom: -150px;
+  right: -100px;
+  animation: float-reverse 25s ease-in-out infinite;
+}
+
+.gradient-orb--3 {
+  width: 400px;
+  height: 400px;
+  background: rgba(var(--color-primary-rgb, 82, 173, 200), 0.08);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: float-slow 33s ease-in-out infinite;
 }

@@ -21,6 +21,8 @@
   --color-shadow-strong: rgba(0, 0, 0, 0.12);
   --gradient-primary: linear-gradient(135deg, #52adc8, #8B5CF6);
   --gradient-subtle: linear-gradient(135deg, rgba(82, 173, 200, 0.08), rgba(139, 92, 246, 0.08));
+  --color-primary-rgb: 82, 173, 200;
+  --color-accent-rgb: 139, 92, 246;
 }
 
 [data-theme="dark"] {
@@ -38,6 +40,8 @@
   --color-shadow-strong: rgba(0, 0, 0, 0.5);
   --gradient-primary: linear-gradient(135deg, #67d4f1, #a78bfa);
   --gradient-subtle: linear-gradient(135deg, rgba(103, 212, 241, 0.06), rgba(167, 139, 250, 0.06));
+  --color-primary-rgb: 103, 212, 241;
+  --color-accent-rgb: 167, 139, 250;
 }
 
 /*
@@ -57,6 +61,7 @@ $monospace                  : Monaco, Consolas, "Lucida Console", monospace;
 
 /* sans serif typefaces */
 $sans-serif-narrow          : $sans-serif;
+$display-font               : "Space Grotesk", $sans-serif;
 $helvetica                  : Helvetica, "Helvetica Neue", Arial, sans-serif;
 
 /* serif typefaces */
@@ -67,7 +72,7 @@ $calisto                    : "Calisto MT", serif;
 $garamond                   : Garamond, serif;
 
 $global-font-family         : $sans-serif;
-$header-font-family         : $sans-serif;
+$header-font-family         : $display-font;
 $caption-font-family        : $serif;
 
 /* type scale */

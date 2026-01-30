@@ -49,8 +49,9 @@
   }
 
   &:active {
-    transform: translateY(0);
+    transform: translateY(0) scale(0.97);
     box-shadow: 0 2px 10px var(--color-shadow, rgba(0, 0, 0, 0.15));
+    transition-duration: 0.1s;
   }
 
   .icon {

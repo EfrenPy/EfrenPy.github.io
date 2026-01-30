@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // Initialize global features (masthead-level, don't need reinit on navigation)
   initDarkMode();
   initLanguage();
+  initColorCustomization();
 
   // Initialize per-page features
   initPageFeatures();
@@ -209,18 +210,49 @@ function initScrollReveal() {
   const revealElements = document.querySelectorAll(
     '.archive__item, .page__content > h2, .page__content > h3, ' +
     '.page__content > p, .page__content > ul, .page__content > ol, ' +
-    '.author__urls li, .feature__item'
+    '.author__urls li, .feature__item, ' +
+    '.highlight-card, .cert-card, .contact-card, ' +
+    '.cv-timeline-item, .cv-edu-card, .cv-skill-tag, ' +
+    '.github-stats > a, .bento-grid > *'
   );
 
-  revealElements.forEach((el, index) => {
+  // Track card indices per parent for stagger
+  const parentCounters = new Map();
+
+  revealElements.forEach((el) => {
     // Don't re-add if already has reveal class
-    if (!el.classList.contains('reveal')) {
+    if (el.classList.contains('reveal') || el.classList.contains('reveal--left') || el.classList.contains('reveal--right')) {
+      revealOnScroll.observe(el);
+      return;
+    }
+
+    // Card-type elements get directional + stagger
+    var isCard = el.matches('.highlight-card, .cert-card, .contact-card, .archive__item, .cv-edu-card, .cv-timeline-item, .bento-grid > *');
+
+    if (isCard && el.parentElement) {
+      var parent = el.parentElement;
+      var count = parentCounters.get(parent) || 0;
+      parentCounters.set(parent, count + 1);
+
+      // Stagger delay
+      el.style.transitionDelay = (count * 0.08) + 's';
+
+      // Directional: odd left, even right
+      if (count % 2 === 0) {
+        el.classList.add('reveal--left');
+      } else {
+        el.classList.add('reveal--right');
+      }
+    } else {
       el.classList.add('reveal');
-      // Add staggered delay for items in lists
-      if (el.matches('.archive__item, .author__urls li')) {
-        el.style.transitionDelay = `${index * 0.05}s`;
+      // Stagger for list items
+      if (el.matches('.author__urls li, .cv-skill-tag')) {
+        var siblings = el.parentElement ? Array.from(el.parentElement.children) : [];
+        var idx = siblings.indexOf(el);
+        el.style.transitionDelay = (idx * 0.05) + 's';
       }
     }
+
     revealOnScroll.observe(el);
   });
 }
@@ -363,6 +395,83 @@ function updateActiveNav() {
       link.classList.add('active');
     }
   });
+}
+
+/* ==========================================================================
+   Accent Color Customization
+   ========================================================================== */
+
+function initColorCustomization() {
+  var toggle = document.querySelector('.color-toggle');
+  var picker = document.querySelector('.color-picker');
+  if (!toggle || !picker) return;
+
+  function hexToRgb(hex) {
+    hex = hex.replace('#', '');
+    var r = parseInt(hex.substring(0, 2), 16);
+    var g = parseInt(hex.substring(2, 4), 16);
+    var b = parseInt(hex.substring(4, 6), 16);
+    return r + ', ' + g + ', ' + b;
+  }
+
+  function applyColors(primary, accent) {
+    var root = document.documentElement;
+    root.style.setProperty('--color-primary', primary);
+    root.style.setProperty('--color-accent', accent);
+    root.style.setProperty('--color-primary-rgb', hexToRgb(primary));
+    root.style.setProperty('--color-accent-rgb', hexToRgb(accent));
+    root.style.setProperty('--gradient-primary', 'linear-gradient(135deg, ' + primary + ', ' + accent + ')');
+    root.style.setProperty('--gradient-subtle', 'linear-gradient(135deg, ' + primary + '14, ' + accent + '14)');
+  }
+
+  // Toggle picker
+  toggle.addEventListener('click', function(e) {
+    e.stopPropagation();
+    picker.classList.toggle('is-open');
+  });
+
+  // Close picker on outside click
+  document.addEventListener('click', function(e) {
+    if (!picker.contains(e.target) && e.target !== toggle) {
+      picker.classList.remove('is-open');
+    }
+  });
+
+  // Swatch click
+  var swatches = picker.querySelectorAll('.color-swatch');
+  swatches.forEach(function(swatch) {
+    swatch.addEventListener('click', function() {
+      var primary = this.getAttribute('data-primary');
+      var accent = this.getAttribute('data-accent');
+
+      // Update active state
+      swatches.forEach(function(s) { s.classList.remove('is-active'); });
+      this.classList.add('is-active');
+
+      applyColors(primary, accent);
+      localStorage.setItem('accent-colors', JSON.stringify({ primary: primary, accent: accent }));
+      picker.classList.remove('is-open');
+    });
+  });
+
+  // Restore saved colors
+  var saved = localStorage.getItem('accent-colors');
+  if (saved) {
+    try {
+      var colors = JSON.parse(saved);
+      applyColors(colors.primary, colors.accent);
+
+      // Mark active swatch
+      swatches.forEach(function(swatch) {
+        if (swatch.getAttribute('data-primary') === colors.primary &&
+            swatch.getAttribute('data-accent') === colors.accent) {
+          swatch.classList.add('is-active');
+        }
+      });
+    } catch (e) {
+      // Invalid saved data, ignore
+    }
+  }
 }
 
 /* ==========================================================================

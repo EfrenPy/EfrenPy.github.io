@@ -21,6 +21,13 @@
   }
 }
 
+// Hero spans full width in grid layout
+.homepage-hero {
+  @include breakpoint($large) {
+    grid-column: 1 / -1;
+  }
+}
+
 .page {
   min-width: 0; // Prevent grid blowout
 
