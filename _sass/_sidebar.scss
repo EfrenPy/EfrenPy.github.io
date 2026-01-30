@@ -14,6 +14,19 @@
     top: 2rem;
     height: fit-content;
     // Width controlled by grid-template-columns in #main
+
+    // Glassmorphism card
+    background: var(--color-card-bg, #fff);
+    backdrop-filter: blur(12px);
+    border-radius: 12px;
+    padding: 1.5rem 1rem;
+    border: 1px solid var(--color-border, $border-color);
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+
+    &:hover {
+      box-shadow: 0 8px 32px var(--color-shadow-strong, rgba(0, 0, 0, 0.12));
+      border-color: var(--color-primary, $info-color);
+    }
   }
 
   h2, h3, h4, h5, h6 {
@@ -66,6 +79,7 @@
     display: block;
     width: auto;
     height: auto;
+    text-align: center;
   }
 
   // Gradient ring on hover
@@ -127,6 +141,7 @@
     width: 100%;
     padding-left: 0;
     padding-right: 0;
+    text-align: center;
   }
 }
 
@@ -141,6 +156,13 @@
 .sidebar .author__name {
   font-family: $sans-serif;
   font-size: $type-size-5;
+
+  @include breakpoint($large) {
+    font-family: $display-font;
+    font-size: $type-size-4;
+    font-weight: 700;
+    text-align: center;
+  }
 }
 
 .author__bio {
@@ -149,6 +171,37 @@
   @include breakpoint($large) {
     margin-top: 10px;
     margin-bottom: 20px;
+    text-align: center;
+    color: var(--color-text-light, $gray);
+    font-size: $type-size-6;
+  }
+}
+
+/*
+   Author info items (location, employer)
+   ========================================================================== */
+
+.author__info-item {
+  color: var(--color-text-light, $gray);
+  font-size: $type-size-6;
+
+  i, .fa, .fas, .fab, .far {
+    color: var(--color-primary, $info-color);
+  }
+}
+
+/*
+   Author URLs divider
+   ========================================================================== */
+
+.author__urls-divider {
+  display: none;
+
+  @include breakpoint($large) {
+    display: block;
+    height: 1px;
+    background: var(--color-border, $border-color);
+    margin: 0.75rem 0;
   }
 }
 
@@ -169,6 +222,9 @@
 
   @include breakpoint($large) {
     display: block;
+    border-top: 1px solid var(--color-border, $border-color);
+    padding-top: 0.75rem;
+    margin-top: 0.5rem;
   }
 
   button {
@@ -188,15 +244,17 @@
   padding: 10px;
   max-width: calc(100vw - 2rem);
   list-style-type: none;
-  border: 1px solid $border-color;
+  border: 1px solid var(--color-border, $border-color);
   border-radius: $border-radius;
-  background: #fff;
+  background: var(--color-card-bg, #fff);
   z-index: -1;
   box-shadow: 0 0 10px rgba(#000, 0.25);
   cursor: default;
 
   @include breakpoint($large) {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
     position: relative;
     margin: 0;
     padding: 0;
@@ -214,7 +272,7 @@
     width: 0;
     border-style: solid;
     border-width: 0 10px 10px;
-    border-color: $border-color transparent;
+    border-color: var(--color-border, $border-color) transparent;
     z-index: 0;
 
     @include breakpoint($large) {
@@ -231,7 +289,7 @@
     width: 0;
     border-style: solid;
     border-width: 0 10px 10px;
-    border-color: #fff transparent;
+    border-color: var(--color-card-bg, #fff) transparent;
     z-index: 1;
 
     @include breakpoint($large) {
@@ -245,6 +303,20 @@
 
     &:hover {
       transform: translateX(5px);
+    }
+
+    @include breakpoint($large) {
+      &:hover {
+        transform: none;
+      }
+
+      // Staggered entrance animation
+      animation: sidebar-item-in 0.4s ease both;
+      @for $i from 1 through 20 {
+        &:nth-child(#{$i}) {
+          animation-delay: #{$i * 0.05}s;
+        }
+      }
     }
   }
 
@@ -276,5 +348,54 @@
       transform: scale(1.2);
       color: var(--color-primary, $info-color);
     }
+  }
+}
+
+/*
+   Pill-style social links
+   ========================================================================== */
+
+.author__link-pill {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 50px;
+  padding: 0.3rem 0.7rem;
+  background: var(--gradient-subtle, linear-gradient(135deg, rgba(82, 173, 200, 0.08), rgba(139, 92, 246, 0.08)));
+  color: var(--color-text, inherit);
+  font-size: $type-size-6;
+  text-decoration: none;
+  transition: all 0.25s ease;
+
+  &:hover {
+    background: var(--gradient-primary, linear-gradient(135deg, #52adc8, #8B5CF6));
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(82, 173, 200, 0.3);
+    text-decoration: none;
+
+    i, .fab, .fas, .far, .ai {
+      animation: icon-pop 0.3s ease;
+      color: #fff;
+    }
+  }
+
+  i, .fab, .fas, .far, .ai {
+    margin-right: 0.3em;
+    transition: color 0.2s ease;
+  }
+}
+
+/*
+   Sidebar entrance animation
+   ========================================================================== */
+
+@keyframes sidebar-item-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

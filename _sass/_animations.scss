@@ -202,7 +202,8 @@ html.is-animating .swup-transition-main {
   .swup-transition-main,
   .gradient-text,
   .gradient-orb,
-  .hero-orb {
+  .hero-orb,
+  .author__urls li {
     animation: none !important;
     transition: none !important;
     opacity: 1 !important;
