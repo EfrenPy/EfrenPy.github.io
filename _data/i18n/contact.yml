@@ -18,6 +18,10 @@ email_label:
   en: "Email"
   es: "Correo"
 
+send_email:
+  en: "Send me an email"
+  es: "Envíame un correo"
+
 connect:
   en: "Connect with me"
   es: "Conectar conmigo"

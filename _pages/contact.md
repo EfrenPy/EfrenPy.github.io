@@ -18,7 +18,7 @@ author_profile: true
     <div class="contact-icon"><i class="fas fa-envelope"></i></div>
     <div class="contact-info">
       <div class="contact-label">{% include t.html page="contact" key="email_label" %}</div>
-      <div class="contact-detail">{{ site.author.email }}</div>
+      <div class="contact-detail">{% include t.html page="contact" key="send_email" %}</div>
     </div>
   </a>
 
