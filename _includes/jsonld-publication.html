@@ -1,0 +1,35 @@
+{% if page.collection == "publications" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": {{ page.title | strip_html | truncate: 110 | jsonify }},
+  "description": {{ page.excerpt | strip_html | strip_newlines | truncate: 200 | jsonify }},
+  {% if page.date %}"datePublished": "{{ page.date | date_to_xmlschema }}",{% endif %}
+  "author": {
+    "@type": "Person",
+    "name": "{{ site.author.name }}",
+    "affiliation": {
+      "@type": "Organization",
+      "name": "CERN"
+    }
+  },
+  {% if page.venue %}
+  "publisher": {
+    "@type": "Organization",
+    "name": {{ page.venue | strip_html | jsonify }}
+  },
+  "isPartOf": {
+    "@type": "PublicationVolume",
+    "name": {{ page.venue | strip_html | jsonify }}
+  },
+  {% endif %}
+  {% if page.paperurl %}"url": "{{ page.paperurl }}",{% endif %}
+  {% if page.link %}"sameAs": "{{ page.link }}",{% endif %}
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ page.url | prepend: site.url }}"
+  }
+}
+</script>
+{% endif %}

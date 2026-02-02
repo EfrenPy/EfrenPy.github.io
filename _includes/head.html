@@ -3,6 +3,7 @@
 <meta charset="utf-8">
 
 {% include seo.html %}
+{% include jsonld-person.html %}
 
 <link href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ base_path }}/feed.xml{% endif %}" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
 
@@ -14,46 +15,17 @@
 <link rel="manifest" href="/manifest.json">
 <link rel="apple-touch-icon" href="/images/logo.png">
 
-<!-- Service Worker Registration -->
-<script>
-  if ('serviceWorker' in navigator) {
-    window.addEventListener('load', function() {
-      navigator.serviceWorker.register('/sw.js')
-        .then(function(registration) {
-          console.log('ServiceWorker registered:', registration.scope);
-        })
-        .catch(function(error) {
-          console.log('ServiceWorker registration failed:', error);
-        });
-    });
-  }
-</script>
-
+<!-- Critical inline scripts: prevent FOUC and register SW -->
 <script>
   document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
-</script>
-
-<!-- Dark mode - prevent flash -->
-<script>
-  (function() {
-    const theme = localStorage.getItem('theme') ||
-      (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-    document.documentElement.setAttribute('data-theme', theme);
-  })();
-</script>
-
-<!-- Language - prevent flash and auto-detect -->
-<script>
-  (function() {
-    const lang = localStorage.getItem('lang') ||
-      (navigator.language.startsWith('es') ? 'es' : 'en');
-    document.documentElement.setAttribute('data-lang', lang);
-  })();
+  (function(){var t=localStorage.getItem('theme')||(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t);})();
+  (function(){var l=localStorage.getItem('lang')||(navigator.language.startsWith('es')?'es':'en');document.documentElement.setAttribute('data-lang',l);})();
+  if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('/sw.js');});}
 </script>
 
 <!-- Swup for SPA-like navigation (self-hosted for reliability) -->
-<script src="{{ base_path }}/assets/js/swup.min.js?v={{ site.time | date: '%s' }}"></script>
-<script>document.addEventListener('DOMContentLoaded',function(){if(typeof Swup!=='undefined'){var swup=new Swup({containers:['#swup-sidebar','#swup-content'],animationSelector:'[class*="swup-transition-"]',cache:true,animateHistoryBrowsing:true});swup.hooks.on('page:view',function(){if(typeof initPageFeatures==='function'){initPageFeatures();}});}});</script>
+<script src="{{ base_path }}/assets/js/swup.min.js?v={{ site.time | date: '%s' }}" defer></script>
+<script defer>document.addEventListener('DOMContentLoaded',function(){if(typeof Swup!=='undefined'){var swup=new Swup({containers:['#swup-sidebar','#swup-content'],animationSelector:'[class*="swup-transition-"]',cache:true,animateHistoryBrowsing:true});swup.hooks.on('page:view',function(){if(typeof initPageFeatures==='function'){initPageFeatures();}var m=document.getElementById('main');if(m){m.setAttribute('tabindex','-1');m.focus({preventScroll:true});}});}});</script>
 
 <!-- Preload critical CSS -->
 <link rel="preload" href="{{ base_path }}/assets/css/main.css?v={{ site.time | date: '%s' }}" as="style">

@@ -12,6 +12,10 @@
 
   <body>
 
+    <a class="skip-link screen-reader-shortcut" href="#main">
+      Skip to main content
+    </a>
+
     <div class="gradient-mesh" aria-hidden="true">
       <div class="gradient-orb gradient-orb--1"></div>
       <div class="gradient-orb gradient-orb--2"></div>
@@ -40,5 +44,6 @@
 
     {% include scripts.html %}
 
+    <div id="sr-announcer" class="visually-hidden" aria-live="polite" aria-atomic="true"></div>
   </body>
 </html>

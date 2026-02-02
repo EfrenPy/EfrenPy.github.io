@@ -292,7 +292,8 @@
       border-radius: 2px;
     }
 
-    &:hover {
+    &:hover,
+    &:focus-visible {
       color: var(--color-primary, $info-color);
 
       &:before {

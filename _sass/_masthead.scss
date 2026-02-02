@@ -54,10 +54,15 @@
   color: var(--color-text-light, $gray);
   transition: color 0.2s ease, background-color 0.2s ease, transform 0.2s ease;
 
-  &:hover {
+  &:hover,
+  &:focus-visible {
     color: var(--color-primary, $info-color);
     background: var(--color-background-secondary, $lighter-gray);
     transform: rotate(15deg);
+  }
+
+  &:focus-visible {
+    transform: none;
   }
 
   .sun-icon {

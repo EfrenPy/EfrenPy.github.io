@@ -70,7 +70,7 @@
             {% else %}
               "{{ teaser | prepend: "/images/" | prepend: base_path }}"
             {% endif %}
-            alt="" loading="lazy">
+            alt="{{ title | strip_html | strip_newlines | default: 'Project thumbnail' }}" width="150" height="150" loading="lazy" decoding="async">
         </a>
       </div>
     {% endif %}

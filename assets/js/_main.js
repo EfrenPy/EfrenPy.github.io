@@ -102,6 +102,14 @@ function initMobileNav() {
   } else if (mql.addListener) {
     mql.addListener(function() { if (mql.matches) closeMenu(); });
   }
+
+  // Close nav on Escape key
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && siteNav.classList.contains('is-open')) {
+      closeMenu();
+      toggle.focus();
+    }
+  });
 }
 
 /* ==========================================================================
@@ -395,6 +403,7 @@ function initDarkMode() {
     const current = document.documentElement.getAttribute('data-theme');
     const next = current === 'dark' ? 'light' : 'dark';
     setTheme(next);
+    announce(next === 'dark' ? 'Dark mode enabled' : 'Light mode enabled');
   });
 
   // Listen for system preference changes
@@ -426,6 +435,7 @@ function initLanguage() {
     const current = document.documentElement.getAttribute('data-lang');
     const next = current === 'en' ? 'es' : 'en';
     setLang(next);
+    announce(next === 'es' ? 'Idioma cambiado a español' : 'Language changed to English');
   });
 }
 
@@ -476,33 +486,89 @@ function initColorCustomization() {
     root.style.setProperty('--gradient-subtle', 'linear-gradient(135deg, ' + primary + '14, ' + accent + '14)');
   }
 
+  function openPicker() {
+    picker.classList.add('is-open');
+    toggle.setAttribute('aria-expanded', 'true');
+    var checked = picker.querySelector('[aria-checked="true"]') || swatches[0];
+    if (checked) checked.focus();
+  }
+
+  function closePicker() {
+    picker.classList.remove('is-open');
+    toggle.setAttribute('aria-expanded', 'false');
+  }
+
   // Toggle picker
   toggle.addEventListener('click', function(e) {
     e.stopPropagation();
-    picker.classList.toggle('is-open');
+    if (picker.classList.contains('is-open')) {
+      closePicker();
+    } else {
+      openPicker();
+    }
   });
 
   // Close picker on outside click
   document.addEventListener('click', function(e) {
     if (!picker.contains(e.target) && e.target !== toggle) {
-      picker.classList.remove('is-open');
+      closePicker();
+    }
+  });
+
+  // Close picker on Escape
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && picker.classList.contains('is-open')) {
+      closePicker();
+      toggle.focus();
     }
   });
 
   // Swatch click
   var swatches = picker.querySelectorAll('.color-swatch');
-  swatches.forEach(function(swatch) {
+
+  function selectSwatch(swatch) {
+    var primary = swatch.getAttribute('data-primary');
+    var accent = swatch.getAttribute('data-accent');
+
+    swatches.forEach(function(s) {
+      s.classList.remove('is-active');
+      s.setAttribute('aria-checked', 'false');
+      s.setAttribute('tabindex', '-1');
+    });
+    swatch.classList.add('is-active');
+    swatch.setAttribute('aria-checked', 'true');
+    swatch.setAttribute('tabindex', '0');
+
+    applyColors(primary, accent);
+    localStorage.setItem('accent-colors', JSON.stringify({ primary: primary, accent: accent }));
+    announce('Accent color changed to ' + swatch.getAttribute('aria-label'));
+    closePicker();
+  }
+
+  swatches.forEach(function(swatch, index) {
     swatch.addEventListener('click', function() {
-      var primary = this.getAttribute('data-primary');
-      var accent = this.getAttribute('data-accent');
+      selectSwatch(this);
+    });
 
-      // Update active state
-      swatches.forEach(function(s) { s.classList.remove('is-active'); });
-      this.classList.add('is-active');
-
-      applyColors(primary, accent);
-      localStorage.setItem('accent-colors', JSON.stringify({ primary: primary, accent: accent }));
-      picker.classList.remove('is-open');
+    // Arrow key navigation within radio group
+    swatch.addEventListener('keydown', function(e) {
+      var nextIndex;
+      if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
+        e.preventDefault();
+        nextIndex = (index + 1) % swatches.length;
+      } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+        e.preventDefault();
+        nextIndex = (index - 1 + swatches.length) % swatches.length;
+      } else if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        selectSwatch(this);
+        return;
+      } else {
+        return;
+      }
+      swatches[index].setAttribute('tabindex', '-1');
+      swatches[nextIndex].setAttribute('tabindex', '0');
+      swatches[nextIndex].focus();
     });
   });
 
@@ -527,40 +593,13 @@ function initColorCustomization() {
 }
 
 /* ==========================================================================
-   Animated Counters (for stats section if added)
+   Screen Reader Announcements
    ========================================================================== */
 
-function initCounters() {
-  const counters = document.querySelectorAll('[data-counter]');
-  if (counters.length === 0) return;
-
-  const animateCounter = (element, target) => {
-    const duration = 2000;
-    const start = 0;
-    const increment = target / (duration / 16);
-    let current = start;
-
-    const animate = () => {
-      current += increment;
-      if (current < target) {
-        element.textContent = Math.floor(current);
-        requestAnimationFrame(animate);
-      } else {
-        element.textContent = target;
-      }
-    };
-    animate();
-  };
-
-  const counterObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const target = parseInt(entry.target.dataset.counter);
-        animateCounter(entry.target, target);
-        counterObserver.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.5 });
-
-  counters.forEach(counter => counterObserver.observe(counter));
+function announce(message) {
+  var announcer = document.getElementById('sr-announcer');
+  if (announcer) {
+    announcer.textContent = message;
+    setTimeout(function() { announcer.textContent = ''; }, 1000);
+  }
 }

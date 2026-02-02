@@ -1,0 +1,29 @@
+{% if page.url == "/" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "{{ site.author.name }}",
+  "url": "{{ site.url }}",
+  "image": "{{ site.url }}/images/webp/profile.webp",
+  "jobTitle": "Postdoctoral Researcher",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "CERN",
+    "url": "https://home.cern"
+  },
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "Universidade de Santiago de Compostela",
+    "url": "https://www.usc.gal"
+  },
+  "knowsAbout": ["Particle Physics", "Silicon Detectors", "Python", "Data Analysis", "FPGA Design"],
+  "sameAs": [
+    {% if site.author.github %}"https://github.com/{{ site.author.github }}"{% endif %}
+    {% if site.author.linkedin %}, "https://www.linkedin.com/in/{{ site.author.linkedin }}"{% endif %}
+    {% if site.author.orcid %}, "{{ site.author.orcid }}"{% endif %}
+    {% if site.author.googlescholar %}, "{{ site.author.googlescholar }}"{% endif %}
+  ]
+}
+</script>
+{% endif %}
