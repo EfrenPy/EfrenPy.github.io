@@ -9,6 +9,8 @@ link: '/posts/2023/12/generative-ai-for-dummies/'
 venue: 'Instituto Galego de Física de Altas Enerxías (IGFAE)'
 smallinfo: '(2023) Workshop Presentation'
 location: "Santiago de Compostela, Spain"
+header:
+  teaser: webp/generative_AI.webp
 ---
 
 The session aims to demystify the complexities of Generative AIs and showcase their practical applications in academic research. Through interactive examples and hands-on activities, participants will explore the capabilities of platforms like ChatGPT in text generation, image creation, and programming assistance.

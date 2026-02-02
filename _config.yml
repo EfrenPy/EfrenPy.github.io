@@ -6,11 +6,11 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-locale                   : "es_ES"
+locale                   : "en"
 title                    : "Efrén Rodríguez Rodríguez"
 title_separator          : "-"
 name                     : &name "Efrén Rodríguez Rodríguez"
-description              : &description "Efrén Rodríguez - CERN Researcher | Silicon Detectors | Python | Data Analysis | Open to Opportunities"
+description              : &description "Postdoctoral researcher at CERN specializing in silicon pixel detectors, data analysis, and particle physics instrumentation. PhD in Particle Physics with expertise in timing detectors and Python."
 url                      : https://efrenrodriguezrodriguez.com # the base hostname & protocol for your site
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "EfrenPy/EfrenPy.github.io"
@@ -62,9 +62,9 @@ analytics:
 author:
   name             : "Efrén Rodríguez Rodríguez"
   avatar           : "webp/profile.webp"
-  bio              : "Postdoctoral Researcher in particle physics silicon detectors for the EP-R&D department at CERN"
-  bio_en           : "Postdoctoral Researcher in particle physics silicon detectors for the EP-R&D department at CERN"
-  bio_es           : "Investigador Postdoctoral en detectores de silicio para física de partículas en el departamento EP-R&D del CERN"
+  bio              : "Postdoctoral Researcher at CERN · Silicon Detectors · Data Analysis · Python"
+  bio_en           : "Postdoctoral Researcher at CERN · Silicon Detectors · Data Analysis · Python"
+  bio_es           : "Investigador Postdoctoral en el CERN · Detectores de Silicio · Análisis de Datos · Python"
   location         : "Geneva, Switzerland"
   location_en      : "Geneva, Switzerland"
   location_es      : "Ginebra, Suiza"

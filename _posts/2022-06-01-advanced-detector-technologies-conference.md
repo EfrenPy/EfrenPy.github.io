@@ -4,6 +4,8 @@ title_en: 'Shaping the Future of Particle Physics: Insights from the Advanced De
 title_es: 'Dando Forma al Futuro de la Física de Partículas: Perspectivas de la Conferencia de Tecnologías Avanzadas de Detectores'
 date: 2022-06-01
 permalink: /posts/2022/06/advanced-detector-technologies-conference/
+header:
+  teaser: webp/pisa_talk.webp
 tags:
   - Particle Physics
   - LHCb VELO Detector

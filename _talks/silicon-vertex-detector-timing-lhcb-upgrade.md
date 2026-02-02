@@ -10,6 +10,8 @@ venue: '15th Pisa Meeting on Advanced Detectors - Edition 2022'
 smallinfo: '(2022) Akiba, K., Collins, P., Rodriguez Rodriguez, E. <b><i>Pisa Meeting Presentation</i></b>'
 location: "Elba, Italy"
 paperurl: 'https://agenda.infn.it/event/22092/contributions/167363/'
+header:
+  teaser: webp/pisa_poster.webp
 ---
 
 [Link to the conference abstract](https://agenda.infn.it/event/22092/contributions/167363/){: .btn--conference}

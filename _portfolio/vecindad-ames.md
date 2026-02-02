@@ -1,7 +1,7 @@
 ---
 title: "Vecindad Ames"
-title_en: "Vecindad Ames — Civic Engagement Platform"
-title_es: "Vecindad Ames — Plataforma de Participación Ciudadana"
+title_en: "Vecindad Ames -Civic Engagement Platform"
+title_es: "Vecindad Ames -Plataforma de Participación Ciudadana"
 excerpt: "A civic engagement platform empowering residents of Ames, Spain to propose and drive community-led initiatives"
 excerpt_en: "A civic engagement platform empowering residents of Ames, Spain to propose and drive community-led initiatives"
 excerpt_es: "Una plataforma de participación ciudadana que permite a los vecinos de Ames, España proponer e impulsar iniciativas comunitarias"

@@ -6,7 +6,7 @@ excerpt: 'Exploring the time resolution and Landau contribution of 3D pixel geom
 date: 2023-01-01  # Adjust the date to the publication date or leave as is if unknown
 link: 'https://doi.org/10.1016/j.nima.2022.167788'
 header:
-  teaser: path-to-your-image.png  # Replace with the path to your teaser image if available
+  teaser: webp/setup_3d.webp
 venue: 'Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment'
 smallinfo: '(2023) Fernández Martínez, P., Coco, V., Gkougkousis, E.-L., et al. <b><i>Nuclear Instruments and Methods in Physics Research Section A</i></b>'
 location: "P. Fernandez Martínez, V. Coco, E.-L. Gkougkousis, M. Halvorsen Mahlum, G. Petrogiannis, G. Pellegrini, E. Rodríguez Rodríguez"  # Adjust if more authors are to be included

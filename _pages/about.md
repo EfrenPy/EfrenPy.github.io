@@ -1,9 +1,10 @@
 ---
 permalink: /
-title: "Welcome!"
-title_en: "Welcome!"
-title_es: "¡Bienvenido!"
-excerpt: "Particle Physics Researcher | Silicon Detector Expert | CERN"
+title: "Efrén Rodríguez - Particle Physics Researcher at CERN"
+title_en: "Efrén Rodríguez - Particle Physics Researcher at CERN"
+title_es: "Efrén Rodríguez - Investigador en Física de Partículas en el CERN"
+description: "Postdoctoral researcher at CERN specializing in silicon pixel detectors, data analysis, and particle physics instrumentation. Leading R&D on next-generation timing detectors."
+excerpt: "Postdoctoral researcher at CERN specializing in silicon pixel detectors, data analysis, and particle physics instrumentation."
 author_profile: true
 redirect_from:
   - /about/

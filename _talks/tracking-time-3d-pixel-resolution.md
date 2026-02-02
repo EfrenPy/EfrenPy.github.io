@@ -10,6 +10,8 @@ venue: '15th Pisa Meeting on Advanced Detectors - Edition 2022'
 smallinfo: '(2022) Gkougkousis, E.L., Lopez Paz, I., Mahlum, M.H., et al. <b><i>Pisa Meeting Poster</i></b>'
 location: "Elba, Italy"
 paperurl: 'https://agenda.infn.it/event/22092/contributions/166722/'
+header:
+  teaser: webp/pisa_talk1.webp
 ---
 
 [Link to the conference abstract](https://agenda.infn.it/event/22092/contributions/166722/){: .btn--conference}

@@ -6,7 +6,7 @@ excerpt: 'Detailing the first upgrade of the LHCb experiment, enhancing its capa
 date: 2023-01-01  # Adjust the date to the publication date or leave as is if unknown
 link: 'https://arxiv.org/abs/2305.10515'
 header:
-  teaser: path-to-your-image.png  # Replace with the path to your teaser image if available
+  teaser: webp/lhcb_upgrade.webp
 venue: 'arXiv:2305.10515 [hep-ex]'
 smallinfo: '(2023) LHCb collaboration, et al. <b><i>arXiv:2305.10515 [hep-ex]</i></b>'
 location: "LHCb collaboration"  # Adjust if more authors are to be included

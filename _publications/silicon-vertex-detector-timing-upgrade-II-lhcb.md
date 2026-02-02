@@ -6,7 +6,7 @@ excerpt: 'Discussing the advancements in vertex detection technology for LHCb Up
 date: 2023-03-01  # Adjust the date to the publication date or leave as is if unknown
 link: 'https://doi.org/10.1016/j.nima.2022.167965'
 header:
-  teaser: path-to-your-image.png  # Replace with the path to your teaser image if available
+  teaser: webp/upgradeII.webp
 venue: 'Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment'
 smallinfo: '(2023) Rodríguez Rodríguez, E. <b><i>Nuclear Instruments and Methods in Physics Research Section A</i></b>'
 location: "Efrén Rodríguez Rodríguez"  # Adjust if more authors are to be included

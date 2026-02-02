@@ -4,6 +4,8 @@ title_en: "Journey to Unraveling the Universe's Mysteries: The LHCb VELO Detecto
 title_es: "Viaje para Desentrañar los Misterios del Universo: El Lanzamiento del Detector LHCb VELO"
 date: 2023-06-30
 permalink: /posts/2023/06/lhcb-velo-detector-launch/
+header:
+  teaser: webp/velo_launch.webp
 tags:
   - Particle Physics
   - CERN

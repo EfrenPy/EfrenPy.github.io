@@ -10,6 +10,8 @@ venue: '18th "Trento" Workshop on Advanced Silicon Radiation Detectors'
 smallinfo: "(2023) Rodriguez Rodriguez, E., Dall'Occo, E., Carvalho Akiba, K., et al. <b><i>Workshop Presentation</i></b>"
 location: "Trento, Italy"
 paperurl: 'https://indi.to/CWSVj'
+header:
+  teaser: webp/setup_3d.webp
 ---
 
 [Link to the conference abstract](https://indi.to/CWSVj){: .btn--conference}

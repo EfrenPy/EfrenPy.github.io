@@ -1,7 +1,7 @@
 ---
 title: "CERN Starter Pack"
-title_en: "CERN Starter Pack — Newcomer Onboarding Guide"
-title_es: "CERN Starter Pack — Guia de Acogida para Recien Llegados"
+title_en: "CERN Starter Pack -Newcomer Onboarding Guide"
+title_es: "CERN Starter Pack -Guia de Acogida para Recien Llegados"
 excerpt: "Bilingual informational website for newcomers at CERN covering legal, tax, and technical guidance"
 excerpt_en: "Bilingual informational website for newcomers at CERN covering legal, tax, and technical guidance"
 excerpt_es: "Sitio web informativo bilingue para recien llegados al CERN con guias legales, fiscales y tecnicas"

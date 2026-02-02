@@ -2,13 +2,13 @@
 
 bio:
   en: |
-    Welcome to my professional space! I'm a physicist specializing in Nuclear and Particle Physics with over five years of experience in designing, building, and implementing advanced technologies in instrumentation and sensors. I have led and contributed to international high-tech projects such as the LHCb silicon pixel detector and the Timepix4 particle beam telescope.
+    I design and test the silicon pixel detectors used in CERN's particle physics experiments. Over five years, I've led hardware projects across three international labs (CERN, Nikhef, and IGFAE), achieving breakthrough 90-picosecond timing resolution and contributing to the LHCb VELO detector now running at the Large Hadron Collider.
 
-    With a strong background in electronics, data analysis, project management, and solving complex problems, I am always seeking opportunities to apply my expertise to innovative and impactful projects in R&D, data science, and research.
+    My work sits at the intersection of electronics, physics, and data analysis: from FPGA-based readout systems and high-speed data transmission to Python-driven analysis pipelines. I'm looking for my next challenge in R&D engineering, data science, or applied physics research.
   es: |
-    ¡Bienvenido a mi espacio profesional! Soy físico especializado en Física Nuclear y de Partículas con más de cinco años de experiencia en el diseño, construcción e implementación de tecnologías avanzadas en instrumentación y sensores. He liderado y contribuido a proyectos internacionales de alta tecnología como el detector de píxeles de silicio LHCb y el telescopio de haces de partículas Timepix4.
+    Diseño y pruebo los detectores de píxeles de silicio utilizados en los experimentos de física de partículas del CERN. Durante cinco años, he liderado proyectos de hardware en tres laboratorios internacionales (CERN, Nikhef e IGFAE), logrando una resolución temporal de 90 picosegundos y contribuyendo al detector LHCb VELO que actualmente opera en el Gran Colisionador de Hadrones.
 
-    Con una sólida formación en electrónica, análisis de datos, gestión de proyectos y resolución de problemas complejos, siempre busco oportunidades para aplicar mi experiencia en proyectos innovadores e impactantes en I+D, ciencia de datos e investigación.
+    Mi trabajo se encuentra en la intersección de la electrónica, la física y el análisis de datos: desde sistemas de lectura basados en FPGA y transmisión de datos de alta velocidad hasta pipelines de análisis con Python. Busco mi próximo reto en ingeniería I+D, ciencia de datos o investigación en física aplicada.
 
 # Highlight cards section
 highlights_title:
@@ -16,28 +16,28 @@ highlights_title:
   es: "Lo que Aporto"
 
 highlight_research_title:
-  en: "Research Leadership"
-  es: "Liderazgo en Investigación"
+  en: "Leading Detector R&D at CERN"
+  es: "Liderando I+D de Detectores en el CERN"
 
 highlight_research_desc:
-  en: "Leading projects at CERN EP-R&D including Timepix4 telescope development and 3D silicon sensor simulation. Experience coordinating international teams across multiple institutions."
-  es: "Liderando proyectos en CERN EP-R&D incluyendo desarrollo del telescopio Timepix4 y simulación de sensores de silicio 3D. Experiencia coordinando equipos internacionales en múltiples instituciones."
+  en: "Building the Timepix4 beam telescope and simulating next-generation 3D silicon sensors for the EP-R&D department. Coordinating hardware campaigns across international teams."
+  es: "Construyendo el telescopio de haz Timepix4 y simulando sensores de silicio 3D de nueva generación para el departamento EP-R&D. Coordinando campañas de hardware con equipos internacionales."
 
 highlight_tech_title:
-  en: "Technical Expertise"
-  es: "Experiencia Técnica"
+  en: "From Python to FPGA"
+  es: "De Python a FPGA"
 
 highlight_tech_desc:
-  en: "Python, C++, ROOT, VHDL/FPGA, LabVIEW. Strong skills in data analysis pipelines, electronics design, and hardware-software integration."
-  es: "Python, C++, ROOT, VHDL/FPGA, LabVIEW. Sólidas habilidades en pipelines de análisis de datos, diseño electrónico e integración hardware-software."
+  en: "Full-stack physics: Python and C++ analysis pipelines, VHDL/FPGA readout electronics, ROOT data frameworks, and LabVIEW control systems. Hardware meets software."
+  es: "Física full-stack: pipelines de análisis en Python y C++, electrónica de lectura VHDL/FPGA, frameworks de datos ROOT y sistemas de control LabVIEW. Hardware y software unidos."
 
 highlight_collab_title:
-  en: "International Collaboration"
-  es: "Colaboración Internacional"
+  en: "3 Labs, 3 Countries"
+  es: "3 Laboratorios, 3 Países"
 
 highlight_collab_desc:
-  en: "Experience at CERN (Geneva), Nikhef (Amsterdam), and IGFAE (Spain). Published researcher and conference presenter in the particle physics community."
-  es: "Experiencia en CERN (Ginebra), Nikhef (Ámsterdam) e IGFAE (España). Investigador publicado y presentador en conferencias de la comunidad de física de partículas."
+  en: "CERN (Geneva), Nikhef (Amsterdam), IGFAE (Spain). Published in top-tier journals, presented at international conferences, and built detectors that are running right now at the LHC."
+  es: "CERN (Ginebra), Nikhef (Ámsterdam), IGFAE (España). Publicaciones en revistas de primer nivel, presentaciones en conferencias internacionales y detectores que operan ahora mismo en el LHC."
 
 # Key achievements section
 achievements_title:
@@ -86,12 +86,12 @@ interests_title:
   es: "Intereses"
 
 interests_engaged:
-  en: "Deeply engaged in: High-energy physics experiments, state-of-the-art silicon detectors, and cutting-edge electronics."
-  es: "Profundamente involucrado en: Experimentos de física de altas energías, detectores de silicio de última generación y electrónica avanzada."
+  en: "Working on: High-energy physics experiments, silicon pixel detectors for timing applications, and custom readout electronics."
+  es: "Trabajo en: Experimentos de física de altas energías, detectores de píxeles de silicio para aplicaciones de temporización y electrónica de lectura personalizada."
 
 interests_explore:
-  en: "Keen to explore: Advanced applications of AI in particle physics and innovative technology solutions."
-  es: "Interesado en explorar: Aplicaciones avanzadas de IA en física de partículas y soluciones tecnológicas innovadoras."
+  en: "Exploring: Machine learning for particle physics, AI-assisted detector design, and data-driven sensor optimization."
+  es: "Explorando: Machine learning para física de partículas, diseño de detectores asistido por IA y optimización de sensores basada en datos."
 
 education_title:
   en: "Education"

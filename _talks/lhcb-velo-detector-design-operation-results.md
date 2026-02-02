@@ -10,6 +10,8 @@ venue: '13th International "Hiroshima" Symposium on the Development and Applicat
 smallinfo: '(2023) Rodriguez Rodriguez, E., Carvalho Akiba, K., De Capua, S., Coco, V. <b><i>Symposium Presentation</i></b>'
 location: "Vancouver, Canada"
 paperurl: 'https://indico.cern.ch/event/1184921/contributions/5574821/attachments/2764326/4816286/The%20LHCb%20VELO%20detector_pdf.pdf'
+header:
+  teaser: webp/talk_vancouver.webp
 ---
 
 [Download the presentation](https://indico.cern.ch/event/1184921/contributions/5574821/attachments/2764326/4816286/The%20LHCb%20VELO%20detector_pdf.pdf)

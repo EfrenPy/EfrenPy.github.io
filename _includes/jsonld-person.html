@@ -4,26 +4,56 @@
   "@context": "https://schema.org",
   "@type": "Person",
   "name": "{{ site.author.name }}",
+  "givenName": "Efrén",
+  "familyName": "Rodríguez Rodríguez",
   "url": "{{ site.url }}",
   "image": "{{ site.url }}/images/webp/profile.webp",
+  "description": "Postdoctoral researcher at CERN specializing in silicon pixel detectors, data analysis, and particle physics instrumentation.",
   "jobTitle": "Postdoctoral Researcher",
   "worksFor": {
     "@type": "Organization",
     "name": "CERN",
-    "url": "https://home.cern"
+    "url": "https://home.cern",
+    "department": "EP-R&D"
   },
-  "alumniOf": {
-    "@type": "CollegeOrUniversity",
-    "name": "Universidade de Santiago de Compostela",
-    "url": "https://www.usc.gal"
+  "alumniOf": [
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "Universidade de Santiago de Compostela",
+      "url": "https://www.usc.gal"
+    }
+  ],
+  "hasCredential": {
+    "@type": "EducationalOccupationalCredential",
+    "credentialCategory": "PhD",
+    "about": "Particle Physics"
   },
-  "knowsAbout": ["Particle Physics", "Silicon Detectors", "Python", "Data Analysis", "FPGA Design"],
+  "knowsAbout": ["Particle Physics", "Silicon Pixel Detectors", "Timing Detectors", "Python", "C++", "Data Analysis", "FPGA Design", "ROOT", "Electronics", "LHCb"],
+  "knowsLanguage": ["en", "es", "gl"],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Geneva",
+    "addressCountry": "CH"
+  },
   "sameAs": [
     {% if site.author.github %}"https://github.com/{{ site.author.github }}"{% endif %}
     {% if site.author.linkedin %}, "https://www.linkedin.com/in/{{ site.author.linkedin }}"{% endif %}
     {% if site.author.orcid %}, "{{ site.author.orcid }}"{% endif %}
     {% if site.author.googlescholar %}, "{{ site.author.googlescholar }}"{% endif %}
   ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "{{ site.author.name }}",
+  "url": "{{ site.url }}",
+  "description": "{{ site.description }}",
+  "author": {
+    "@type": "Person",
+    "name": "{{ site.author.name }}"
+  }
 }
 </script>
 {% endif %}

@@ -1,7 +1,7 @@
 ---
 title: "JulaboFL1703-control"
-title_en: "JulaboFL1703-control — Lab Equipment Control System"
-title_es: "JulaboFL1703-control — Sistema de Control de Equipos de Laboratorio"
+title_en: "JulaboFL1703-control -Lab Equipment Control System"
+title_es: "JulaboFL1703-control -Sistema de Control de Equipos de Laboratorio"
 excerpt: "Python control suite for operating a Julabo recirculating chiller via CLI, GUI, and network interfaces"
 excerpt_en: "Python control suite for operating a Julabo recirculating chiller via CLI, GUI, and network interfaces"
 excerpt_es: "Suite de control en Python para operar un enfriador recirculante Julabo mediante CLI, GUI e interfaces de red"
@@ -23,7 +23,7 @@ tags:
 
 ### Description
 
-A comprehensive Python control suite for operating a Julabo FL1703 recirculating chiller, providing multiple interfaces for laboratory temperature control — from command-line to remote GUI.
+A comprehensive Python control suite for operating a Julabo FL1703 recirculating chiller, providing multiple interfaces for laboratory temperature control -from command-line to remote GUI.
 
 ### Features
 

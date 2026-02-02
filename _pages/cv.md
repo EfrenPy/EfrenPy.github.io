@@ -3,6 +3,7 @@ layout: archive
 title: "Curriculum Vitae"
 title_en: "Curriculum Vitae"
 title_es: "Currículum Vitae"
+description: "CV of Efrén Rodríguez: postdoctoral researcher at CERN with expertise in silicon detectors, Python, C++, data analysis, and particle physics instrumentation."
 permalink: /cv/
 author_profile: true
 redirect_from:

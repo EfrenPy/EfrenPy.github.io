@@ -1,7 +1,7 @@
 ---
 title: "MapToPoster"
-title_en: "MapToPoster — City Map Poster Generator"
-title_es: "MapToPoster — Generador de Pósters de Mapas Urbanos"
+title_en: "MapToPoster -City Map Poster Generator"
+title_es: "MapToPoster -Generador de Pósters de Mapas Urbanos"
 excerpt: "Python tool that transforms any city into minimalist map posters using OpenStreetMap data"
 excerpt_en: "Python tool that transforms any city into minimalist map posters using OpenStreetMap data"
 excerpt_es: "Herramienta Python que transforma cualquier ciudad en pósters de mapas minimalistas usando datos de OpenStreetMap"

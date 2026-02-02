@@ -6,9 +6,9 @@ title:
 
 intro:
   en: |
-    I'm always interested in discussing new opportunities in **research**, **R&D engineering**, and **data science**. Whether you're looking for expertise in particle physics instrumentation, data analysis, or project leadership, I'd be happy to connect.
+    Looking for a physicist who can lead hardware projects, analyze complex datasets, and deliver results? Let's talk. I'm open to opportunities in **R&D engineering**, **data science**, and **research**, anywhere that values hands-on technical expertise and cross-functional collaboration.
   es: |
-    Siempre estoy interesado en discutir nuevas oportunidades en **investigación**, **ingeniería I+D** y **ciencia de datos**. Si buscas experiencia en instrumentación de física de partículas, análisis de datos o liderazgo de proyectos, estaré encantado de conectar.
+    ¿Buscas un físico que pueda liderar proyectos de hardware, analizar conjuntos de datos complejos y entregar resultados? Hablemos. Estoy abierto a oportunidades en **ingeniería I+D**, **ciencia de datos** e **investigación**, en cualquier lugar que valore la experiencia técnica práctica y la colaboración multidisciplinar.
 
 reach_out_title:
   en: "Get in Touch"
@@ -38,25 +38,25 @@ interests_text:
   en: |
     I'm particularly interested in roles involving:
 
-    - **R&D Engineering** — Sensor development, electronics, instrumentation, hardware-software integration
-    - **Data Science & Engineering** — Scientific computing, data analysis pipelines, machine learning applications
-    - **Research Positions** — Particle physics, detector development, experimental physics
-    - **Technical Project Management** — Leading cross-functional teams on technology projects
+    - **R&D Engineering**:Sensor development, electronics, instrumentation, hardware-software integration
+    - **Data Science & Engineering**:Scientific computing, data analysis pipelines, machine learning applications
+    - **Research Positions**:Particle physics, detector development, experimental physics
+    - **Technical Project Management**:Leading cross-functional teams on technology projects
   es: |
     Estoy particularmente interesado en roles que involucren:
 
-    - **Ingeniería I+D** — Desarrollo de sensores, electrónica, instrumentación, integración hardware-software
-    - **Ciencia e Ingeniería de Datos** — Computación científica, pipelines de análisis de datos, aplicaciones de machine learning
-    - **Posiciones de Investigación** — Física de partículas, desarrollo de detectores, física experimental
-    - **Gestión de Proyectos Técnicos** — Liderar equipos multifuncionales en proyectos tecnológicos
+    - **Ingeniería I+D**:Desarrollo de sensores, electrónica, instrumentación, integración hardware-software
+    - **Ciencia e Ingeniería de Datos**:Computación científica, pipelines de análisis de datos, aplicaciones de machine learning
+    - **Posiciones de Investigación**:Física de partículas, desarrollo de detectores, física experimental
+    - **Gestión de Proyectos Técnicos**:Liderar equipos multifuncionales en proyectos tecnológicos
 
 location_title:
   en: "Location & Availability"
   es: "Ubicación y Disponibilidad"
 
 location_text:
-  en: "Open to opportunities worldwide, including remote positions. Currently based in Geneva, Switzerland."
-  es: "Abierto a oportunidades en todo el mundo, incluyendo posiciones remotas. Actualmente ubicado en Ginebra, Suiza."
+  en: "Based in Geneva, Switzerland. Open to relocation and remote positions worldwide."
+  es: "Ubicado en Ginebra, Suiza. Abierto a reubicación y posiciones remotas en todo el mundo."
 
 download_cv:
   en: "Download Full CV"
