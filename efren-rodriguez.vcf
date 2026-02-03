@@ -1,0 +1,11 @@
+BEGIN:VCARD
+VERSION:3.0
+FN;CHARSET=UTF-8:Efrén Rodríguez Rodríguez
+N;CHARSET=UTF-8:Rodríguez Rodríguez;Efrén;;;
+EMAIL;CHARSET=UTF-8;type=HOME,INTERNET:efrenrguezrguez@gmail.com
+TEL;TYPE=CELL:+34629266373
+ADR;CHARSET=UTF-8;TYPE=WORK:;;;Geneva;;;Switzerland
+ORG;CHARSET=UTF-8:CERN
+URL;CHARSET=UTF-8:https://efrenrodriguezrodriguez.com/
+REV:2026-02-03T09:55:56.541Z
+END:VCARD

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Efrén Rodríguez Rodríguez - Contact Card</title>
+  <meta name="description" content="Digital business card for Efrén Rodríguez Rodríguez, CERN">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --primary: #52adc8;
+      --primary-dark: #3d8fa8;
+      --accent: #8B5CF6;
+      --bg: #0f172a;
+      --bg-card: rgba(30, 41, 59, 0.7);
+      --text: #e2e8f0;
+      --text-light: #94a3b8;
+      --border: rgba(148, 163, 184, 0.15);
+      --gradient: linear-gradient(135deg, #67d4f1, #a78bfa);
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, 'Segoe UI', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100dvh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+      overflow: hidden;
+    }
+
+    /* Animated background orbs */
+    .bg-orb {
+      position: fixed;
+      border-radius: 50%;
+      filter: blur(80px);
+      opacity: 0.3;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .bg-orb--1 {
+      width: 400px; height: 400px;
+      background: #52adc8;
+      top: -100px; left: -100px;
+      animation: float 8s ease-in-out infinite;
+    }
+    .bg-orb--2 {
+      width: 350px; height: 350px;
+      background: #8B5CF6;
+      bottom: -80px; right: -80px;
+      animation: float 10s ease-in-out infinite reverse;
+    }
+    @keyframes float {
+      0%, 100% { transform: translate(0, 0); }
+      50% { transform: translate(30px, -30px); }
+    }
+
+    .card {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      max-width: 420px;
+      background: var(--bg-card);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 2.5rem 2rem 2rem;
+      text-align: center;
+    }
+
+    .card__avatar {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      background: var(--gradient);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1.25rem;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 2rem;
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: -0.02em;
+    }
+
+    .card__name {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.6rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      background: var(--gradient);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 0.35rem;
+    }
+
+    .card__org {
+      font-size: 0.95rem;
+      color: var(--text-light);
+      margin-bottom: 0.2rem;
+    }
+
+    .card__location {
+      font-size: 0.85rem;
+      color: var(--text-light);
+      margin-bottom: 1.75rem;
+    }
+
+    .card__links {
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+      margin-bottom: 1.75rem;
+    }
+
+    .card__link {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.7rem 1rem;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      background: rgba(15, 23, 42, 0.5);
+      color: var(--text);
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: border-color 0.2s, background 0.2s;
+    }
+    .card__link:hover {
+      border-color: var(--primary);
+      background: rgba(82, 173, 200, 0.08);
+    }
+
+    .card__link-icon {
+      flex-shrink: 0;
+      width: 20px;
+      height: 20px;
+      opacity: 0.7;
+    }
+
+    .card__link-label {
+      color: var(--text-light);
+      font-size: 0.75rem;
+      min-width: 48px;
+      text-align: left;
+    }
+    .card__link-value {
+      text-align: left;
+    }
+
+    .card__save {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      width: 100%;
+      padding: 0.85rem 1.5rem;
+      border: none;
+      border-radius: 12px;
+      background: var(--gradient);
+      color: #fff;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s, filter 0.2s;
+    }
+    .card__save:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(82, 173, 200, 0.25);
+      filter: brightness(1.1);
+    }
+    .card__save:active {
+      transform: translateY(0);
+    }
+
+    .card__save-icon {
+      width: 18px;
+      height: 18px;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .bg-orb { animation: none; }
+      .card__save { transition: none; }
+      .card__link { transition: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="bg-orb bg-orb--1"></div>
+  <div class="bg-orb bg-orb--2"></div>
+
+  <div class="card">
+    <div class="card__avatar">ER</div>
+    <h1 class="card__name">Efrén Rodríguez Rodríguez</h1>
+    <p class="card__org">CERN</p>
+    <p class="card__location">Geneva, Switzerland</p>
+
+    <div class="card__links">
+      <a href="tel:+34629266373" class="card__link">
+        <svg class="card__link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span class="card__link-label">Phone</span>
+        <span class="card__link-value">+34 629 266 373</span>
+      </a>
+      <a href="mailto:efrenrguezrguez@gmail.com" class="card__link">
+        <svg class="card__link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        <span class="card__link-label">Email</span>
+        <span class="card__link-value">efrenrguezrguez@gmail.com</span>
+      </a>
+      <a href="https://efrenrodriguezrodriguez.com/" class="card__link" target="_blank" rel="noopener">
+        <svg class="card__link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        <span class="card__link-label">Web</span>
+        <span class="card__link-value">efrenrodriguezrodriguez.com</span>
+      </a>
+    </div>
+
+    <a href="/efren-rodriguez.vcf" download="efren-rodriguez.vcf" class="card__save">
+      <svg class="card__save-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      Save Contact
+    </a>
+  </div>
+</body>
+</html>
