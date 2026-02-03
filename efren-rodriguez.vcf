@@ -3,9 +3,10 @@ VERSION:3.0
 FN;CHARSET=UTF-8:Efrén Rodríguez Rodríguez
 N;CHARSET=UTF-8:Rodríguez Rodríguez;Efrén;;;
 EMAIL;CHARSET=UTF-8;type=HOME,INTERNET:efrenrguezrguez@gmail.com
-TEL;TYPE=CELL:+34629266373
 ADR;CHARSET=UTF-8;TYPE=WORK:;;;Geneva;;;Switzerland
+TITLE;CHARSET=UTF-8:Postdoctoral Researcher
 ORG;CHARSET=UTF-8:CERN
 URL;CHARSET=UTF-8:https://efrenrodriguezrodriguez.com/
-REV:2026-02-03T09:55:56.541Z
+X-SOCIALPROFILE;CHARSET=UTF-8;TYPE=linkedin:https://www.linkedin.com/in/efrenrguezrguez
+REV:2026-02-03T10:29:41.663Z
 END:VCARD
