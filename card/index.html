@@ -12,53 +12,74 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --primary: #52adc8;
-      --primary-dark: #3d8fa8;
-      --accent: #8B5CF6;
-      --bg: #0f172a;
-      --bg-card: rgba(30, 41, 59, 0.7);
-      --text: #e2e8f0;
-      --text-light: #94a3b8;
-      --border: rgba(148, 163, 184, 0.15);
-      --gradient: linear-gradient(135deg, #67d4f1, #a78bfa);
+      --color-background: #fff;
+      --color-background-secondary: #f8fafc;
+      --color-text: #1e293b;
+      --color-text-light: #64748b;
+      --color-border: #e2e8f0;
+      --color-primary: #52adc8;
+      --color-primary-dark: #3d8fa8;
+      --color-accent: #8B5CF6;
+      --color-card-bg: #fff;
+      --color-shadow: rgba(0, 0, 0, 0.08);
+      --color-shadow-strong: rgba(0, 0, 0, 0.12);
+      --gradient-primary: linear-gradient(135deg, #52adc8, #8B5CF6);
+      --gradient-subtle: linear-gradient(135deg, rgba(82, 173, 200, 0.08), rgba(139, 92, 246, 0.08));
     }
 
     body {
-      font-family: 'Inter', -apple-system, 'Segoe UI', sans-serif;
-      background: var(--bg);
-      color: var(--text);
+      font-family: 'Inter', -apple-system, 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+      background: var(--color-background);
+      color: var(--color-text);
       min-height: 100dvh;
       display: flex;
       align-items: center;
       justify-content: center;
       padding: 1.5rem;
+      position: relative;
       overflow: hidden;
     }
 
-    /* Animated background orbs */
+    /* Animated background orbs - matching main site */
     .bg-orb {
       position: fixed;
       border-radius: 50%;
       filter: blur(80px);
-      opacity: 0.3;
+      opacity: 0.4;
       pointer-events: none;
       z-index: 0;
     }
     .bg-orb--1 {
-      width: 400px; height: 400px;
+      width: 500px; height: 500px;
       background: #52adc8;
-      top: -100px; left: -100px;
-      animation: float 8s ease-in-out infinite;
+      top: -150px; left: -150px;
+      animation: float 20s ease-in-out infinite;
     }
     .bg-orb--2 {
-      width: 350px; height: 350px;
+      width: 400px; height: 400px;
       background: #8B5CF6;
-      bottom: -80px; right: -80px;
-      animation: float 10s ease-in-out infinite reverse;
+      bottom: -100px; right: -100px;
+      animation: float-reverse 25s ease-in-out infinite;
+    }
+    .bg-orb--3 {
+      width: 300px; height: 300px;
+      background: #52adc8;
+      top: 50%; right: -80px;
+      animation: float-slow 33s ease-in-out infinite;
     }
     @keyframes float {
+      0%, 100% { transform: translate(0, 0) scale(1); }
+      33% { transform: translate(30px, -30px) scale(1.05); }
+      66% { transform: translate(-20px, 20px) scale(0.95); }
+    }
+    @keyframes float-reverse {
+      0%, 100% { transform: translate(0, 0) scale(1); }
+      33% { transform: translate(-25px, 25px) scale(1.03); }
+      66% { transform: translate(15px, -15px) scale(0.97); }
+    }
+    @keyframes float-slow {
       0%, 100% { transform: translate(0, 0); }
-      50% { transform: translate(30px, -30px); }
+      50% { transform: translate(-30px, -20px); }
     }
 
     .card {
@@ -66,29 +87,42 @@
       z-index: 1;
       width: 100%;
       max-width: 420px;
-      background: var(--bg-card);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      border: 1px solid var(--border);
+      background: var(--color-card-bg);
+      border: 1px solid var(--color-border);
       border-radius: 20px;
       padding: 2.5rem 2rem 2rem;
       text-align: center;
+      box-shadow: 0 4px 24px var(--color-shadow), 0 1px 3px var(--color-shadow-strong);
     }
 
+    /* Profile picture with gradient ring */
     .card__avatar {
-      width: 96px;
-      height: 96px;
-      border-radius: 50%;
-      background: var(--gradient);
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      position: relative;
+      width: 120px;
+      height: 120px;
       margin: 0 auto 1.25rem;
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: 2rem;
-      font-weight: 700;
-      color: #fff;
-      letter-spacing: -0.02em;
+    }
+    .card__avatar::before {
+      content: '';
+      position: absolute;
+      inset: -3px;
+      border-radius: 50%;
+      background: var(--gradient-primary);
+      z-index: 0;
+      animation: pulse-ring 3s ease-in-out infinite;
+    }
+    .card__avatar img {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--color-background);
+    }
+    @keyframes pulse-ring {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.7; transform: scale(1.04); }
     }
 
     .card__name {
@@ -96,7 +130,7 @@
       font-size: 1.6rem;
       font-weight: 700;
       letter-spacing: -0.02em;
-      background: var(--gradient);
+      background: var(--gradient-primary);
       -webkit-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -105,20 +139,21 @@
 
     .card__org {
       font-size: 0.95rem;
-      color: var(--text-light);
-      margin-bottom: 0.2rem;
+      font-weight: 600;
+      color: var(--color-text);
+      margin-bottom: 0.15rem;
     }
 
     .card__location {
       font-size: 0.85rem;
-      color: var(--text-light);
+      color: var(--color-text-light);
       margin-bottom: 1.75rem;
     }
 
     .card__links {
       display: flex;
       flex-direction: column;
-      gap: 0.65rem;
+      gap: 0.6rem;
       margin-bottom: 1.75rem;
     }
 
@@ -126,31 +161,36 @@
       display: flex;
       align-items: center;
       gap: 0.75rem;
-      padding: 0.7rem 1rem;
-      border-radius: 10px;
-      border: 1px solid var(--border);
-      background: rgba(15, 23, 42, 0.5);
-      color: var(--text);
+      padding: 0.75rem 1rem;
+      border-radius: 12px;
+      border: 1px solid var(--color-border);
+      background: var(--color-background-secondary);
+      color: var(--color-text);
       text-decoration: none;
       font-size: 0.9rem;
-      transition: border-color 0.2s, background 0.2s;
+      transition: border-color 0.2s, background 0.2s, transform 0.2s, box-shadow 0.2s;
     }
     .card__link:hover {
-      border-color: var(--primary);
-      background: rgba(82, 173, 200, 0.08);
+      border-color: var(--color-primary);
+      background: rgba(82, 173, 200, 0.06);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px var(--color-shadow);
     }
 
     .card__link-icon {
       flex-shrink: 0;
       width: 20px;
       height: 20px;
-      opacity: 0.7;
+      color: var(--color-primary);
     }
 
     .card__link-label {
-      color: var(--text-light);
-      font-size: 0.75rem;
-      min-width: 48px;
+      color: var(--color-text-light);
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      min-width: 44px;
       text-align: left;
     }
     .card__link-value {
@@ -166,17 +206,18 @@
       padding: 0.85rem 1.5rem;
       border: none;
       border-radius: 12px;
-      background: var(--gradient);
+      background: var(--gradient-primary);
       color: #fff;
       font-family: 'Inter', sans-serif;
       font-size: 0.95rem;
       font-weight: 600;
       cursor: pointer;
+      text-decoration: none;
       transition: transform 0.2s, box-shadow 0.2s, filter 0.2s;
     }
     .card__save:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 8px 24px rgba(82, 173, 200, 0.25);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 24px rgba(82, 173, 200, 0.3);
       filter: brightness(1.1);
     }
     .card__save:active {
@@ -190,17 +231,20 @@
 
     @media (prefers-reduced-motion: reduce) {
       .bg-orb { animation: none; }
-      .card__save { transition: none; }
-      .card__link { transition: none; }
+      .card__avatar::before { animation: none; }
+      .card__save, .card__link { transition: none; }
     }
   </style>
 </head>
 <body>
   <div class="bg-orb bg-orb--1"></div>
   <div class="bg-orb bg-orb--2"></div>
+  <div class="bg-orb bg-orb--3"></div>
 
   <div class="card">
-    <div class="card__avatar">ER</div>
+    <div class="card__avatar">
+      <img src="/images/webp/profile.webp" alt="Efrén Rodríguez Rodríguez" loading="eager">
+    </div>
     <h1 class="card__name">Efrén Rodríguez Rodríguez</h1>
     <p class="card__org">CERN</p>
     <p class="card__location">Geneva, Switzerland</p>
@@ -224,7 +268,7 @@
     </div>
 
     <a href="/efren-rodriguez.vcf" download="efren-rodriguez.vcf" class="card__save">
-      <svg class="card__save-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      <svg class="card__save-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg>
       Save Contact
     </a>
   </div>
