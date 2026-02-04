@@ -223,6 +223,11 @@
     background: var(--color-background-secondary, $lighter-gray);
   }
 
+  &:focus-visible {
+    outline: 2px solid var(--color-primary, #52adc8);
+    outline-offset: 3px;
+  }
+
   .navicon {
     display: block;
     position: relative;

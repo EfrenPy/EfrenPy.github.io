@@ -6,11 +6,11 @@
 
 {% if site.words_per_minute %}
   {% if words < 180 %}
-	  <span class="lang-en">less than 1 minute read</span><span class="lang-es">menos de 1 minuto de lectura</span>
+	  <span class="lang-en" lang="en">less than 1 minute read</span><span class="lang-es" lang="es">menos de 1 minuto de lectura</span>
 	{% elsif words < 360 %}
-	  1 <span class="lang-en">minute read</span><span class="lang-es">minuto de lectura</span>
+	  1 <span class="lang-en" lang="en">minute read</span><span class="lang-es" lang="es">minuto de lectura</span>
 	{% else %}
-	  {{ words | divided_by:site.words_per_minute }} <span class="lang-en">minute read</span><span class="lang-es">minutos de lectura</span>
+	  {{ words | divided_by:site.words_per_minute }} <span class="lang-en" lang="en">minute read</span><span class="lang-es" lang="es">minutos de lectura</span>
 	{% endif %}
 {% else %}
   Undefined parameter words_per_minute at _config.yml

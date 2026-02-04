@@ -9,7 +9,7 @@
 {% if post.title_en %}
   {% assign title_en = post.title_en | markdownify | remove: "<p>" | remove: "</p>" %}
   {% assign title_es = post.title_es | markdownify | remove: "<p>" | remove: "</p>" %}
-  {% capture title %}<span class="lang-en">{{ title_en }}</span><span class="lang-es">{{ title_es }}</span>{% endcapture %}
+  {% capture title %}<span class="lang-en" lang="en">{{ title_en }}</span><span class="lang-es" lang="es">{{ title_es }}</span>{% endcapture %}
 {% elsif post.id %}
   {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
 {% else %}
@@ -60,7 +60,7 @@
       {% endif %}
     </p>
     {% elsif post.excerpt and site.read_more == 'enabled' %}
-    <p class="archive__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<a href="{{ base_path }}{{ post.url }}" rel="permalink"> <span class="lang-en">Read more</span><span class="lang-es">Leer más</span></a>       
+    <p class="archive__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<a href="{{ base_path }}{{ post.url }}" rel="permalink"> <span class="lang-en" lang="en">Read more</span><span class="lang-es" lang="es">Leer más</span></a>       
       {% if post.link %}
         <a href="{{ post.link }}"><i class="fas fa-fw fa-link zoom" aria-hidden="true"></i></a>
       {% endif %}

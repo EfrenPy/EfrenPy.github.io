@@ -12,5 +12,9 @@
   },
   "engines": {
     "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "qrcode": "^1.5.4",
+    "vcards-js": "^2.10.0"
   }
 }

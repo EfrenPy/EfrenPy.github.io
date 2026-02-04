@@ -194,6 +194,12 @@ html.is-animating .swup-transition-main {
   transform: translateX(0);
 }
 
+/* Swup loading indicator */
+.scroll-progress.progress-bar--loading {
+  transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 1;
+}
+
 /* Respect reduced motion preferences */
 @media (prefers-reduced-motion: reduce) {
   .reveal,

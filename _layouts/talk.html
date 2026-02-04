@@ -23,23 +23,23 @@ layout: default
     <div class="page__inner-wrap">
       {% unless page.header.overlay_color or page.header.overlay_image %}
         <header>
-          {% if page.title %}<h1 class="page__title" itemprop="headline">{% if page.title_en %}<span class="lang-en">{{ page.title_en | markdownify | remove: "<p>" | remove: "</p>" }}</span><span class="lang-es">{{ page.title_es | markdownify | remove: "<p>" | remove: "</p>" }}</span>{% else %}{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}{% endif %}</h1>{% endif %}
+          {% if page.title %}<h1 class="page__title" itemprop="headline">{% if page.title_en %}<span class="lang-en" lang="en">{{ page.title_en | markdownify | remove: "<p>" | remove: "</p>" }}</span><span class="lang-es" lang="es">{{ page.title_es | markdownify | remove: "<p>" | remove: "</p>" }}</span>{% else %}{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}{% endif %}</h1>{% endif %}
           {% if page.read_time %}
             <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
           {% endif %}
         {% if page.modified %}
-          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i><span class="lang-en">Date:</span><span class="lang-es">Fecha:</span></strong> <time datetime="{{ page.modified | date: "%Y-%m-%d" }}">{{ page.modified | date: "%B %d, %Y" }}</time></p>
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i><span class="lang-en" lang="en">Date:</span><span class="lang-es" lang="es">Fecha:</span></strong> <time datetime="{{ page.modified | date: "%Y-%m-%d" }}">{{ page.modified | date: "%B %d, %Y" }}</time></p>
         {% elsif page.date %}
-          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i><span class="lang-en">Date:</span><span class="lang-es">Fecha:</span></strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time></p>
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i><span class="lang-en" lang="en">Date:</span><span class="lang-es" lang="es">Fecha:</span></strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time></p>
         {% endif %}
-        {% if page.talk_type %}<p>{{page.talk_type}} <span class="lang-en">at</span><span class="lang-es">en</span> {{ page.venue }},  {{page.location}} {% endif %}
+        {% if page.talk_type %}<p>{{page.talk_type}} <span class="lang-en" lang="en">at</span><span class="lang-es" lang="es">en</span> {{ page.venue }},  {{page.location}} {% endif %}
 
         </header>
       {% endunless %}
 
       <section class="page__content" itemprop="text">
         {{ content }}
-        {% if page.link %}<div><a href="{{ page.link }}" class="btn"><span class="lang-en">Direct Link</span><span class="lang-es">Enlace Directo</span></a></div>{% endif %}
+        {% if page.link %}<div><a href="{{ page.link }}" class="btn"><span class="lang-en" lang="en">Direct Link</span><span class="lang-es" lang="es">Enlace Directo</span></a></div>{% endif %}
       </section>
 
       <footer class="page__meta">
@@ -62,7 +62,7 @@ layout: default
   {% comment %}<!-- only show related on a post page when not disabled -->{% endcomment %}
   {% if page.id and page.related and site.related_posts.size > 0 %}
     <div class="page__related">
-      <h4 class="page__related-title"><span class="lang-en">You May Also Enjoy</span><span class="lang-es">También Te Puede Interesar</span></h4>
+      <h4 class="page__related-title"><span class="lang-en" lang="en">You May Also Enjoy</span><span class="lang-es" lang="es">También Te Puede Interesar</span></h4>
       <div class="grid__wrapper">
         {% for post in site.related_posts limit:4 %}
           {% include archive-single.html type="grid" %}

@@ -1,0 +1,28 @@
+{% if page.date and page.title and page.id and page.collection == "posts" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": {{ page.title | strip_html | strip_newlines | jsonify }},
+  "datePublished": "{{ page.date | date_to_xmlschema }}",
+  {% if page.modified %}"dateModified": "{{ page.modified | date_to_xmlschema }}",{% endif %}
+  {% if page.excerpt %}"description": {{ page.excerpt | markdownify | strip_html | strip_newlines | truncate: 200 | jsonify }},{% endif %}
+  "url": "{{ page.url | prepend: site.url }}",
+  "author": {
+    "@type": "Person",
+    "name": "{{ site.author.name }}",
+    "url": "{{ site.url }}"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "{{ site.author.name }}",
+    "url": "{{ site.url }}"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ page.url | prepend: site.url }}"
+  }{% if page.header.image or page.header.teaser or site.og_image %},
+  "image": "{% if page.header.image %}{% if page.header.image contains "://" %}{{ page.header.image }}{% else %}{{ page.header.image | prepend: "/images/" | prepend: site.url }}{% endif %}{% elsif page.header.teaser %}{% if page.header.teaser contains "://" %}{{ page.header.teaser }}{% else %}{{ page.header.teaser | prepend: "/images/" | prepend: site.url }}{% endif %}{% elsif site.og_image %}{{ site.og_image | prepend: "/images/" | prepend: site.url }}{% endif %}"{% endif %}
+}
+</script>
+{% endif %}

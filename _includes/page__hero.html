@@ -31,7 +31,7 @@
     <div class="wrapper">
       <h1 class="page__title" itemprop="headline">
         {% if paginator %}
-          {{ site.title }}{% unless paginator.page == 1 %} <span class="lang-en">Page</span><span class="lang-es">Página</span> {{ paginator.page }}{% endunless %}
+          {{ site.title }}{% unless paginator.page == 1 %} <span class="lang-en" lang="en">Page</span><span class="lang-es" lang="es">Página</span> {{ paginator.page }}{% endunless %}
         {% else %}
           {{ page.title | default: site.title | markdownify | remove: "<p>" | remove: "</p>" }}
         {% endif %}
@@ -43,7 +43,7 @@
         <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
       {% endif %}
       {% if page.header.cta_url %}
-        <p><a href="{{ cta_path }}" class="btn btn--light-outline btn--large">{% if page.header.cta_label %}{{ page.header.cta_label }}{% else %}<span class="lang-en">Learn More</span><span class="lang-es">Saber Más</span>{% endif %}</a></p>
+        <p><a href="{{ cta_path }}" class="btn btn--light-outline btn--large">{% if page.header.cta_label %}{{ page.header.cta_label }}{% else %}<span class="lang-en" lang="en">Learn More</span><span class="lang-es" lang="es">Saber Más</span>{% endif %}</a></p>
       {% endif %}
     </div>
   {% else %}

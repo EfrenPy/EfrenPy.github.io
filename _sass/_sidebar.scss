@@ -392,7 +392,8 @@
   text-decoration: none;
   transition: all 0.25s ease;
 
-  &:hover {
+  &:hover,
+  &:focus-visible {
     background: var(--gradient-primary, linear-gradient(135deg, #52adc8, #8B5CF6));
     color: #fff;
     transform: translateY(-2px);
