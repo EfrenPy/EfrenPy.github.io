@@ -12,6 +12,10 @@
   @include breakpoint($large) {
     // Width controlled by grid-template-columns in #main
 
+    // CSS-only fallback; JS overrides dynamically for tall sidebars
+    position: sticky;
+    top: 2rem;
+
     // Glassmorphism card
     background: var(--color-card-bg, #fff);
     backdrop-filter: blur(12px);
