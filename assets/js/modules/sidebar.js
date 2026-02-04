@@ -86,7 +86,7 @@ function initStickyScroll() {
       return;
     }
 
-    const sidebarHeight = sidebar.offsetHeight;
+    const sidebarHeight = Math.max(sidebar.offsetHeight, sidebar.scrollHeight);
     const viewportHeight = window.innerHeight;
     const mastheadH = getMastheadHeight();
 
@@ -126,7 +126,7 @@ function initStickyScroll() {
       case STATE.FLOAT:
         if (scrollingDown) {
           // Check if sidebar bottom has reached viewport bottom
-          if (sidebarRect.bottom <= viewportHeight) {
+          if (sidebarRect.top + sidebarHeight <= viewportHeight) {
             sidebar.style.position = 'sticky';
             sidebar.style.top = -(sidebarHeight - viewportHeight) + 'px';
             state = STATE.STICK_BOTTOM;
