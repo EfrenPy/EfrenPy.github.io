@@ -10,9 +10,6 @@
   margin-bottom: 1em;
 
   @include breakpoint($large) {
-    position: sticky;
-    top: 2rem;
-    height: fit-content;
     // Width controlled by grid-template-columns in #main
 
     // Glassmorphism card
