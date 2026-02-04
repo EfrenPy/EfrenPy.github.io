@@ -2,17 +2,107 @@
    PRINT STYLES
    ========================================================================== */
 
-/*
-   Hide the following elements on print
-   ========================================================================== */
-
 @media print {
+
+  /* Page setup */
+  @page {
+    margin: 2cm;
+  }
+
+  /* Hide non-content elements */
   .masthead,
   .toc,
   .page__share,
   .page__related,
   .ads,
-  .page__footer {
-    display: none;
+  .page__footer,
+  .gradient-mesh,
+  .scroll-to-top,
+  .color-picker,
+  .color-toggle,
+  .lang-toggle,
+  .theme-toggle,
+  .nav-toggle,
+  .scroll-progress,
+  .skip-link,
+  .author__urls-toggle {
+    display: none !important;
+  }
+
+  /* Reset to black on white */
+  body {
+    color: #000 !important;
+    background: #fff !important;
+    font-size: 12pt;
+    line-height: 1.5;
+  }
+
+  /* Show link URLs inline */
+  a[href]::after {
+    content: " (" attr(href) ")";
+    font-size: 0.85em;
+    color: #555;
+    word-break: break-all;
+  }
+
+  /* Don't show URL for anchors, javascript, or internal links */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  /* Remove decorative styles */
+  * {
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  img {
+    border-radius: 0 !important;
+  }
+
+  /* Page break rules */
+  h1, h2, h3, h4, h5, h6 {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  .highlight-card,
+  .cert-card,
+  .contact-card,
+  .archive__item,
+  .cv-edu-card,
+  .cv-timeline-item {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  img, figure, table, pre {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  /* CV timeline prints cleanly */
+  .cv-timeline::before {
+    background: #000 !important;
+  }
+
+  .cv-timeline-item::before {
+    background: #000 !important;
+    box-shadow: none !important;
+    border-color: #fff !important;
+  }
+
+  .cv-skill-tag {
+    background: #eee !important;
+    color: #000 !important;
+  }
+
+  /* Remove transforms and animations */
+  .reveal,
+  .reveal--left,
+  .reveal--right {
+    opacity: 1 !important;
+    transform: none !important;
   }
 }

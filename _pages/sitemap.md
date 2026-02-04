@@ -9,14 +9,14 @@ author_profile: true
 
 {% include base_path %}
 
-<span class="lang-en">A list of all the posts and pages found on the site. For you robots out there is an</span><span class="lang-es">Una lista de todas las publicaciones y páginas del sitio. Para los robots, hay una</span> [<span class="lang-en">XML version</span><span class="lang-es">versión XML</span>]({{ base_path }}/sitemap.xml) <span class="lang-en">available for digesting as well.</span><span class="lang-es">disponible también.</span>
+<span class="lang-en" lang="en">A list of all the posts and pages found on the site. For you robots out there is an</span><span class="lang-es" lang="es">Una lista de todas las publicaciones y páginas del sitio. Para los robots, hay una</span> [<span class="lang-en" lang="en">XML version</span><span class="lang-es" lang="es">versión XML</span>]({{ base_path }}/sitemap.xml) <span class="lang-en" lang="en">available for digesting as well.</span><span class="lang-es" lang="es">disponible también.</span>
 
-<h2><span class="lang-en">Pages</span><span class="lang-es">Páginas</span></h2>
+<h2><span class="lang-en" lang="en">Pages</span><span class="lang-es" lang="es">Páginas</span></h2>
 {% for post in site.pages %}
   {% include archive-single.html %}
 {% endfor %}
 
-<h2><span class="lang-en">Posts</span><span class="lang-es">Publicaciones</span></h2>
+<h2><span class="lang-en" lang="en">Posts</span><span class="lang-es" lang="es">Publicaciones</span></h2>
 {% for post in site.posts %}
   {% include archive-single.html %}
 {% endfor %}

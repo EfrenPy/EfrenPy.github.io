@@ -4,6 +4,6 @@
 {%- endcomment -%}
 {%- assign translations = site.data.i18n[include.page][include.key] -%}
 {%- if translations -%}
-<div class="lang-en">{{ translations.en | markdownify }}</div>
-<div class="lang-es">{{ translations.es | markdownify }}</div>
+<div class="lang-en" lang="en">{{ translations.en | markdownify }}</div>
+<div class="lang-es" lang="es">{{ translations.es | markdownify }}</div>
 {%- endif -%}

@@ -16,7 +16,7 @@
   {% assign tag_hashes = (page_tags | split: ',' | sort:0) %}
 
   <p class="page__taxonomy">
-    <strong><i class="fa fa-fw fa-tags" aria-hidden="true"></i> <span class="lang-en">Tags:</span><span class="lang-es">Etiquetas:</span> </strong>
+    <strong><i class="fa fa-fw fa-tags" aria-hidden="true"></i> <span class="lang-en" lang="en">Tags:</span><span class="lang-es" lang="es">Etiquetas:</span> </strong>
     <span itemprop="keywords">
     {% for hash in tag_hashes %}
       {% assign keyValue = hash | split: '#' %}

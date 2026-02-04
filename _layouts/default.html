@@ -23,6 +23,11 @@
     </div>
 
     {% include browser-upgrade.html %}
+    <div class="offline-banner" role="alert" aria-live="polite" hidden>
+      <i class="fas fa-wifi" aria-hidden="true"></i>
+      <span class="lang-en" lang="en">You are currently offline. Some content may not be available.</span>
+      <span class="lang-es" lang="es">Estás sin conexión. Parte del contenido puede no estar disponible.</span>
+    </div>
     {% include masthead.html %}
 
     <div id="main" role="main">
@@ -41,6 +46,16 @@
         {% include footer.html %}
       </footer>
     </div>
+
+    {% if site.search %}
+    <div class="search-overlay" hidden>
+      <div class="search-overlay__inner">
+        <button class="search-overlay__close" aria-label="Close search">&times;</button>
+        <input class="search-overlay__input" type="search" placeholder="Search..." aria-label="Search site content" autocomplete="off">
+        <div class="search-overlay__results"></div>
+      </div>
+    </div>
+    {% endif %}
 
     {% include scripts.html %}
 

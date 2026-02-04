@@ -16,6 +16,7 @@ layout: default
 
 {% include jsonld-publication.html %}
 {% include jsonld-project.html %}
+{% include jsonld-blogposting.html %}
 <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
     {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
     {% if page.excerpt %}<meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
@@ -25,27 +26,27 @@ layout: default
     <div class="page__inner-wrap">
       {% unless page.header.overlay_color or page.header.overlay_image %}
         <header>
-          {% if page.title %}<h1 class="page__title" itemprop="headline">{% if page.title_en %}<span class="lang-en">{{ page.title_en | markdownify | remove: "<p>" | remove: "</p>" }}</span><span class="lang-es">{{ page.title_es | markdownify | remove: "<p>" | remove: "</p>" }}</span>{% else %}{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}{% endif %}</h1>{% endif %}
+          {% if page.title %}<h1 class="page__title" itemprop="headline">{% if page.title_en %}<span class="lang-en" lang="en">{{ page.title_en | markdownify | remove: "<p>" | remove: "</p>" }}</span><span class="lang-es" lang="es">{{ page.title_es | markdownify | remove: "<p>" | remove: "</p>" }}</span>{% else %}{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}{% endif %}</h1>{% endif %}
           {% if page.read_time %}
             <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
           {% endif %}
         {% if page.modified %}
-          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> <span class="lang-en">Published:</span><span class="lang-es">Publicado:</span></strong> <time datetime="{{ page.modified | date: "%Y-%m-%d" }}">{{ page.modified | date: "%B %d, %Y" }}</time></p>
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> <span class="lang-en" lang="en">Published:</span><span class="lang-es" lang="es">Publicado:</span></strong> <time datetime="{{ page.modified | date: "%Y-%m-%d" }}">{{ page.modified | date: "%B %d, %Y" }}</time></p>
         {% endif %}
         
         {% if page.collection == 'teaching' %}
           <p> {{ page.type }}, <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif page.venue and page.date %}
-          <p><span class="lang-en">Published in</span><span class="lang-es">Publicado en</span> <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
+          <p><span class="lang-en" lang="en">Published in</span><span class="lang-es" lang="es">Publicado en</span> <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif page.date %}
-          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> <span class="lang-en">Published:</span><span class="lang-es">Publicado:</span></strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> <span class="lang-en" lang="en">Published:</span><span class="lang-es" lang="es">Publicado:</span></strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
         {% endif %}
         
              
         {% if page.citation and page.paperurl %}
-          <p><span class="lang-en">Recommended citation:</span><span class="lang-es">Citación recomendada:</span> {{ page.citation }} <a href="{{ page.paperurl }}"><u>{{ page.paperurl }}</u></a></p>
+          <p><span class="lang-en" lang="en">Recommended citation:</span><span class="lang-es" lang="es">Citación recomendada:</span> {{ page.citation }} <a href="{{ page.paperurl }}"><u>{{ page.paperurl }}</u></a></p>
         {% elsif page.citation %}
-          <p><span class="lang-en">Recommended citation:</span><span class="lang-es">Citación recomendada:</span> {{ page.citation }} </p>
+          <p><span class="lang-en" lang="en">Recommended citation:</span><span class="lang-es" lang="es">Citación recomendada:</span> {{ page.citation }} </p>
         {% endif %}
     
         </header>
@@ -53,7 +54,7 @@ layout: default
 
       <section class="page__content" itemprop="text">
         {{ content }}
-        {% if page.link %}<div><a href="{{ page.link }}" class="btn"><span class="lang-en">Direct Link</span><span class="lang-es">Enlace Directo</span></a></div>{% endif %}
+        {% if page.link %}<div><a href="{{ page.link }}" class="btn"><span class="lang-en" lang="en">Direct Link</span><span class="lang-es" lang="es">Enlace Directo</span></a></div>{% endif %}
       </section>
 
       <footer class="page__meta">
@@ -76,7 +77,7 @@ layout: default
   {% comment %}<!-- only show related on a post page when not disabled -->{% endcomment %}
   {% if page.id and page.related and site.related_posts.size > 0 %}
     <div class="page__related">
-      <h4 class="page__related-title"><span class="lang-en">You May Also Enjoy</span><span class="lang-es">También Te Puede Interesar</span></h4>
+      <h4 class="page__related-title"><span class="lang-en" lang="en">You May Also Enjoy</span><span class="lang-es" lang="es">También Te Puede Interesar</span></h4>
       <div class="grid__wrapper">
         {% for post in site.related_posts limit:4 %}
           {% include archive-single.html type="grid" %}

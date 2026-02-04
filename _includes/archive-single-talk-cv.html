@@ -9,7 +9,7 @@
 {% if post.title_en %}
   {% assign title_en = post.title_en | markdownify | remove: "<p>" | remove: "</p>" %}
   {% assign title_es = post.title_es | markdownify | remove: "<p>" | remove: "</p>" %}
-  {% capture title %}<span class="lang-en">{{ title_en }}</span><span class="lang-es">{{ title_es }}</span>{% endcapture %}
+  {% capture title %}<span class="lang-en" lang="en">{{ title_en }}</span><span class="lang-es" lang="es">{{ title_es }}</span>{% endcapture %}
 {% elsif post.id %}
   {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
 {% else %}
@@ -38,7 +38,7 @@
       {% endif %}
     </h3>
     {% if post.date %}<p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {{ post.date | date: '%B %d, %Y' }}</p>{% endif %}
-    {% if post.venue%}<p class="archive__item-excerpt" itemprop="description">{{post.type}} <span class="lang-en">at</span><span class="lang-es">en</span> {{ post.venue }},  {{post.location}}</p>{% endif %}
+    {% if post.venue%}<p class="archive__item-excerpt" itemprop="description">{{post.type}} <span class="lang-en" lang="en">at</span><span class="lang-es" lang="es">en</span> {{ post.venue }},  {{post.location}}</p>{% endif %}
     </li>
   </article>
 </div>
