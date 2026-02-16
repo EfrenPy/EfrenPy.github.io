@@ -375,6 +375,65 @@ a.reversefootnote {
 
 
 /*
+   CV Snapshot Stats Bar
+   ========================================================================== */
+
+.cv-snapshot {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+  padding: 1.5rem;
+  background: var(--color-card-bg, #fff);
+  border: 1px solid var(--color-border, $border-color);
+  border-radius: 12px;
+  text-align: center;
+
+  @include breakpoint($small) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.cv-snapshot__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.cv-snapshot__number {
+  font-size: 1.75rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  background: var(--gradient-primary, linear-gradient(135deg, #52adc8, #8B5CF6));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cv-snapshot__label {
+  font-size: 0.8rem;
+  color: var(--color-text-light, $gray);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+
+  // Override default hiding for inline lang spans
+  span.lang-en,
+  span.lang-es {
+    display: none;
+  }
+}
+
+[data-lang="en"] .cv-snapshot__label span.lang-en {
+  display: inline;
+}
+
+[data-lang="es"] .cv-snapshot__label span.lang-es {
+  display: inline;
+}
+
+/*
    CV Styles
    ========================================================================== */
 
@@ -628,10 +687,10 @@ a.reversefootnote {
 }
 
 .homepage-hero__tagline {
-  font-size: clamp(1rem, 2.5vw, 1.25rem);
-  color: var(--color-text-light, $gray);
-  margin-bottom: 2rem;
-  font-weight: 400;
+  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+  color: var(--color-text, $dark-gray);
+  margin-bottom: 1rem;
+  font-weight: 500;
 
   // Override block display for language spans inside hero
   .lang-en,
@@ -641,12 +700,31 @@ a.reversefootnote {
   }
 }
 
+.homepage-hero__subtitle {
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
+  color: var(--color-text-light, $gray);
+  margin-bottom: 2rem;
+  font-weight: 400;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+
+  .lang-en,
+  .lang-es {
+    display: none;
+    text-align: center;
+  }
+}
+
 // Show correct language span as block (centered) inside hero
-[data-lang="en"] .homepage-hero__tagline .lang-en {
+[data-lang="en"] .homepage-hero__tagline .lang-en,
+[data-lang="en"] .homepage-hero__subtitle .lang-en {
   display: block;
 }
 
-[data-lang="es"] .homepage-hero__tagline .lang-es {
+[data-lang="es"] .homepage-hero__tagline .lang-es,
+[data-lang="es"] .homepage-hero__subtitle .lang-es {
   display: block;
 }
 
@@ -770,6 +848,139 @@ a.reversefootnote {
     margin: 0;
     line-height: 1.6;
   }
+}
+
+/*
+   "How I Can Help" Value Props
+   ========================================================================== */
+
+.value-props {
+  display: grid;
+  gap: 1.25rem;
+  margin: 1.5rem 0;
+}
+
+.value-prop {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  padding: 1.5rem;
+  background: var(--color-card-bg, #fff);
+  border: 1px solid var(--color-border, $border-color);
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 35px var(--color-shadow, rgba(0,0,0,0.1));
+    border-color: var(--color-primary, $info-color);
+
+    .value-prop__icon {
+      background: linear-gradient(135deg, var(--color-primary, $info-color), var(--color-accent, #8B5CF6));
+
+      i { color: #fff; }
+    }
+  }
+}
+
+.value-prop__icon {
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-background-secondary, $lighter-gray);
+  border-radius: 12px;
+  transition: background 0.3s ease;
+
+  i {
+    font-size: 1.3rem;
+    color: var(--color-primary, $info-color);
+    transition: color 0.3s ease;
+  }
+}
+
+.value-prop__content {
+  flex: 1;
+  min-width: 0;
+
+  h4 {
+    margin: 0 0 0.4rem;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--color-text, $dark-gray);
+  }
+
+  p {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: var(--color-text-light, $gray);
+  }
+}
+
+/*
+   "What I'm Looking For" Section
+   ========================================================================== */
+
+.looking-for-section {
+  background: var(--color-card-bg, #fff);
+  border: 1px solid var(--color-border, $border-color);
+  border-left: 4px solid var(--color-primary, $info-color);
+  border-radius: 12px;
+  padding: 2rem 1.5rem;
+  margin: 1.5rem 0;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  @include breakpoint($small) {
+    padding: 2.5rem 2rem;
+  }
+}
+
+.looking-for-section__primary,
+.looking-for-section__secondary {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+
+  > i {
+    color: var(--color-primary, $info-color);
+    font-size: 1.3rem;
+    margin-top: 0.2rem;
+    flex-shrink: 0;
+  }
+
+  p {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--color-text, $dark-gray);
+  }
+}
+
+.looking-for-section__secondary {
+  > i {
+    color: var(--color-accent, #8B5CF6);
+  }
+
+  p {
+    color: var(--color-text-light, $gray);
+    font-size: 0.9rem;
+  }
+}
+
+.looking-for-section__cta {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--color-border, $border-color);
 }
 
 /*
@@ -1277,10 +1488,29 @@ a.reversefootnote {
   border: none;
   color: var(--color-text, $dark-gray);
   cursor: pointer;
-  padding: 0.25rem;
+  padding: 0.15rem;
   display: flex;
   align-items: center;
+  min-width: 34px;
+  min-height: 34px;
+  justify-content: center;
   transition: color 0.2s ease;
+
+  svg {
+    width: 18px;
+    height: 18px;
+
+    @include breakpoint($medium) {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  @include breakpoint($medium) {
+    padding: 0.25rem;
+    min-width: 44px;
+    min-height: 44px;
+  }
 
   &:hover {
     color: var(--color-primary, $info-color);

@@ -44,15 +44,21 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0.5rem;
-  min-width: 44px;
-  min-height: 44px;
+  padding: 0.25rem;
+  min-width: 34px;
+  min-height: 34px;
   background: transparent;
   border: none;
   border-radius: 50%;
   cursor: pointer;
   color: var(--color-text-light, $gray);
   transition: color 0.2s ease, background-color 0.2s ease, transform 0.2s ease;
+
+  @include breakpoint($medium) {
+    padding: 0.5rem;
+    min-width: 44px;
+    min-height: 44px;
+  }
 
   &:hover,
   &:focus-visible {
@@ -63,6 +69,16 @@
 
   &:focus-visible {
     transform: none;
+  }
+
+  svg {
+    width: 18px;
+    height: 18px;
+
+    @include breakpoint($medium) {
+      width: 20px;
+      height: 20px;
+    }
   }
 
   .sun-icon {
@@ -89,17 +105,25 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 44px;
-  min-width: 44px;
-  padding: 0.4rem 0.6rem;
+  min-height: 34px;
+  min-width: 34px;
+  padding: 0.2rem 0.4rem;
   background: transparent;
   border: 1px solid var(--color-border, $border-color);
   border-radius: 4px;
   cursor: pointer;
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   font-weight: 600;
   transition: all 0.2s ease;
-  margin-left: 0.5rem;
+  margin-left: 0;
+
+  @include breakpoint($medium) {
+    min-height: 44px;
+    min-width: 44px;
+    padding: 0.4rem 0.6rem;
+    font-size: 0.75rem;
+    margin-left: 0.5rem;
+  }
 
   &:hover {
     border-color: var(--color-primary, $info-color);
@@ -139,16 +163,33 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0.5rem;
-  min-width: 44px;
-  min-height: 44px;
+  padding: 0.25rem;
+  min-width: 34px;
+  min-height: 34px;
   background: transparent;
   border: none;
   border-radius: 50%;
   cursor: pointer;
   color: var(--color-text-light, $gray);
   transition: color 0.2s ease, background-color 0.2s ease, transform 0.2s ease;
-  margin-left: 0.5rem;
+  margin-left: 0;
+
+  svg {
+    width: 18px;
+    height: 18px;
+
+    @include breakpoint($medium) {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  @include breakpoint($medium) {
+    padding: 0.5rem;
+    min-width: 44px;
+    min-height: 44px;
+    margin-left: 0.5rem;
+  }
 
   &:hover {
     color: var(--color-primary, $info-color);
@@ -233,8 +274,12 @@
     @include container;
     @include clearfix;
     position: relative;
-    padding: 1em 1em 1em;
+    padding: 0.4em 0.5em;
     font-family: $sans-serif-narrow;
+
+    @include breakpoint($medium) {
+      padding: 0.75em 1em;
+    }
 
     @include breakpoint($x-large) {
       max-width: $x-large;
