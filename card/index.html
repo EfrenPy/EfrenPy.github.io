@@ -245,6 +245,90 @@
       height: 18px;
     }
 
+    /* Website CTA banner */
+    .card__website-cta {
+      display: block;
+      margin-top: 1rem;
+      padding: 1rem 1.25rem;
+      border-radius: 14px;
+      background: var(--gradient-subtle);
+      border: 1.5px solid var(--color-primary);
+      text-decoration: none;
+      color: var(--color-text);
+      transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+      position: relative;
+      overflow: hidden;
+    }
+    .card__website-cta::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: var(--gradient-primary);
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+    .card__website-cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(82, 173, 200, 0.2);
+    }
+    .card__website-cta:hover::before {
+      opacity: 0.06;
+    }
+
+    .card__website-cta-header {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 0.5rem;
+    }
+    .card__website-cta-title {
+      font-size: 0.85rem;
+      font-weight: 600;
+      background: var(--gradient-primary);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .card__website-cta-arrow {
+      position: relative;
+      width: 20px;
+      height: 20px;
+      color: var(--color-primary);
+      transition: transform 0.2s;
+    }
+    .card__website-cta:hover .card__website-cta-arrow {
+      transform: translateX(3px);
+    }
+    .card__website-cta-desc {
+      position: relative;
+      font-size: 0.78rem;
+      color: var(--color-text-light);
+      line-height: 1.45;
+      margin-bottom: 0.65rem;
+    }
+    .card__website-cta-tags {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+    }
+    .card__website-cta-tag {
+      font-size: 0.65rem;
+      font-weight: 600;
+      padding: 0.2rem 0.55rem;
+      border-radius: 20px;
+      background: var(--color-card-bg);
+      border: 1px solid var(--color-border);
+      color: var(--color-text-light);
+      letter-spacing: 0.02em;
+      transition: border-color 0.2s, color 0.2s;
+    }
+    .card__website-cta:hover .card__website-cta-tag {
+      border-color: var(--color-primary);
+      color: var(--color-primary);
+    }
+
     @media (max-width: 480px) {
       .card { padding: 1.75rem 1.25rem 1.5rem; border-radius: 16px; }
       .card__name { font-size: 1.3rem; }
@@ -285,14 +369,7 @@
           <div class="card__link-value">efrenrguezrguez@gmail.com</div>
         </div>
       </a>
-      <a href="https://efrenrodriguezrodriguez.com/" class="card__link" target="_blank" rel="noopener">
-        <svg class="card__link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-        <div class="card__link-text">
-          <div class="card__link-label">Web</div>
-          <div class="card__link-value">efrenrodriguezrodriguez.com</div>
-        </div>
-      </a>
-      <a href="https://www.linkedin.com/in/efrenrguezrguez" class="card__link" target="_blank" rel="noopener">
+      <a href="https://www.linkedin.com/in/efrenrguezrguez" class="card__link" target="_blank" rel="noopener noreferrer">
         <svg class="card__link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
         <div class="card__link-text">
           <div class="card__link-label">LinkedIn</div>
@@ -304,6 +381,21 @@
     <a href="/efren-rodriguez.vcf" download="efren-rodriguez.vcf" class="card__save">
       <svg class="card__save-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg>
       Save Contact
+    </a>
+
+    <a href="https://efrenrodriguezrodriguez.com/" class="card__website-cta" target="_blank" rel="noopener noreferrer">
+      <div class="card__website-cta-header">
+        <span class="card__website-cta-title">Explore my full portfolio</span>
+        <svg class="card__website-cta-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+      </div>
+      <div class="card__website-cta-desc">Projects, publications, talks &amp; more about my work in data science and particle physics.</div>
+      <div class="card__website-cta-tags">
+        <span class="card__website-cta-tag">Projects</span>
+        <span class="card__website-cta-tag">CV</span>
+        <span class="card__website-cta-tag">Publications</span>
+        <span class="card__website-cta-tag">Talks</span>
+        <span class="card__website-cta-tag">Blog</span>
+      </div>
     </a>
   </div>
 </body>
