@@ -1586,13 +1586,39 @@ a.reversefootnote {
 .logo-strip__img {
   height: 40px;
   width: auto;
-  max-width: 120px;
+  max-width: 140px;
   object-fit: contain;
 
   @include breakpoint($small) {
     height: 48px;
-    max-width: 140px;
+    max-width: 160px;
   }
+}
+
+// Per-logo visual size tuning (compensate for whitespace / aspect ratio)
+.logo-strip__item[title="CERN"] .logo-strip__img {
+  height: 56px;
+  @include breakpoint($small) { height: 64px; }
+}
+
+.logo-strip__item[title="IGFAE"] .logo-strip__img {
+  height: 52px;
+  @include breakpoint($small) { height: 62px; }
+}
+
+.logo-strip__item[title="Nikhef"] .logo-strip__img {
+  height: 34px;
+  @include breakpoint($small) { height: 40px; }
+}
+
+.logo-strip__item[title="USC"] .logo-strip__img {
+  height: 44px;
+  @include breakpoint($small) { height: 52px; }
+}
+
+.logo-strip__item[title="LHCb"] .logo-strip__img {
+  height: 38px;
+  @include breakpoint($small) { height: 44px; }
 }
 
 // Light/dark mode switching for logos
