@@ -155,3 +155,17 @@ explore_publications:
 publications_title:
   en: "Featured Publications"
   es: "Publicaciones Destacadas"
+
+# Logo strip section
+logo_strip_title:
+  en: "Where I've Made an Impact"
+  es: "Donde He Dejado Huella"
+
+# Closing CTA section
+closing_cta_title:
+  en: "Interested? Let's Talk"
+  es: "¿Interesado? Hablemos"
+
+closing_cta_subtitle:
+  en: "I'm actively exploring new opportunities in technical leadership and project management."
+  es: "Estoy explorando activamente nuevas oportunidades en liderazgo técnico y dirección de proyectos."

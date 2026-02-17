@@ -13,6 +13,12 @@
     {% if site.author.github %}
       <li><a href="https://github.com/{{ site.author.github }}" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
     {% endif %}
+    {% if site.author.linkedin %}
+      <li><a href="https://www.linkedin.com/in/{{ site.author.linkedin }}" rel="noopener"><i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+    {% endif %}
+    {% if site.author.email %}
+      <li><a href="mailto:{{ site.author.email }}" rel="noopener"><i class="fas fa-envelope" aria-hidden="true"></i> Email</a></li>
+    {% endif %}
     {% if site.author.bitbucket %}
       <li><a href="https://bitbucket.org/{{ site.author.bitbucket }}" rel="noopener"><i class="fab fa-bitbucket" aria-hidden="true"></i> Bitbucket</a></li>
     {% endif %}

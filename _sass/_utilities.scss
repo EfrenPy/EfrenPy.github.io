@@ -1520,3 +1520,200 @@ a.reversefootnote {
     color: var(--color-primary, $info-color);
   }
 }
+
+/*
+   Credibility Logo Strip
+   ========================================================================== */
+
+.logo-strip {
+  text-align: center;
+  padding: 1.5rem 1rem 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.logo-strip__title {
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--color-text-light, $gray);
+  margin: 0 0 1.25rem;
+
+  .lang-en,
+  .lang-es {
+    display: none;
+  }
+}
+
+[data-lang="en"] .logo-strip__title .lang-en,
+[data-lang="es"] .logo-strip__title .lang-es {
+  display: inline;
+}
+
+.logo-strip__logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+
+  @include breakpoint($small) {
+    gap: 2.5rem;
+  }
+
+  @include breakpoint($medium) {
+    gap: 3rem;
+  }
+}
+
+.logo-strip__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0.7;
+
+  // Override underline link style from .page__content
+  background-image: none !important;
+
+  &:hover {
+    opacity: 1;
+    transform: scale(1.08);
+    background-image: none !important;
+  }
+}
+
+.logo-strip__img {
+  height: 40px;
+  width: auto;
+  max-width: 120px;
+  object-fit: contain;
+
+  @include breakpoint($small) {
+    height: 48px;
+    max-width: 140px;
+  }
+}
+
+// Light/dark mode switching for logos
+.logo-strip__img--dark {
+  display: none;
+}
+
+[data-theme="dark"] .logo-strip__img--light {
+  display: none;
+}
+
+[data-theme="dark"] .logo-strip__img--dark {
+  display: block;
+}
+
+// Invert filter for logos without dark variants
+[data-theme="dark"] .logo-strip__img--invert {
+  filter: brightness(0) invert(1) opacity(0.85);
+}
+
+/*
+   Closing CTA Section
+   ========================================================================== */
+
+.closing-cta {
+  text-align: center;
+  padding: 3rem 1.5rem;
+  margin: 2rem 0 0;
+  background: var(--color-card-bg, #fff);
+  border: 1px solid var(--color-border, $border-color);
+  border-radius: 16px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  @include breakpoint($small) {
+    padding: 4rem 2rem;
+  }
+}
+
+.closing-cta__title {
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  font-weight: 700;
+  margin: 0 0 0.75rem;
+  letter-spacing: -0.02em;
+
+  .lang-en,
+  .lang-es {
+    display: none;
+  }
+}
+
+[data-lang="en"] .closing-cta__title .lang-en,
+[data-lang="es"] .closing-cta__title .lang-es {
+  display: inline;
+}
+
+.closing-cta__subtitle {
+  font-size: 1.05rem;
+  color: var(--color-text-light, $gray);
+  margin: 0 auto 2rem;
+  max-width: 550px;
+  line-height: 1.6;
+
+  .lang-en,
+  .lang-es {
+    display: none;
+  }
+}
+
+[data-lang="en"] .closing-cta__subtitle .lang-en,
+[data-lang="es"] .closing-cta__subtitle .lang-es {
+  display: block;
+}
+
+.closing-cta__buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/*
+   Floating Mobile CTA
+   ========================================================================== */
+
+.floating-cta {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  padding: 0.75rem 1rem;
+  background: var(--color-background, #fff);
+  border-top: 1px solid var(--color-border, $border-color);
+  box-shadow: 0 -4px 20px var(--color-shadow, rgba(0,0,0,0.1));
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+
+  // Only show on mobile
+  @include breakpoint($large) {
+    display: none !important;
+  }
+
+  &.is-visible {
+    transform: translateY(0);
+  }
+
+  .btn {
+    flex: 1;
+    max-width: 200px;
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 0.65rem 1rem;
+  }
+}
+
+// Shift scroll-to-top button up when floating CTA is visible
+.floating-cta.is-visible ~ .page__footer .scroll-to-top,
+body:has(.floating-cta.is-visible) .scroll-to-top {
+  bottom: 5rem;
+}

@@ -21,8 +21,9 @@
   }
 }
 
-// Hero spans full width in grid layout
-.homepage-hero {
+// Hero and logo strip span full width in grid layout
+.homepage-hero,
+.logo-strip {
   @include breakpoint($large) {
     grid-column: 1 / -1;
   }

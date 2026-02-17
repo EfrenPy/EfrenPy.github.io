@@ -40,11 +40,40 @@ redirect_from:
   </div>
 </section>
 
+<section class="logo-strip" aria-label="Institutions">
+  <h3 class="logo-strip__title">
+    <span class="lang-en" lang="en">Where I've Made an Impact</span>
+    <span class="lang-es" lang="es">Donde He Dejado Huella</span>
+  </h3>
+  <div class="logo-strip__logos">
+    <a href="https://home.cern" target="_blank" rel="noopener noreferrer" class="logo-strip__item" title="CERN">
+      <img src="{{ site.baseurl }}/images/logos/CERN-Logo-Social-Media/icon cern blue.png" alt="CERN" class="logo-strip__img logo-strip__img--light" loading="lazy">
+      <img src="{{ site.baseurl }}/images/logos/CERN-Logo-Social-Media/icon cern badge.png" alt="CERN" class="logo-strip__img logo-strip__img--dark" loading="lazy">
+    </a>
+    <a href="https://www.nikhef.nl" target="_blank" rel="noopener noreferrer" class="logo-strip__item" title="Nikhef">
+      <img src="{{ site.baseurl }}/images/logos/Nikhef-logo-RGB-red-on-white-500x225.png" alt="Nikhef" class="logo-strip__img logo-strip__img--light" loading="lazy">
+      <img src="{{ site.baseurl }}/images/logos/Nikhef-logo-RGB-red-on-white-500x225.png" alt="Nikhef" class="logo-strip__img logo-strip__img--dark logo-strip__img--invert" loading="lazy">
+    </a>
+    <a href="https://igfae.usc.es/igfae/" target="_blank" rel="noopener noreferrer" class="logo-strip__item" title="IGFAE">
+      <img src="{{ site.baseurl }}/images/logos/IGFAE_VERSIONES-03_azul escuro (7).svg" alt="IGFAE" class="logo-strip__img logo-strip__img--light" loading="lazy">
+      <img src="{{ site.baseurl }}/images/logos/IGFAE_VERSIONES-08_gris (3).svg" alt="IGFAE" class="logo-strip__img logo-strip__img--dark" loading="lazy">
+    </a>
+    <a href="https://www.usc.gal" target="_blank" rel="noopener noreferrer" class="logo-strip__item" title="USC">
+      <img src="{{ site.baseurl }}/images/logos/usc.png" alt="Universidade de Santiago de Compostela" class="logo-strip__img logo-strip__img--light" loading="lazy">
+      <img src="{{ site.baseurl }}/images/logos/usc-negativo-azul.png" alt="Universidade de Santiago de Compostela" class="logo-strip__img logo-strip__img--dark" loading="lazy">
+    </a>
+    <a href="https://lhcb.web.cern.ch" target="_blank" rel="noopener noreferrer" class="logo-strip__item" title="LHCb">
+      <img src="{{ site.baseurl }}/images/logos/lhcb-logo-0121-72_S.png" alt="LHCb" class="logo-strip__img logo-strip__img--light" loading="lazy">
+      <img src="{{ site.baseurl }}/images/logos/lhcb-logo-0121-72_S.png" alt="LHCb" class="logo-strip__img logo-strip__img--dark logo-strip__img--invert" loading="lazy">
+    </a>
+  </div>
+</section>
+
 {% include t-block.html page="about" key="bio" %}
 
 ---
 
-### {% include t.html page="about" key="highlights_title" %}
+<h3>{% include t.html page="about" key="highlights_title" %}</h3>
 
 <div class="bento-grid">
   <div class="highlight-card bento-span-2">
@@ -66,7 +95,7 @@ redirect_from:
 
 ---
 
-### {% include t.html page="about" key="help_team_title" %}
+<h3>{% include t.html page="about" key="help_team_title" %}</h3>
 
 <div class="value-props">
   <div class="value-prop">
@@ -101,13 +130,13 @@ redirect_from:
 
 ---
 
-### {% include t.html page="about" key="achievements_title" %}
+<h3>{% include t.html page="about" key="achievements_title" %}</h3>
 
 {% include t-block.html page="about" key="achievements" %}
 
 ---
 
-### {% include t.html page="about" key="interests_title" %}
+<h3>{% include t.html page="about" key="interests_title" %}</h3>
 
 <div class="looking-for-section">
   <div class="looking-for-section__primary">
@@ -130,7 +159,7 @@ redirect_from:
 
 ---
 
-### {% include t.html page="about" key="certifications_title" %}
+<h3>{% include t.html page="about" key="certifications_title" %}</h3>
 
 <div class="certifications-grid">
   <div class="cert-card">
@@ -144,7 +173,7 @@ redirect_from:
 
 ---
 
-### {% include t.html page="about" key="education_title" %}
+<h3>{% include t.html page="about" key="education_title" %}</h3>
 
 :hatched_chick: {% include t.html page="about" key="edu_phd" md=true %}
 
@@ -156,8 +185,32 @@ redirect_from:
 
 {% include t-block.html page="about" key="explore_publications" %}
 
-### {% include t.html page="about" key="publications_title" %}
+<h3>{% include t.html page="about" key="publications_title" %}</h3>
 
 <ul>{% for post in site.publications %}
   {% include archive-single-publications-about.html %}
 {% endfor %}</ul>
+
+---
+
+<section class="closing-cta">
+  <h3 class="closing-cta__title gradient-text">
+    <span class="lang-en" lang="en">Interested? Let's Talk</span>
+    <span class="lang-es" lang="es">¿Interesado? Hablemos</span>
+  </h3>
+  <p class="closing-cta__subtitle">
+    <span class="lang-en" lang="en">I'm actively exploring new opportunities in technical leadership and project management.</span>
+    <span class="lang-es" lang="es">Estoy explorando activamente nuevas oportunidades en liderazgo técnico y dirección de proyectos.</span>
+  </p>
+  <div class="closing-cta__buttons">
+    <a href="{{ site.baseurl }}/contact/" class="btn btn--large">
+      <i class="fas fa-envelope"></i> <span class="lang-en" lang="en">Get in Touch</span><span class="lang-es" lang="es">Contactar</span>
+    </a>
+    <a href="https://www.linkedin.com/in/efrenrguezrguez" class="btn btn--large btn--outline" target="_blank" rel="noopener noreferrer">
+      <i class="fab fa-linkedin"></i> LinkedIn
+    </a>
+    <a href="{{ site.baseurl }}/files/Efren_Rodriguez_CV.pdf" class="btn btn--large btn--outline cv-download-btn" data-no-swup target="_blank" rel="noopener noreferrer">
+      <i class="fas fa-download"></i> <span class="lang-en" lang="en">Download CV</span><span class="lang-es" lang="es">Descargar CV</span>
+    </a>
+  </div>
+</section>

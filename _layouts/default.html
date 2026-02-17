@@ -40,6 +40,14 @@
       </div>
     </div>
 
+    {% if page.url == "/" %}
+    <div class="floating-cta" aria-label="Quick contact">
+      <a href="{{ site.baseurl }}/contact/" class="btn">
+        <i class="fas fa-envelope"></i> <span class="lang-en" lang="en">Get in Touch</span><span class="lang-es" lang="es">Contactar</span>
+      </a>
+    </div>
+    {% endif %}
+
     <div class="page__footer">
       <footer>
         {% include footer/custom.html %}

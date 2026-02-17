@@ -145,3 +145,41 @@ export function initScrollToTop() {
   // Initial check
   updateVisibility();
 }
+
+/* ==========================================================================
+   Floating Mobile CTA
+   ========================================================================== */
+
+export function initFloatingCta() {
+  var cta = document.querySelector('.floating-cta');
+  if (!cta) return;
+
+  var scrollThreshold = 600;
+  var ticking = false;
+
+  var updateVisibility = function() {
+    if (window.scrollY > scrollThreshold && window.innerWidth < 925) {
+      cta.classList.add('is-visible');
+    } else {
+      cta.classList.remove('is-visible');
+    }
+    ticking = false;
+  };
+
+  window.addEventListener('scroll', function() {
+    if (!ticking) {
+      requestAnimationFrame(updateVisibility);
+      ticking = true;
+    }
+  }, { passive: true });
+
+  window.addEventListener('resize', function() {
+    if (!ticking) {
+      requestAnimationFrame(updateVisibility);
+      ticking = true;
+    }
+  }, { passive: true });
+
+  // Initial check
+  updateVisibility();
+}
