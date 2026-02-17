@@ -1602,9 +1602,9 @@ a.reversefootnote {
 }
 
 .logo-strip__item[title="IGFAE"] .logo-strip__img {
-  height: 32px;
-  max-width: 200px;
-  @include breakpoint($small) { height: 38px; max-width: 240px; }
+  height: 36px;
+  max-width: 220px;
+  @include breakpoint($small) { height: 44px; max-width: 280px; }
 }
 
 .logo-strip__item[title="Nikhef"] .logo-strip__img {
@@ -1642,9 +1642,9 @@ a.reversefootnote {
 
 // Force both USC variants to the same box size
 .logo-strip__item[title="USC"] .logo-strip__img {
-  width: 69px;
+  width: 81px;
   object-fit: contain;
-  @include breakpoint($small) { width: 81px; }
+  @include breakpoint($small) { width: 95px; }
 }
 
 /*
