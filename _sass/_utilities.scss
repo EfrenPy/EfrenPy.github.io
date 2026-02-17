@@ -703,11 +703,9 @@ a.reversefootnote {
 .homepage-hero__subtitle {
   font-size: clamp(0.9rem, 2vw, 1.1rem);
   color: var(--color-text-light, $gray);
-  margin-bottom: 2rem;
+  margin: 0 auto 2rem;
   font-weight: 400;
   max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
   line-height: 1.6;
   text-align: center;
 
@@ -716,6 +714,11 @@ a.reversefootnote {
     display: none;
     text-align: center;
   }
+}
+
+// Override .page__content p margin to keep subtitle centered
+.page__content p.homepage-hero__subtitle {
+  margin: 0 auto 2rem;
 }
 
 // Show correct language span as block (centered) inside hero
