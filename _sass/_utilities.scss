@@ -1597,8 +1597,8 @@ a.reversefootnote {
 
 // Per-logo visual size tuning (compensate for whitespace / aspect ratio)
 .logo-strip__item[title="CERN"] .logo-strip__img {
-  height: 52px;
-  @include breakpoint($small) { height: 60px; }
+  height: 56px;
+  @include breakpoint($small) { height: 66px; }
 }
 
 .logo-strip__item[title="IGFAE"] .logo-strip__img {
@@ -1635,9 +1635,16 @@ a.reversefootnote {
   display: block;
 }
 
-// Invert filter for logos without dark variants
+// Invert filter for logos without dark variants (PNG with white bg)
 [data-theme="dark"] .logo-strip__img--invert {
-  filter: brightness(0) invert(1) opacity(0.85);
+  filter: invert(1) grayscale(1) contrast(1.2);
+}
+
+// Ensure USC dark variant matches light variant size
+.logo-strip__item[title="USC"] .logo-strip__img--dark {
+  height: 44px;
+  min-width: 69px;
+  @include breakpoint($small) { height: 52px; min-width: 81px; }
 }
 
 /*
