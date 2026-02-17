@@ -26,7 +26,7 @@ redirect_from:
     <span class="cv-snapshot__label"><span class="lang-en" lang="en">Countries / Labs</span><span class="lang-es" lang="es">Países / Labs</span></span>
   </div>
   <div class="cv-snapshot__item">
-    <span class="cv-snapshot__number">M€+</span>
+    <span class="cv-snapshot__number">3M€+</span>
     <span class="cv-snapshot__label"><span class="lang-en" lang="en">Project Budget</span><span class="lang-es" lang="es">Presupuesto</span></span>
   </div>
   <div class="cv-snapshot__item">
@@ -177,6 +177,22 @@ redirect_from:
       </div>
     </div>
   </div>
+</div>
+
+<div class="cv-section">
+  <h2 class="cv-section-title"><i class="fas fa-code"></i>
+    <span class="lang-en" lang="en">Selected Projects</span>
+    <span class="lang-es" lang="es">Proyectos Destacados</span>
+  </h2>
+  <p>
+    <span class="lang-en" lang="en">See my technical projects including data analysis tools, detector simulations, and open-source contributions.</span>
+    <span class="lang-es" lang="es">Consulta mis proyectos técnicos incluyendo herramientas de análisis de datos, simulaciones de detectores y contribuciones de código abierto.</span>
+  </p>
+  <a href="/portfolio/" class="btn btn--primary">
+    <i class="fas fa-arrow-right"></i>
+    <span class="lang-en" lang="en">View Projects</span>
+    <span class="lang-es" lang="es">Ver Proyectos</span>
+  </a>
 </div>
 
 <div class="cv-section">
