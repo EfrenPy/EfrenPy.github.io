@@ -1640,11 +1640,11 @@ a.reversefootnote {
   filter: invert(1) grayscale(1) contrast(1.2);
 }
 
-// Ensure USC dark variant matches light variant size
-.logo-strip__item[title="USC"] .logo-strip__img--dark {
-  height: 44px;
-  min-width: 69px;
-  @include breakpoint($small) { height: 52px; min-width: 81px; }
+// Force both USC variants to the same box size
+.logo-strip__item[title="USC"] .logo-strip__img {
+  width: 69px;
+  object-fit: contain;
+  @include breakpoint($small) { width: 81px; }
 }
 
 /*

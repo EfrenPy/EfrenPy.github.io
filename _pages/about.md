@@ -64,7 +64,7 @@ redirect_from:
     </a>
     <a href="https://lhcb.web.cern.ch" target="_blank" rel="noopener noreferrer" class="logo-strip__item" title="LHCb">
       <img src="{{ site.baseurl }}/images/logos/lhcb-logo-0121-72_S.png" alt="LHCb" class="logo-strip__img logo-strip__img--light" loading="lazy">
-      <img src="{{ site.baseurl }}/images/logos/lhcb-logo-0121-72_S.png" alt="LHCb" class="logo-strip__img logo-strip__img--dark logo-strip__img--invert" loading="lazy">
+      <img src="{{ site.baseurl }}/images/logos/lhcb-logo-0121-72_S.png" alt="LHCb" class="logo-strip__img logo-strip__img--dark" loading="lazy">
     </a>
   </div>
 </section>
