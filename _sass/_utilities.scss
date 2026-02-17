@@ -1640,13 +1640,6 @@ a.reversefootnote {
   filter: invert(1) grayscale(1) contrast(1.2);
 }
 
-// Force both USC variants to the same box size
-.logo-strip__item[title="USC"] .logo-strip__img {
-  width: 81px;
-  object-fit: contain;
-  @include breakpoint($small) { width: 95px; }
-}
-
 /*
    Closing CTA Section
    ========================================================================== */

@@ -6,7 +6,7 @@
 <meta http-equiv="X-Content-Type-Options" content="nosniff">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="robots" content="max-image-preview:large">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self';">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self';">
 
 <!-- DNS prefetch for CDN -->
 <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
@@ -20,7 +20,7 @@
 <meta name="msapplication-config" content="{{ site.baseurl }}/images/browserconfig.xml?v=M44lzPylqQ">
 <meta name="theme-color" content="#ffffff">
 <!-- Preload icon font so sidebar renders fully on first paint -->
-<link rel="preload" href="{{ site.baseurl }}/assets/fonts/academicons.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="{{ site.baseurl }}/assets/fonts/academicons.woff?v=1.8.0" as="font" type="font/woff" crossorigin>
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/academicons.css"/>
 
 {% if page.mathjax %}
