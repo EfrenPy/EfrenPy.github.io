@@ -15,8 +15,8 @@ redirect_from:
   <div class="homepage-hero__content">
     <h1 class="homepage-hero__name gradient-text">Efrén Rodríguez</h1>
     <p class="homepage-hero__tagline">
-      <span class="lang-en" lang="en">I deliver complex technical projects — from CERN to your team</span>
-      <span class="lang-es" lang="es">Lidero proyectos técnicos complejos — del CERN a tu equipo</span>
+      <span class="lang-en" lang="en">I deliver complex technical projects, from CERN to your team</span>
+      <span class="lang-es" lang="es">Lidero proyectos técnicos complejos, del CERN a tu equipo</span>
     </p>
     <p class="homepage-hero__subtitle">
       <span class="lang-en" lang="en">Project manager and R&D engineer with 5+ years leading multi-million EUR international detector projects. Seeking my next challenge in technical leadership.</span>

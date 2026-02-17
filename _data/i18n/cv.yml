@@ -60,12 +60,12 @@ cern_postdoc_intro:
   es: "Liderando tres proyectos I+D en paralelo y coordinando un equipo multidisciplinar en CERN y laboratorios asociados:"
 
 cern_postdoc_item1:
-  en: "**Sensor Simulation Programme:** Driving simulation and optimization of next-gen 3D silicon sensors — defining requirements, tracking milestones, and aligning outputs with the broader detector programme"
-  es: "**Programa de Simulación de Sensores:** Impulsando la simulación y optimización de sensores 3D de silicio de nueva generación — definiendo requisitos, seguimiento de hitos y alineando resultados con el programa general del detector"
+  en: "**Sensor Simulation Programme:** Driving simulation and optimization of next-gen 3D silicon sensors. Defining requirements, tracking milestones, and aligning outputs with the broader detector programme"
+  es: "**Programa de Simulación de Sensores:** Impulsando la simulación y optimización de sensores 3D de silicio de nueva generación. Definiendo requisitos, seguimiento de hitos y alineando resultados con el programa general del detector"
 
 cern_postdoc_item2:
-  en: "**Timepix4 Telescope Build:** Managing end-to-end delivery of a precision measurement instrument — from procurement and assembly to commissioning and data analysis across international test-beam campaigns"
-  es: "**Construcción del Telescopio Timepix4:** Gestionando la entrega integral de un instrumento de medición de precisión — desde adquisiciones y montaje hasta puesta en marcha y análisis de datos en campañas internacionales de haces de prueba"
+  en: "**Timepix4 Telescope Build:** Managing end-to-end delivery of a precision measurement instrument, from procurement and assembly to commissioning and data analysis across international test-beam campaigns"
+  es: "**Construcción del Telescopio Timepix4:** Gestionando la entrega integral de un instrumento de medición de precisión, desde adquisiciones y montaje hasta puesta en marcha y análisis de datos en campañas internacionales de haces de prueba"
 
 cern_postdoc_item3:
   en: "**Validation & Quality Assurance:** Designing and coordinating novel testing methodologies to qualify next-generation sensors against demanding performance specifications"
@@ -73,21 +73,21 @@ cern_postdoc_item3:
 
 # Nikhef description
 nikhef_item1:
-  en: "Owned the full characterization pipeline for Timepix4 readout ASICs — defining test protocols, executing measurements, and reporting results to stakeholders"
-  es: "Responsable del pipeline completo de caracterización de ASICs de lectura Timepix4 — definiendo protocolos de prueba, ejecutando mediciones y reportando resultados a las partes interesadas"
+  en: "Owned the full characterization pipeline for Timepix4 readout ASICs: defined test protocols, executed measurements, and reported results to stakeholders"
+  es: "Responsable del pipeline completo de caracterización de ASICs de lectura Timepix4: definí protocolos de prueba, ejecuté mediciones y reporté resultados a las partes interesadas"
 
 nikhef_item2:
   en: "Led the design and construction of a Timepix4-based telescope for international test-beam campaigns, coordinating across Nikhef and CERN teams"
   es: "Lideré el diseño y construcción de un telescopio basado en Timepix4 para campañas internacionales de haces de prueba, coordinando entre equipos de Nikhef y CERN"
 
 nikhef_item3:
-  en: "Delivered a **world-class 90 picosecond timing resolution** — exceeding project targets through systematic data analysis and iterative optimization"
-  es: "Logré una **resolución temporal de 90 picosegundos de nivel mundial** — superando los objetivos del proyecto mediante análisis de datos sistemático y optimización iterativa"
+  en: "Delivered a **world-class 90 picosecond timing resolution**, exceeding project targets through systematic data analysis and iterative optimization"
+  es: "Logré una **resolución temporal de 90 picosegundos de nivel mundial**, superando los objetivos del proyecto mediante análisis de datos sistemático y optimización iterativa"
 
 # CERN 2021 description
 cern2021_item1:
-  en: "Contributed to the commissioning of the upgraded LHCb VELO detector — one of CERN's flagship detector upgrades, now operational at the LHC"
-  es: "Contribuí a la puesta en marcha del detector LHCb VELO actualizado — una de las actualizaciones de detector insignia del CERN, ahora operativa en el LHC"
+  en: "Contributed to the commissioning of the upgraded LHCb VELO detector, one of CERN's flagship detector upgrades now operational at the LHC"
+  es: "Contribuí a la puesta en marcha del detector LHCb VELO actualizado, una de las actualizaciones de detector insignia del CERN ahora operativa en el LHC"
 
 cern2021_item2:
   en: "Conducted R&D on next-generation 3D silicon pixel sensors through international test-beam campaigns"
@@ -95,25 +95,25 @@ cern2021_item2:
 
 # IGFAE PhD description
 igfae_phd_item1:
-  en: "Designed and validated **5 Gbps high-speed data transmission systems** and high-voltage cabling for the LHCb VELO upgrade — balancing signal integrity against strict space and radiation constraints"
-  es: "Diseñé y validé **sistemas de transmisión de datos de alta velocidad a 5 Gbps** y cableado de alto voltaje para la actualización del LHCb VELO — equilibrando integridad de señal frente a estrictas restricciones de espacio y radiación"
+  en: "Designed and validated **5 Gbps high-speed data transmission systems** and high-voltage cabling for the LHCb VELO upgrade, balancing signal integrity against strict space and radiation constraints"
+  es: "Diseñé y validé **sistemas de transmisión de datos de alta velocidad a 5 Gbps** y cableado de alto voltaje para la actualización del LHCb VELO, equilibrando integridad de señal frente a estrictas restricciones de espacio y radiación"
 
 igfae_phd_item2:
   en: "Coordinated on-site commissioning activities at CERN for the upgraded LHCb VELO detector, liaising between the Spanish and Swiss teams"
   es: "Coordiné actividades de puesta en marcha in situ en CERN para el detector LHCb VELO actualizado, enlazando entre los equipos español y suizo"
 
 igfae_phd_item3:
-  en: "Managed test-beam campaigns for 3D silicon sensor R&D — planning logistics, allocating beam time, and analysing results"
-  es: "Gestioné campañas de haces de prueba para I+D de sensores de silicio 3D — planificando logística, asignando tiempo de haz y analizando resultados"
+  en: "Managed test-beam campaigns for 3D silicon sensor R&D: planned logistics, allocated beam time, and analysed results"
+  es: "Gestioné campañas de haces de prueba para I+D de sensores de silicio 3D: planifiqué logística, asigné tiempo de haz y analicé resultados"
 
 igfae_phd_item4:
-  en: "Launched the Timepix4 ASIC characterization programme at IGFAE — establishing test infrastructure and measurement protocols from scratch"
-  es: "Lancé el programa de caracterización del ASIC Timepix4 en IGFAE — estableciendo infraestructura de prueba y protocolos de medición desde cero"
+  en: "Launched the Timepix4 ASIC characterization programme at IGFAE, establishing test infrastructure and measurement protocols from scratch"
+  es: "Lancé el programa de caracterización del ASIC Timepix4 en IGFAE, estableciendo infraestructura de prueba y protocolos de medición desde cero"
 
 # IGFAE Intern description
 igfae_intern_desc:
-  en: "Built and characterised a 3D X-ray mapping experiment in collaboration with CERN — first exposure to international research project coordination."
-  es: "Construí y caractericé un experimento de mapeo 3D de rayos X en colaboración con CERN — primera experiencia en coordinación de proyectos de investigación internacionales."
+  en: "Built and characterised a 3D X-ray mapping experiment in collaboration with CERN. First exposure to international research project coordination."
+  es: "Construí y caractericé un experimento de mapeo 3D de rayos X en colaboración con CERN. Primera experiencia en coordinación de proyectos de investigación internacionales."
 
 # Skills section
 skills_title:
