@@ -1597,13 +1597,14 @@ a.reversefootnote {
 
 // Per-logo visual size tuning (compensate for whitespace / aspect ratio)
 .logo-strip__item[title="CERN"] .logo-strip__img {
-  height: 56px;
-  @include breakpoint($small) { height: 64px; }
+  height: 52px;
+  @include breakpoint($small) { height: 60px; }
 }
 
 .logo-strip__item[title="IGFAE"] .logo-strip__img {
-  height: 52px;
-  @include breakpoint($small) { height: 62px; }
+  height: 32px;
+  max-width: 200px;
+  @include breakpoint($small) { height: 38px; max-width: 240px; }
 }
 
 .logo-strip__item[title="Nikhef"] .logo-strip__img {
