@@ -2,59 +2,98 @@
 
 bio:
   en: |
-    I design and test the silicon pixel detectors used in CERN's particle physics experiments. Over five years, I've led hardware projects across three international labs (CERN, Nikhef, and IGFAE), achieving breakthrough 90-picosecond timing resolution and contributing to the LHCb VELO detector now running at the Large Hadron Collider.
+    For the past five years, I've managed one of CERN's most demanding R&D programmes: building a next-generation particle detector across three international labs with a multi-million EUR budget. That meant planning roadmaps months ahead, coordinating engineers and physicists across time zones, tracking dozens of parallel workstreams, and making technical trade-offs under real pressure — all while hitting our performance targets.
 
-    My work sits at the intersection of electronics, physics, and data analysis: from FPGA-based readout systems and high-speed data transmission to Python-driven analysis pipelines. I'm looking for my next challenge in R&D engineering, data science, or applied physics research.
+    Now I'm channelling that experience into industry. I'm looking for a role where I can lead technical teams, drive complex projects to delivery, and use my rare combination of hands-on engineering (electronics, FPGAs, Python, C++) and leadership to make a measurable impact. If your team needs someone who has already operated at scale in one of the world's most demanding technical environments — let's talk.
   es: |
-    Diseño y pruebo los detectores de píxeles de silicio utilizados en los experimentos de física de partículas del CERN. Durante cinco años, he liderado proyectos de hardware en tres laboratorios internacionales (CERN, Nikhef e IGFAE), logrando una resolución temporal de 90 picosegundos y contribuyendo al detector LHCb VELO que actualmente opera en el Gran Colisionador de Hadrones.
+    Durante los últimos cinco años, he gestionado uno de los programas de I+D más exigentes del CERN: construir un detector de partículas de nueva generación en tres laboratorios internacionales con un presupuesto multimillonario. Eso significó planificar hojas de ruta con meses de antelación, coordinar ingenieros y físicos en distintas zonas horarias, seguir decenas de líneas de trabajo en paralelo y tomar decisiones técnicas bajo presión real — todo mientras cumplíamos nuestros objetivos de rendimiento.
 
-    Mi trabajo se encuentra en la intersección de la electrónica, la física y el análisis de datos: desde sistemas de lectura basados en FPGA y transmisión de datos de alta velocidad hasta pipelines de análisis con Python. Busco mi próximo reto en ingeniería I+D, ciencia de datos o investigación en física aplicada.
+    Ahora canalizo esa experiencia hacia la industria. Busco un rol donde pueda liderar equipos técnicos, impulsar proyectos complejos hasta su entrega y aplicar mi combinación poco frecuente de ingeniería práctica (electrónica, FPGAs, Python, C++) y liderazgo para generar un impacto medible. Si tu equipo necesita a alguien que ya ha operado a escala en uno de los entornos técnicos más exigentes del mundo — hablemos.
 
 # Highlight cards section
 highlights_title:
-  en: "What I Bring"
-  es: "Lo que Aporto"
+  en: "What I Bring to Your Team"
+  es: "Lo que Aporto a Tu Equipo"
 
 highlight_research_title:
-  en: "Leading Detector R&D at CERN"
-  es: "Liderando I+D de Detectores en el CERN"
+  en: "Technical Project Leadership"
+  es: "Liderazgo de Proyectos Técnicos"
 
 highlight_research_desc:
-  en: "Building the Timepix4 beam telescope and simulating next-generation 3D silicon sensors for the EP-R&D department. Coordinating hardware campaigns across international teams."
-  es: "Construyendo el telescopio de haz Timepix4 y simulando sensores de silicio 3D de nueva generación para el departamento EP-R&D. Coordinando campañas de hardware con equipos internacionales."
+  en: "Led a multi-million EUR detector programme at CERN, coordinating hardware delivery, budgets, and cross-functional teams across 3 international labs. On time, on spec, breakthrough results."
+  es: "Lideré un programa de detectores multimillonario en el CERN, coordinando entregas de hardware, presupuestos y equipos multidisciplinares en 3 laboratorios internacionales. A tiempo, según especificaciones, resultados de vanguardia."
 
 highlight_tech_title:
-  en: "From Python to FPGA"
-  es: "De Python a FPGA"
+  en: "Hardware + Software Fluency"
+  es: "Dominio Hardware + Software"
 
 highlight_tech_desc:
-  en: "Full-stack physics: Python and C++ analysis pipelines, VHDL/FPGA readout electronics, ROOT data frameworks, and LabVIEW control systems. Hardware meets software."
-  es: "Física full-stack: pipelines de análisis en Python y C++, electrónica de lectura VHDL/FPGA, frameworks de datos ROOT y sistemas de control LabVIEW. Hardware y software unidos."
+  en: "Rare combination: hands-on electronics and FPGA design plus Python/C++ data pipelines. I speak both languages — from circuit boards to dashboards."
+  es: "Combinación poco frecuente: electrónica práctica y diseño FPGA junto con pipelines de datos en Python/C++. Hablo ambos idiomas — de placas de circuitos a dashboards."
 
 highlight_collab_title:
-  en: "3 Labs, 3 Countries"
-  es: "3 Laboratorios, 3 Países"
+  en: "International & Data-Driven"
+  es: "Internacional y Basado en Datos"
 
 highlight_collab_desc:
-  en: "CERN (Geneva), Nikhef (Amsterdam), IGFAE (Spain). Published in top-tier journals, presented at international conferences, and built detectors that are running right now at the LHC."
-  es: "CERN (Ginebra), Nikhef (Ámsterdam), IGFAE (España). Publicaciones en revistas de primer nivel, presentaciones en conferencias internacionales y detectores que operan ahora mismo en el LHC."
+  en: "5+ years in multicultural teams across Switzerland, the Netherlands, and Spain. Every decision backed by rigorous data analysis — a habit that translates directly to KPIs and metrics."
+  es: "Más de 5 años en equipos multiculturales en Suiza, Países Bajos y España. Cada decisión respaldada por análisis de datos riguroso — un hábito que se traduce directamente en KPIs y métricas."
+
+# How I Can Help Your Team section
+help_team_title:
+  en: "How I Can Help Your Team"
+  es: "Cómo Puedo Ayudar a Tu Equipo"
+
+help_manage_title:
+  en: "Run Complex Projects End-to-End"
+  es: "Gestionar Proyectos Complejos de Principio a Fin"
+
+help_manage_desc:
+  en: "I've taken multi-million EUR programmes from blank-page planning through delivery across international labs. I know how to scope work, manage risk, track milestones, and keep stakeholders aligned — whether it's a detector upgrade or a product launch."
+  es: "He llevado programas multimillonarios desde la planificación inicial hasta la entrega en laboratorios internacionales. Sé cómo definir el alcance, gestionar riesgos, seguir hitos y mantener a las partes interesadas alineadas — ya sea una actualización de detector o el lanzamiento de un producto."
+
+help_teams_title:
+  en: "Align Cross-Functional Teams"
+  es: "Alinear Equipos Multidisciplinares"
+
+help_teams_desc:
+  en: "At CERN, I coordinated engineers, physicists, and technicians across Switzerland, the Netherlands, and Spain. I'm fluent in translating between specialists — turning conflicting priorities into shared goals and clear deliverables."
+  es: "En el CERN, coordiné ingenieros, físicos y técnicos en Suiza, Países Bajos y España. Sé traducir entre especialistas — convirtiendo prioridades en conflicto en objetivos compartidos y entregables claros."
+
+help_bridge_title:
+  en: "Bridge Hardware & Software"
+  es: "Conectar Hardware y Software"
+
+help_bridge_desc:
+  en: "I'm equally comfortable reviewing a circuit schematic and debugging a Python pipeline. This lets me have credible technical conversations with any team — and catch integration issues before they become schedule problems."
+  es: "Me desenvuelvo igual revisando un esquema de circuito que depurando un pipeline en Python. Esto me permite tener conversaciones técnicas creíbles con cualquier equipo — y detectar problemas de integración antes de que se conviertan en retrasos."
+
+help_data_title:
+  en: "Drive Decisions with Data"
+  es: "Impulsar Decisiones con Datos"
+
+help_data_desc:
+  en: "Years of analysing terabytes of physics data trained me to question assumptions and follow evidence. I bring the same rigour to KPIs, roadmaps, and resource allocation — no gut feelings, just informed decisions."
+  es: "Años analizando terabytes de datos físicos me entrenaron a cuestionar suposiciones y seguir la evidencia. Aporto el mismo rigor a KPIs, hojas de ruta y asignación de recursos — sin intuiciones, solo decisiones informadas."
 
 # Key achievements section
 achievements_title:
-  en: "Key Achievements"
-  es: "Logros Clave"
+  en: "Key Results"
+  es: "Resultados Clave"
 
 achievements:
   en: |
-    - **90 picosecond** track time resolution achieved - a breakthrough in particle timing detection
-    - Contributed to the successful launch of the **LHCb VELO upgrade detector**
-    - Developed high-speed data transmission lines handling **5 Gbps** per channel
-    - Published in top-tier journals including *Nuclear Instruments and Methods*
+    - **Led a multi-million EUR** international R&D programme across CERN, Nikhef, and IGFAE — delivering on time and exceeding performance targets
+    - **Achieved breakthrough performance** (90 ps timing resolution) through systematic optimization and cross-functional coordination
+    - Managed the successful **launch of a major detector upgrade** (LHCb VELO) — now operational at the world's largest particle accelerator
+    - Designed **high-speed data systems** handling 5 Gbps per channel, balancing technical constraints with project deadlines
+    - **Published and presented** results at international conferences — translating complex technical work for diverse audiences
   es: |
-    - Resolución temporal de trazas de **90 picosegundos** lograda - un avance en detección temporal de partículas
-    - Contribución al exitoso lanzamiento del **detector LHCb VELO actualizado**
-    - Desarrollo de líneas de transmisión de datos de alta velocidad manejando **5 Gbps** por canal
-    - Publicaciones en revistas de primer nivel incluyendo *Nuclear Instruments and Methods*
+    - **Lideré un programa I+D internacional multimillonario** en CERN, Nikhef e IGFAE — entregando a tiempo y superando los objetivos de rendimiento
+    - **Logré resultados de vanguardia** (resolución temporal de 90 ps) mediante optimización sistemática y coordinación multidisciplinar
+    - Gestioné el exitoso **lanzamiento de una actualización mayor del detector** (LHCb VELO) — ahora operativo en el mayor acelerador de partículas del mundo
+    - Diseñé **sistemas de datos de alta velocidad** manejando 5 Gbps por canal, equilibrando restricciones técnicas con plazos del proyecto
+    - **Publiqué y presenté** resultados en conferencias internacionales — traduciendo trabajo técnico complejo para audiencias diversas
 
 # Certifications section
 certifications_title:
@@ -82,16 +121,16 @@ cv_download:
   es: "Descargar CV"
 
 interests_title:
-  en: "Interests"
-  es: "Intereses"
+  en: "What I'm Looking For"
+  es: "Lo que Busco"
 
 interests_engaged:
-  en: "Working on: High-energy physics experiments, silicon pixel detectors for timing applications, and custom readout electronics."
-  es: "Trabajo en: Experimentos de física de altas energías, detectores de píxeles de silicio para aplicaciones de temporización y electrónica de lectura personalizada."
+  en: "Roles where I can lead technical teams, manage complex R&D projects, and drive results — project management, engineering management, or technical leadership positions."
+  es: "Roles donde pueda liderar equipos técnicos, gestionar proyectos I+D complejos e impulsar resultados — dirección de proyectos, gestión de ingeniería o puestos de liderazgo técnico."
 
 interests_explore:
-  en: "Exploring: Machine learning for particle physics, AI-assisted detector design, and data-driven sensor optimization."
-  es: "Explorando: Machine learning para física de partículas, diseño de detectores asistido por IA y optimización de sensores basada en datos."
+  en: "Also interested in: data-driven product development, R&D strategy, and any role that values a unique combination of hands-on technical skills and international project leadership."
+  es: "También interesado en: desarrollo de producto basado en datos, estrategia I+D y cualquier rol que valore una combinación única de habilidades técnicas prácticas y liderazgo de proyectos internacionales."
 
 education_title:
   en: "Education"

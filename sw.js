@@ -76,7 +76,8 @@ self.addEventListener('fetch', (event) => {
         return caches.match(event.request)
           .then((cached) => {
             if (cached) return cached;
-            if (event.request.headers.get('accept').includes('text/html')) {
+            const accept = event.request.headers.get('accept');
+            if (accept && accept.includes('text/html')) {
               return caches.match(OFFLINE_URL);
             }
           });

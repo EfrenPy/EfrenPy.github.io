@@ -1,37 +1,34 @@
-# main links links
+# main links
 main:
-  - title: "Research"
-    title_en: "Research"
-    title_es: "Investigación"
-    url: /publications/
+  - title: "CV"
+    title_en: "CV"
+    title_es: "CV"
+    url: /cv/
 
   - title: "Projects"
     title_en: "Projects"
     title_es: "Proyectos"
     url: /portfolio/
 
-  - title: "Talks"
-    title_en: "Talks"
-    title_es: "Charlas"
-    url: /talks/
+  - title: "Contact"
+    title_en: "Contact"
+    title_es: "Contacto"
+    url: /contact/
 
-  # - title: "Teaching"
-  #   url: /teaching/
+  - title: "Publications"
+    title_en: "Publications"
+    title_es: "Publicaciones"
+    url: /publications/
 
   - title: "Blog"
     title_en: "Blog"
     title_es: "Blog"
     url: /year-archive/
 
-  - title: "CV"
-    title_en: "CV"
-    title_es: "CV"
-    url: /cv/
-
-  - title: "Contact"
-    title_en: "Contact"
-    title_es: "Contacto"
-    url: /contact/
+  - title: "Talks"
+    title_en: "Talks"
+    title_es: "Charlas"
+    url: /talks/
 
   - title: "Personal"
     title_en: "Personal"

@@ -10,7 +10,7 @@ locale                   : "en"
 title                    : "Efrén Rodríguez Rodríguez"
 title_separator          : "-"
 name                     : &name "Efrén Rodríguez Rodríguez"
-description              : &description "Postdoctoral researcher at CERN specializing in silicon pixel detectors, data analysis, and particle physics instrumentation. PhD in Particle Physics with expertise in timing detectors and Python."
+description              : &description "Technical project manager with 5+ years leading multi-million EUR R&D projects at CERN. Bridging hardware and software across international teams. Open to PM, engineering management, and technical leadership roles."
 url                      : https://efrenrodriguezrodriguez.com # the base hostname & protocol for your site
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "EfrenPy/EfrenPy.github.io"
@@ -62,9 +62,9 @@ analytics:
 author:
   name             : "Efrén Rodríguez Rodríguez"
   avatar           : "webp/profile.webp"
-  bio              : "Postdoctoral Researcher at CERN · Silicon Detectors · Data Analysis · Python"
-  bio_en           : "Postdoctoral Researcher at CERN · Silicon Detectors · Data Analysis · Python"
-  bio_es           : "Investigador Postdoctoral en el CERN · Detectores de Silicio · Análisis de Datos · Python"
+  bio              : "Technical Project Manager · R&D Leader at CERN · Hardware + Software · Data-Driven"
+  bio_en           : "Technical Project Manager · R&D Leader at CERN · Hardware + Software · Data-Driven"
+  bio_es           : "Director de Proyectos Técnicos · Líder I+D en el CERN · Hardware + Software · Basado en Datos"
   location         : "Geneva, Switzerland"
   location_en      : "Geneva, Switzerland"
   location_es      : "Ginebra, Suiza"
@@ -129,6 +129,12 @@ exclude:
   - scripts
   - tmp
   - vendor
+  - .ralph
+  - .ralphrc
+  - prompt.md
+  - fix_plan.md
+  - CLAUDE.md
+  - package-lock.json
 keep_files:
   - .git
   - .svn

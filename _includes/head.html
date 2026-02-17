@@ -5,7 +5,7 @@
 {% include seo.html %}
 {% include jsonld-person.html %}
 
-<link href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ base_path }}/feed.xml{% endif %}" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
+<link href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ site.baseurl }}/feed.xml{% endif %}" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#52adc8">
@@ -18,18 +18,18 @@
 <!-- Critical inline scripts: prevent FOUC and register SW -->
 <script>
   document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
-  (function(){var t=localStorage.getItem('theme')||(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t);})();
-  (function(){var l=localStorage.getItem('lang')||(navigator.language.startsWith('es')?'es':'en');document.documentElement.setAttribute('data-lang',l);document.documentElement.setAttribute('lang',l);})();
+  (function(){var t=localStorage.getItem('theme');t=(t==='dark'||t==='light')?t:(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t);})();
+  (function(){var l=localStorage.getItem('lang');l=(l==='en'||l==='es')?l:(navigator.language.startsWith('es')?'es':'en');document.documentElement.setAttribute('data-lang',l);document.documentElement.setAttribute('lang',l);})();
   if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('/sw.js');});}
 </script>
 
 <!-- Swup for SPA-like navigation (self-hosted for reliability) -->
-<script src="{{ base_path }}/assets/js/swup.min.js?v={{ site.time | date: '%s' }}" defer></script>
+<script src="{{ site.baseurl }}/assets/js/swup.min.js?v={{ site.time | date: '%s' }}" defer></script>
 <script defer>document.addEventListener('DOMContentLoaded',function(){if(typeof Swup!=='undefined'){var swup=new Swup({containers:['#swup-sidebar','#swup-content'],animationSelector:'[class*="swup-transition-"]',cache:true,animateHistoryBrowsing:true});swup.hooks.on('visit:start',function(){var p=document.querySelector('.scroll-progress');if(p){p.classList.add('progress-bar--loading');p.style.width='80%';}});swup.hooks.on('content:replace',function(){var p=document.querySelector('.scroll-progress');if(p){p.style.width='100%';setTimeout(function(){p.classList.remove('progress-bar--loading');p.style.width='0%';},300);}});swup.hooks.on('page:view',function(){if(typeof initPageFeatures==='function'){initPageFeatures();}var m=document.getElementById('main');if(m){m.setAttribute('tabindex','-1');m.focus({preventScroll:true});}});}});</script>
 
 <!-- Preload critical CSS -->
-<link rel="preload" href="{{ base_path }}/assets/css/main.css?v={{ site.time | date: '%s' }}" as="style">
+<link rel="preload" href="{{ site.baseurl }}/assets/css/main.css?v={{ site.time | date: '%s' }}" as="style">
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="{{ base_path }}/assets/css/main.css?v={{ site.time | date: '%s' }}">
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css?v={{ site.time | date: '%s' }}">
 

@@ -77,6 +77,21 @@ function initStickyScroll() {
     return masthead ? masthead.offsetHeight : 0;
   }
 
+  /** Measure the sidebar's full content height, accounting for any overflow
+   *  that getBoundingClientRect might miss (e.g. lazy-loaded images). */
+  function getSidebarHeight() {
+    return Math.max(
+      sidebar.getBoundingClientRect().height,
+      sidebar.offsetHeight,
+      sidebar.scrollHeight
+    );
+  }
+
+  /** Compute the sticky top value that pins the sidebar bottom to the viewport bottom. */
+  function stickBottomTop() {
+    return document.documentElement.clientHeight - getSidebarHeight();
+  }
+
   function update() {
     ticking = false;
 
@@ -86,9 +101,9 @@ function initStickyScroll() {
       return;
     }
 
-    const sidebarHeight = Math.max(sidebar.offsetHeight, sidebar.scrollHeight);
-    const viewportHeight = window.innerHeight;
+    const viewportHeight = document.documentElement.clientHeight;
     const mastheadH = getMastheadHeight();
+    const sidebarHeight = getSidebarHeight();
 
     // Short sidebar: let CSS sticky handle it
     if (sidebarHeight <= viewportHeight - mastheadH) {
@@ -114,6 +129,9 @@ function initStickyScroll() {
         break;
 
       case STATE.STICK_BOTTOM:
+        // Re-adjust top each frame to handle dynamic height changes
+        // (lazy images loading, font swaps, etc.)
+        sidebar.style.top = stickBottomTop() + 'px';
         if (!scrollingDown) {
           // Transition to FLOAT
           floatOffset = sidebarRect.top - wrapper.getBoundingClientRect().top;
@@ -126,9 +144,10 @@ function initStickyScroll() {
       case STATE.FLOAT:
         if (scrollingDown) {
           // Check if sidebar bottom has reached viewport bottom
-          if (sidebarRect.top + sidebarHeight <= viewportHeight) {
+          if (sidebarRect.bottom <= viewportHeight) {
             sidebar.style.position = 'sticky';
-            sidebar.style.top = -(sidebarHeight - viewportHeight) + 'px';
+            // Measure height AFTER switching to sticky (may reflow)
+            sidebar.style.top = stickBottomTop() + 'px';
             state = STATE.STICK_BOTTOM;
           }
         } else {
@@ -162,4 +181,12 @@ function initStickyScroll() {
 
   window.addEventListener('scroll', onScroll, { signal, passive: true });
   window.addEventListener('resize', onResize, { signal });
+
+  // After fonts load, re-adjust if currently stuck at bottom
+  // (font loading can change sidebar height)
+  document.fonts.ready.then(() => {
+    if (state === STATE.STICK_BOTTOM) {
+      sidebar.style.top = stickBottomTop() + 'px';
+    }
+  });
 }

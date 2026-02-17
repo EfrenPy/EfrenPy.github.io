@@ -6,19 +6,22 @@
 <meta http-equiv="X-Content-Type-Options" content="nosniff">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="robots" content="max-image-preview:large">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self';">
 
 <!-- DNS prefetch for CDN -->
 <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
 
 <!-- Favicon -->
-<link rel="icon" type="image/png" sizes="32x32" href="{{ base_path }}/images/logo.png">
-<link rel="icon" type="image/png" sizes="16x16" href="{{ base_path }}/images/logo.png">
-<link rel="apple-touch-icon" sizes="180x180" href="{{ base_path }}/images/logo.png">
-<link rel="mask-icon" href="{{ base_path }}/images/safari-pinned-tab.svg?v=M44lzPylqQ" color="#52adc8">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}/images/logo.png">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ site.baseurl }}/images/logo.png">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/images/logo.png">
+<link rel="mask-icon" href="{{ site.baseurl }}/images/safari-pinned-tab.svg?v=M44lzPylqQ" color="#52adc8">
 <meta name="msapplication-TileColor" content="#000000">
-<meta name="msapplication-config" content="{{ base_path }}/images/browserconfig.xml?v=M44lzPylqQ">
+<meta name="msapplication-config" content="{{ site.baseurl }}/images/browserconfig.xml?v=M44lzPylqQ">
 <meta name="theme-color" content="#ffffff">
-<link rel="stylesheet" href="{{ base_path }}/assets/css/academicons.css"/>
+<!-- Preload icon font so sidebar renders fully on first paint -->
+<link rel="preload" href="{{ site.baseurl }}/assets/fonts/academicons.woff" as="font" type="font/woff" crossorigin>
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/academicons.css"/>
 
 {% if page.mathjax %}
 <script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
@@ -32,8 +35,5 @@
 </script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML' integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous" async></script>
 {% endif %}
-
-<!-- Content Security Policy -->
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https:; connect-src 'self' https:;">
 
 <!-- end custom head snippets -->

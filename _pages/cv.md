@@ -3,7 +3,7 @@ layout: archive
 title: "Curriculum Vitae"
 title_en: "Curriculum Vitae"
 title_es: "Currículum Vitae"
-description: "CV of Efrén Rodríguez: postdoctoral researcher at CERN with expertise in silicon detectors, Python, C++, data analysis, and particle physics instrumentation."
+description: "Efrén Rodríguez — Technical project manager with 5+ years leading multi-million EUR international R&D at CERN. Python, C++, FPGA, cross-functional team leadership. Open to PM, engineering management, and technical leadership roles."
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -12,28 +12,26 @@ redirect_from:
 
 {% include base_path %}
 
-<a href="{{ base_path }}/files/Efren_Rodriguez_CV.pdf" class="cv-download-btn" data-no-swup target="_blank" rel="noopener">
+<a href="{{ base_path }}/files/Efren_Rodriguez_CV.pdf" class="cv-download-btn" data-no-swup target="_blank" rel="noopener noreferrer">
   <i class="fas fa-download"></i> {% include t.html page="cv" key="download_btn" %}
 </a>
 
-<div class="cv-section">
-  <h2 class="cv-section-title"><i class="fas fa-graduation-cap"></i> {% include t.html page="cv" key="education_title" %}</h2>
-  <div class="cv-education">
-    <div class="cv-edu-card">
-      <div class="degree">{% include t.html page="cv" key="phd_degree" %}</div>
-      <div class="institution">{% include t.html page="cv" key="usc" %}</div>
-      <div class="year">2020 - 2024</div>
-    </div>
-    <div class="cv-edu-card">
-      <div class="degree">{% include t.html page="cv" key="ms_degree" %}</div>
-      <div class="institution">{% include t.html page="cv" key="usc" %}</div>
-      <div class="year">2019 - 2020</div>
-    </div>
-    <div class="cv-edu-card">
-      <div class="degree">{% include t.html page="cv" key="bs_degree" %}</div>
-      <div class="institution">{% include t.html page="cv" key="usc" %}</div>
-      <div class="year">2015 - 2019</div>
-    </div>
+<div class="cv-snapshot">
+  <div class="cv-snapshot__item">
+    <span class="cv-snapshot__number">5+</span>
+    <span class="cv-snapshot__label"><span class="lang-en" lang="en">Years Leading R&D</span><span class="lang-es" lang="es">Años Liderando I+D</span></span>
+  </div>
+  <div class="cv-snapshot__item">
+    <span class="cv-snapshot__number">3</span>
+    <span class="cv-snapshot__label"><span class="lang-en" lang="en">Countries / Labs</span><span class="lang-es" lang="es">Países / Labs</span></span>
+  </div>
+  <div class="cv-snapshot__item">
+    <span class="cv-snapshot__number">M€+</span>
+    <span class="cv-snapshot__label"><span class="lang-en" lang="en">Project Budget</span><span class="lang-es" lang="es">Presupuesto</span></span>
+  </div>
+  <div class="cv-snapshot__item">
+    <span class="cv-snapshot__number">90ps</span>
+    <span class="cv-snapshot__label"><span class="lang-en" lang="en">Record Resolution</span><span class="lang-es" lang="es">Resolución Récord</span></span>
   </div>
 </div>
 
@@ -131,8 +129,32 @@ redirect_from:
     <div class="cv-skills">
       <span class="cv-skill-tag cv-skill-tag--secondary">{% include t.html page="cv" key="project_management" %}</span>
       <span class="cv-skill-tag cv-skill-tag--secondary">{% include t.html page="cv" key="team_leadership" %}</span>
+      <span class="cv-skill-tag cv-skill-tag--secondary">{% include t.html page="cv" key="stakeholder_management" %}</span>
+      <span class="cv-skill-tag cv-skill-tag--secondary">{% include t.html page="cv" key="cross_functional" %}</span>
+      <span class="cv-skill-tag cv-skill-tag--secondary">{% include t.html page="cv" key="risk_management" %}</span>
       <span class="cv-skill-tag cv-skill-tag--secondary">{% include t.html page="cv" key="scientific_communication" %}</span>
       <span class="cv-skill-tag cv-skill-tag--secondary">{% include t.html page="cv" key="problem_solving" %}</span>
+    </div>
+  </div>
+</div>
+
+<div class="cv-section">
+  <h2 class="cv-section-title"><i class="fas fa-graduation-cap"></i> {% include t.html page="cv" key="education_title" %}</h2>
+  <div class="cv-education">
+    <div class="cv-edu-card">
+      <div class="degree">{% include t.html page="cv" key="phd_degree" %}</div>
+      <div class="institution">{% include t.html page="cv" key="usc" %}</div>
+      <div class="year">2020 - 2024</div>
+    </div>
+    <div class="cv-edu-card">
+      <div class="degree">{% include t.html page="cv" key="ms_degree" %}</div>
+      <div class="institution">{% include t.html page="cv" key="usc" %}</div>
+      <div class="year">2019 - 2020</div>
+    </div>
+    <div class="cv-edu-card">
+      <div class="degree">{% include t.html page="cv" key="bs_degree" %}</div>
+      <div class="institution">{% include t.html page="cv" key="usc" %}</div>
+      <div class="year">2015 - 2019</div>
     </div>
   </div>
 </div>

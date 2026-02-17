@@ -1,10 +1,10 @@
 ---
 permalink: /
-title: "Efrén Rodríguez - Particle Physics Researcher at CERN"
-title_en: "Efrén Rodríguez - Particle Physics Researcher at CERN"
-title_es: "Efrén Rodríguez - Investigador en Física de Partículas en el CERN"
-description: "Postdoctoral researcher at CERN specializing in silicon pixel detectors, data analysis, and particle physics instrumentation. Leading R&D on next-generation timing detectors."
-excerpt: "Postdoctoral researcher at CERN specializing in silicon pixel detectors, data analysis, and particle physics instrumentation."
+title: "Efrén Rodríguez - Technical Project Manager | CERN R&D Leader"
+title_en: "Efrén Rodríguez - Technical Project Manager | CERN R&D Leader"
+title_es: "Efrén Rodríguez - Director de Proyectos Técnicos | Líder I+D en el CERN"
+description: "Technical project manager who led multi-million EUR detector projects at CERN. Coordinating international teams across 3 countries, bridging hardware and software. Open to PM, engineering management, and R&D leadership roles."
+excerpt: "Technical project manager who led multi-million EUR international R&D projects at CERN. Seeking PM, engineering management, and R&D leadership roles."
 author_profile: true
 redirect_from:
   - /about/
@@ -15,15 +15,22 @@ redirect_from:
   <div class="homepage-hero__content">
     <h1 class="homepage-hero__name gradient-text">Efrén Rodríguez</h1>
     <p class="homepage-hero__tagline">
-      <span class="lang-en" lang="en">Particle Physics Researcher · Silicon Detector Expert · CERN</span>
-      <span class="lang-es" lang="es">Investigador en Física de Partículas · Experto en Detectores de Silicio · CERN</span>
+      <span class="lang-en" lang="en">I deliver complex technical projects — from CERN to your team</span>
+      <span class="lang-es" lang="es">Lidero proyectos técnicos complejos — del CERN a tu equipo</span>
+    </p>
+    <p class="homepage-hero__subtitle">
+      <span class="lang-en" lang="en">Project manager and R&D engineer with 5+ years leading multi-million EUR international detector projects. Seeking my next challenge in technical leadership.</span>
+      <span class="lang-es" lang="es">Director de proyectos e ingeniero I+D con más de 5 años liderando proyectos internacionales de detectores multimillonarios. Busco mi próximo reto en liderazgo técnico.</span>
     </p>
     <div class="homepage-hero__cta">
-      <a href="{{ site.baseurl }}/files/Efren_Rodriguez_CV.pdf" class="btn btn--large cv-download-btn" data-no-swup target="_blank" rel="noopener">
+      <a href="{{ site.baseurl }}/contact/" class="btn btn--large">
+        <i class="fas fa-envelope"></i> <span class="lang-en" lang="en">Get in Touch</span><span class="lang-es" lang="es">Contactar</span>
+      </a>
+      <a href="{{ site.baseurl }}/files/Efren_Rodriguez_CV.pdf" class="btn btn--large btn--outline cv-download-btn" data-no-swup target="_blank" rel="noopener noreferrer">
         <i class="fas fa-download"></i> <span class="lang-en" lang="en">Download CV</span><span class="lang-es" lang="es">Descargar CV</span>
       </a>
-      <a href="{{ site.baseurl }}/portfolio/" class="btn btn--large btn--outline">
-        <span class="lang-en" lang="en">View Projects</span><span class="lang-es" lang="es">Ver Proyectos</span>
+      <a href="https://www.linkedin.com/in/efrenrguezrguez" class="btn btn--large btn--outline" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-linkedin"></i> LinkedIn
       </a>
     </div>
   </div>
@@ -41,19 +48,54 @@ redirect_from:
 
 <div class="bento-grid">
   <div class="highlight-card bento-span-2">
-    <i class="fas fa-users"></i>
+    <i class="fas fa-project-diagram"></i>
     <h4>{% include t.html page="about" key="highlight_research_title" %}</h4>
     <p>{% include t.html page="about" key="highlight_research_desc" %}</p>
   </div>
   <div class="highlight-card">
-    <i class="fas fa-code"></i>
+    <i class="fas fa-microchip"></i>
     <h4>{% include t.html page="about" key="highlight_tech_title" %}</h4>
     <p>{% include t.html page="about" key="highlight_tech_desc" %}</p>
   </div>
   <div class="highlight-card">
-    <i class="fas fa-globe"></i>
+    <i class="fas fa-chart-line"></i>
     <h4>{% include t.html page="about" key="highlight_collab_title" %}</h4>
     <p>{% include t.html page="about" key="highlight_collab_desc" %}</p>
+  </div>
+</div>
+
+---
+
+### {% include t.html page="about" key="help_team_title" %}
+
+<div class="value-props">
+  <div class="value-prop">
+    <div class="value-prop__icon"><i class="fas fa-tasks"></i></div>
+    <div class="value-prop__content">
+      <h4>{% include t.html page="about" key="help_manage_title" %}</h4>
+      <p>{% include t.html page="about" key="help_manage_desc" %}</p>
+    </div>
+  </div>
+  <div class="value-prop">
+    <div class="value-prop__icon"><i class="fas fa-users-cog"></i></div>
+    <div class="value-prop__content">
+      <h4>{% include t.html page="about" key="help_teams_title" %}</h4>
+      <p>{% include t.html page="about" key="help_teams_desc" %}</p>
+    </div>
+  </div>
+  <div class="value-prop">
+    <div class="value-prop__icon"><i class="fas fa-code-branch"></i></div>
+    <div class="value-prop__content">
+      <h4>{% include t.html page="about" key="help_bridge_title" %}</h4>
+      <p>{% include t.html page="about" key="help_bridge_desc" %}</p>
+    </div>
+  </div>
+  <div class="value-prop">
+    <div class="value-prop__icon"><i class="fas fa-chart-bar"></i></div>
+    <div class="value-prop__content">
+      <h4>{% include t.html page="about" key="help_data_title" %}</h4>
+      <p>{% include t.html page="about" key="help_data_desc" %}</p>
+    </div>
   </div>
 </div>
 
@@ -62,6 +104,29 @@ redirect_from:
 ### {% include t.html page="about" key="achievements_title" %}
 
 {% include t-block.html page="about" key="achievements" %}
+
+---
+
+### {% include t.html page="about" key="interests_title" %}
+
+<div class="looking-for-section">
+  <div class="looking-for-section__primary">
+    <i class="fas fa-compass"></i>
+    {% include t-block.html page="about" key="interests_engaged" %}
+  </div>
+  <div class="looking-for-section__secondary">
+    <i class="fas fa-lightbulb"></i>
+    {% include t-block.html page="about" key="interests_explore" %}
+  </div>
+  <div class="looking-for-section__cta">
+    <a href="{{ site.baseurl }}/contact/" class="btn btn--large">
+      <i class="fas fa-envelope"></i> <span class="lang-en" lang="en">Let's Talk</span><span class="lang-es" lang="es">Hablemos</span>
+    </a>
+    <a href="https://www.linkedin.com/in/efrenrguezrguez" class="btn btn--large btn--outline" target="_blank" rel="noopener noreferrer">
+      <i class="fab fa-linkedin"></i> <span class="lang-en" lang="en">Connect on LinkedIn</span><span class="lang-es" lang="es">Conectar en LinkedIn</span>
+    </a>
+  </div>
+</div>
 
 ---
 

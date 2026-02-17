@@ -55,7 +55,7 @@ export function initSearch() {
     resultsContainer.innerHTML = results.slice(0, 10).map(function(item) {
       var excerpt = item.excerpt || '';
       if (excerpt.length > 120) excerpt = excerpt.substring(0, 120) + '...';
-      return '<a class="search-result" href="' + item.url + '">' +
+      return '<a class="search-result" href="' + encodeURI(item.url) + '">' +
         '<div class="search-result__title">' + escapeHtml(item.title) + '</div>' +
         (excerpt ? '<div class="search-result__excerpt">' + escapeHtml(excerpt) + '</div>' : '') +
         '</a>';

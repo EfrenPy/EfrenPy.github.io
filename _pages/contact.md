@@ -23,7 +23,7 @@ author_profile: true
     </div>
   </a>
 
-  <a href="https://www.linkedin.com/in/{{ site.author.linkedin }}" class="contact-card" target="_blank" rel="noopener">
+  <a href="https://www.linkedin.com/in/{{ site.author.linkedin }}" class="contact-card" target="_blank" rel="noopener noreferrer">
     <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
     <div class="contact-info">
       <div class="contact-label">LinkedIn</div>
@@ -31,7 +31,7 @@ author_profile: true
     </div>
   </a>
 
-  <a href="https://github.com/{{ site.author.github }}" class="contact-card" target="_blank" rel="noopener">
+  <a href="https://github.com/{{ site.author.github }}" class="contact-card" target="_blank" rel="noopener noreferrer">
     <div class="contact-icon"><i class="fab fa-github"></i></div>
     <div class="contact-info">
       <div class="contact-label">GitHub</div>
@@ -54,6 +54,6 @@ author_profile: true
 
 ---
 
-<a href="{{ site.baseurl }}/files/Efren_Rodriguez_CV.pdf" class="cv-download-btn" data-no-swup target="_blank" rel="noopener">
+<a href="{{ site.baseurl }}/files/Efren_Rodriguez_CV.pdf" class="cv-download-btn" data-no-swup target="_blank" rel="noopener noreferrer">
   <i class="fas fa-download"></i> {% include t.html page="contact" key="download_cv" %}
 </a>

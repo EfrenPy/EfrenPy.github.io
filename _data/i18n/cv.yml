@@ -56,64 +56,64 @@ present:
 
 # CERN Postdoc description
 cern_postdoc_intro:
-  en: "Leading a team responsible for three key projects in advanced particle detection technology:"
-  es: "Liderando un equipo responsable de tres proyectos clave en tecnología avanzada de detección de partículas:"
+  en: "Leading three parallel R&D projects and coordinating a cross-functional team across CERN and partner labs:"
+  es: "Liderando tres proyectos I+D en paralelo y coordinando un equipo multidisciplinar en CERN y laboratorios asociados:"
 
 cern_postdoc_item1:
-  en: "**Simulation of 3D column silicon sensors:** Overseeing sensor simulation and optimization to enhance precision in high-energy experiments"
-  es: "**Simulación de sensores de silicio 3D columnares:** Supervisando la simulación y optimización de sensores para mejorar la precisión en experimentos de alta energía"
+  en: "**Sensor Simulation Programme:** Driving simulation and optimization of next-gen 3D silicon sensors — defining requirements, tracking milestones, and aligning outputs with the broader detector programme"
+  es: "**Programa de Simulación de Sensores:** Impulsando la simulación y optimización de sensores 3D de silicio de nueva generación — definiendo requisitos, seguimiento de hitos y alineando resultados con el programa general del detector"
 
 cern_postdoc_item2:
-  en: "**Development of a Timepix4 telescope:** Managing construction, operation, and data analysis for test beam campaigns"
-  es: "**Desarrollo de un telescopio Timepix4:** Gestionando la construcción, operación y análisis de datos para campañas de haces de prueba"
+  en: "**Timepix4 Telescope Build:** Managing end-to-end delivery of a precision measurement instrument — from procurement and assembly to commissioning and data analysis across international test-beam campaigns"
+  es: "**Construcción del Telescopio Timepix4:** Gestionando la entrega integral de un instrumento de medición de precisión — desde adquisiciones y montaje hasta puesta en marcha y análisis de datos en campañas internacionales de haces de prueba"
 
 cern_postdoc_item3:
-  en: "**Testing techniques:** Coordinating innovative setups and techniques to validate new high-energy physics sensors"
-  es: "**Técnicas de prueba:** Coordinando configuraciones y técnicas innovadoras para validar nuevos sensores de física de altas energías"
+  en: "**Validation & Quality Assurance:** Designing and coordinating novel testing methodologies to qualify next-generation sensors against demanding performance specifications"
+  es: "**Validación y Aseguramiento de Calidad:** Diseñando y coordinando metodologías de prueba innovadoras para cualificar sensores de nueva generación frente a especificaciones de rendimiento exigentes"
 
 # Nikhef description
 nikhef_item1:
-  en: "Characterization of Timepix4 ASICs for silicon sensor readout"
-  es: "Caracterización de ASICs Timepix4 para lectura de sensores de silicio"
+  en: "Owned the full characterization pipeline for Timepix4 readout ASICs — defining test protocols, executing measurements, and reporting results to stakeholders"
+  es: "Responsable del pipeline completo de caracterización de ASICs de lectura Timepix4 — definiendo protocolos de prueba, ejecutando mediciones y reportando resultados a las partes interesadas"
 
 nikhef_item2:
-  en: "Development of a Timepix4-based telescope for test-beam campaigns"
-  es: "Desarrollo de un telescopio basado en Timepix4 para campañas de haces de prueba"
+  en: "Led the design and construction of a Timepix4-based telescope for international test-beam campaigns, coordinating across Nikhef and CERN teams"
+  es: "Lideré el diseño y construcción de un telescopio basado en Timepix4 para campañas internacionales de haces de prueba, coordinando entre equipos de Nikhef y CERN"
 
 nikhef_item3:
-  en: "Achieved **90 picosecond track time resolution** through timing analysis"
-  es: "Logró una **resolución temporal de trazas de 90 picosegundos** mediante análisis temporal"
+  en: "Delivered a **world-class 90 picosecond timing resolution** — exceeding project targets through systematic data analysis and iterative optimization"
+  es: "Logré una **resolución temporal de 90 picosegundos de nivel mundial** — superando los objetivos del proyecto mediante análisis de datos sistemático y optimización iterativa"
 
 # CERN 2021 description
 cern2021_item1:
-  en: "Commissioning of the upgraded LHCb VELO detector"
-  es: "Puesta en marcha del detector LHCb VELO actualizado"
+  en: "Contributed to the commissioning of the upgraded LHCb VELO detector — one of CERN's flagship detector upgrades, now operational at the LHC"
+  es: "Contribuí a la puesta en marcha del detector LHCb VELO actualizado — una de las actualizaciones de detector insignia del CERN, ahora operativa en el LHC"
 
 cern2021_item2:
-  en: "3D-column silicon pixel sensors research in test beam campaigns"
-  es: "Investigación de sensores de píxeles de silicio 3D columnares en campañas de haces de prueba"
+  en: "Conducted R&D on next-generation 3D silicon pixel sensors through international test-beam campaigns"
+  es: "Realicé I+D sobre sensores de píxeles de silicio 3D de nueva generación a través de campañas internacionales de haces de prueba"
 
 # IGFAE PhD description
 igfae_phd_item1:
-  en: "Development and characterization of high-speed data transmission lines and high-voltage flat cables for the LHCb VELO upgrade"
-  es: "Desarrollo y caracterización de líneas de transmisión de datos de alta velocidad y cables planos de alto voltaje para la actualización del LHCb VELO"
+  en: "Designed and validated **5 Gbps high-speed data transmission systems** and high-voltage cabling for the LHCb VELO upgrade — balancing signal integrity against strict space and radiation constraints"
+  es: "Diseñé y validé **sistemas de transmisión de datos de alta velocidad a 5 Gbps** y cableado de alto voltaje para la actualización del LHCb VELO — equilibrando integridad de señal frente a estrictas restricciones de espacio y radiación"
 
 igfae_phd_item2:
-  en: "Commissioning of the upgraded LHCb VELO detector"
-  es: "Puesta en marcha del detector LHCb VELO actualizado"
+  en: "Coordinated on-site commissioning activities at CERN for the upgraded LHCb VELO detector, liaising between the Spanish and Swiss teams"
+  es: "Coordiné actividades de puesta en marcha in situ en CERN para el detector LHCb VELO actualizado, enlazando entre los equipos español y suizo"
 
 igfae_phd_item3:
-  en: "3D-column silicon pixel sensors development in test beam campaigns"
-  es: "Desarrollo de sensores de píxeles de silicio 3D columnares en campañas de haces de prueba"
+  en: "Managed test-beam campaigns for 3D silicon sensor R&D — planning logistics, allocating beam time, and analysing results"
+  es: "Gestioné campañas de haces de prueba para I+D de sensores de silicio 3D — planificando logística, asignando tiempo de haz y analizando resultados"
 
 igfae_phd_item4:
-  en: "Characterization of Timepix4 ASICs for silicon sensor readout"
-  es: "Caracterización de ASICs Timepix4 para lectura de sensores de silicio"
+  en: "Launched the Timepix4 ASIC characterization programme at IGFAE — establishing test infrastructure and measurement protocols from scratch"
+  es: "Lancé el programa de caracterización del ASIC Timepix4 en IGFAE — estableciendo infraestructura de prueba y protocolos de medición desde cero"
 
 # IGFAE Intern description
 igfae_intern_desc:
-  en: "Research project collaboration with CERN; development and characterization of a 3D X-ray mapping experiment."
-  es: "Colaboración en proyecto de investigación con CERN; desarrollo y caracterización de un experimento de mapeo 3D de rayos X."
+  en: "Built and characterised a 3D X-ray mapping experiment in collaboration with CERN — first exposure to international research project coordination."
+  es: "Construí y caractericé un experimento de mapeo 3D de rayos X en colaboración con CERN — primera experiencia en coordinación de proyectos de investigación internacionales."
 
 # Skills section
 skills_title:
@@ -129,8 +129,8 @@ hardware_research:
   es: "Hardware e Investigación"
 
 soft_skills:
-  en: "Soft Skills"
-  es: "Habilidades Blandas"
+  en: "Leadership & Management"
+  es: "Liderazgo y Gestión"
 
 # Skill tags
 silicon_sensors:
@@ -168,6 +168,18 @@ scientific_communication:
 problem_solving:
   en: "Problem Solving"
   es: "Resolución de Problemas"
+
+stakeholder_management:
+  en: "Stakeholder Management"
+  es: "Gestión de Partes Interesadas"
+
+cross_functional:
+  en: "Cross-Functional Coordination"
+  es: "Coordinación Multidisciplinar"
+
+risk_management:
+  en: "Risk & Budget Management"
+  es: "Gestión de Riesgos y Presupuestos"
 
 # Certifications section
 certifications_title:
