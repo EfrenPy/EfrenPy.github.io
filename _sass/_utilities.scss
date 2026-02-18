@@ -1978,9 +1978,3 @@ body:has(.floating-cta.is-visible) .scroll-to-top {
   bottom: 5rem;
 }
 
-// Ensure footer content isn't hidden behind floating CTA on mobile
-.page__footer {
-  @include breakpoint(0 $large) {
-    padding-bottom: 4.5rem;
-  }
-}
