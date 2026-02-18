@@ -3,7 +3,7 @@ layout: single
 title: "Contact"
 title_en: "Contact"
 title_es: "Contacto"
-description: "Get in touch with Efrén Rodríguez for R&D engineering, data science, and research opportunities. Based at CERN, Geneva."
+description: "Get in touch with Efren Rodriguez for technical project management, engineering leadership, and R&D roles. Based at CERN, open to new opportunities."
 permalink: /contact/
 author_profile: true
 ---

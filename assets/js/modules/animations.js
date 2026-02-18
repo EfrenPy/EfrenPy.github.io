@@ -27,7 +27,7 @@ export function initScrollReveal() {
     '.archive__item, .page__content > h2, .page__content > h3, ' +
     '.page__content > p, .page__content > ul, .page__content > ol, ' +
     '.author__urls li, .feature__item, ' +
-    '.highlight-card, .cert-card, .contact-card, ' +
+    '.highlight-card, .cert-card, .contact-card, .career-timeline__milestone, ' +
     '.cv-timeline-item, .cv-edu-card, .cv-skill-tag, ' +
     '.github-stats > a, .bento-grid > *'
   );
@@ -43,7 +43,7 @@ export function initScrollReveal() {
     }
 
     // Card-type elements get directional + stagger
-    var isCard = el.matches('.highlight-card, .cert-card, .contact-card, .archive__item, .cv-edu-card, .cv-timeline-item, .bento-grid > *');
+    var isCard = el.matches('.highlight-card, .cert-card, .contact-card, .career-timeline__milestone, .archive__item, .cv-edu-card, .cv-timeline-item, .bento-grid > *');
 
     if (isCard && el.parentElement) {
       var parent = el.parentElement;

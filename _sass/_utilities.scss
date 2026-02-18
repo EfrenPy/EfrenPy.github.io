@@ -1554,7 +1554,7 @@ a.reversefootnote {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
+  gap: 1.5rem;
   flex-wrap: wrap;
 
   @include breakpoint($small) {
@@ -1702,6 +1702,217 @@ a.reversefootnote {
 }
 
 /*
+   Career Timeline (Homepage)
+   ========================================================================== */
+
+.career-timeline {
+  margin: 1.5rem 0;
+  margin-left: 2.5rem; // Space for year labels on mobile
+
+  @include breakpoint($medium) {
+    margin-left: 0;
+  }
+}
+
+.career-timeline__milestones {
+  position: relative;
+  padding-left: 2rem;
+
+  // Vertical gradient line
+  &::before {
+    content: '';
+    position: absolute;
+    left: 6px;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: linear-gradient(to bottom, var(--color-primary, $info-color), var(--color-primary-dark, $primary-color));
+    border-radius: 2px;
+  }
+}
+
+.career-timeline__milestone {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding-bottom: 1.75rem;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+}
+
+.career-timeline__year {
+  position: absolute;
+  left: -2rem;
+  top: -0.35rem;
+  transform: translateX(-100%);
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--color-text-light, $gray);
+  white-space: nowrap;
+  min-width: 2.5rem;
+  text-align: right;
+}
+
+.career-timeline__dot {
+  position: absolute;
+  left: -2rem;
+  top: 0.3rem;
+  width: 14px;
+  height: 14px;
+  background: var(--color-background, #fff);
+  border: 3px solid var(--color-primary, $info-color);
+  border-radius: 50%;
+  transform: translateX(-5.5px);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  z-index: 1;
+}
+
+.career-timeline__milestone:hover .career-timeline__dot {
+  transform: translateX(-5.5px) scale(1.3);
+  box-shadow: 0 0 0 4px rgba(82, 173, 200, 0.2);
+}
+
+.career-timeline__label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+
+  strong {
+    font-size: 1rem;
+    color: var(--color-text, $dark-gray);
+  }
+
+  span {
+    font-size: 0.85rem;
+    color: var(--color-text-light, $gray);
+  }
+}
+
+// Current milestone accent
+.career-timeline__milestone--current {
+  .career-timeline__dot {
+    background: var(--color-primary, $info-color);
+    border-color: var(--color-primary, $info-color);
+    animation: pulse-ring 2s ease infinite;
+  }
+
+  .career-timeline__label strong {
+    color: var(--color-primary, $info-color);
+  }
+}
+
+@keyframes pulse-ring {
+  0% { box-shadow: 0 0 0 0 rgba(82, 173, 200, 0.4); }
+  70% { box-shadow: 0 0 0 8px rgba(82, 173, 200, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(82, 173, 200, 0); }
+}
+
+.career-timeline__cta {
+  margin-top: 1.25rem;
+  text-align: center;
+}
+
+// Desktop: horizontal layout
+@include breakpoint($medium) {
+  .career-timeline__milestones {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+
+    // Horizontal gradient line
+    &::before {
+      left: 0;
+      right: 0;
+      top: 50%;
+      bottom: auto;
+      width: auto;
+      height: 3px;
+      transform: translateY(-50%);
+      background: linear-gradient(to right, var(--color-primary, $info-color), var(--color-primary-dark, $primary-color));
+    }
+  }
+
+  .career-timeline__milestone {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 0;
+    flex: 1;
+    text-align: center;
+  }
+
+  .career-timeline__year {
+    position: relative;
+    left: auto;
+    top: auto;
+    transform: none;
+    min-width: auto;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-size: 0.85rem;
+  }
+
+  .career-timeline__dot {
+    position: relative;
+    left: auto;
+    top: auto;
+    transform: none;
+    margin-bottom: 0.5rem;
+  }
+
+  .career-timeline__milestone:hover .career-timeline__dot {
+    transform: scale(1.3);
+  }
+
+  .career-timeline__label {
+    align-items: center;
+
+    strong {
+      font-size: 0.9rem;
+    }
+
+    span {
+      font-size: 0.8rem;
+    }
+  }
+}
+
+/*
+   CV Timeline Enhancements (hover + institution colors)
+   ========================================================================== */
+
+.cv-timeline-item {
+  transition: background 0.2s ease, transform 0.2s ease;
+  border-radius: 12px;
+  padding: 0.75rem 1rem 0.75rem 0;
+
+  &:hover {
+    background: var(--color-background-secondary, rgba(0,0,0,0.02));
+    transform: translateX(4px);
+  }
+
+  // Institution-colored dots
+  &[data-institution="cern"]::before {
+    background: #0053A1;
+    box-shadow: 0 0 0 3px #0053A1;
+  }
+
+  &[data-institution="nikhef"]::before {
+    background: #C41230;
+    box-shadow: 0 0 0 3px #C41230;
+  }
+
+  &[data-institution="igfae"]::before {
+    background: #1B3A5C;
+    box-shadow: 0 0 0 3px #1B3A5C;
+  }
+}
+
+/*
    Floating Mobile CTA
    ========================================================================== */
 
@@ -1732,7 +1943,7 @@ a.reversefootnote {
 
   .btn {
     flex: 1;
-    max-width: 200px;
+    max-width: 180px;
     text-align: center;
     font-size: 0.9rem;
     padding: 0.65rem 1rem;
@@ -1748,10 +1959,28 @@ a.reversefootnote {
       }
     }
   }
+
+  .floating-cta__linkedin {
+    flex: 0 0 auto;
+    max-width: none;
+    width: 42px;
+    padding: 0.65rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+  }
 }
 
 // Shift scroll-to-top button up when floating CTA is visible
 .floating-cta.is-visible ~ .page__footer .scroll-to-top,
 body:has(.floating-cta.is-visible) .scroll-to-top {
   bottom: 5rem;
+}
+
+// Ensure footer content isn't hidden behind floating CTA on mobile
+.page__footer {
+  @include breakpoint(0 $large) {
+    padding-bottom: 4.5rem;
+  }
 }

@@ -156,6 +156,63 @@ publications_title:
   en: "Featured Publications"
   es: "Publicaciones Destacadas"
 
+# Career timeline section
+career_timeline_title:
+  en: "Career Journey"
+  es: "Trayectoria Profesional"
+
+career_timeline_cta:
+  en: "View Full CV"
+  es: "Ver CV Completo"
+
+milestone_2015_label:
+  en: "BSc Physics"
+  es: "Grado en Física"
+
+milestone_2015_sub:
+  en: "University of Santiago de Compostela"
+  es: "Universidad de Santiago de Compostela"
+
+milestone_2018_label:
+  en: "First Research"
+  es: "Primera Investigación"
+
+milestone_2018_sub:
+  en: "IGFAE — Silicon detector R&D"
+  es: "IGFAE — I+D de detectores de silicio"
+
+milestone_2019_label:
+  en: "MSc + PhD Start"
+  es: "Máster + Inicio Doctorado"
+
+milestone_2019_sub:
+  en: "Particle & Nuclear Physics"
+  es: "Física de Partículas y Nuclear"
+
+milestone_2021_label:
+  en: "CERN Researcher"
+  es: "Investigador en el CERN"
+
+milestone_2021_sub:
+  en: "LHCb VELO detector upgrade"
+  es: "Mejora del detector LHCb VELO"
+
+milestone_2022_label:
+  en: "Nikhef Secondment"
+  es: "Estancia en Nikhef"
+
+milestone_2022_sub:
+  en: "Amsterdam — International collaboration"
+  es: "Ámsterdam — Colaboración internacional"
+
+milestone_2024_label:
+  en: "PhD + CERN Postdoc"
+  es: "Doctorado + Postdoc CERN"
+
+milestone_2024_sub:
+  en: "Leading next-gen detector projects"
+  es: "Liderando proyectos de detectores de nueva generación"
+
 # Logo strip section
 logo_strip_title:
   en: "Where I've Made an Impact"

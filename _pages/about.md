@@ -136,6 +136,68 @@ redirect_from:
 
 ---
 
+<h3>{% include t.html page="about" key="career_timeline_title" %}</h3>
+
+<section class="career-timeline">
+  <div class="career-timeline__milestones">
+    <div class="career-timeline__milestone">
+      <span class="career-timeline__year">2015</span>
+      <span class="career-timeline__dot"></span>
+      <div class="career-timeline__label">
+        <strong>{% include t.html page="about" key="milestone_2015_label" %}</strong>
+        <span>{% include t.html page="about" key="milestone_2015_sub" %}</span>
+      </div>
+    </div>
+    <div class="career-timeline__milestone">
+      <span class="career-timeline__year">2018</span>
+      <span class="career-timeline__dot"></span>
+      <div class="career-timeline__label">
+        <strong>{% include t.html page="about" key="milestone_2018_label" %}</strong>
+        <span>{% include t.html page="about" key="milestone_2018_sub" %}</span>
+      </div>
+    </div>
+    <div class="career-timeline__milestone">
+      <span class="career-timeline__year">2019</span>
+      <span class="career-timeline__dot"></span>
+      <div class="career-timeline__label">
+        <strong>{% include t.html page="about" key="milestone_2019_label" %}</strong>
+        <span>{% include t.html page="about" key="milestone_2019_sub" %}</span>
+      </div>
+    </div>
+    <div class="career-timeline__milestone">
+      <span class="career-timeline__year">2021</span>
+      <span class="career-timeline__dot"></span>
+      <div class="career-timeline__label">
+        <strong>{% include t.html page="about" key="milestone_2021_label" %}</strong>
+        <span>{% include t.html page="about" key="milestone_2021_sub" %}</span>
+      </div>
+    </div>
+    <div class="career-timeline__milestone">
+      <span class="career-timeline__year">2022</span>
+      <span class="career-timeline__dot"></span>
+      <div class="career-timeline__label">
+        <strong>{% include t.html page="about" key="milestone_2022_label" %}</strong>
+        <span>{% include t.html page="about" key="milestone_2022_sub" %}</span>
+      </div>
+    </div>
+    <div class="career-timeline__milestone career-timeline__milestone--current">
+      <span class="career-timeline__year">2024</span>
+      <span class="career-timeline__dot"></span>
+      <div class="career-timeline__label">
+        <strong>{% include t.html page="about" key="milestone_2024_label" %}</strong>
+        <span>{% include t.html page="about" key="milestone_2024_sub" %}</span>
+      </div>
+    </div>
+  </div>
+  <div class="career-timeline__cta">
+    <a href="{{ site.baseurl }}/cv/" class="btn btn--outline">
+      <i class="fas fa-arrow-right"></i> {% include t.html page="about" key="career_timeline_cta" %}
+    </a>
+  </div>
+</section>
+
+---
+
 <h3>{% include t.html page="about" key="interests_title" %}</h3>
 
 <div class="looking-for-section">

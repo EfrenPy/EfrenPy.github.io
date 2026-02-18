@@ -38,7 +38,7 @@ redirect_from:
 <div class="cv-section">
   <h2 class="cv-section-title"><i class="fas fa-briefcase"></i> {% include t.html page="cv" key="experience_title" %}</h2>
   <div class="cv-timeline">
-    <div class="cv-timeline-item">
+    <div class="cv-timeline-item" data-institution="cern">
       <div class="cv-position">{% include t.html page="cv" key="postdoc_position" %}</div>
       <div class="cv-company"><i class="fas fa-building"></i> CERN</div>
       <div class="cv-date"><span class="lang-en" lang="en">Oct 2024 - Present</span><span class="lang-es" lang="es">Oct 2024 - Actualidad</span></div>
@@ -51,7 +51,7 @@ redirect_from:
         </ul>
       </div>
     </div>
-    <div class="cv-timeline-item">
+    <div class="cv-timeline-item" data-institution="nikhef">
       <div class="cv-position">{% include t.html page="cv" key="invited_researcher" %}</div>
       <div class="cv-company"><i class="fas fa-building"></i> Nikhef</div>
       <div class="cv-date"><span class="lang-en" lang="en">Jun 2022 - Jun 2023</span><span class="lang-es" lang="es">Jun 2022 - Jun 2023</span></div>
@@ -63,7 +63,7 @@ redirect_from:
         </ul>
       </div>
     </div>
-    <div class="cv-timeline-item">
+    <div class="cv-timeline-item" data-institution="cern">
       <div class="cv-position">{% include t.html page="cv" key="invited_researcher" %}</div>
       <div class="cv-company"><i class="fas fa-building"></i> CERN</div>
       <div class="cv-date"><span class="lang-en" lang="en">Aug 2021 - Feb 2022</span><span class="lang-es" lang="es">Ago 2021 - Feb 2022</span></div>
@@ -74,7 +74,7 @@ redirect_from:
         </ul>
       </div>
     </div>
-    <div class="cv-timeline-item">
+    <div class="cv-timeline-item" data-institution="igfae">
       <div class="cv-position">{% include t.html page="cv" key="phd_researcher" %}</div>
       <div class="cv-company"><i class="fas fa-university"></i> IGFAE</div>
       <div class="cv-date"><span class="lang-en" lang="en">Jan 2019 - Sep 2024</span><span class="lang-es" lang="es">Ene 2019 - Sep 2024</span></div>
@@ -87,7 +87,7 @@ redirect_from:
         </ul>
       </div>
     </div>
-    <div class="cv-timeline-item">
+    <div class="cv-timeline-item" data-institution="igfae">
       <div class="cv-position">{% include t.html page="cv" key="research_intern" %}</div>
       <div class="cv-company"><i class="fas fa-university"></i> IGFAE</div>
       <div class="cv-date"><span class="lang-en" lang="en">Jun 2018 - Sep 2020</span><span class="lang-es" lang="es">Jun 2018 - Sep 2020</span></div>
