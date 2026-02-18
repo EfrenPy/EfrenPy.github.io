@@ -227,3 +227,283 @@ publications_title:
 talks_title:
   en: "Talks & Presentations"
   es: "Charlas y Presentaciones"
+
+# Download buttons (bilingual)
+download_btn_en:
+  en: "Download CV (English)"
+  es: "Descargar CV (Inglés)"
+
+download_btn_es:
+  en: "Download CV (Spanish)"
+  es: "Descargar CV (Español)"
+
+download_btn_ats_en:
+  en: "Download ATS CV (English)"
+  es: "Descargar CV ATS (Inglés)"
+
+download_btn_ats_es:
+  en: "Download ATS CV (Spanish)"
+  es: "Descargar CV ATS (Español)"
+
+# ==========================================================================
+#   PRINT CV KEYS (ATS-optimized, used by cv-print layout)
+# ==========================================================================
+
+print_name:
+  en: "Efren Rodriguez Rodriguez"
+  es: "Efren Rodriguez Rodriguez"
+
+print_title:
+  en: "Technical Project Manager | R&D Leader"
+  es: "Director de Proyectos Técnicos | Líder de I+D"
+
+print_contact:
+  en: "Geneva, Switzerland | efren.rodriguez.rodriguez@cern.ch | linkedin.com/in/efrenrguezrguez | efrenpy.github.io"
+  es: "Ginebra, Suiza | efren.rodriguez.rodriguez@cern.ch | linkedin.com/in/efrenrguezrguez | efrenpy.github.io"
+
+print_summary_title:
+  en: "Professional Summary"
+  es: "Resumen Profesional"
+
+print_summary:
+  en: "Technical project manager and R&D leader with 8+ years of experience delivering complex hardware-software systems across 3 countries (Spain, Netherlands, Switzerland). Currently leading a 20+ person cross-functional team at CERN, managing EUR 3M+ in project budgets. Proven track record in sensor development, system integration, and test campaign management. Achieved world-record 90 ps timing resolution (40% beyond target). Bridges the gap between hardware engineering and software-driven data analysis, combining hands-on technical expertise with strategic programme leadership."
+  es: "Director de proyectos técnicos y líder de I+D con más de 8 años de experiencia entregando sistemas complejos hardware-software en 3 países (España, Países Bajos, Suiza). Actualmente liderando un equipo multidisciplinar de más de 20 personas en el CERN, gestionando más de 3M EUR en presupuestos de proyectos. Trayectoria demostrada en desarrollo de sensores, integración de sistemas y gestión de campañas de prueba. Logré una resolución temporal récord mundial de 90 ps (40% por encima del objetivo). Conecto la ingeniería de hardware con el análisis de datos basado en software, combinando experiencia técnica práctica con liderazgo estratégico de programas."
+
+print_competencies_title:
+  en: "Core Competencies"
+  es: "Competencias Clave"
+
+print_competencies_leadership_label:
+  en: "Leadership"
+  es: "Liderazgo"
+
+print_competencies_leadership:
+  en: "Project Management, Cross-Functional Team Leadership (20+), Stakeholder Management, Risk & Budget Management (EUR 3M+), Strategic Planning, Vendor Relations"
+  es: "Gestión de Proyectos, Liderazgo de Equipos Multidisciplinares (20+), Gestión de Partes Interesadas, Gestión de Riesgos y Presupuestos (3M+ EUR), Planificación Estratégica, Relaciones con Proveedores"
+
+print_competencies_technical_label:
+  en: "Technical"
+  es: "Técnico"
+
+print_competencies_technical:
+  en: "Python, C++, ROOT, FPGA/VHDL, LabVIEW, Git, WinCC OA, Data Analysis, Signal Processing, System Integration"
+  es: "Python, C++, ROOT, FPGA/VHDL, LabVIEW, Git, WinCC OA, Análisis de Datos, Procesamiento de Señales, Integración de Sistemas"
+
+print_competencies_domain_label:
+  en: "Domain"
+  es: "Dominio"
+
+print_competencies_domain:
+  en: "Sensor Development, Quality Assurance & Validation, Test Campaign Management, System Integration, Hardware-Software Interface, Precision Instrumentation"
+  es: "Desarrollo de Sensores, Aseguramiento de Calidad y Validación, Gestión de Campañas de Prueba, Integración de Sistemas, Interfaz Hardware-Software, Instrumentación de Precisión"
+
+print_experience_title:
+  en: "Professional Experience"
+  es: "Experiencia Profesional"
+
+# CERN Postdoc (print)
+print_cern_postdoc_role:
+  en: "R&D Project Lead"
+  es: "Líder de Proyectos I+D"
+
+print_cern_postdoc_org:
+  en: "CERN, Geneva, Switzerland"
+  es: "CERN, Ginebra, Suiza"
+
+print_cern_postdoc_dates:
+  en: "Oct 2024 - Present"
+  es: "Oct 2024 - Actualidad"
+
+print_cern_postdoc_bullet1:
+  en: "Lead 3 parallel R&D projects and coordinate a 20+ person cross-functional team across CERN and partner laboratories in 4 countries"
+  es: "Lidero 3 proyectos I+D en paralelo y coordino un equipo multidisciplinar de más de 20 personas en CERN y laboratorios asociados en 4 países"
+
+print_cern_postdoc_bullet2:
+  en: "Manage EUR 200K+ in procurement and equipment budgets, negotiating with vendors and tracking deliverables against programme milestones"
+  es: "Gestiono más de 200K EUR en presupuestos de adquisiciones y equipamiento, negociando con proveedores y controlando entregables frente a hitos del programa"
+
+print_cern_postdoc_bullet3:
+  en: "Drive simulation and optimization of next-generation 3D silicon sensors, defining requirements and aligning outputs with the broader detector upgrade programme"
+  es: "Impulso la simulación y optimización de sensores 3D de silicio de nueva generación, definiendo requisitos y alineando resultados con el programa general de actualización del detector"
+
+print_cern_postdoc_bullet4:
+  en: "Reduced test-beam campaign turnaround by 30% through streamlined logistics planning and automated data analysis pipelines"
+  es: "Reduje el tiempo de respuesta de campañas de prueba en un 30% mediante planificación logística optimizada y pipelines automatizados de análisis de datos"
+
+# Nikhef (print)
+print_nikhef_role:
+  en: "Invited Researcher"
+  es: "Investigador Visitante"
+
+print_nikhef_org:
+  en: "Nikhef, Amsterdam, Netherlands"
+  es: "Nikhef, Ámsterdam, Países Bajos"
+
+print_nikhef_dates:
+  en: "Jun 2022 - Jun 2023"
+  es: "Jun 2022 - Jun 2023"
+
+print_nikhef_bullet1:
+  en: "Owned the full characterization pipeline for Timepix4 readout ASICs: defined 15+ test protocols, executed 500+ measurements, and reported results to international stakeholders"
+  es: "Responsable del pipeline completo de caracterización de ASICs de lectura Timepix4: definí más de 15 protocolos de prueba, ejecuté más de 500 mediciones y reporté resultados a partes interesadas internacionales"
+
+print_nikhef_bullet2:
+  en: "Led design and construction of a Timepix4-based beam telescope, coordinating hardware integration across Nikhef and CERN teams"
+  es: "Lideré el diseño y construcción de un telescopio de haz basado en Timepix4, coordinando la integración de hardware entre equipos de Nikhef y CERN"
+
+print_nikhef_bullet3:
+  en: "Achieved world-record 90 picosecond timing resolution, exceeding project target by 40% through systematic data analysis and iterative optimization"
+  es: "Logré una resolución temporal récord mundial de 90 picosegundos, superando el objetivo del proyecto en un 40% mediante análisis de datos sistemático y optimización iterativa"
+
+# CERN 2021 (print)
+print_cern2021_role:
+  en: "Invited Researcher"
+  es: "Investigador Visitante"
+
+print_cern2021_org:
+  en: "CERN, Geneva, Switzerland"
+  es: "CERN, Ginebra, Suiza"
+
+print_cern2021_dates:
+  en: "Aug 2021 - Feb 2022"
+  es: "Ago 2021 - Feb 2022"
+
+print_cern2021_bullet1:
+  en: "Contributed to commissioning of the upgraded LHCb VELO detector (EUR 20M+ project), validating 10+ prototype modules against performance specifications"
+  es: "Contribuí a la puesta en marcha del detector LHCb VELO actualizado (proyecto de más de 20M EUR), validando más de 10 módulos prototipo frente a especificaciones de rendimiento"
+
+print_cern2021_bullet2:
+  en: "Conducted R&D on next-generation 3D silicon pixel sensors through international test-beam campaigns at CERN and DESY"
+  es: "Realicé I+D sobre sensores de píxeles de silicio 3D de nueva generación a través de campañas internacionales de haces de prueba en CERN y DESY"
+
+# IGFAE PhD (print)
+print_igfae_phd_role:
+  en: "R&D Engineer & Project Coordinator"
+  es: "Ingeniero I+D y Coordinador de Proyectos"
+
+print_igfae_phd_org:
+  en: "IGFAE, Santiago de Compostela, Spain"
+  es: "IGFAE, Santiago de Compostela, España"
+
+print_igfae_phd_dates:
+  en: "Jan 2019 - Sep 2024"
+  es: "Ene 2019 - Sep 2024"
+
+print_igfae_phd_bullet1:
+  en: "Designed and validated 5 Gbps high-speed data transmission systems for the LHCb VELO upgrade, balancing signal integrity against strict space and radiation constraints"
+  es: "Diseñé y validé sistemas de transmisión de datos de alta velocidad a 5 Gbps para la actualización del LHCb VELO, equilibrando integridad de señal frente a estrictas restricciones de espacio y radiación"
+
+print_igfae_phd_bullet2:
+  en: "Coordinated 6+ on-site visits and 4 test-beam campaigns at CERN, managing cross-border logistics between Spanish and Swiss teams"
+  es: "Coordiné más de 6 visitas in situ y 4 campañas de haces de prueba en CERN, gestionando logística transfronteriza entre equipos español y suizo"
+
+print_igfae_phd_bullet3:
+  en: "Launched the Timepix4 ASIC characterization programme at IGFAE, establishing test infrastructure and measurement protocols adopted by 2 partner laboratories"
+  es: "Lancé el programa de caracterización del ASIC Timepix4 en IGFAE, estableciendo infraestructura de prueba y protocolos de medición adoptados por 2 laboratorios asociados"
+
+# IGFAE Intern (print)
+print_igfae_intern_role:
+  en: "Junior Research Engineer"
+  es: "Ingeniero de Investigación Junior"
+
+print_igfae_intern_org:
+  en: "IGFAE, Santiago de Compostela, Spain"
+  es: "IGFAE, Santiago de Compostela, España"
+
+print_igfae_intern_dates:
+  en: "Jun 2018 - Sep 2020"
+  es: "Jun 2018 - Sep 2020"
+
+print_igfae_intern_bullet1:
+  en: "Built and characterised a 3D X-ray mapping prototype in collaboration with CERN, producing calibration datasets used by 3 downstream research projects"
+  es: "Construí y caractericé un prototipo de mapeo 3D de rayos X en colaboración con CERN, produciendo conjuntos de datos de calibración utilizados por 3 proyectos de investigación posteriores"
+
+# Education (print)
+print_education_title:
+  en: "Education"
+  es: "Educación"
+
+print_phd:
+  en: "Ph.D. in Particle Physics"
+  es: "Doctorado en Física de Partículas"
+
+print_msc:
+  en: "M.S. in Physics"
+  es: "Máster en Física"
+
+print_bsc:
+  en: "B.S. in Physics"
+  es: "Grado en Física"
+
+print_usc:
+  en: "University of Santiago de Compostela"
+  es: "Universidad de Santiago de Compostela"
+
+# Certifications (print)
+print_certifications_title:
+  en: "Certifications"
+  es: "Certificaciones"
+
+print_cert_python:
+  en: "Python IT Specialist (INF-303)"
+  es: "Especialista IT en Python (INF-303)"
+
+print_cert_python_issuer:
+  en: "Certiport / Pearson VUE, 2023"
+  es: "Certiport / Pearson VUE, 2023"
+
+print_cert_cern:
+  en: "CERN Radiation & Safety Certifications"
+  es: "Certificaciones de Radiación y Seguridad del CERN"
+
+print_cert_cern_issuer:
+  en: "CERN, 2021-2024"
+  es: "CERN, 2021-2024"
+
+# Languages (print)
+print_languages_title:
+  en: "Languages"
+  es: "Idiomas"
+
+print_lang_spanish:
+  en: "Spanish (Native)"
+  es: "Español (Nativo)"
+
+print_lang_english:
+  en: "English (C1 - Full Professional)"
+  es: "Inglés (C1 - Profesional Completo)"
+
+print_lang_galician:
+  en: "Galician (Native)"
+  es: "Gallego (Nativo)"
+
+# Key Achievements (print sidebar)
+print_highlights_title:
+  en: "Key Achievements"
+  es: "Logros Clave"
+
+print_highlight_years:
+  en: "8+ years in technical R&D across 3 countries"
+  es: "8+ años en I+D técnico en 3 países"
+
+print_highlight_team:
+  en: "Leading 20+ person cross-functional team"
+  es: "Liderando equipo multidisciplinar de 20+ personas"
+
+print_highlight_budget:
+  en: "EUR 3M+ in project budgets managed"
+  es: "3M+ EUR en presupuestos de proyectos gestionados"
+
+print_highlight_record:
+  en: "World-record 90 ps timing resolution (40% beyond target)"
+  es: "Resolución temporal récord mundial de 90 ps (40% sobre objetivo)"
+
+# Selected Publications (print)
+print_publications_title:
+  en: "Selected Publications"
+  es: "Publicaciones Seleccionadas"
+
+# Conference Presentations (print)
+print_talks_title:
+  en: "Conference Presentations"
+  es: "Presentaciones en Conferencias"

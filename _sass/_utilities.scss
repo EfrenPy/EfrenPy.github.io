@@ -1110,6 +1110,14 @@ a.reversefootnote {
   }
 }
 
+// CV Download buttons container
+.cv-download-buttons {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
 // Download button
 .cv-download-btn {
   display: inline-flex;
@@ -1122,7 +1130,7 @@ a.reversefootnote {
   border-radius: 10px;
   text-decoration: none;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  margin-bottom: 2rem;
+  margin-bottom: 0;
   position: relative;
   overflow: hidden;
 
@@ -1151,6 +1159,17 @@ a.reversefootnote {
 
   i {
     font-size: 1.1rem;
+  }
+}
+
+.cv-download-btn--secondary {
+  background: var(--color-background-secondary, $lighter-gray);
+  color: var(--color-text, $dark-gray) !important;
+  border: 1.5px solid var(--color-border, $border-color);
+
+  &:hover {
+    color: var(--color-text, $dark-gray) !important;
+    box-shadow: 0 15px 35px var(--color-shadow, rgba(0,0,0,0.15));
   }
 }
 
