@@ -1906,4 +1906,53 @@ a.reversefootnote {
   }
 }
 
+/*
+   Floating Mobile CTA (compact)
+   ========================================================================== */
+
+.floating-cta {
+  position: fixed;
+  bottom: 0.75rem;
+  right: 0.75rem;
+  z-index: 99;
+  display: flex;
+  gap: 0.4rem;
+  transform: translateY(calc(100% + 1rem));
+  transition: transform 0.3s ease;
+
+  @include breakpoint($large) {
+    display: none !important;
+  }
+
+  &.is-visible {
+    transform: translateY(0);
+  }
+}
+
+.floating-cta__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  padding: 0.45rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #fff;
+  background: var(--gradient-primary, linear-gradient(135deg, #52adc8, #8B5CF6));
+  border-radius: 999px;
+  text-decoration: none;
+  box-shadow: 0 2px 10px var(--color-shadow, rgba(0,0,0,0.2));
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  white-space: nowrap;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(82, 173, 200, 0.4);
+    color: #fff;
+  }
+
+  i {
+    font-size: 0.8rem;
+  }
+}
 

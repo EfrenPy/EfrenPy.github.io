@@ -6,7 +6,7 @@
 import { initMobileNav, updateActiveNav } from './modules/nav.js';
 import { initDarkMode, initLanguage, initColorCustomization } from './modules/theme.js';
 import { initLightbox } from './modules/lightbox.js';
-import { initScrollReveal, initScrollProgress, initScrollToTop } from './modules/animations.js';
+import { initScrollReveal, initScrollProgress, initScrollToTop, initFloatingCta } from './modules/animations.js';
 import { initSidebar } from './modules/sidebar.js';
 import { initSearch } from './modules/search.js';
 import { initOfflineIndicator } from './modules/offline.js';
@@ -70,6 +70,7 @@ function initPageFeatures() {
   initScrollToTop();
 
   // Floating mobile CTA
+  initFloatingCta();
 
   // Scroll to top on new page
   window.scrollTo(0, 0);

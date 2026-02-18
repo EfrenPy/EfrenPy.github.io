@@ -146,3 +146,50 @@ export function initScrollToTop() {
   updateVisibility();
 }
 
+/* ==========================================================================
+   Floating Mobile CTA
+   ========================================================================== */
+
+export function initFloatingCta() {
+  var cta = document.querySelector('.floating-cta');
+  if (!cta) return;
+
+  var scrollThreshold = 600;
+  var ticking = false;
+  var footerVisible = false;
+
+  var footer = document.querySelector('.page__footer');
+  if (footer) {
+    var footerObserver = new IntersectionObserver(function(entries) {
+      footerVisible = entries[0].isIntersecting;
+      updateVisibility();
+    }, { threshold: 0.1 });
+    footerObserver.observe(footer);
+  }
+
+  var updateVisibility = function() {
+    if (window.scrollY > scrollThreshold && window.innerWidth < 925 && !footerVisible) {
+      cta.classList.add('is-visible');
+    } else {
+      cta.classList.remove('is-visible');
+    }
+    ticking = false;
+  };
+
+  window.addEventListener('scroll', function() {
+    if (!ticking) {
+      requestAnimationFrame(updateVisibility);
+      ticking = true;
+    }
+  }, { passive: true });
+
+  window.addEventListener('resize', function() {
+    if (!ticking) {
+      requestAnimationFrame(updateVisibility);
+      ticking = true;
+    }
+  }, { passive: true });
+
+  updateVisibility();
+}
+
