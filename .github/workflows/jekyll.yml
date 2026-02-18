@@ -34,8 +34,8 @@ jobs:
       - name: Install Node dependencies
         run: npm ci
 
-      - name: Verify Ghostscript
-        run: gs --version
+      - name: Install Ghostscript
+        run: sudo apt-get update && sudo apt-get install -y ghostscript
 
       - name: Generate CV PDFs
         run: node scripts/generate-cv-pdf.js
