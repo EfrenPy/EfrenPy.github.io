@@ -9,6 +9,7 @@
  */
 
 const puppeteer = require('puppeteer');
+const { execSync } = require('child_process');
 const http = require('http');
 const path = require('path');
 const fs = require('fs');
@@ -36,6 +37,28 @@ const MIME_TYPES = {
   '.svg': 'image/svg+xml',
   '.webp': 'image/webp',
 };
+
+function compressPdf(filePath) {
+  const tmpPath = filePath + '.tmp';
+  try {
+    execSync(
+      `gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/ebook -dNOPAUSE -dBATCH -dQUIET -sOutputFile="${tmpPath}" "${filePath}"`,
+      { stdio: 'pipe' }
+    );
+    const origSize = fs.statSync(filePath).size;
+    const compSize = fs.statSync(tmpPath).size;
+    if (compSize < origSize) {
+      fs.renameSync(tmpPath, filePath);
+      console.log(`  Compressed: ${(origSize / 1024).toFixed(1)} KB → ${(compSize / 1024).toFixed(1)} KB`);
+    } else {
+      fs.unlinkSync(tmpPath);
+      console.log(`  Skipped compression (already optimal)`);
+    }
+  } catch {
+    // Ghostscript not available — skip gracefully
+    if (fs.existsSync(tmpPath)) fs.unlinkSync(tmpPath);
+  }
+}
 
 function startServer() {
   return new Promise((resolve) => {
@@ -93,6 +116,7 @@ function startServer() {
 
     const stats = fs.statSync(outputPath);
     console.log(`Generated ${pdf} (${(stats.size / 1024).toFixed(1)} KB)`);
+    compressPdf(outputPath);
     await page.close();
   }
 

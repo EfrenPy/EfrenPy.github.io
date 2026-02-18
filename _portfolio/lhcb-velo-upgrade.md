@@ -2,9 +2,9 @@
 title: "LHCb VELO Detector Upgrade"
 title_en: "LHCb VELO Detector Upgrade"
 title_es: "Actualización del Detector LHCb VELO"
-excerpt: "Contributed to a major particle physics detector upgrade at CERN's Large Hadron Collider"
-excerpt_en: "Contributed to a major particle physics detector upgrade at CERN's Large Hadron Collider"
-excerpt_es: "Contribuí a una importante actualización de detector de física de partículas en el Gran Colisionador de Hadrones del CERN"
+excerpt: "Delivered critical 5 Gbps electronics for a multi-million EUR detector upgrade, QA-testing 1000+ components across 3 international labs"
+excerpt_en: "Delivered critical 5 Gbps electronics for a multi-million EUR detector upgrade, QA-testing 1000+ components across 3 international labs"
+excerpt_es: "Entregué electrónica crítica de 5 Gbps para una actualización de detector multimillonaria, testando 1000+ componentes en 3 laboratorios internacionales"
 collection: portfolio
 header:
   teaser: webp/lhcb_upgrade.webp

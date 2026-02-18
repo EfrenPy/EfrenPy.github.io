@@ -4,15 +4,19 @@ title:
   en: "Contact"
   es: "Contacto"
 
+headline:
+  en: "Let's Build Something Great Together"
+  es: "Construyamos Algo Grande Juntos"
+
 intro:
   en: |
     Looking for a technical project leader who delivers results across hardware, software, and international teams? Let's talk. I'm open to opportunities in **R&D engineering**, **technical project management**, and **data science** — anywhere that values hands-on expertise and cross-functional leadership.
-
-    I typically respond within 24 hours.
   es: |
     ¿Buscas un líder de proyectos técnicos que entregue resultados en hardware, software y equipos internacionales? Hablemos. Estoy abierto a oportunidades en **ingeniería I+D**, **gestión técnica de proyectos** y **ciencia de datos** — en cualquier lugar que valore la experiencia práctica y el liderazgo multidisciplinar.
 
-    Normalmente respondo en menos de 24 horas.
+response_time:
+  en: "I typically respond within 24 hours"
+  es: "Normalmente respondo en menos de 24 horas"
 
 reach_out_title:
   en: "Get in Touch"

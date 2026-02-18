@@ -38,7 +38,12 @@
            <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> <span class="lang-en" lang="en">Published:</span><span class="lang-es" lang="es">Publicado:</span></strong> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
           {% endif %}
 
-      {% if post.excerpt and site.read_more != 'enabled' %}
+      {% if post.excerpt_en %}
+      <p class="archive__item-excerpt" itemprop="description">
+        <span class="lang-en" lang="en">{{ post.excerpt_en | markdownify | remove: '<p>' | remove: '</p>' }}</span>
+        <span class="lang-es" lang="es">{{ post.excerpt_es | markdownify | remove: '<p>' | remove: '</p>' }}</span>
+      </p>
+      {% elsif post.excerpt and site.read_more != 'enabled' %}
       <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
       {% elsif post.excerpt and site.read_more == 'enabled' %}
       <p class="archive__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> <span class="lang-en" lang="en">Read more</span><span class="lang-es" lang="es">Leer más</span></a></strong></p></p>

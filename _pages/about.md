@@ -73,28 +73,6 @@ redirect_from:
 
 ---
 
-<h3>{% include t.html page="about" key="highlights_title" %}</h3>
-
-<div class="bento-grid">
-  <div class="highlight-card bento-span-2">
-    <i class="fas fa-project-diagram"></i>
-    <h4>{% include t.html page="about" key="highlight_research_title" %}</h4>
-    <p>{% include t.html page="about" key="highlight_research_desc" %}</p>
-  </div>
-  <div class="highlight-card">
-    <i class="fas fa-microchip"></i>
-    <h4>{% include t.html page="about" key="highlight_tech_title" %}</h4>
-    <p>{% include t.html page="about" key="highlight_tech_desc" %}</p>
-  </div>
-  <div class="highlight-card">
-    <i class="fas fa-chart-line"></i>
-    <h4>{% include t.html page="about" key="highlight_collab_title" %}</h4>
-    <p>{% include t.html page="about" key="highlight_collab_desc" %}</p>
-  </div>
-</div>
-
----
-
 <h3>{% include t.html page="about" key="help_team_title" %}</h3>
 
 <div class="value-props">
@@ -221,30 +199,6 @@ redirect_from:
 
 ---
 
-<h3>{% include t.html page="about" key="certifications_title" %}</h3>
-
-<div class="certifications-grid">
-  <div class="cert-card">
-    <div class="cert-icon"><i class="fab fa-python"></i></div>
-    <div class="cert-info">
-      <div class="cert-name">{% include t.html page="about" key="cert_python" %}</div>
-      <div class="cert-issuer">{% include t.html page="about" key="cert_python_issuer" %}</div>
-    </div>
-  </div>
-</div>
-
----
-
-<h3>{% include t.html page="about" key="education_title" %}</h3>
-
-:hatched_chick: {% include t.html page="about" key="edu_phd" md=true %}
-
-:hatching_chick: {% include t.html page="about" key="edu_master" md=true %}
-
-:egg: {% include t.html page="about" key="edu_bachelor" md=true %}
-
----
-
 <div class="featured-post-card">
   <div class="featured-post-card__icon"><i class="fas fa-newspaper"></i></div>
   <div class="featured-post-card__content">
@@ -256,34 +210,3 @@ redirect_from:
   </div>
 </div>
 
-{% include t-block.html page="about" key="explore_publications" %}
-
-<h3>{% include t.html page="about" key="publications_title" %}</h3>
-
-<ul>{% for post in site.publications %}
-  {% include archive-single-publications-about.html %}
-{% endfor %}</ul>
-
----
-
-<section class="closing-cta">
-  <h3 class="closing-cta__title gradient-text">
-    <span class="lang-en" lang="en">Interested? Let's Talk</span>
-    <span class="lang-es" lang="es">¿Interesado? Hablemos</span>
-  </h3>
-  <p class="closing-cta__subtitle">
-    <span class="lang-en" lang="en">I'm actively exploring new opportunities in technical leadership and project management.</span>
-    <span class="lang-es" lang="es">Estoy explorando activamente nuevas oportunidades en liderazgo técnico y dirección de proyectos.</span>
-  </p>
-  <div class="closing-cta__buttons">
-    <a href="{{ site.baseurl }}/contact/" class="btn btn--large">
-      <i class="fas fa-envelope"></i> <span class="lang-en" lang="en">Get in Touch</span><span class="lang-es" lang="es">Contactar</span>
-    </a>
-    <a href="https://www.linkedin.com/in/efrenrguezrguez" class="btn btn--large btn--outline" target="_blank" rel="noopener noreferrer">
-      <i class="fab fa-linkedin"></i> LinkedIn
-    </a>
-    <a href="{{ site.baseurl }}/files/Efren_Rodriguez_CV.pdf" class="btn btn--large btn--outline cv-download-btn" data-no-swup target="_blank" rel="noopener noreferrer">
-      <i class="fas fa-download"></i> <span class="lang-en" lang="en">Download CV</span><span class="lang-es" lang="es">Descargar CV</span>
-    </a>
-  </div>
-</section>

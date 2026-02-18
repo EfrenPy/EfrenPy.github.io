@@ -8,14 +8,21 @@ permalink: /contact/
 author_profile: true
 ---
 
+<h2 class="contact-headline">{% include t.html page="contact" key="headline" %}</h2>
+
 {% include t-block.html page="contact" key="intro" %}
+
+<div class="response-time-badge">
+  <i class="fas fa-clock"></i>
+  {% include t.html page="contact" key="response_time" %}
+</div>
 
 ---
 
 ### {% include t.html page="contact" key="reach_out_title" %}
 
 <div class="contact-methods">
-  <a href="mailto:{{ site.author.email }}" class="contact-card">
+  <a href="mailto:{{ site.author.email }}" class="contact-card contact-card--primary">
     <div class="contact-icon"><i class="fas fa-envelope"></i></div>
     <div class="contact-info">
       <div class="contact-label">{% include t.html page="contact" key="email_label" %}</div>

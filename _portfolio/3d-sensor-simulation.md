@@ -2,9 +2,9 @@
 title: "3D Silicon Sensor Simulation"
 title_en: "3D Silicon Sensor Simulation"
 title_es: "Simulación de Sensores de Silicio 3D"
-excerpt: "Developing simulation framework for next-generation radiation-hard particle detectors"
-excerpt_en: "Developing simulation framework for next-generation radiation-hard particle detectors"
-excerpt_es: "Desarrollando framework de simulación para detectores de partículas resistentes a radiación de próxima generación"
+excerpt: "Built TCAD + Python simulation framework optimizing next-gen sensor geometry for extreme radiation environments (10¹⁶ particles/cm²)"
+excerpt_en: "Built TCAD + Python simulation framework optimizing next-gen sensor geometry for extreme radiation environments (10¹⁶ particles/cm²)"
+excerpt_es: "Construí framework de simulación TCAD + Python optimizando geometría de sensores de nueva generación para entornos de radiación extrema (10¹⁶ partículas/cm²)"
 collection: portfolio
 header:
   teaser: webp/3d_sensor.webp
