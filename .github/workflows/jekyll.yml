@@ -25,6 +25,21 @@ jobs:
         env:
           JEKYLL_ENV: production
 
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install Node dependencies
+        run: npm ci
+
+      - name: Generate CV PDFs
+        run: node scripts/generate-cv-pdf.js
+
+      - name: Copy generated PDFs to _site
+        run: cp files/Efren_Rodriguez_CV*.pdf _site/files/
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         if: github.ref == 'refs/heads/master'

@@ -1,0 +1,11 @@
+{%- comment -%}
+  Print-only translation helper: outputs ONLY the active language text (no dual spans).
+  Usage: {% include t-print.html page="cv" key="print_summary" %}
+  For markdown: {% include t-print.html page="cv" key="print_summary" md=true %}
+  Requires page.cv_lang to be set in front matter (e.g., cv_lang: en)
+{%- endcomment -%}
+{%- assign translations = site.data.i18n[include.page][include.key] -%}
+{%- if translations -%}
+{%- assign lang = page.cv_lang | default: "en" -%}
+{%- if include.md -%}{{ translations[lang] | markdownify | remove: '<p>' | remove: '</p>' }}{%- else -%}{{ translations[lang] }}{%- endif -%}
+{%- endif -%}

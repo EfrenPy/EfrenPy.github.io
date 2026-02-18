@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="{{ page.cv_lang | default: 'en' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex, nofollow">
+  <title>{{ page.title }}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&family=Raleway:wght@200;600;800&display=swap" rel="stylesheet">
+  <style>
+    /* Reset */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Lato', 'Segoe UI', sans-serif;
+      font-size: 10pt;
+      line-height: 1.5;
+      color: #2b2b2b;
+      background: #fff;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .cv-print {
+      max-width: 210mm;
+      margin: 0 auto;
+    }
+
+    /* ── Gradient accent bar ── */
+    .cv-accent-bar {
+      height: 4px;
+      background: linear-gradient(90deg, #1a365d, #2c5282);
+      position: relative;
+      z-index: 2;
+    }
+
+    /* ── Header (full-width, above sidebar bg) ── */
+    .cv-header {
+      display: flex;
+      align-items: center;
+      gap: 18pt;
+      padding: 22pt 28pt 18pt;
+      position: relative;
+      z-index: 2;
+      background: #fff;
+    }
+
+    .cv-header__photo {
+      flex-shrink: 0;
+      width: 74pt;
+      height: 74pt;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #cbd5e0;
+    }
+
+    .cv-header__info {
+      flex: 1;
+    }
+
+    .cv-header__name {
+      font-family: 'Raleway', 'Segoe UI', sans-serif;
+      font-size: 28pt;
+      font-weight: 800;
+      color: #1a365d;
+      letter-spacing: 1px;
+      margin-bottom: 4pt;
+    }
+
+    .cv-header__title {
+      font-family: 'Lato', sans-serif;
+      font-size: 11.5pt;
+      font-weight: 400;
+      color: #4a5568;
+      margin-bottom: 8pt;
+    }
+
+    .cv-header__contact {
+      font-size: 9pt;
+      color: #4a5568;
+      line-height: 1.6;
+    }
+
+    .cv-header__contact a {
+      color: #1a365d;
+      text-decoration: none;
+    }
+
+    .cv-header__contact .sep {
+      margin: 0 6pt;
+      color: #cbd5e0;
+    }
+
+    .cv-header__divider {
+      border: none;
+      height: 1.5px;
+      background: linear-gradient(90deg, transparent, #cbd5e0 15%, #cbd5e0 85%, transparent);
+      margin: 0 28pt;
+      position: relative;
+      z-index: 2;
+    }
+
+    /* ── Two-column body (float-based for proper pagination) ── */
+    .cv-body::after {
+      content: '';
+      display: table;
+      clear: both;
+    }
+
+    /* Sidebar background — position:fixed repeats on every printed page */
+    .cv-sidebar-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 30%;
+      height: 100%;
+      background: #f7f8fa;
+      z-index: 0;
+      border-right: 1px solid #edf2f7;
+    }
+
+    .cv-sidebar {
+      float: left;
+      width: 30%;
+      padding: 20pt 18pt 24pt 24pt;
+      position: relative;
+      z-index: 1;
+    }
+
+    .cv-main {
+      overflow: hidden;
+      padding: 20pt 26pt 24pt 22pt;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* ── Section headings ── */
+    .cv-section {
+      margin-bottom: 18pt;
+    }
+
+    .cv-section__title {
+      font-family: 'Raleway', 'Segoe UI', sans-serif;
+      font-size: 10pt;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: #1a365d;
+      border-bottom: 1.5px solid #1a365d;
+      padding-bottom: 3pt;
+      margin-bottom: 10pt;
+    }
+
+    .cv-sidebar .cv-section__title {
+      border-bottom-color: #2c5282;
+    }
+
+    /* ── Summary ── */
+    .cv-summary {
+      font-size: 9.5pt;
+      line-height: 1.55;
+      color: #2b2b2b;
+    }
+
+    /* ── Skills: pill tags ── */
+    .cv-skills-category {
+      margin-bottom: 12pt;
+    }
+
+    .cv-skills-label {
+      font-weight: 700;
+      font-size: 8.5pt;
+      color: #1a365d;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 4pt;
+    }
+
+    .cv-skills-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4pt;
+    }
+
+    .cv-skill-pill {
+      display: inline-block;
+      background: #edf2f7;
+      border: 1px solid rgba(45, 45, 45, 0.12);
+      color: #2b2b2b;
+      padding: 2pt 7pt;
+      border-radius: 3px;
+      font-size: 8.5pt;
+      line-height: 1.5;
+    }
+
+    /* ── Experience entries ── */
+    .cv-entry {
+      margin-bottom: 16pt;
+      page-break-inside: avoid;
+    }
+
+    .cv-entry__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 1pt;
+    }
+
+    .cv-entry__role {
+      font-size: 10.5pt;
+      font-weight: 700;
+      color: #2b2b2b;
+    }
+
+    .cv-entry__dates {
+      font-size: 9pt;
+      font-style: italic;
+      color: #718096;
+      white-space: nowrap;
+      flex-shrink: 0;
+      margin-left: 8pt;
+    }
+
+    .cv-entry__org {
+      font-style: italic;
+      color: #4a5568;
+      font-size: 9.5pt;
+      margin-bottom: 4pt;
+    }
+
+    .cv-entry__bullets {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .cv-entry__bullets li {
+      padding-left: 13pt;
+      position: relative;
+      margin-bottom: 4pt;
+      font-size: 9.5pt;
+      line-height: 1.55;
+      color: #2b2b2b;
+    }
+
+    .cv-entry__bullets li::before {
+      content: "\2022";
+      position: absolute;
+      left: 1pt;
+      color: #1a365d;
+      font-size: 10pt;
+      line-height: 1.4;
+    }
+
+    .cv-entry__bullets strong {
+      font-weight: 700;
+      color: #1a202c;
+    }
+
+    /* ── Education (sidebar) ── */
+    .cv-edu-entry {
+      margin-bottom: 10pt;
+    }
+
+    .cv-edu-entry__degree {
+      font-weight: 700;
+      font-size: 9pt;
+      color: #2b2b2b;
+      display: block;
+    }
+
+    .cv-edu-entry__school {
+      font-size: 8.5pt;
+      color: #4a5568;
+      display: block;
+      margin-top: 1pt;
+    }
+
+    .cv-edu-entry__year {
+      font-size: 8.5pt;
+      color: #718096;
+      margin-top: 1pt;
+    }
+
+    /* ── Certifications ── */
+    .cv-cert-entry {
+      margin-bottom: 5pt;
+      font-size: 9pt;
+      color: #2b2b2b;
+      line-height: 1.45;
+    }
+
+    .cv-cert-entry strong {
+      font-weight: 700;
+      color: #2b2b2b;
+    }
+
+    /* ── Languages ── */
+    .cv-languages {
+      font-size: 9pt;
+      color: #2b2b2b;
+    }
+
+    .cv-lang-item {
+      margin-bottom: 3pt;
+    }
+
+    .cv-lang-item strong {
+      font-weight: 700;
+    }
+
+    .cv-lang-item span {
+      color: #718096;
+    }
+
+    /* ── Key Achievements (sidebar) ── */
+    .cv-highlights {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .cv-highlights li {
+      padding-left: 11pt;
+      position: relative;
+      margin-bottom: 8pt;
+      font-size: 8.5pt;
+      line-height: 1.5;
+      color: #2b2b2b;
+    }
+
+    .cv-highlights li::before {
+      content: "\25B8";
+      position: absolute;
+      left: 0;
+      color: #2c5282;
+      font-size: 8pt;
+    }
+
+    /* ── Publications & Talks (main) ── */
+    .cv-pub-entry {
+      margin-bottom: 7pt;
+      padding-left: 13pt;
+      position: relative;
+      font-size: 9.5pt;
+      line-height: 1.5;
+    }
+
+    .cv-pub-entry::before {
+      content: "\2022";
+      position: absolute;
+      left: 1pt;
+      color: #1a365d;
+      font-size: 10pt;
+      line-height: 1.4;
+    }
+
+    .cv-pub-entry__title {
+      font-weight: 700;
+      color: #2b2b2b;
+    }
+
+    .cv-pub-entry__venue {
+      color: #4a5568;
+      font-style: italic;
+    }
+
+    .cv-pub-entry__year {
+      color: #718096;
+    }
+
+    .cv-talk-entry {
+      margin-bottom: 7pt;
+      padding-left: 13pt;
+      position: relative;
+      font-size: 9.5pt;
+      line-height: 1.5;
+    }
+
+    .cv-talk-entry::before {
+      content: "\2022";
+      position: absolute;
+      left: 1pt;
+      color: #1a365d;
+      font-size: 10pt;
+      line-height: 1.4;
+    }
+
+    .cv-talk-entry__title {
+      font-weight: 700;
+      color: #2b2b2b;
+    }
+
+    .cv-talk-entry__venue {
+      color: #4a5568;
+      font-style: italic;
+    }
+
+    .cv-talk-entry__detail {
+      color: #718096;
+    }
+
+    /* ── Print overrides ── */
+    @media print {
+      body {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+      .cv-entry { page-break-inside: avoid; }
+      .cv-sidebar-bg { background: #f7f8fa !important; }
+    }
+  </style>
+</head>
+<body data-lang="{{ page.cv_lang | default: 'en' }}">
+  <div class="cv-print">
+    {{ content }}
+  </div>
+</body>
+</html>
