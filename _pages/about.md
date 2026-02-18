@@ -19,8 +19,8 @@ redirect_from:
       <span class="lang-es" lang="es">Lidero proyectos técnicos complejos, del CERN a tu equipo</span>
     </p>
     <p class="homepage-hero__subtitle">
-      <span class="lang-en" lang="en">Project manager and R&D engineer with 5+ years leading multi-million EUR international detector projects. Seeking my next challenge in technical leadership.</span>
-      <span class="lang-es" lang="es">Director de proyectos e ingeniero I+D con más de 5 años liderando proyectos internacionales de detectores multimillonarios. Busco mi próximo reto en liderazgo técnico.</span>
+      <span class="lang-en" lang="en">R&D engineer and project manager with 8+ years in technical R&D and 4 years leading multi-million EUR international projects. Seeking my next challenge in technical leadership.</span>
+      <span class="lang-es" lang="es">Ingeniero I+D y director de proyectos con más de 8 años en I+D técnico y 4 años liderando proyectos internacionales multimillonarios. Busco mi próximo reto en liderazgo técnico.</span>
     </p>
     <div class="homepage-hero__cta">
       <a href="{{ site.baseurl }}/contact/" class="btn btn--large">

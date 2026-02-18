@@ -1824,15 +1824,15 @@ a.reversefootnote {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
 
-    // Horizontal gradient line
+    // Horizontal gradient line — aligned with dots (padding-top + year + gap + half-dot)
     &::before {
       left: 0;
       right: 0;
-      top: 50%;
+      top: calc(2.5rem + 1.2em + 0.5rem + 7px);
       bottom: auto;
       width: auto;
       height: 3px;
-      transform: translateY(-50%);
+      transform: none;
       background: linear-gradient(to right, var(--color-primary, $info-color), var(--color-primary-dark, $primary-color));
     }
   }

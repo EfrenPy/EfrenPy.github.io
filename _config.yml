@@ -10,7 +10,7 @@ locale                   : "en"
 title                    : "Efrén Rodríguez Rodríguez"
 title_separator          : "-"
 name                     : &name "Efrén Rodríguez Rodríguez"
-description              : &description "Technical project manager with 5+ years leading multi-million EUR R&D projects at CERN. Bridging hardware and software across international teams. Open to PM, engineering management, and technical leadership roles."
+description              : &description "R&D engineer and project manager with 8+ years in technical R&D and 4 years leading multi-million EUR projects at CERN. Bridging hardware and software across international teams. Open to PM, engineering management, and technical leadership roles."
 url                      : https://efrenrodriguezrodriguez.com # the base hostname & protocol for your site
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "EfrenPy/EfrenPy.github.io"
