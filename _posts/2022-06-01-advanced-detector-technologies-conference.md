@@ -12,8 +12,8 @@ tags:
   - CERN
   - Conference
 gallery1:
-  - url: pisa_talk.gif
-    image_path: pisa_talk.gif
+  - url: webp/pisa_talk.webp
+    image_path: webp/pisa_talk.webp
     alt: "Pisa conference talk"
 ---
 

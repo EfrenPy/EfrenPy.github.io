@@ -12,8 +12,8 @@ tags:
   - LHCb VELO Detector
   - Research Innovation
 gallery1:
-  - url: velo_launch.gif
-    image_path: velo_launch.gif
+  - url: webp/velo_launch.webp
+    image_path: webp/velo_launch.webp
     alt: "LHCb VELO detector launch"
 ---
 

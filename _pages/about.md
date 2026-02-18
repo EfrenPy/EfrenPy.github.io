@@ -52,7 +52,7 @@ redirect_from:
     </a>
     <a href="https://www.nikhef.nl" target="_blank" rel="noopener noreferrer" class="logo-strip__item" title="Nikhef">
       <img src="{{ site.baseurl }}/images/logos/Nikhef-logo-RGB-red-on-white-500x225.png" alt="Nikhef" class="logo-strip__img logo-strip__img--light" loading="lazy">
-      <img src="{{ site.baseurl }}/images/logos/Nikhef-logo-RGB-red-on-white-500x225.png" alt="Nikhef" class="logo-strip__img logo-strip__img--dark" loading="lazy">
+      <img src="{{ site.baseurl }}/images/logos/Nikhef-logo-RGB-red-on-white-500x225.png" alt="Nikhef" class="logo-strip__img logo-strip__img--dark logo-strip__img--invert" loading="lazy">
     </a>
     <a href="https://igfae.usc.es/igfae/" target="_blank" rel="noopener noreferrer" class="logo-strip__item" title="IGFAE">
       <img src="{{ site.baseurl }}/images/logos/IGFAE_VERSIONES-03_azul escuro (7).svg" alt="IGFAE" class="logo-strip__img logo-strip__img--light" loading="lazy">

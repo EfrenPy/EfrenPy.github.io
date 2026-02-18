@@ -782,87 +782,6 @@ a.reversefootnote {
   animation: float-reverse 18s ease-in-out infinite;
 }
 
-/*
-   Bento Grid Layout
-   ========================================================================== */
-
-.bento-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.25rem;
-  margin: 1.5rem 0;
-
-  @include breakpoint($medium) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-.bento-span-2 {
-  @include breakpoint($medium) {
-    grid-column: span 2;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    text-align: left;
-    gap: 1.5rem;
-
-    > i {
-      margin-bottom: 0;
-    }
-  }
-}
-
-.homepage-highlights {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
-  gap: 1.5rem;
-  margin: 1.5rem 0;
-}
-
-.highlight-card {
-  background: var(--color-card-bg, #fff);
-  border: 1px solid var(--color-border, $border-color);
-  border-top: 3px solid var(--color-primary, $info-color);
-  border-radius: 12px;
-  padding: 2rem 1.5rem;
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-
-  &:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 20px 40px var(--color-shadow, rgba(0,0,0,0.1));
-    border-top-color: var(--color-accent, #8B5CF6);
-
-    > i {
-      transform: scale(1.15) translateY(-2px);
-      color: var(--color-accent, #8B5CF6);
-    }
-  }
-
-  > i {
-    font-size: 2.5rem;
-    color: var(--color-primary, $info-color);
-    margin-bottom: 1rem;
-    display: block;
-    transition: transform 0.3s ease, color 0.3s ease;
-  }
-
-  h4 {
-    margin: 0.5rem 0;
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: var(--color-text, $dark-gray);
-  }
-
-  p {
-    font-size: 0.9rem;
-    color: var(--color-text-light, $gray);
-    margin: 0;
-    line-height: 1.6;
-  }
-}
 
 /*
    "How I Can Help" Value Props
@@ -1424,7 +1343,6 @@ a.reversefootnote {
 }
 
 // Card press feedback
-.highlight-card:active,
 .cert-card:active,
 .contact-card:active,
 .archive__item:active {
@@ -1728,66 +1646,6 @@ a.reversefootnote {
   filter: invert(1) grayscale(1) contrast(1.2);
 }
 
-/*
-   Closing CTA Section
-   ========================================================================== */
-
-.closing-cta {
-  text-align: center;
-  padding: 3rem 1.5rem;
-  margin: 2rem 0 0;
-  background: var(--color-card-bg, #fff);
-  border: 1px solid var(--color-border, $border-color);
-  border-radius: 16px;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-
-  @include breakpoint($small) {
-    padding: 4rem 2rem;
-  }
-}
-
-.closing-cta__title {
-  font-size: clamp(1.5rem, 3vw, 2.2rem);
-  font-weight: 700;
-  margin: 0 0 0.75rem;
-  letter-spacing: -0.02em;
-
-  .lang-en,
-  .lang-es {
-    display: none;
-  }
-}
-
-[data-lang="en"] .closing-cta__title .lang-en,
-[data-lang="es"] .closing-cta__title .lang-es {
-  display: inline;
-}
-
-.closing-cta__subtitle {
-  font-size: 1.05rem;
-  color: var(--color-text-light, $gray);
-  margin: 0 auto 2rem;
-  max-width: 550px;
-  line-height: 1.6;
-
-  .lang-en,
-  .lang-es {
-    display: none;
-  }
-}
-
-[data-lang="en"] .closing-cta__subtitle .lang-en,
-[data-lang="es"] .closing-cta__subtitle .lang-es {
-  display: block;
-}
-
-.closing-cta__buttons {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  flex-wrap: wrap;
-}
 
 /*
    Career Timeline (Homepage)

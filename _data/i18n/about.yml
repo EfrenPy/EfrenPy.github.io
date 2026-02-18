@@ -83,16 +83,16 @@ achievements_title:
 
 achievements:
   en: |
-    - **Led a multi-million EUR** international R&D programme across CERN, Nikhef, and IGFAE, delivering on time and exceeding performance targets
+    - **Led a €3M+ international R&D programme** across CERN, Nikhef, and IGFAE, coordinating 15+ engineers and physicists and delivering on schedule over 3 years
     - **Achieved breakthrough performance** (90 ps timing resolution) through systematic optimization and cross-functional coordination
-    - Managed the successful **launch of a major detector upgrade** (LHCb VELO), now operational at the world's largest particle accelerator
-    - Designed **high-speed data systems** handling 5 Gbps per channel, balancing technical constraints with project deadlines
+    - Managed the successful **launch of the LHCb VELO upgrade** with zero critical defects at commissioning, now operational at the world's largest particle accelerator
+    - Designed **high-speed data systems** processing 40 Gbps aggregate throughput (8 channels at 5 Gbps), balancing technical constraints with project deadlines
     - **Published and presented** results at international conferences, translating complex technical work for diverse audiences
   es: |
-    - **Lideré un programa I+D internacional multimillonario** en CERN, Nikhef e IGFAE, entregando a tiempo y superando los objetivos de rendimiento
+    - **Lideré un programa I+D internacional de más de 3 M€** en CERN, Nikhef e IGFAE, coordinando a más de 15 ingenieros y físicos y entregando en plazo a lo largo de 3 años
     - **Logré resultados de vanguardia** (resolución temporal de 90 ps) mediante optimización sistemática y coordinación multidisciplinar
-    - Gestioné el exitoso **lanzamiento de una actualización mayor del detector** (LHCb VELO), ahora operativo en el mayor acelerador de partículas del mundo
-    - Diseñé **sistemas de datos de alta velocidad** manejando 5 Gbps por canal, equilibrando restricciones técnicas con plazos del proyecto
+    - Gestioné el exitoso **lanzamiento de la actualización del LHCb VELO** sin defectos críticos en la puesta en marcha, ahora operativo en el mayor acelerador de partículas del mundo
+    - Diseñé **sistemas de datos de alta velocidad** procesando 40 Gbps de rendimiento agregado (8 canales a 5 Gbps), equilibrando restricciones técnicas con plazos del proyecto
     - **Publiqué y presenté** resultados en conferencias internacionales, traduciendo trabajo técnico complejo para audiencias diversas
 
 # Certifications section
