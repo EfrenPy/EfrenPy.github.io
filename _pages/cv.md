@@ -43,7 +43,7 @@ redirect_from:
       <div class="cv-company"><i class="fas fa-building"></i> CERN</div>
       <div class="cv-date"><span class="lang-en" lang="en">Oct 2024 - Present</span><span class="lang-es" lang="es">Oct 2024 - Actualidad</span></div>
       <div class="cv-description">
-        {% include t.html page="cv" key="cern_postdoc_intro" %}
+        {% include t.html page="cv" key="cern_postdoc_intro" md=true %}
         <ul>
           <li>{% include t.html page="cv" key="cern_postdoc_item1" md=true %}</li>
           <li>{% include t.html page="cv" key="cern_postdoc_item2" md=true %}</li>
@@ -80,7 +80,7 @@ redirect_from:
       <div class="cv-date"><span class="lang-en" lang="en">Jan 2019 - Sep 2024</span><span class="lang-es" lang="es">Ene 2019 - Sep 2024</span></div>
       <div class="cv-description">
         <ul>
-          <li>{% include t.html page="cv" key="igfae_phd_item1" %}</li>
+          <li>{% include t.html page="cv" key="igfae_phd_item1" md=true %}</li>
           <li>{% include t.html page="cv" key="igfae_phd_item2" %}</li>
           <li>{% include t.html page="cv" key="igfae_phd_item3" %}</li>
           <li>{% include t.html page="cv" key="igfae_phd_item4" %}</li>
