@@ -12,22 +12,23 @@ author_profile: true
 
 <p>{% include t.html page="portfolio" key="intro" %}</p>
 
-<hr>
-
-<h2>{% include t.html page="portfolio" key="github_title" %}</h2>
-
-<div class="github-note">
-  <i class="fas fa-info-circle"></i>
-  {% include t.html page="portfolio" key="github_note" %}
-</div>
-
-<div class="github-stats">
-  <a href="https://github.com/EfrenPy" target="_blank" rel="noopener noreferrer">
-    <img class="theme-img" src="{{ site.baseurl }}/images/github-stats-light.svg" data-light="{{ site.baseurl }}/images/github-stats-light.svg" data-dark="{{ site.baseurl }}/images/github-stats-dark.svg" alt="GitHub Stats">
-  </a>
-  <a href="https://github.com/EfrenPy" target="_blank" rel="noopener noreferrer">
-    <img class="theme-img" src="{{ site.baseurl }}/images/github-langs-light.svg" data-light="{{ site.baseurl }}/images/github-langs-light.svg" data-dark="{{ site.baseurl }}/images/github-langs-dark.svg" alt="Top Languages">
-  </a>
+<div class="cv-snapshot">
+  <div class="cv-snapshot__item">
+    <span class="cv-snapshot__number">4+</span>
+    <span class="cv-snapshot__label">{% include t.html page="portfolio" key="numbers_years" %}</span>
+  </div>
+  <div class="cv-snapshot__item">
+    <span class="cv-snapshot__number">3</span>
+    <span class="cv-snapshot__label">{% include t.html page="portfolio" key="numbers_labs" %}</span>
+  </div>
+  <div class="cv-snapshot__item">
+    <span class="cv-snapshot__number">5 Gbps</span>
+    <span class="cv-snapshot__label">{% include t.html page="portfolio" key="numbers_data" %}</span>
+  </div>
+  <div class="cv-snapshot__item">
+    <span class="cv-snapshot__number">90ps</span>
+    <span class="cv-snapshot__label">{% include t.html page="portfolio" key="numbers_record" %}</span>
+  </div>
 </div>
 
 <hr>
@@ -49,3 +50,21 @@ author_profile: true
     {% include archive-single.html %}
   {% endif %}
 {% endfor %}
+
+<hr>
+
+<h2>{% include t.html page="portfolio" key="github_title" %}</h2>
+
+<div class="github-note">
+  <i class="fas fa-info-circle"></i>
+  {% include t.html page="portfolio" key="github_note" %}
+</div>
+
+<div class="github-stats">
+  <a href="https://github.com/EfrenPy" target="_blank" rel="noopener noreferrer">
+    <img class="theme-img" src="{{ site.baseurl }}/images/github-stats-light.svg" data-light="{{ site.baseurl }}/images/github-stats-light.svg" data-dark="{{ site.baseurl }}/images/github-stats-dark.svg" alt="GitHub Stats" loading="lazy">
+  </a>
+  <a href="https://github.com/EfrenPy" target="_blank" rel="noopener noreferrer">
+    <img class="theme-img" src="{{ site.baseurl }}/images/github-langs-light.svg" data-light="{{ site.baseurl }}/images/github-langs-light.svg" data-dark="{{ site.baseurl }}/images/github-langs-dark.svg" alt="Top Languages" loading="lazy">
+  </a>
+</div>

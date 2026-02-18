@@ -8,6 +8,22 @@ intro:
   en: "Selected projects showcasing my experience in hardware development, data analysis, and project leadership."
   es: "Proyectos seleccionados que demuestran mi experiencia en desarrollo de hardware, análisis de datos y liderazgo de proyectos."
 
+numbers_years:
+  en: "Years R&D"
+  es: "Años I+D"
+
+numbers_labs:
+  en: "International Labs"
+  es: "Laboratorios Internacionales"
+
+numbers_data:
+  en: "Data Systems"
+  es: "Sistemas de Datos"
+
+numbers_record:
+  en: "Record Resolution"
+  es: "Resolución Récord"
+
 github_title:
   en: "GitHub Activity"
   es: "Actividad en GitHub"

@@ -180,6 +180,15 @@ redirect_from:
 </div>
 
 <div class="cv-section">
+  <h2 class="cv-section-title"><i class="fas fa-language"></i> {% include t.html page="cv" key="languages_title" %}</h2>
+  <div class="cv-skills">
+    <span class="cv-skill-tag">🇪🇸 {% include t.html page="cv" key="lang_spanish" %}</span>
+    <span class="cv-skill-tag">🇬🇧 {% include t.html page="cv" key="lang_english" %}</span>
+    <span class="cv-skill-tag">{% include t.html page="cv" key="lang_galician" %}</span>
+  </div>
+</div>
+
+<div class="cv-section">
   <h2 class="cv-section-title"><i class="fas fa-code"></i>
     <span class="lang-en" lang="en">Selected Projects</span>
     <span class="lang-es" lang="es">Proyectos Destacados</span>

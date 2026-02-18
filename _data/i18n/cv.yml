@@ -35,20 +35,20 @@ experience_title:
   es: "Experiencia Laboral"
 
 postdoc_position:
-  en: "Postdoctoral Researcher"
-  es: "Investigador Postdoctoral"
+  en: "R&D Project Lead (Postdoctoral Researcher)"
+  es: "Líder de Proyectos I+D (Investigador Postdoctoral)"
 
 invited_researcher:
   en: "Invited Researcher"
   es: "Investigador Visitante"
 
 phd_researcher:
-  en: "PhD Researcher"
-  es: "Investigador Predoctoral"
+  en: "R&D Engineer & Project Coordinator (PhD Researcher)"
+  es: "Ingeniero I+D y Coordinador de Proyectos (Investigador Predoctoral)"
 
 research_intern:
-  en: "Research Intern"
-  es: "Becario de Investigación"
+  en: "Junior Research Engineer (Research Intern)"
+  es: "Ingeniero de Investigación Junior (Becario de Investigación)"
 
 present:
   en: "Present"
@@ -56,8 +56,8 @@ present:
 
 # CERN Postdoc description
 cern_postdoc_intro:
-  en: "Leading three parallel R&D projects and coordinating a cross-functional team across CERN and partner labs:"
-  es: "Liderando tres proyectos I+D en paralelo y coordinando un equipo multidisciplinar en CERN y laboratorios asociados:"
+  en: "Leading three parallel R&D projects and coordinating a **20+ person** cross-functional team across CERN and partner labs:"
+  es: "Liderando tres proyectos I+D en paralelo y coordinando un equipo multidisciplinar de **más de 20 personas** en CERN y laboratorios asociados:"
 
 cern_postdoc_item1:
   en: "**Sensor Simulation Programme:** Driving simulation and optimization of next-gen 3D silicon sensors. Defining requirements, tracking milestones, and aligning outputs with the broader detector programme"
@@ -201,6 +201,23 @@ cert_cern_safety:
 cert_cern_issuer:
   en: "CERN"
   es: "CERN"
+
+# Languages section
+languages_title:
+  en: "Languages"
+  es: "Idiomas"
+
+lang_spanish:
+  en: "Spanish: Native"
+  es: "Español: Nativo"
+
+lang_english:
+  en: "English: Full Professional"
+  es: "Inglés: Profesional Completo"
+
+lang_galician:
+  en: "Galician: Native"
+  es: "Gallego: Nativo"
 
 # Publications & Talks sections
 publications_title:
