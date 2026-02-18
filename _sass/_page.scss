@@ -431,8 +431,10 @@
   }
 
   .grid__item {
-    float: none;
-    width: 100%;
+    float: none !important;
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
     margin-bottom: 0;
 
     .archive__item {
@@ -452,15 +454,14 @@
     }
 
     .archive__item-excerpt {
-      display: block;
-      font-size: 0.8rem;
-      line-height: 1.4;
-      color: var(--color-text-muted, #64748b);
-      overflow: hidden;
-      display: -webkit-box;
+      display: -webkit-box !important;
       -webkit-line-clamp: 3;
       -webkit-box-orient: vertical;
-      text-align: left;
+      overflow: hidden !important;
+      font-size: 0.8rem !important;
+      line-height: 1.4;
+      color: var(--color-text-muted, #64748b);
+      text-align: left !important;
       margin-bottom: 0.5rem;
     }
 
