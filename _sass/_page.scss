@@ -465,6 +465,13 @@
       margin-bottom: 0.5rem;
     }
 
+    // Hide bilingual content blocks and stray paragraphs that leak into cards
+    .archive__item-body > .lang-en,
+    .archive__item-body > .lang-es,
+    .archive__item-body > p:not([class]) {
+      display: none !important;
+    }
+
     .archive__item-tags {
       margin-top: auto;
       display: flex;
