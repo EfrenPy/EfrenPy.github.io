@@ -180,6 +180,7 @@
   background: transparent;
 
   @include breakpoint($medium) {
+    flex-wrap: nowrap;
     justify-content: flex-start;
     gap: 0.5em 1em;
   }
@@ -285,10 +286,10 @@
     display: flex;
     flex-basis: auto;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     order: 0;
     justify-content: flex-start;
-    gap: 0.25em 1em;
+    gap: 0.25em 0.6em;
   }
 
   li {
@@ -335,10 +336,8 @@
     // Active state
     &.active {
       color: var(--color-primary, $info-color);
-      font-weight: 600;
       background: var(--gradient-subtle, linear-gradient(135deg, rgba(82, 173, 200, 0.08), rgba(139, 92, 246, 0.08)));
       border-radius: 6px;
-      padding: 0.4rem 0.6rem;
 
       &:before {
         transform: scaleX(1);
