@@ -57,8 +57,8 @@ help_teams_title:
   es: "Alinear Equipos Multidisciplinares"
 
 help_teams_desc:
-  en: "At CERN, I coordinated engineers, physicists, and technicians across Switzerland, the Netherlands, and Spain. I can translate between specialists, turning conflicting priorities into shared goals and clear deliverables."
-  es: "En el CERN, coordiné ingenieros, físicos y técnicos en Suiza, Países Bajos y España. Sé traducir entre especialistas, convirtiendo prioridades en conflicto en objetivos compartidos y entregables claros."
+  en: "At CERN, I coordinated engineers, physicists, and technicians across Switzerland, the Netherlands, and Spain. I know how to get people with very different priorities rowing in the same direction."
+  es: "En el CERN, coordiné ingenieros, físicos y técnicos en Suiza, Países Bajos y España. Sé cómo conseguir que personas con prioridades muy distintas remen en la misma dirección."
 
 help_bridge_title:
   en: "Bridge Hardware & Software"
@@ -73,8 +73,8 @@ help_data_title:
   es: "Impulsar Decisiones con Datos"
 
 help_data_desc:
-  en: "Years of analysing terabytes of physics data trained me to question assumptions and follow evidence. I bring the same rigour to KPIs, roadmaps, and resource allocation. No gut feelings, just informed decisions."
-  es: "Años analizando terabytes de datos físicos me entrenaron a cuestionar suposiciones y seguir la evidencia. Aporto el mismo rigor a KPIs, hojas de ruta y asignación de recursos. Sin intuiciones, solo decisiones informadas."
+  en: "Years of analysing terabytes of physics data taught me to question assumptions and follow the evidence. I bring that same habit to KPIs, roadmaps, and resource planning."
+  es: "Años analizando terabytes de datos físicos me enseñaron a cuestionar suposiciones y seguir la evidencia. Traslado ese mismo hábito a KPIs, hojas de ruta y planificación de recursos."
 
 # Key achievements section
 achievements_title:
@@ -190,8 +190,8 @@ milestone_2018_label:
   es: "Primera Investigación"
 
 milestone_2018_sub:
-  en: "IGFAE — Silicon detector R&D"
-  es: "IGFAE — I+D de detectores de silicio"
+  en: "IGFAE, silicon detector R&D"
+  es: "IGFAE, I+D de detectores de silicio"
 
 milestone_2019_label:
   en: "MSc + PhD Start"
@@ -214,8 +214,8 @@ milestone_2022_label:
   es: "Estancia en Nikhef"
 
 milestone_2022_sub:
-  en: "Amsterdam — International collaboration"
-  es: "Ámsterdam — Colaboración internacional"
+  en: "Amsterdam, international collaboration"
+  es: "Ámsterdam, colaboración internacional"
 
 milestone_2024_label:
   en: "PhD + CERN Postdoc"

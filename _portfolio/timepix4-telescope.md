@@ -2,9 +2,9 @@
 title: "Timepix4 Beam Telescope"
 title_en: "Timepix4 Beam Telescope"
 title_es: "Telescopio de Haz Timepix4"
-excerpt: "Led cross-institutional team to build precision tracking system achieving record 90ps resolution — from concept to operational in 18 months"
-excerpt_en: "Led cross-institutional team to build precision tracking system achieving record 90ps resolution — from concept to operational in 18 months"
-excerpt_es: "Lideré equipo interinstitucional para construir sistema de seguimiento de precisión logrando récord de 90ps — de concepto a operativo en 18 meses"
+excerpt: "Led cross-institutional team to build precision tracking system achieving record 90ps resolution. Concept to operational in 18 months"
+excerpt_en: "Led cross-institutional team to build precision tracking system achieving record 90ps resolution. Concept to operational in 18 months"
+excerpt_es: "Lideré equipo interinstitucional para construir sistema de seguimiento de precisión logrando récord de 90ps. De concepto a operativo en 18 meses"
 collection: portfolio
 header:
   teaser: webp/setup_3d.webp
