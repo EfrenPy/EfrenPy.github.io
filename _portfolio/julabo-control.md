@@ -38,3 +38,7 @@ A comprehensive Python control suite for operating a Julabo FL1703 recirculating
 ### Technical Stack
 
 `Python` `Serial (RS232)` `Tkinter` `TCP/IP` `Matplotlib`
+
+### Industry Relevance
+
+Demonstrates end-to-end IoT/lab automation skills: serial communication protocols, real-time GUI dashboards, and networked device control. These patterns apply directly to industrial process control, manufacturing automation, and remote monitoring systems.

@@ -2,8 +2,8 @@
 layout: archive
 title: "Publications"
 title_en: "Publications"
-title_es: "Investigación"
-description: "Research publications by Efrén Rodríguez on silicon pixel detectors, timing measurements, and the LHCb experiment at CERN."
+title_es: "Publicaciones"
+description: "Published research by Efren Rodriguez on silicon detector systems, precision timing, and the LHCb experiment at CERN."
 permalink: /publications/
 author_profile: true
 ---

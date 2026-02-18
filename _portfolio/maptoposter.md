@@ -38,3 +38,7 @@ A Python tool that transforms any city into beautiful, minimalist map posters us
 ### Technical Stack
 
 `Python` `OSMnx` `Matplotlib` `OpenStreetMap` `SVG` `PDF`
+
+### Industry Relevance
+
+Showcases geospatial data processing, automated rendering pipelines, and configurable output generation. The same pattern — ingest data, apply transformations, produce publication-ready output — applies to report generation, data visualization tools, and ETL pipelines.

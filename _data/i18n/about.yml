@@ -148,6 +148,18 @@ edu_bachelor:
   en: "Bachelor's in Physics, _University of Santiago de Compostela_"
   es: "Grado en Física, _Universidad de Santiago de Compostela_"
 
+featured_post_title:
+  en: "From the Blog"
+  es: "Del Blog"
+
+featured_post_desc:
+  en: "My latest chapter: stepping into an R&D leadership role at CERN and what it means for my next career move."
+  es: "Mi último capítulo: asumiendo un rol de liderazgo I+D en el CERN y lo que significa para mi próximo paso profesional."
+
+featured_post_cta:
+  en: "Read the Full Post"
+  es: "Leer el Post Completo"
+
 explore_publications:
   en: "Feel free to explore my contributions to the field through the list of publications available on this site."
   es: "No dudes en explorar mis contribuciones al campo a través de la lista de publicaciones disponibles en este sitio."

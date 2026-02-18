@@ -26,7 +26,7 @@
           {% else %}
             "{{ teaser | prepend: "/images/" | prepend: base_path }}"
           {% endif %}
-          alt="">
+          alt="{{ title | strip_html | strip_newlines | default: 'Publication thumbnail' }}">
       </div>
     {% endif %}
 

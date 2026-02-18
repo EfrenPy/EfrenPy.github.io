@@ -36,3 +36,7 @@ A collaborative civic engagement platform empowering residents of Ames, Spain to
 ### Technical Stack
 
 `Web Development` `Civic Tech` `Community Engagement`
+
+### Industry Relevance
+
+Full-stack civic tech platform built from scratch, handling user engagement, content management, and participatory decision-making workflows. Shows product development skills: identifying user needs, designing features, and shipping a live product used by a real community.

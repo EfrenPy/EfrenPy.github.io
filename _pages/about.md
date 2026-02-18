@@ -47,8 +47,8 @@ redirect_from:
   </h3>
   <div class="logo-strip__logos">
     <a href="https://home.cern" target="_blank" rel="noopener noreferrer" class="logo-strip__item" title="CERN">
-      <img src="{{ site.baseurl }}/images/logos/CERN-Logo-Social-Media/icon cern blue.png" alt="CERN" class="logo-strip__img logo-strip__img--light" loading="lazy">
-      <img src="{{ site.baseurl }}/images/logos/CERN-Logo-Social-Media/icon cern badge.png" alt="CERN" class="logo-strip__img logo-strip__img--dark" loading="lazy">
+      <img src="{{ site.baseurl }}/images/logos/CERN-Logo-Social-Media/icon cern blue.webp" alt="CERN" class="logo-strip__img logo-strip__img--light" loading="lazy">
+      <img src="{{ site.baseurl }}/images/logos/CERN-Logo-Social-Media/icon cern badge.webp" alt="CERN" class="logo-strip__img logo-strip__img--dark" loading="lazy">
     </a>
     <a href="https://www.nikhef.nl" target="_blank" rel="noopener noreferrer" class="logo-strip__item" title="Nikhef">
       <img src="{{ site.baseurl }}/images/logos/Nikhef-logo-RGB-red-on-white-500x225.png" alt="Nikhef" class="logo-strip__img logo-strip__img--light" loading="lazy">
@@ -63,8 +63,8 @@ redirect_from:
       <img src="{{ site.baseurl }}/images/logos/usc-negativo-azul.png" alt="Universidade de Santiago de Compostela" class="logo-strip__img logo-strip__img--dark" loading="lazy">
     </a>
     <a href="https://lhcb.web.cern.ch" target="_blank" rel="noopener noreferrer" class="logo-strip__item" title="LHCb">
-      <img src="{{ site.baseurl }}/images/logos/lhcb-logo-0121-72_S.png" alt="LHCb" class="logo-strip__img logo-strip__img--light" loading="lazy">
-      <img src="{{ site.baseurl }}/images/logos/lhcb-logo-0121-72_S.png" alt="LHCb" class="logo-strip__img logo-strip__img--dark" loading="lazy">
+      <img src="{{ site.baseurl }}/images/logos/lhcb-logo-0121-72_S.webp" alt="LHCb" class="logo-strip__img logo-strip__img--light" loading="lazy">
+      <img src="{{ site.baseurl }}/images/logos/lhcb-logo-0121-72_S.webp" alt="LHCb" class="logo-strip__img logo-strip__img--dark" loading="lazy">
     </a>
   </div>
 </section>
@@ -244,6 +244,17 @@ redirect_from:
 :egg: {% include t.html page="about" key="edu_bachelor" md=true %}
 
 ---
+
+<div class="featured-post-card">
+  <div class="featured-post-card__icon"><i class="fas fa-newspaper"></i></div>
+  <div class="featured-post-card__content">
+    <h4>{% include t.html page="about" key="featured_post_title" %}</h4>
+    <p>{% include t.html page="about" key="featured_post_desc" %}</p>
+    <a href="{{ site.baseurl }}/posts/2024/10/new-horizons-at-cern/" class="btn btn--outline btn--small">
+      <i class="fas fa-arrow-right"></i> {% include t.html page="about" key="featured_post_cta" %}
+    </a>
+  </div>
+</div>
 
 {% include t-block.html page="about" key="explore_publications" %}
 

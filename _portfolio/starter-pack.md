@@ -41,3 +41,7 @@ A bilingual (Spanish/English) static website designed to help newcomers starting
 ### Technical Stack
 
 `HTML` `CSS` `JavaScript` `Vite` `i18n` `GitHub Pages`
+
+### Industry Relevance
+
+Designed a bilingual knowledge-base product solving a real onboarding pain point for international CERN newcomers. Demonstrates technical writing, i18n architecture, and the ability to identify process gaps and build tools that improve team productivity.

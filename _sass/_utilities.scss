@@ -1913,6 +1913,54 @@ a.reversefootnote {
 }
 
 /*
+   Featured Post Card
+   ========================================================================== */
+
+.featured-post-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.2rem;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  border: 1px solid var(--color-border, $light-gray);
+  border-radius: $border-radius;
+  background: var(--color-bg-card, $lighter-gray);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.featured-post-card__icon {
+  flex-shrink: 0;
+  font-size: 1.6rem;
+  color: $primary-color;
+  padding-top: 0.2rem;
+}
+
+.featured-post-card__content {
+  flex: 1;
+  min-width: 0;
+
+  h4 {
+    margin: 0 0 0.4rem;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--color-text, $dark-gray);
+  }
+
+  p {
+    margin: 0 0 0.8rem;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: var(--color-text-light, $gray);
+  }
+}
+
+/*
    Floating Mobile CTA
    ========================================================================== */
 
