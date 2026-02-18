@@ -1113,9 +1113,32 @@ a.reversefootnote {
 // CV Download buttons container
 .cv-download-buttons {
   display: flex;
-  gap: 0.75rem;
+  gap: 1rem;
   flex-wrap: wrap;
   margin-bottom: 2rem;
+  align-items: flex-start;
+}
+
+.cv-download-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.cv-download-lang {
+  font-size: 0.78rem;
+  color: var(--color-text-light, $gray);
+  text-decoration: none;
+  border: 1px solid var(--color-border, $border-color);
+  border-radius: 6px;
+  padding: 0.25rem 0.5rem;
+  transition: color 0.2s ease, border-color 0.2s ease;
+  white-space: nowrap;
+
+  &:hover {
+    color: var(--color-primary, $info-color);
+    border-color: var(--color-primary, $info-color);
+  }
 }
 
 // Download button

@@ -13,18 +13,18 @@ redirect_from:
 {% include base_path %}
 
 <div class="cv-download-buttons">
-  <a href="{{ base_path }}/files/Efren_Rodriguez_CV.pdf" class="cv-download-btn" data-no-swup target="_blank" rel="noopener noreferrer">
-    <i class="fas fa-download"></i> {% include t.html page="cv" key="download_btn_en" %}
-  </a>
-  <a href="{{ base_path }}/files/Efren_Rodriguez_CV_ES.pdf" class="cv-download-btn cv-download-btn--secondary" data-no-swup target="_blank" rel="noopener noreferrer">
-    <i class="fas fa-download"></i> {% include t.html page="cv" key="download_btn_es" %}
-  </a>
-  <a href="{{ base_path }}/files/Efren_Rodriguez_CV_ATS.pdf" class="cv-download-btn cv-download-btn--secondary" data-no-swup target="_blank" rel="noopener noreferrer">
-    <i class="fas fa-robot"></i> {% include t.html page="cv" key="download_btn_ats_en" %}
-  </a>
-  <a href="{{ base_path }}/files/Efren_Rodriguez_CV_ATS_ES.pdf" class="cv-download-btn cv-download-btn--secondary" data-no-swup target="_blank" rel="noopener noreferrer">
-    <i class="fas fa-robot"></i> {% include t.html page="cv" key="download_btn_ats_es" %}
-  </a>
+  <div class="cv-download-group">
+    <a href="{{ base_path }}/files/Efren_Rodriguez_CV.pdf" class="cv-download-btn" data-no-swup target="_blank" rel="noopener noreferrer">
+      <i class="fas fa-download"></i> {% include t.html page="cv" key="download_btn_en" %}
+    </a>
+    <a href="{{ base_path }}/files/Efren_Rodriguez_CV_ES.pdf" class="cv-download-lang" data-no-swup target="_blank" rel="noopener noreferrer">Español</a>
+  </div>
+  <div class="cv-download-group">
+    <a href="{{ base_path }}/files/Efren_Rodriguez_CV_ATS.pdf" class="cv-download-btn cv-download-btn--secondary" data-no-swup target="_blank" rel="noopener noreferrer">
+      <i class="fas fa-robot"></i> {% include t.html page="cv" key="download_btn_ats_en" %}
+    </a>
+    <a href="{{ base_path }}/files/Efren_Rodriguez_CV_ATS_ES.pdf" class="cv-download-lang" data-no-swup target="_blank" rel="noopener noreferrer">Español</a>
+  </div>
 </div>
 
 <div class="cv-snapshot">
