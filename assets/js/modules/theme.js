@@ -57,6 +57,7 @@ export function initLanguage() {
     const current = document.documentElement.getAttribute('data-lang');
     const next = current === 'en' ? 'es' : 'en';
     setLang(next);
+    toggle.setAttribute('aria-pressed', next === 'es' ? 'true' : 'false');
     announce(next === 'es' ? 'Idioma cambiado a español' : 'Language changed to English');
   });
 }

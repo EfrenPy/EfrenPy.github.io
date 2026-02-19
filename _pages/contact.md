@@ -4,6 +4,7 @@ title: "Contact"
 title_en: "Contact"
 title_es: "Contacto"
 description: "Get in touch with Efren Rodriguez for technical project management, engineering leadership, and R&D roles. Based at CERN, open to new opportunities."
+keywords: "contact, hire, project manager, R&D engineer, Geneva, Switzerland, CERN, technical leadership"
 permalink: /contact/
 author_profile: true
 ---

@@ -1,5 +1,8 @@
+---
+layout: null
+---
 // Service Worker for Efrén Rodríguez Rodríguez's website
-const CACHE_NAME = 'efren-site-v2';
+const CACHE_NAME = 'efren-site-{{ site.time | date: "%s" }}';
 const OFFLINE_URL = '/offline/';
 
 // Assets to cache on install
@@ -8,9 +11,8 @@ const PRECACHE_ASSETS = [
   '/offline/',
   '/assets/css/main.css',
   '/assets/js/main.min.js',
-  '/assets/js/swup.min.js',
   '/favicon.png',
-  '/images/logo.png',
+  '/images/logo-192.png',
   '/images/webp/profile.webp'
 ];
 

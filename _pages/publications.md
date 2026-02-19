@@ -4,6 +4,7 @@ title: "Publications"
 title_en: "Publications"
 title_es: "Publicaciones"
 description: "Published research by Efren Rodriguez on silicon detector systems, precision timing, and the LHCb experiment at CERN."
+keywords: "publications, silicon detectors, LHCb VELO, particle physics instrumentation, pixel sensors, timing detectors, nuclear instruments methods"
 permalink: /publications/
 author_profile: true
 ---

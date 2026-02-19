@@ -10,35 +10,6 @@ bio:
 
     Ahora canalizo esa experiencia hacia la industria. Busco un rol donde pueda liderar equipos técnicos, impulsar proyectos complejos hasta su entrega y aplicar mi combinación de ingeniería práctica (electrónica, FPGAs, Python, C++) y liderazgo para generar un impacto medible. Si tu equipo necesita a alguien que ya ha operado a escala en uno de los entornos técnicos más exigentes del mundo, hablemos.
 
-# Highlight cards section
-highlights_title:
-  en: "What I Bring to Your Team"
-  es: "Lo que Aporto a Tu Equipo"
-
-highlight_research_title:
-  en: "Technical Project Leadership"
-  es: "Liderazgo de Proyectos Técnicos"
-
-highlight_research_desc:
-  en: "Led a multi-million EUR detector programme at CERN, coordinating hardware delivery, budgets, and cross-functional teams across 3 international labs. On time, on spec, breakthrough results."
-  es: "Lideré un programa de detectores multimillonario en el CERN, coordinando entregas de hardware, presupuestos y equipos multidisciplinares en 3 laboratorios internacionales. A tiempo, según especificaciones, resultados de vanguardia."
-
-highlight_tech_title:
-  en: "Hardware + Software Fluency"
-  es: "Dominio Hardware + Software"
-
-highlight_tech_desc:
-  en: "Rare combination: hands-on electronics and FPGA design plus Python/C++ data pipelines. I speak both languages, from circuit boards to dashboards."
-  es: "Combinación poco frecuente: electrónica práctica y diseño FPGA junto con pipelines de datos en Python/C++. Hablo ambos idiomas, de placas de circuitos a dashboards."
-
-highlight_collab_title:
-  en: "International & Data-Driven"
-  es: "Internacional y Basado en Datos"
-
-highlight_collab_desc:
-  en: "8+ years in multicultural teams across Switzerland, the Netherlands, and Spain. Every decision backed by rigorous data analysis, a habit that translates directly to KPIs and metrics."
-  es: "Más de 8 años en equipos multiculturales en Suiza, Países Bajos y España. Cada decisión respaldada por análisis de datos riguroso, un hábito que se traduce directamente en KPIs y métricas."
-
 # How I Can Help Your Team section
 help_team_title:
   en: "How I Can Help Your Team"
@@ -95,31 +66,6 @@ achievements:
     - Diseñé **sistemas de datos de alta velocidad** procesando 40 Gbps de rendimiento agregado (8 canales a 5 Gbps), equilibrando restricciones técnicas con plazos del proyecto
     - **Publiqué y presenté** resultados en conferencias internacionales, traduciendo trabajo técnico complejo para audiencias diversas
 
-# Certifications section
-certifications_title:
-  en: "Certifications"
-  es: "Certificaciones"
-
-cert_python:
-  en: "Python IT Specialist (INF-303)"
-  es: "Especialista IT en Python (INF-303)"
-
-cert_python_issuer:
-  en: "Certiport / Pearson VUE - 2023"
-  es: "Certiport / Pearson VUE - 2023"
-
-cv_link:
-  en: "Stay updated with my professional journey by checking out my"
-  es: "Mantente al día con mi trayectoria profesional consultando mi"
-
-cv_label:
-  en: "latest CV"
-  es: "CV actualizado"
-
-cv_download:
-  en: "Download CV"
-  es: "Descargar CV"
-
 interests_title:
   en: "What I'm Looking For"
   es: "Lo que Busco"
@@ -159,14 +105,6 @@ featured_post_desc:
 featured_post_cta:
   en: "Read the Full Post"
   es: "Leer el Post Completo"
-
-explore_publications:
-  en: "Feel free to explore my contributions to the field through the list of publications available on this site."
-  es: "No dudes en explorar mis contribuciones al campo a través de la lista de publicaciones disponibles en este sitio."
-
-publications_title:
-  en: "Featured Publications"
-  es: "Publicaciones Destacadas"
 
 # Career timeline section
 career_timeline_title:
@@ -230,11 +168,3 @@ logo_strip_title:
   en: "Where I've Made an Impact"
   es: "Donde He Dejado Huella"
 
-# Closing CTA section
-closing_cta_title:
-  en: "Interested? Let's Talk"
-  es: "¿Interesado? Hablemos"
-
-closing_cta_subtitle:
-  en: "I'm actively exploring new opportunities in technical leadership and project management."
-  es: "Estoy explorando activamente nuevas oportunidades en liderazgo técnico y dirección de proyectos."

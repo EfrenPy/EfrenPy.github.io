@@ -3,6 +3,7 @@
   "short_name": "Efrén R.R.",
   "description": "Technical project manager and R&D engineer. 8+ years delivering complex international projects at CERN.",
   "start_url": "/",
+  "scope": "/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#52adc8",
@@ -14,16 +15,22 @@
       "type": "image/png"
     },
     {
-      "src": "/images/logo.png",
+      "src": "/images/logo-192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/images/logo.png",
+      "src": "/images/logo-192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "maskable"
+    },
+    {
+      "src": "/images/logo-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
     }
   ]
 }

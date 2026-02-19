@@ -11,6 +11,8 @@ import { initSidebar } from './modules/sidebar.js';
 import { initSearch } from './modules/search.js';
 import { initOfflineIndicator } from './modules/offline.js';
 
+var footerObserver = null;
+
 document.addEventListener('DOMContentLoaded', function() {
 
   // Initialize global features (masthead-level, don't need reinit on navigation)
@@ -58,19 +60,19 @@ document.documentElement.style.scrollBehavior = 'smooth';
    ========================================================================== */
 
 function initPageFeatures() {
-  // Sticky footer
-  const footer = document.querySelector('.page__footer');
+  // Sticky footer — clean up previous observer to avoid leaks on Swup transitions
+  if (footerObserver) { footerObserver.disconnect(); footerObserver = null; }
+
+  var footer = document.querySelector('.page__footer');
   if (footer) {
-    const updateFooterMargin = () => {
+    var updateFooterMargin = function() {
       document.body.style.marginBottom = footer.offsetHeight + 'px';
     };
     updateFooterMargin();
 
     if (typeof ResizeObserver !== 'undefined') {
-      const resizeObserver = new ResizeObserver(updateFooterMargin);
-      resizeObserver.observe(footer);
-    } else {
-      window.addEventListener('resize', updateFooterMargin);
+      footerObserver = new ResizeObserver(updateFooterMargin);
+      footerObserver.observe(footer);
     }
   }
 

@@ -1,8 +1,8 @@
 {% include base_path %}
 
-<div class="page__footer-follow" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;">
+<div class="page__footer-follow">
 
-  <ul class="social-icons" style="list-style: none; padding: 0; display: flex; align-items: center; margin: 0;">
+  <ul class="social-icons">
     <li><strong><span class="lang-en" lang="en">Follow:</span><span class="lang-es" lang="es">Seguir:</span></strong></li>
     {% if site.twitter.username %}
       <li><a href="https://twitter.com/{{ site.twitter.username }}" rel="noopener"><i class="fab fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
@@ -25,7 +25,7 @@
     <li><a href="{{ base_path }}/feed.xml" title="RSS Feed" aria-label="RSS Feed"><i class="fas fa-rss" aria-hidden="true"></i> RSS</a></li>
   </ul>
 
-  <div style="margin-left: auto; font-size: 0.8em;">
+  <div class="page__footer-copyright">
     &copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}
   </div>
 

@@ -2,22 +2,29 @@
    Scroll Reveal Animations
    ========================================================================== */
 
+var scrollRevealObserver = null;
+var floatingCtaObserver = null;
+var floatingCtaAbort = null;
+
 export function initScrollReveal() {
+  // Clean up previous observer
+  if (scrollRevealObserver) { scrollRevealObserver.disconnect(); scrollRevealObserver = null; }
+
   // Skip if user prefers reduced motion
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
     return;
   }
 
-  const observerOptions = {
+  var observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -50px 0px'
   };
 
-  const revealOnScroll = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
+  scrollRevealObserver = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
       if (entry.isIntersecting) {
         entry.target.classList.add('is-visible');
-        revealOnScroll.unobserve(entry.target);
+        scrollRevealObserver.unobserve(entry.target);
       }
     });
   }, observerOptions);
@@ -38,7 +45,7 @@ export function initScrollReveal() {
   revealElements.forEach((el) => {
     // Don't re-add if already has reveal class
     if (el.classList.contains('reveal') || el.classList.contains('reveal--left') || el.classList.contains('reveal--right')) {
-      revealOnScroll.observe(el);
+      scrollRevealObserver.observe(el);
       return;
     }
 
@@ -69,7 +76,7 @@ export function initScrollReveal() {
       }
     }
 
-    revealOnScroll.observe(el);
+    scrollRevealObserver.observe(el);
   });
 }
 
@@ -151,8 +158,15 @@ export function initScrollToTop() {
    ========================================================================== */
 
 export function initFloatingCta() {
+  // Clean up previous observers and listeners
+  if (floatingCtaObserver) { floatingCtaObserver.disconnect(); floatingCtaObserver = null; }
+  if (floatingCtaAbort) { floatingCtaAbort.abort(); floatingCtaAbort = null; }
+
   var cta = document.querySelector('.floating-cta');
   if (!cta) return;
+
+  floatingCtaAbort = new AbortController();
+  var signal = floatingCtaAbort.signal;
 
   var scrollThreshold = 600;
   var ticking = false;
@@ -160,11 +174,11 @@ export function initFloatingCta() {
 
   var footer = document.querySelector('.page__footer');
   if (footer) {
-    var footerObserver = new IntersectionObserver(function(entries) {
+    floatingCtaObserver = new IntersectionObserver(function(entries) {
       footerVisible = entries[0].isIntersecting;
       updateVisibility();
     }, { threshold: 0.1 });
-    footerObserver.observe(footer);
+    floatingCtaObserver.observe(footer);
   }
 
   var updateVisibility = function() {
@@ -181,14 +195,14 @@ export function initFloatingCta() {
       requestAnimationFrame(updateVisibility);
       ticking = true;
     }
-  }, { passive: true });
+  }, { passive: true, signal: signal });
 
   window.addEventListener('resize', function() {
     if (!ticking) {
       requestAnimationFrame(updateVisibility);
       ticking = true;
     }
-  }, { passive: true });
+  }, { passive: true, signal: signal });
 
   updateVisibility();
 }
