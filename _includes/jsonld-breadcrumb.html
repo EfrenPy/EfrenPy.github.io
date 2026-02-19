@@ -9,13 +9,13 @@
       "position": 1,
       "name": "Home",
       "item": "{{ site.url }}"
-    },
+    }{% assign crumbs = page.url | split: '/' %}{% assign pos = 1 %}{% assign crumb_url = "" %}{% for crumb in crumbs offset: 1 %}{% unless crumb == "" %}{% assign pos = pos | plus: 1 %}{% assign crumb_url = crumb_url | append: "/" | append: crumb %},
     {
       "@type": "ListItem",
-      "position": 2,
-      "name": "{{ page.title | default: page.url | replace: '/', '' | capitalize }}",
-      "item": "{{ site.url }}{{ page.url }}"
-    }
+      "position": {{ pos }},
+      "name": {% if forloop.last %}"{{ page.title | default: crumb | replace: '-', ' ' | capitalize | strip_html }}"{% else %}"{{ crumb | replace: '-', ' ' | capitalize }}"{% endif %},
+      "item": "{{ site.url }}{{ crumb_url }}/"
+    }{% endunless %}{% endfor %}
   ]
 }
 </script>

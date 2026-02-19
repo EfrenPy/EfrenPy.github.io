@@ -1169,6 +1169,11 @@ a.reversefootnote {
   position: fixed;
   bottom: 2rem;
   right: 2rem;
+
+  // Move scroll-to-top above floating CTA on mobile
+  @include breakpoint(max-width $large - 1) {
+    bottom: calc(3.5rem + env(safe-area-inset-bottom, 0px));
+  }
   width: 44px;
   height: 44px;
   border: none;
@@ -1597,7 +1602,7 @@ a.reversefootnote {
 
 .career-timeline {
   margin: 1.5rem 0;
-  margin-left: 2.5rem; // Space for year labels on mobile
+  margin-left: clamp(1.5rem, 8vw, 2.5rem);
 
   @include breakpoint($medium) {
     margin-left: 0;

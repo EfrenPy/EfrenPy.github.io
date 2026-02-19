@@ -7,6 +7,3 @@ Allow: /
 Sitemap: {{ site.url }}/sitemap.xml
 
 Disallow: /assets/fonts/
-Disallow: /files/paper1.pdf
-Disallow: /files/paper2.pdf
-Disallow: /files/paper3.pdf

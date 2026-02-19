@@ -5,6 +5,7 @@ title_es: "Simulación de Sensores de Silicio 3D"
 excerpt: "Built TCAD + Python simulation framework optimizing next-gen sensor geometry for extreme radiation environments (10¹⁶ particles/cm²)"
 excerpt_en: "Built TCAD + Python simulation framework optimizing next-gen sensor geometry for extreme radiation environments (10¹⁶ particles/cm²)"
 excerpt_es: "Construí framework de simulación TCAD + Python optimizando geometría de sensores de nueva generación para entornos de radiación extrema (10¹⁶ partículas/cm²)"
+schema_type: ResearchProject
 collection: portfolio
 header:
   teaser: webp/3d_sensor.webp

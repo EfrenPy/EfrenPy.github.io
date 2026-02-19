@@ -27,17 +27,4 @@
 <link rel="preload" href="{{ site.baseurl }}/assets/fonts/space-grotesk/space-grotesk-latin-700.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/academicons.css" media="print" onload="this.media='all'"/>
 
-{% if page.mathjax %}
-<script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    tex2jax: {
-      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-      processEscapes: true
-    }
-  });
-</script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML' integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous" async></script>
-{% endif %}
-
 <!-- end custom head snippets -->

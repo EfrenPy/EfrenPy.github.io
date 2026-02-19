@@ -120,49 +120,49 @@ redirect_from:
 
 <section class="career-timeline" aria-label="Career timeline">
   <div class="career-timeline__milestones">
-    <div class="career-timeline__milestone">
+    <div class="career-timeline__milestone" role="group" aria-label="2015">
       <span class="career-timeline__year">2015</span>
-      <span class="career-timeline__dot"></span>
+      <span class="career-timeline__dot" aria-hidden="true"></span>
       <div class="career-timeline__label">
         <strong>{% include t.html page="about" key="milestone_2015_label" %}</strong>
         <span>{% include t.html page="about" key="milestone_2015_sub" %}</span>
       </div>
     </div>
-    <div class="career-timeline__milestone">
+    <div class="career-timeline__milestone" role="group" aria-label="2018">
       <span class="career-timeline__year">2018</span>
-      <span class="career-timeline__dot"></span>
+      <span class="career-timeline__dot" aria-hidden="true"></span>
       <div class="career-timeline__label">
         <strong>{% include t.html page="about" key="milestone_2018_label" %}</strong>
         <span>{% include t.html page="about" key="milestone_2018_sub" %}</span>
       </div>
     </div>
-    <div class="career-timeline__milestone">
+    <div class="career-timeline__milestone" role="group" aria-label="2019">
       <span class="career-timeline__year">2019</span>
-      <span class="career-timeline__dot"></span>
+      <span class="career-timeline__dot" aria-hidden="true"></span>
       <div class="career-timeline__label">
         <strong>{% include t.html page="about" key="milestone_2019_label" %}</strong>
         <span>{% include t.html page="about" key="milestone_2019_sub" %}</span>
       </div>
     </div>
-    <div class="career-timeline__milestone">
+    <div class="career-timeline__milestone" role="group" aria-label="2021">
       <span class="career-timeline__year">2021</span>
-      <span class="career-timeline__dot"></span>
+      <span class="career-timeline__dot" aria-hidden="true"></span>
       <div class="career-timeline__label">
         <strong>{% include t.html page="about" key="milestone_2021_label" %}</strong>
         <span>{% include t.html page="about" key="milestone_2021_sub" %}</span>
       </div>
     </div>
-    <div class="career-timeline__milestone">
+    <div class="career-timeline__milestone" role="group" aria-label="2022">
       <span class="career-timeline__year">2022</span>
-      <span class="career-timeline__dot"></span>
+      <span class="career-timeline__dot" aria-hidden="true"></span>
       <div class="career-timeline__label">
         <strong>{% include t.html page="about" key="milestone_2022_label" %}</strong>
         <span>{% include t.html page="about" key="milestone_2022_sub" %}</span>
       </div>
     </div>
-    <div class="career-timeline__milestone career-timeline__milestone--current">
+    <div class="career-timeline__milestone career-timeline__milestone--current" role="group" aria-label="2024">
       <span class="career-timeline__year">2024</span>
-      <span class="career-timeline__dot"></span>
+      <span class="career-timeline__dot" aria-hidden="true"></span>
       <div class="career-timeline__label">
         <strong>{% include t.html page="about" key="milestone_2024_label" %}</strong>
         <span>{% include t.html page="about" key="milestone_2024_sub" %}</span>

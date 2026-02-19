@@ -5,6 +5,7 @@ title_es: "Actualización del Detector LHCb VELO"
 excerpt: "Delivered critical 5 Gbps electronics for a multi-million EUR detector upgrade, QA-testing 1000+ components across 3 international labs"
 excerpt_en: "Delivered critical 5 Gbps electronics for a multi-million EUR detector upgrade, QA-testing 1000+ components across 3 international labs"
 excerpt_es: "Entregué electrónica crítica de 5 Gbps para una actualización de detector multimillonaria, testando 1000+ componentes en 3 laboratorios internacionales"
+schema_type: ResearchProject
 collection: portfolio
 header:
   teaser: webp/lhcb_upgrade.webp

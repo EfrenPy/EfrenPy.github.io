@@ -307,3 +307,20 @@
   }
 }
 
+@media (max-width: 360px) {
+  .search-toggle,
+  .theme-toggle,
+  .lang-toggle,
+  .color-toggle {
+    min-width: 30px;
+    min-height: 30px;
+    padding: 0.15rem;
+
+    svg, i {
+      width: 15px;
+      height: 15px;
+      font-size: 0.85rem;
+    }
+  }
+}
+

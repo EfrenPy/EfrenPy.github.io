@@ -46,6 +46,16 @@ document.addEventListener('DOMContentLoaded', function() {
       initPageFeatures();
       var m = document.getElementById('main');
       if (m) { m.setAttribute('tabindex', '-1'); m.focus({ preventScroll: true }); }
+      // GA4 virtual pageview for SPA navigation
+      if (typeof gtag === 'function') {
+        gtag('event', 'page_view', {
+          page_path: window.location.pathname,
+          page_title: document.title
+        });
+      }
+      // Announce page to screen readers
+      var announcer = document.getElementById('sr-announcer');
+      if (announcer) { announcer.textContent = document.title; }
     });
   }
 
