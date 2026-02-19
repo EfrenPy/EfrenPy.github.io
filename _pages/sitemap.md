@@ -3,6 +3,7 @@ layout: archive
 title: "Sitemap"
 title_en: "Sitemap"
 title_es: "Mapa del sitio"
+description: "Full sitemap for Efrén Rodríguez's portfolio. Navigate to CV, projects, publications, talks, and contact."
 permalink: /sitemap/
 author_profile: true
 ---

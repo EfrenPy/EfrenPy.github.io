@@ -12,7 +12,7 @@ const PRECACHE_ASSETS = [
   '/assets/css/main.css',
   '/assets/js/main.min.js',
   '/favicon.png',
-  '/images/logo-192.png',
+  '/images/logo-192.webp',
   '/images/webp/profile.webp'
 ];
 

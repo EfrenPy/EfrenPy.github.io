@@ -662,7 +662,7 @@ a.reversefootnote {
   justify-content: center;
   flex-wrap: wrap;
 
-  @media (max-width: $small) {
+  @include breakpoint(max-width $small) {
     flex-direction: column;
     align-items: stretch;
 
@@ -1239,7 +1239,7 @@ a.reversefootnote {
     border-radius: 8px;
   }
 
-  @media (max-width: 600px) {
+  @include breakpoint(max-width $small) {
     flex-direction: column;
     align-items: stretch;
   }
@@ -1341,7 +1341,7 @@ a.reversefootnote {
 }
 
 // Mobile: bottom-sheet search
-@media (max-width: #{$medium - 1}) {
+@include breakpoint(max-width #{$medium - 1}) {
   .search-overlay {
     padding: 0;
     align-items: flex-end;

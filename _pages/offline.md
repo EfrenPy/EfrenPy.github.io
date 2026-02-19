@@ -3,6 +3,7 @@ layout: single
 title: "Offline"
 title_en: "You're Offline"
 title_es: "Sin Conexión"
+description: "You are currently offline. Reconnect to browse Efrén Rodríguez's portfolio."
 permalink: /offline/
 author_profile: false
 ---
