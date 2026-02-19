@@ -1340,6 +1340,26 @@ a.reversefootnote {
   flex-direction: column;
 }
 
+// Mobile: bottom-sheet search
+@media (max-width: #{$medium - 1}) {
+  .search-overlay {
+    padding: 0;
+    align-items: flex-end;
+  }
+
+  .search-overlay__inner {
+    width: 100%;
+    max-width: none;
+    max-height: 85vh;
+    border-radius: 16px 16px 0 0;
+    padding: 1rem;
+  }
+
+  .search-overlay__input {
+    font-size: 1rem;
+  }
+}
+
 .search-overlay__close {
   position: absolute;
   top: 1rem;
