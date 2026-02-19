@@ -4,13 +4,13 @@ collection: publications
 permalink: /publication/the-lhcb-upgrade-i
 excerpt: 'Detailing the first upgrade of the LHCb experiment, enhancing its capabilities for future research.'
 description: "Comprehensive technical overview of the LHCb Upgrade I detector at CERN, detailing performance improvements and scientific goals."
-date: 2023-01-01  # Adjust the date to the publication date or leave as is if unknown
+date: 2023-01-01
 link: 'https://arxiv.org/abs/2305.10515'
 header:
   teaser: webp/lhcb_upgrade.webp
 venue: 'arXiv:2305.10515 [hep-ex]'
 smallinfo: '(2023) LHCb collaboration, et al. <b><i>arXiv:2305.10515 [hep-ex]</i></b>'
-location: "LHCb collaboration"  # Adjust if more authors are to be included
+location: "LHCb collaboration"
 paperurl: 'https://arxiv.org/pdf/2305.10515.pdf'
 gallery1:
   - url: webp/lhcb_upgrade.webp

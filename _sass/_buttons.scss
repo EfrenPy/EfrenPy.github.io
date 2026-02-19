@@ -187,4 +187,12 @@
       color: #fff !important;
     }
   }
+
+  /* conference abstract link */
+
+  &--conference {
+    @extend .btn;
+    @extend .btn--small;
+    @extend .btn--outline;
+  }
 }

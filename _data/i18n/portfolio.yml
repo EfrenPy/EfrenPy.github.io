@@ -17,8 +17,8 @@ numbers_labs:
   es: "Laboratorios Internacionales"
 
 numbers_data:
-  en: "Data Systems"
-  es: "Sistemas de Datos"
+  en: "Data Throughput"
+  es: "Rendimiento de Datos"
 
 numbers_record:
   en: "Record Resolution"

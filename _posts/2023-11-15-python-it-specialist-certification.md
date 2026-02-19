@@ -2,8 +2,11 @@
 title: 'Achievement Unlocked: INF-303 Python IT Specialist Certification'
 title_en: 'Achievement Unlocked: INF-303 Python IT Specialist Certification'
 title_es: 'Logro Desbloqueado: Certificación INF-303 Python IT Specialist'
+description: "Earning the INF-303 Python IT Specialist certification — why I pursued it alongside my physics research and what it covers."
 date: 2023-11-15
 permalink: /posts/2023/11/python-it-specialist-certification/
+header:
+  teaser: webp/python_certificado.webp
 tags:
   - Python
   - Certification
@@ -16,7 +19,5 @@ gallery1:
 ---
 
 {% include t-block.html page="posts" key="python_cert_text" %}
-
-#Python #Certification #ITSpecialist #MilestoneReached
 
 {% include gallery id="gallery1" caption=" " %}

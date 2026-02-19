@@ -4,13 +4,13 @@ collection: publications
 permalink: /publication/silicon-vertex-detector-timing-upgrade-II-lhcb
 excerpt: 'Discussing the advancements in vertex detection technology for LHCb Upgrade II.'
 description: "Research on next-generation silicon vertex detector with precision timing for LHCb Upgrade II at CERN. Published in Nuclear Instruments and Methods."
-date: 2023-03-01  # Adjust the date to the publication date or leave as is if unknown
+date: 2023-03-01
 link: 'https://doi.org/10.1016/j.nima.2022.167965'
 header:
   teaser: webp/upgradeII.webp
 venue: 'Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment'
 smallinfo: '(2023) Rodríguez Rodríguez, E. <b><i>Nuclear Instruments and Methods in Physics Research Section A</i></b>'
-location: "Efrén Rodríguez Rodríguez"  # Adjust if more authors are to be included
+location: "Efrén Rodríguez Rodríguez"
 paperurl: 'https://www.sciencedirect.com/science/article/pii/S0168900222012578'
 gallery1:
   - url: webp/upgradeII.webp

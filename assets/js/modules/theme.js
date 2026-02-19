@@ -199,6 +199,11 @@ export function initColorCustomization() {
         if (swatch.getAttribute('data-primary') === colors.primary &&
             swatch.getAttribute('data-accent') === colors.accent) {
           swatch.classList.add('is-active');
+          swatch.setAttribute('aria-checked', 'true');
+          swatch.setAttribute('tabindex', '0');
+        } else {
+          swatch.setAttribute('aria-checked', 'false');
+          swatch.setAttribute('tabindex', '-1');
         }
       });
     } catch (e) {

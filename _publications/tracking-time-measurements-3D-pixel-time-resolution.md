@@ -4,13 +4,13 @@ collection: publications
 permalink: /publication/tracking-time-measurements-3D-pixel-time-resolution
 excerpt: 'Exploring the time resolution and Landau contribution of 3D pixel geometries in high-radiation environments.'
 description: "Characterization of 3D pixel sensor timing resolution through test-beam measurements at CERN SPS. Published in Nuclear Instruments and Methods."
-date: 2023-01-01  # Adjust the date to the publication date or leave as is if unknown
+date: 2023-01-01
 link: 'https://doi.org/10.1016/j.nima.2022.167788'
 header:
   teaser: webp/setup_3d.webp
 venue: 'Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment'
 smallinfo: '(2023) Fernández Martínez, P., Coco, V., Gkougkousis, E.-L., et al. <b><i>Nuclear Instruments and Methods in Physics Research Section A</i></b>'
-location: "P. Fernandez Martínez, V. Coco, E.-L. Gkougkousis, M. Halvorsen Mahlum, G. Petrogiannis, G. Pellegrini, E. Rodríguez Rodríguez"  # Adjust if more authors are to be included
+location: "P. Fernandez Martínez, V. Coco, E.-L. Gkougkousis, M. Halvorsen Mahlum, G. Petrogiannis, G. Pellegrini, E. Rodríguez Rodríguez"
 paperurl: 'https://www.sciencedirect.com/science/article/pii/S0168900222010804'
 gallery1:
   - url: webp/setup_3d.webp

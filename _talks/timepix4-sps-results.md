@@ -3,6 +3,7 @@ title: "New Results from Timepix4 at the SPS"
 collection: talks
 type: "Talk"
 permalink: /talks/timepix4-sps-results
+description: "Presenting synchronous readout and track reconstruction results from Timepix4 ASICs at the CERN SPS, at the 18th Trento Workshop."
 excerpt: 'Introducing the advancements in synchronous readout and track reconstruction with Timepix4 ASICs.'
 date: 2023-02-28
 link: 'https://indi.to/CWSVj'

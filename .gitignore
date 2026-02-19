@@ -5,3 +5,9 @@ node_modules/
 vendor/
 package-lock.json
 CLAUDE.md
+.ralph/
+.ralphrc
+prompt.md
+babel.config.js
+jest.config.js
+tests/

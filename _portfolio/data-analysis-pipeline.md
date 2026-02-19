@@ -2,6 +2,7 @@
 title: "Test Beam Data Pipeline"
 title_en: "Test Beam Data Pipeline"
 title_es: "Pipeline de Datos de Haz de Pruebas"
+description: "Automated TB-scale data pipeline for beam test analysis, cutting turnaround from days to hours across 10+ experimental campaigns."
 excerpt: "Built TB-scale automated pipeline cutting analysis turnaround from days to hours, processing data from 10+ beam test campaigns"
 excerpt_en: "Built TB-scale automated pipeline cutting analysis turnaround from days to hours, processing data from 10+ beam test campaigns"
 excerpt_es: "Construí pipeline automatizado a escala TB reduciendo el análisis de días a horas, procesando datos de más de 10 campañas de test beam"

@@ -29,7 +29,7 @@ export function initMobileNav() {
   });
 
   // Close nav when resizing to desktop
-  var mql = window.matchMedia('(min-width: 768px)');
+  var mql = window.matchMedia('(min-width: 925px)');
   if (mql.addEventListener) {
     mql.addEventListener('change', function() { if (mql.matches) closeMenu(); });
   } else if (mql.addListener) {

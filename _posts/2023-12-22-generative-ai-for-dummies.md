@@ -2,8 +2,11 @@
 title: 'Generative AI for Dummies'
 title_en: 'Generative AI for Dummies'
 title_es: 'IA Generativa para Principiantes'
+description: "Hosting an introductory Generative AI workshop at IGFAE, covering practical applications of large language models for academic researchers."
 date: 2023-12-22
 permalink: /posts/2023/12/generative-ai-for-dummies/
+header:
+  teaser: webp/generative_AI.webp
 tags:
   - Generative AI
   - AI Workshops
@@ -15,7 +18,5 @@ gallery1:
 ---
 
 {% include t-block.html page="posts" key="genai_text" %}
-
-#GenerativeAI #ResearchInnovation #AIWorkshop #TechnologyInAcademia
 
 {% include gallery id="gallery1" caption=" " %}
