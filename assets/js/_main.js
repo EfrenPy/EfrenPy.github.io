@@ -24,6 +24,29 @@ document.addEventListener('DOMContentLoaded', function() {
   // Initialize per-page features
   initPageFeatures();
 
+  // Initialize Swup SPA navigation
+  if (typeof Swup !== 'undefined') {
+    var swup = new Swup({
+      containers: ['#swup-sidebar', '#swup-content'],
+      animationSelector: '[class*="swup-transition-"]',
+      cache: true,
+      animateHistoryBrowsing: true
+    });
+    swup.hooks.on('visit:start', function() {
+      var p = document.querySelector('.scroll-progress');
+      if (p) { p.classList.add('progress-bar--loading'); p.style.width = '80%'; }
+    });
+    swup.hooks.on('content:replace', function() {
+      var p = document.querySelector('.scroll-progress');
+      if (p) { p.style.width = '100%'; setTimeout(function() { p.classList.remove('progress-bar--loading'); p.style.width = '0%'; }, 300); }
+    });
+    swup.hooks.on('page:view', function() {
+      initPageFeatures();
+      var m = document.getElementById('main');
+      if (m) { m.setAttribute('tabindex', '-1'); m.focus({ preventScroll: true }); }
+    });
+  }
+
 });
 
 // Enable smooth scrolling via CSS (add to html element)
