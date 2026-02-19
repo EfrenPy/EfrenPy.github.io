@@ -5,6 +5,7 @@ title_en: "Efrén Rodríguez - Technical Project Manager | CERN R&D Leader"
 title_es: "Efrén Rodríguez - Director de Proyectos Técnicos | Líder I+D en el CERN"
 description: "Technical project manager who led multi-million EUR detector projects at CERN. Coordinating international teams across 3 countries, bridging hardware and software. Open to PM, engineering management, and R&D leadership roles."
 excerpt: "Technical project manager who led multi-million EUR international R&D projects at CERN. Seeking PM, engineering management, and R&D leadership roles."
+keywords: "technical project manager, R&D engineer, CERN, engineering manager, technical program manager, hardware software integration, team leadership, systems engineering"
 author_profile: true
 featured_post: /posts/2024/10/new-horizons-at-cern/
 redirect_from:
@@ -48,24 +49,24 @@ redirect_from:
   </h3>
   <div class="logo-strip__logos">
     <a href="https://home.cern" target="_blank" rel="noopener noreferrer" class="logo-strip__item" title="CERN">
-      <img src="{{ site.baseurl }}/images/logos/CERN-Logo-Social-Media/icon cern blue.webp" alt="CERN" class="logo-strip__img logo-strip__img--light" loading="lazy">
-      <img src="{{ site.baseurl }}/images/logos/CERN-Logo-Social-Media/icon cern badge.webp" alt="CERN" class="logo-strip__img logo-strip__img--dark" loading="lazy">
+      <img src="{{ site.baseurl }}/images/logos/CERN-Logo-Social-Media/icon cern blue.webp" alt="CERN" class="logo-strip__img logo-strip__img--light" loading="lazy" width="80" height="80">
+      <img src="{{ site.baseurl }}/images/logos/CERN-Logo-Social-Media/icon cern badge.webp" alt="CERN" class="logo-strip__img logo-strip__img--dark" loading="lazy" width="80" height="80">
     </a>
     <a href="https://www.nikhef.nl" target="_blank" rel="noopener noreferrer" class="logo-strip__item" title="Nikhef">
-      <img src="{{ site.baseurl }}/images/logos/Nikhef-logo-RGB-red-on-white-500x225.png" alt="Nikhef" class="logo-strip__img logo-strip__img--light" loading="lazy">
-      <img src="{{ site.baseurl }}/images/logos/Nikhef-logo-RGB-red-on-white-500x225.png" alt="Nikhef" class="logo-strip__img logo-strip__img--dark logo-strip__img--invert" loading="lazy">
+      <img src="{{ site.baseurl }}/images/logos/Nikhef-logo-RGB-red-on-white-500x225.webp" alt="Nikhef" class="logo-strip__img logo-strip__img--light" loading="lazy" width="107" height="48">
+      <img src="{{ site.baseurl }}/images/logos/Nikhef-logo-RGB-red-on-white-500x225.webp" alt="Nikhef" class="logo-strip__img logo-strip__img--dark logo-strip__img--invert" loading="lazy" width="107" height="48">
     </a>
     <a href="https://igfae.usc.es/igfae/" target="_blank" rel="noopener noreferrer" class="logo-strip__item" title="IGFAE">
-      <img src="{{ site.baseurl }}/images/logos/IGFAE_VERSIONES-03_azul escuro (7).svg" alt="IGFAE" class="logo-strip__img logo-strip__img--light" loading="lazy">
-      <img src="{{ site.baseurl }}/images/logos/IGFAE_VERSIONES-08_gris (3).svg" alt="IGFAE" class="logo-strip__img logo-strip__img--dark" loading="lazy">
+      <img src="{{ site.baseurl }}/images/logos/IGFAE_VERSIONES-03_azul escuro (7).svg" alt="IGFAE" class="logo-strip__img logo-strip__img--light" loading="lazy" width="120" height="48">
+      <img src="{{ site.baseurl }}/images/logos/IGFAE_VERSIONES-08_gris (3).svg" alt="IGFAE" class="logo-strip__img logo-strip__img--dark" loading="lazy" width="120" height="48">
     </a>
     <a href="https://www.usc.gal" target="_blank" rel="noopener noreferrer" class="logo-strip__item" title="USC">
-      <img src="{{ site.baseurl }}/images/logos/usc.png" alt="Universidade de Santiago de Compostela" class="logo-strip__img logo-strip__img--light" loading="lazy">
-      <img src="{{ site.baseurl }}/images/logos/usc-negativo-azul.png" alt="Universidade de Santiago de Compostela" class="logo-strip__img logo-strip__img--dark" loading="lazy">
+      <img src="{{ site.baseurl }}/images/logos/usc.webp" alt="Universidade de Santiago de Compostela" class="logo-strip__img logo-strip__img--light" loading="lazy" width="74" height="48">
+      <img src="{{ site.baseurl }}/images/logos/usc-negativo-azul.webp" alt="Universidade de Santiago de Compostela" class="logo-strip__img logo-strip__img--dark" loading="lazy" width="74" height="48">
     </a>
     <a href="https://lhcb.web.cern.ch" target="_blank" rel="noopener noreferrer" class="logo-strip__item" title="LHCb">
-      <img src="{{ site.baseurl }}/images/logos/lhcb-logo-0121-72_S.webp" alt="LHCb" class="logo-strip__img logo-strip__img--light" loading="lazy">
-      <img src="{{ site.baseurl }}/images/logos/lhcb-logo-0121-72_S.webp" alt="LHCb" class="logo-strip__img logo-strip__img--dark" loading="lazy">
+      <img src="{{ site.baseurl }}/images/logos/lhcb-logo-0121-72_S.webp" alt="LHCb" class="logo-strip__img logo-strip__img--light" loading="lazy" width="80" height="48">
+      <img src="{{ site.baseurl }}/images/logos/lhcb-logo-0121-72_S.webp" alt="LHCb" class="logo-strip__img logo-strip__img--dark" loading="lazy" width="80" height="48">
     </a>
   </div>
 </section>

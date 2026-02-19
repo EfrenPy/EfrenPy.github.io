@@ -2,6 +2,8 @@
    Image Lightbox with Keyboard Navigation
    ========================================================================== */
 
+var showPrev, showNext;
+
 export function initLightbox() {
   var imageLinks = document.querySelectorAll(
     'a[href$=".jpg"], a[href$=".jpeg"], a[href$=".JPG"], a[href$=".png"], a[href$=".gif"], a[href$=".webp"]'
@@ -25,6 +27,16 @@ export function initLightbox() {
       '<div class="lightbox-counter"></div>';
     document.body.appendChild(dialog);
 
+    // Handle broken images
+    dialog.querySelector('img').addEventListener('error', function() {
+      this.alt = 'Image could not be loaded';
+      this.style.minWidth = '300px';
+      this.style.minHeight = '200px';
+      this.style.display = 'flex';
+      this.style.alignItems = 'center';
+      this.style.background = 'rgba(255,255,255,0.1)';
+    });
+
     // Add lightbox styles once
     var style = document.createElement('style');
     style.textContent =
@@ -46,6 +58,17 @@ export function initLightbox() {
     dialog.addEventListener('click', function(e) {
       if (e.target === dialog) dialog.close();
     });
+
+    // Nav and keyboard handlers (only bind once, use module-level refs)
+    var prevBtn = dialog.querySelector('.lightbox-prev');
+    var nextBtn = dialog.querySelector('.lightbox-next');
+    prevBtn.addEventListener('click', function(e) { e.stopPropagation(); if (showPrev) showPrev(); });
+    nextBtn.addEventListener('click', function(e) { e.stopPropagation(); if (showNext) showNext(); });
+
+    dialog.addEventListener('keydown', function(e) {
+      if (e.key === 'ArrowLeft') { e.preventDefault(); if (showPrev) showPrev(); }
+      else if (e.key === 'ArrowRight') { e.preventDefault(); if (showNext) showNext(); }
+    });
   }
 
   var lightboxImg = dialog.querySelector('img');
@@ -55,7 +78,14 @@ export function initLightbox() {
 
   function showImage(index) {
     currentIndex = index;
+    // Reset error styles from previous failed loads
+    lightboxImg.style.minWidth = '';
+    lightboxImg.style.minHeight = '';
+    lightboxImg.style.background = '';
     lightboxImg.src = images[index].href;
+    // Dynamic alt text from source image
+    var sourceImg = images[index].querySelector('img');
+    lightboxImg.alt = (sourceImg && sourceImg.alt) ? sourceImg.alt : 'Image ' + (index + 1);
     // Update nav button visibility
     var hasMultiple = images.length > 1;
     prevBtn.hidden = !hasMultiple;
@@ -64,22 +94,13 @@ export function initLightbox() {
     counter.textContent = hasMultiple ? (index + 1) + ' / ' + images.length : '';
   }
 
-  function showPrev() {
+  // Update module-level refs so dialog handlers use current image set
+  showPrev = function() {
     showImage((currentIndex - 1 + images.length) % images.length);
-  }
-
-  function showNext() {
+  };
+  showNext = function() {
     showImage((currentIndex + 1) % images.length);
-  }
-
-  prevBtn.addEventListener('click', function(e) { e.stopPropagation(); showPrev(); });
-  nextBtn.addEventListener('click', function(e) { e.stopPropagation(); showNext(); });
-
-  // Keyboard navigation
-  dialog.addEventListener('keydown', function(e) {
-    if (e.key === 'ArrowLeft') { e.preventDefault(); showPrev(); }
-    else if (e.key === 'ArrowRight') { e.preventDefault(); showNext(); }
-  });
+  };
 
   // Attach click handlers to image links
   images.forEach(function(link, index) {
