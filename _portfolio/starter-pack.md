@@ -30,6 +30,8 @@ New CERN employees face a maze of legal, tax, housing, and technical setup requi
 
 ### Solution
 
+![CERN aerial view](/images/webp/starter_pack_cern.webp){: .portfolio-img}
+
 A fully static knowledge base serving **40+ content pages in 4 languages** (Spanish, English, Italian, French):
 
 - **Legal & Tax Hub** — Contracts, work permits, health insurance, taxation, pension, social security, country-specific guides (French/Swiss taxes, Spain's Modelo 720)
@@ -40,11 +42,10 @@ A fully static knowledge base serving **40+ content pages in 4 languages** (Span
 
 Architecture: Eleventy (11ty) v3 static generator with Nunjucks templating, search index built at compile time, and zero server-side dependencies.
 
-![CERN aerial view](/images/webp/starter_pack_cern.webp){: .align-center}
-
 ### Technical Stack
 
 `Eleventy (11ty)` `Nunjucks` `JavaScript (ES modules)` `Fuse.js` `Playwright` `GitHub Actions` `FTP Deploy`
+{: .tech-stack}
 
 ### Results
 
@@ -52,6 +53,7 @@ Architecture: Eleventy (11ty) v3 static generator with Nunjucks templating, sear
 - **355 Playwright tests** with full CI pipeline
 - **Lighthouse CI** monitoring on every push
 - Live at [starter-pack.efrenrodriguezrodriguez.com](https://starter-pack.efrenrodriguezrodriguez.com/)
+{: .results-highlight}
 
 ### Industry Relevance
 

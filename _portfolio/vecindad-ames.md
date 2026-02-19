@@ -29,6 +29,8 @@ Give residents of Ames (Galicia, Spain) a digital tool to propose, track, and vo
 
 ### Solution
 
+![Vecindad Ames platform preview](/images/webp/bertamirans.webp){: .portfolio-img}
+
 A progressive web app built around three participatory pillars:
 
 - **Citizen Listening** — Community assemblies and shared diagnosis: structured input from residents surfaced in a public feed
@@ -40,11 +42,10 @@ A progressive web app built around three participatory pillars:
 
 Additional features: contact form, FAQ, downloadable participation guide (PDF), social sharing (WhatsApp, X, Facebook), email newsletter, and Schema.org structured data.
 
-![Vecindad Ames platform preview](/images/webp/bertamirans.webp){: .align-center}
-
 ### Technical Stack
 
 `PHP` `JavaScript` `HTML/CSS` `PWA (Service Worker)` `Schema.org` `GDPR Compliance`
+{: .tech-stack}
 
 ### Industry Relevance
 

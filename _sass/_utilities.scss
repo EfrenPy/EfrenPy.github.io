@@ -715,6 +715,10 @@ a.reversefootnote {
   display: grid;
   gap: 1.25rem;
   margin: 1.5rem 0;
+
+  @include breakpoint($medium) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .value-prop {
@@ -1902,6 +1906,50 @@ a.reversefootnote {
 
   i {
     font-size: 0.8rem;
+  }
+}
+
+/* ========================================================================
+   Portfolio project subpage styles
+   ======================================================================== */
+
+.portfolio-img {
+  max-width: 320px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px var(--color-shadow, rgba(0, 0, 0, 0.1));
+  margin-bottom: 1em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include breakpoint($small) {
+    float: right;
+    margin-left: 1.5em;
+    margin-right: 0;
+  }
+}
+
+.tech-stack code {
+  display: inline-block;
+  padding: 0.25em 0.65em;
+  margin: 0.2em 0.15em;
+  font-size: $type-size-7;
+  background: var(--gradient-subtle, linear-gradient(135deg, rgba(82,173,200,0.08), rgba(139,92,246,0.08)));
+  color: var(--color-primary, $info-color);
+  border: 1px solid var(--color-border, $border-color);
+  border-radius: 50px;
+  font-weight: 600;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.results-highlight {
+  padding: 1em 1.25em;
+  background: var(--gradient-subtle, linear-gradient(135deg, rgba(82,173,200,0.05), rgba(139,92,246,0.05)));
+  border-left: 3px solid var(--color-primary, $info-color);
+  border-radius: 0 8px 8px 0;
+
+  li {
+    padding: 0.3em 0;
   }
 }
 

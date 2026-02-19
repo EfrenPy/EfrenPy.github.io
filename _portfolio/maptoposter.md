@@ -29,6 +29,8 @@ Generate print-ready, publication-quality city map posters from code — with fu
 
 ### Solution
 
+![Tokyo map poster in japanese ink style](/images/webp/maptoposter_tokyo.webp){: .portfolio-img}
+
 A Python CLI tool that fetches OpenStreetMap data via OSMnx and renders layered map artwork:
 
 - **17 built-in themes** — noir, blueprint, neon cyberpunk, japanese ink, terracotta, sunset, and more
@@ -50,11 +52,10 @@ python create_map_poster.py -c "Tokyo" -C "Japan" -dc "東京" --font-family "No
 python create_map_poster.py -c "London" -C "UK" -p A2 --dpi 600
 ```
 
-![Tokyo map poster in japanese ink style](/images/webp/maptoposter_tokyo.webp){: .align-center}
-
 ### Technical Stack
 
 `Python` `OSMnx` `Matplotlib` `Pillow` `OpenStreetMap` `Google Fonts` `SVG` `PDF`
+{: .tech-stack}
 
 ### Industry Relevance
 

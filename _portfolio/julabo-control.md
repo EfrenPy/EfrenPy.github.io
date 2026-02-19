@@ -30,6 +30,8 @@ Provide reliable, multi-interface control of precision laboratory cooling equipm
 
 ### Solution
 
+![Julabo FL1703 recirculating chiller](/images/webp/julabo.webp){: .portfolio-img}
+
 Built a full-stack Python control suite with 6 interface layers:
 
 - **CLI** — Subcommands for status, setpoint, start/stop, and scheduled ramps
@@ -41,17 +43,17 @@ Built a full-stack Python control suite with 6 interface layers:
 
 Additional capabilities: setpoint schedules with linear interpolation, alarm monitoring with desktop notifications, CSV/SQLite logging, Docker deployment with docker-compose + Grafana stack, and a hardware simulator for development without physical equipment.
 
-![Julabo FL1703 recirculating chiller](/images/webp/julabo.webp){: .align-center}
-
 ### Technical Stack
 
 `Python 3.9+` `pyserial (RS232)` `asyncio` `Tkinter` `Matplotlib` `WebSockets` `MQTT` `Docker` `Prometheus` `Grafana` `SQLite`
+{: .tech-stack}
 
 ### Results
 
 - **587 tests**, 93% code coverage
 - **6 entry points** (`julabo`, `julabo-server`, `julabo-server-async`, `julabo-remote`, `julabo-web`, `julabo-mqtt`)
 - Full documentation: deployment guide, protocol reference, security notes, troubleshooting
+{: .results-highlight}
 
 ### Industry Relevance
 
