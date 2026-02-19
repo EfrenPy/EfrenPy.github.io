@@ -2,9 +2,10 @@
 title: "JulaboFL1703-control"
 title_en: "JulaboFL1703-control -Lab Equipment Control System"
 title_es: "JulaboFL1703-control -Sistema de Control de Equipos de Laboratorio"
-excerpt: "Python control suite for operating a Julabo recirculating chiller via CLI, GUI, and network interfaces"
-excerpt_en: "Python control suite for operating a Julabo recirculating chiller via CLI, GUI, and network interfaces"
-excerpt_es: "Suite de control en Python para operar un enfriador recirculante Julabo mediante CLI, GUI e interfaces de red"
+description: "Open-source Python control suite for Julabo FL1703 recirculating chillers with 6 interface layers, Docker deployment, and 587 tests at 93% coverage."
+excerpt: "Python control suite for Julabo recirculating chillers with CLI, GUI, web dashboard, Docker deployment, and 587 tests"
+excerpt_en: "Python control suite for Julabo recirculating chillers with CLI, GUI, web dashboard, Docker deployment, and 587 tests"
+excerpt_es: "Suite de control en Python para enfriadores recirculantes Julabo con CLI, GUI, panel web, despliegue Docker y 587 tests"
 collection: portfolio
 category: personal
 link: https://github.com/EfrenPy/JulaboFL1703-control
@@ -13,32 +14,45 @@ header:
 tags:
   - Python
   - Serial Communication
-  - GUI
-  - TCP Server
+  - Asyncio
+  - Docker
+  - Prometheus
+  - MQTT
 ---
 
 ## Project Overview
 
-**Role:** Developer | **Type:** Personal Project | [GitHub Repository](https://github.com/EfrenPy/JulaboFL1703-control)
+**Role:** Developer | **Type:** Open Source | [GitHub Repository](https://github.com/EfrenPy/JulaboFL1703-control)
 
-### Description
+### The Challenge
 
-A comprehensive Python control suite for operating a Julabo FL1703 recirculating chiller, providing multiple interfaces for laboratory temperature control -from command-line to remote GUI.
+Provide reliable, multi-interface control of precision laboratory cooling equipment (Julabo FL1703 recirculating chiller) for experimental physics environments where temperature stability is critical.
 
-### Features
+### Solution
 
-- Reusable Python library with RS232 serial communication
-- CLI with subcommands: version, status, get/set setpoint, start, stop, and interactive GUI
-- Desktop GUI with live temperature chart via Matplotlib
-- TCP JSON server for remote network-based control with companion GUI client
-- Auto-detection of USB serial adapters on Linux and Windows
+Built a full-stack Python control suite with 6 interface layers:
+
+- **CLI** — Subcommands for status, setpoint, start/stop, and scheduled ramps
+- **Desktop GUI** — Tkinter dashboard with live Matplotlib temperature chart
+- **TCP JSON Server** — Remote control with optional TLS and token auth
+- **Web Dashboard** — Browser UI with Server-Sent Events and WebSocket support
+- **MQTT Bridge** — Publish telemetry to external brokers for fleet monitoring
+- **Prometheus Endpoint** — `/metrics` for Grafana dashboards and alerting
+
+Additional capabilities: setpoint schedules with linear interpolation, alarm monitoring with desktop notifications, CSV/SQLite logging, Docker deployment with docker-compose + Grafana stack, and a hardware simulator for development without physical equipment.
 
 ![Julabo FL1703 recirculating chiller](/images/webp/julabo.webp){: .align-center}
 
 ### Technical Stack
 
-`Python` `Serial (RS232)` `Tkinter` `TCP/IP` `Matplotlib`
+`Python 3.9+` `pyserial (RS232)` `asyncio` `Tkinter` `Matplotlib` `WebSockets` `MQTT` `Docker` `Prometheus` `Grafana` `SQLite`
+
+### Results
+
+- **587 tests**, 93% code coverage
+- **6 entry points** (`julabo`, `julabo-server`, `julabo-server-async`, `julabo-remote`, `julabo-web`, `julabo-mqtt`)
+- Full documentation: deployment guide, protocol reference, security notes, troubleshooting
 
 ### Industry Relevance
 
-Demonstrates end-to-end IoT/lab automation skills: serial communication protocols, real-time GUI dashboards, and networked device control. These patterns apply directly to industrial process control, manufacturing automation, and remote monitoring systems.
+End-to-end IoT platform demonstrating: serial communication protocols, async networking, real-time dashboards, observability (Prometheus/Grafana), containerized deployment, and comprehensive test coverage. Directly applicable to industrial process control, manufacturing automation, and remote monitoring systems.
