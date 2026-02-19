@@ -13,7 +13,8 @@
   <body>
 
     <a class="skip-link screen-reader-shortcut" href="#main">
-      Skip to main content
+      <span class="lang-en" lang="en">Skip to main content</span>
+      <span class="lang-es" lang="es">Saltar al contenido principal</span>
     </a>
 
     <div class="gradient-mesh" aria-hidden="true">
@@ -66,8 +67,8 @@
     {% if site.search %}
     <div class="search-overlay" hidden>
       <div class="search-overlay__inner">
-        <button class="search-overlay__close" aria-label="Close search">&times;</button>
-        <input class="search-overlay__input" id="search-input" type="search" placeholder="Search..." aria-label="Search site content" autocomplete="off" aria-controls="search-results">
+        <button class="search-overlay__close" aria-label="Close search" data-i18n-en="Close search" data-i18n-es="Cerrar búsqueda">&times;</button>
+        <input class="search-overlay__input" id="search-input" type="search" placeholder="Search..." data-i18n-en="Search..." data-i18n-es="Buscar..." aria-label="Search site content" autocomplete="off" aria-controls="search-results">
         <div class="search-overlay__results" id="search-results" role="status" aria-live="polite"></div>
       </div>
     </div>

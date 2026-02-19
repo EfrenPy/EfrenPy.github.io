@@ -128,16 +128,6 @@ html.is-animating .swup-transition-main {
   }
 }
 
-/* Button shine effect */
-@keyframes shine {
-  0% {
-    transform: translateX(-100%) skewX(-15deg);
-  }
-  100% {
-    transform: translateX(200%) skewX(-15deg);
-  }
-}
-
 /* Directional scroll reveals */
 .reveal--left {
   opacity: 0;

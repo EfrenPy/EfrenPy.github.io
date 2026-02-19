@@ -13,7 +13,7 @@ redirect_from:
   - /about.html
 ---
 
-<section class="homepage-hero">
+<section class="homepage-hero" aria-label="Introduction">
   <div class="homepage-hero__content">
     <h1 class="homepage-hero__name gradient-text">Efrén Rodríguez</h1>
     <p class="homepage-hero__tagline">
@@ -118,7 +118,7 @@ redirect_from:
 
 <h3>{% include t.html page="about" key="career_timeline_title" %}</h3>
 
-<section class="career-timeline">
+<section class="career-timeline" aria-label="Career timeline">
   <div class="career-timeline__milestones">
     <div class="career-timeline__milestone">
       <span class="career-timeline__year">2015</span>

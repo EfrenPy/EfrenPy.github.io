@@ -48,7 +48,8 @@ export function initSearch() {
     });
 
     if (results.length === 0) {
-      resultsContainer.innerHTML = '<div class="search-no-results">No results found.</div>';
+      var lang = document.documentElement.getAttribute('data-lang') || 'en';
+      resultsContainer.innerHTML = '<div class="search-no-results">' + (lang === 'es' ? 'No se encontraron resultados.' : 'No results found.') + '</div>';
       return;
     }
 

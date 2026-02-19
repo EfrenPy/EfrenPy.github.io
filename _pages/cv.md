@@ -209,7 +209,7 @@ redirect_from:
     <span class="lang-en" lang="en">See my technical projects including data analysis tools, detector simulations, and open-source contributions.</span>
     <span class="lang-es" lang="es">Consulta mis proyectos técnicos incluyendo herramientas de análisis de datos, simulaciones de detectores y contribuciones de código abierto.</span>
   </p>
-  <a href="/portfolio/" class="btn btn--primary">
+  <a href="/portfolio/" class="btn">
     <i class="fas fa-arrow-right"></i>
     <span class="lang-en" lang="en">View Projects</span>
     <span class="lang-es" lang="es">Ver Proyectos</span>

@@ -13,12 +13,12 @@ author_profile: false
   <div class="lang-en" lang="en">
     <h2>You're currently offline</h2>
     <p>It looks like you've lost your internet connection. Some pages you've visited before may still be available.</p>
-    <p><a href="/" class="btn btn--primary">Try the Homepage</a></p>
+    <p><a href="/" class="btn">Try the Homepage</a></p>
   </div>
 
   <div class="lang-es" lang="es">
     <h2>Estás sin conexión</h2>
     <p>Parece que has perdido la conexión a internet. Algunas páginas que has visitado antes pueden seguir disponibles.</p>
-    <p><a href="/" class="btn btn--primary">Ir a la Página Principal</a></p>
+    <p><a href="/" class="btn">Ir a la Página Principal</a></p>
   </div>
 </div>

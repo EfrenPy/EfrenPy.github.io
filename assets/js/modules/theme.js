@@ -53,11 +53,23 @@ export function initLanguage() {
     localStorage.setItem('lang', lang);
   };
 
+  const updateI18n = (lang) => {
+    toggle.setAttribute('aria-pressed', lang === 'es' ? 'true' : 'false');
+    document.querySelectorAll('[data-i18n-' + lang + ']').forEach(el => {
+      const text = el.getAttribute('data-i18n-' + lang);
+      if (el.tagName === 'INPUT') el.placeholder = text;
+      else if (el.hasAttribute('aria-label')) el.setAttribute('aria-label', text);
+    });
+  };
+
+  const currentLang = document.documentElement.getAttribute('data-lang') || 'en';
+  updateI18n(currentLang);
+
   toggle.addEventListener('click', () => {
     const current = document.documentElement.getAttribute('data-lang');
     const next = current === 'en' ? 'es' : 'en';
     setLang(next);
-    toggle.setAttribute('aria-pressed', next === 'es' ? 'true' : 'false');
+    updateI18n(next);
     announce(next === 'es' ? 'Idioma cambiado a español' : 'Language changed to English');
   });
 }
