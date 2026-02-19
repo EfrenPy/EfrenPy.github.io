@@ -27,7 +27,7 @@
           {% else %}
             "{{ teaser | prepend: "/images/" | prepend: base_path }}"
           {% endif %}
-          alt="">
+          alt="{{ title | strip_html | strip_newlines | default: 'CV entry thumbnail' }}">
       </div>
     {% endif %}
     <h3 class="archive__item-title" itemprop="headline">

@@ -6,6 +6,7 @@ title_es: "Efrén Rodríguez - Director de Proyectos Técnicos | Líder I+D en e
 description: "Technical project manager who led multi-million EUR detector projects at CERN. Coordinating international teams across 3 countries, bridging hardware and software. Open to PM, engineering management, and R&D leadership roles."
 excerpt: "Technical project manager who led multi-million EUR international R&D projects at CERN. Seeking PM, engineering management, and R&D leadership roles."
 author_profile: true
+featured_post: /posts/2024/10/new-horizons-at-cern/
 redirect_from:
   - /about/
   - /about.html
@@ -204,7 +205,7 @@ redirect_from:
   <div class="featured-post-card__content">
     <h4>{% include t.html page="about" key="featured_post_title" %}</h4>
     <p>{% include t.html page="about" key="featured_post_desc" %}</p>
-    <a href="{{ site.baseurl }}/posts/2024/10/new-horizons-at-cern/" class="btn btn--outline btn--small">
+    <a href="{{ site.baseurl }}{{ page.featured_post }}" class="btn btn--outline btn--small">
       <i class="fas fa-arrow-right"></i> {% include t.html page="about" key="featured_post_cta" %}
     </a>
   </div>

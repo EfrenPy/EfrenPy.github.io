@@ -142,6 +142,7 @@
     &--es {
       display: inline;
       color: var(--color-primary, $info-color);
+      font-weight: 700;
     }
   }
 
@@ -150,6 +151,7 @@
     .lang-label--en {
       display: inline;
       color: var(--color-primary, $info-color);
+      font-weight: 700;
     }
 
     .lang-label--es {
@@ -305,13 +307,3 @@
   }
 }
 
-.masthead__menu-item {
-  display: block;
-  list-style-type: none;
-  white-space: nowrap;
-
-  &--lg {
-    padding-right: 2em;
-    font-weight: 700;
-  }
-}

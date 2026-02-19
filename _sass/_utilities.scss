@@ -1912,7 +1912,7 @@ a.reversefootnote {
 
 .floating-cta {
   position: fixed;
-  bottom: 0.75rem;
+  bottom: calc(0.75rem + env(safe-area-inset-bottom, 0px));
   left: 50%;
   z-index: 99;
   display: flex;
