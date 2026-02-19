@@ -43,7 +43,7 @@ export function initSearch() {
 
     var terms = query.toLowerCase().split(/\s+/).filter(Boolean);
     var results = searchData.filter(function(item) {
-      var text = (item.title + ' ' + item.excerpt).toLowerCase();
+      var text = (item.title + ' ' + item.excerpt + ' ' + (item.tags || []).join(' ')).toLowerCase();
       return terms.every(function(term) { return text.indexOf(term) !== -1; });
     });
 

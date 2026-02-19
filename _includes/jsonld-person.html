@@ -56,4 +56,17 @@
   }
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "mainEntity": {
+    "@type": "Person",
+    "name": "{{ site.author.name }}",
+    "url": "{{ site.url }}",
+    "jobTitle": "Technical Project Manager",
+    "worksFor": { "@type": "Organization", "name": "CERN" }
+  }
+}
+</script>
 {% endif %}

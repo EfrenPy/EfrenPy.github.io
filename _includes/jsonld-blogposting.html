@@ -5,7 +5,7 @@
   "@type": "BlogPosting",
   "headline": {{ page.title | strip_html | strip_newlines | jsonify }},
   "datePublished": "{{ page.date | date_to_xmlschema }}",
-  {% if page.modified %}"dateModified": "{{ page.modified | date_to_xmlschema }}",{% endif %}
+  "dateModified": "{{ page.modified | default: page.date | date_to_xmlschema }}",
   {% if page.excerpt %}"description": {{ page.excerpt | markdownify | strip_html | strip_newlines | truncate: 200 | jsonify }},{% endif %}
   "url": "{{ page.url | prepend: site.url }}",
   "author": {

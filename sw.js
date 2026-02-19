@@ -49,12 +49,15 @@ self.addEventListener('fetch', (event) => {
 
   // Cache-first for static assets (CSS, JS, fonts, images)
   if (url.pathname.match(/\.(css|js|woff2?|png|webp|jpg|jpeg|gif|svg)$/)) {
+    const cleanUrl = new URL(event.request.url);
+    cleanUrl.search = '';
+    const cleanRequest = new Request(cleanUrl, { headers: event.request.headers });
     event.respondWith(
-      caches.match(event.request).then((cached) => {
+      caches.match(cleanRequest).then((cached) => {
         const fetchPromise = fetch(event.request).then((response) => {
           if (response.ok) {
             const clone = response.clone();
-            caches.open(CACHE_NAME).then((cache) => cache.put(event.request, clone));
+            caches.open(CACHE_NAME).then((cache) => cache.put(cleanRequest, clone));
           }
           return response;
         }).catch(() => cached);

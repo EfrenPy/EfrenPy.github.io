@@ -11,7 +11,8 @@ layout: null
     "url": {{ page.url | prepend: site.baseurl | jsonify }},
     "excerpt": {{ page.excerpt | default: page.description | default: "" | markdownify | strip_html | strip_newlines | truncate: 200 | jsonify }},
     "date": "{{ page.date | date: "%Y-%m-%d" }}",
-    "categories": {{ page.categories | default: "" | jsonify }}
+    "categories": {{ page.categories | default: "" | jsonify }},
+    "tags": {{ page.tags | default: "" | jsonify }}
   }{% unless forloop.last %},{% endunless %}
   {% endfor %}
 ]

@@ -8,6 +8,7 @@
   "background_color": "#ffffff",
   "theme_color": "#52adc8",
   "orientation": "portrait-primary",
+  "lang": "en",
   "icons": [
     {
       "src": "/favicon.png",
@@ -31,6 +32,12 @@
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
+    },
+    {
+      "src": "/images/logo-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ]
 }

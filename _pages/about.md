@@ -1,8 +1,8 @@
 ---
 permalink: /
-title: "Efrén Rodríguez - Technical Project Manager | CERN R&D Leader"
-title_en: "Efrén Rodríguez - Technical Project Manager | CERN R&D Leader"
-title_es: "Efrén Rodríguez - Director de Proyectos Técnicos | Líder I+D en el CERN"
+title: "Efrén Rodríguez - Technical Project Manager - CERN R&D Leader"
+title_en: "Efrén Rodríguez - Technical Project Manager - CERN R&D Leader"
+title_es: "Efrén Rodríguez - Director de Proyectos Técnicos - Líder I+D en el CERN"
 description: "Technical project manager who led multi-million EUR detector projects at CERN. Coordinating international teams across 3 countries, bridging hardware and software. Open to PM, engineering management, and R&D leadership roles."
 excerpt: "Technical project manager who led multi-million EUR international R&D projects at CERN. Seeking PM, engineering management, and R&D leadership roles."
 keywords: "technical project manager, R&D engineer, CERN, engineering manager, technical program manager, hardware software integration, team leadership, systems engineering"
