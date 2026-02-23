@@ -25,9 +25,6 @@ jobs:
         env:
           JEKYLL_ENV: production
 
-      - name: Run postbuild validation
-        run: npm run validate
-
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
@@ -35,7 +32,10 @@ jobs:
           cache: 'npm'
 
       - name: Install Node dependencies
-        run: npm ci
+        run: npm install
+
+      - name: Run postbuild validation
+        run: npm run validate
 
       - name: Install Ghostscript
         run: sudo apt-get update && sudo apt-get install -y ghostscript
