@@ -1,7 +1,7 @@
 ---
 title: "Tracking the Time: Measurements towards the characterization of a 3D pixel in terms of time resolution and Landau contribution evaluation"
 collection: publications
-permalink: /publication/tracking-time-measurements-3D-pixel-time-resolution
+permalink: /publication/tracking-time-measurements-3D-pixel-time-resolution/
 excerpt: 'Exploring the time resolution and Landau contribution of 3D pixel geometries in high-radiation environments.'
 description: "Characterization of 3D pixel sensor timing resolution through test-beam measurements at CERN SPS. Published in Nuclear Instruments and Methods."
 date: 2023-01-01

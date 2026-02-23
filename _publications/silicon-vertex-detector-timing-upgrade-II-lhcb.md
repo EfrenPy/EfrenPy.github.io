@@ -1,7 +1,7 @@
 ---
 title: "Silicon vertex detector with timing for the Upgrade II of LHCb"
 collection: publications
-permalink: /publication/silicon-vertex-detector-timing-upgrade-II-lhcb
+permalink: /publication/silicon-vertex-detector-timing-upgrade-II-lhcb/
 excerpt: 'Discussing the advancements in vertex detection technology for LHCb Upgrade II.'
 description: "Research on next-generation silicon vertex detector with precision timing for LHCb Upgrade II at CERN. Published in Nuclear Instruments and Methods."
 date: 2023-03-01

@@ -133,6 +133,8 @@ exclude:
   - fix_plan.md
   - CLAUDE.md
   - package-lock.json
+  - docs
+  - markdown_generator
 keep_files:
   - .git
   - .svn

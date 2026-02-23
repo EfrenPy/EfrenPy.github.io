@@ -2,7 +2,7 @@
 title: "The LHCb VELO detector: design operation and first results"
 collection: talks
 type: "Talk"
-permalink: /talks/lhcb-velo-detector-design-operation-results
+permalink: /talks/lhcb-velo-detector-design-operation-results/
 description: "Presenting the design, operation, and first physics results of the upgraded LHCb VELO detector at the 13th Hiroshima Symposium (HSTD13)."
 excerpt: 'Presenting the design, operation, and initial outcomes of the upgraded LHCb VELO detector at CERN.'
 date: 2023-12-04

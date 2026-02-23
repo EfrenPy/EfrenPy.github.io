@@ -5,6 +5,7 @@ title_en: "You're Offline"
 title_es: "Sin Conexión"
 description: "You are currently offline. Reconnect to browse Efrén Rodríguez's portfolio."
 permalink: /offline/
+sitemap: false
 author_profile: false
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "The LHCb upgrade I"
 collection: publications
-permalink: /publication/the-lhcb-upgrade-i
+permalink: /publication/the-lhcb-upgrade-i/
 excerpt: 'Detailing the first upgrade of the LHCb experiment, enhancing its capabilities for future research.'
 description: "Comprehensive technical overview of the LHCb Upgrade I detector at CERN, detailing performance improvements and scientific goals."
 date: 2023-01-01

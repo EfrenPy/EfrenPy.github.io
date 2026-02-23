@@ -2,7 +2,7 @@
 title: "Generative AIs for Dummies Workshop"
 collection: workshops
 type: "Workshop"
-permalink: /workshops/generative-ais-for-dummies
+permalink: /workshops/generative-ais-for-dummies/
 description: "Introductory workshop on Generative AI for academic researchers at IGFAE, covering practical applications of large language models."
 excerpt: 'An introductory workshop on Generative Artificial Intelligences, tailored for beginners in the field, focusing on practical applications in academic research.'
 date: 2023-12-20

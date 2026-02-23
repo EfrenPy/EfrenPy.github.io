@@ -2,7 +2,7 @@
 title: "Tracking the Time: Single cell 3D pixel time resolution and Landau contribution evaluation via test-beam and laboratory measurements"
 collection: talks
 type: "Poster"
-permalink: /talks/tracking-time-3d-pixel-resolution
+permalink: /talks/tracking-time-3d-pixel-resolution/
 description: "Poster on timing resolution and Landau contribution of single-cell 3D pixel sensors, measured via test-beam at CERN SPS."
 excerpt: 'Investigating the timing resolution and Landau contribution of single cell 3D pixel technology in high radiation environments.'
 date: 2022-05-24

@@ -2,7 +2,7 @@
 title: "A Silicon Vertex Detector with Timing for the Upgrade II of LHCb"
 collection: talks
 type: "Talk"
-permalink: /talks/silicon-vertex-detector-timing-lhcb-upgrade
+permalink: /talks/silicon-vertex-detector-timing-lhcb-upgrade/
 description: "Talk on next-generation silicon vertex detector with precision timing for the LHCb Upgrade II, presented at the 15th Pisa Meeting."
 excerpt: 'Exploring advanced silicon vertex detector technologies for the LHCb Upgrade II with enhanced timing precision.'
 date: 2022-05-24
