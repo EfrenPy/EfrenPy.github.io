@@ -26,9 +26,13 @@
 .archive__subtitle {
   margin: 1.414em 0 0;
   padding-bottom: 0.5em;
-  font-size: $type-size-5;
-  color: mix(#fff, $gray, 25%);
-  border-bottom: 1px solid $border-color;
+  font-family: $display-font;
+  font-size: $type-size-3;
+  font-weight: 700;
+  color: var(--color-text, inherit);
+  margin-top: 2rem;
+  border-bottom: 3px solid transparent;
+  border-image: linear-gradient(90deg, var(--color-primary, $info-color), transparent) 1;
 
   + .list__item .archive__item-title {
     margin-top: 0.5em;
@@ -66,6 +70,10 @@
 .archive__item-excerpt {
   margin-top: 0;
   font-size: $type-size-6;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 
   & + p {
     text-indent: 0;
@@ -86,6 +94,14 @@
     flex-shrink: 0;
     width: 150px;
     align-self: center;
+
+    @include breakpoint($medium) {
+      width: 200px;
+    }
+
+    img {
+      aspect-ratio: 4 / 3;
+    }
   }
 
   @media (max-width: 400px) {
@@ -130,10 +146,21 @@
   padding: 0.2rem 0.6rem;
   font-size: $type-size-7;
   font-weight: 500;
-  background: var(--gradient-subtle, linear-gradient(135deg, rgba(82, 173, 200, 0.08), rgba(139, 92, 246, 0.08)));
-  color: var(--color-primary, $info-color);
+  color: #fff;
   border-radius: 50px;
-  transition: background 0.3s ease, color 0.3s ease;
+  transition: background 0.3s ease, color 0.3s ease, transform 0.2s ease;
+
+  &:nth-child(3n+1) {
+    background: var(--color-primary, $info-color);
+  }
+
+  &:nth-child(3n+2) {
+    background: var(--color-accent, #8B5CF6);
+  }
+
+  &:nth-child(3n+3) {
+    background: #10b981;
+  }
 
   .archive__item:hover & {
     background: var(--gradient-primary, linear-gradient(135deg, #52adc8, #8B5CF6));
@@ -180,6 +207,7 @@ li:has(.archive__item) {
   border-radius: 12px;
   background: var(--color-card-bg, #fff);
   border: 1px solid var(--color-border, $border-color);
+  border-left: 4px solid var(--color-primary, $info-color);
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
               box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1),
               border-color 0.3s ease;
@@ -198,30 +226,13 @@ li:has(.archive__item) {
     pointer-events: none;
   }
 
-  // Glow effect behind card
-  &::after {
-    content: '';
-    position: absolute;
-    inset: -2px;
-    border-radius: 14px;
-    background: var(--gradient-primary, linear-gradient(135deg, #52adc8, #8B5CF6));
-    z-index: -1;
-    opacity: 0;
-    filter: blur(15px);
-    transition: opacity 0.3s ease;
-  }
-
   &:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 25px 50px var(--color-shadow-strong, rgba(0, 0, 0, 0.12));
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px var(--color-shadow-strong, rgba(0, 0, 0, 0.12));
     border-color: var(--color-primary, $info-color);
 
     &::before {
-      opacity: 1;
-    }
-
-    &::after {
-      opacity: 0.25;
+      opacity: 0.5;
     }
 
     .archive__item-teaser {
@@ -232,6 +243,16 @@ li:has(.archive__item) {
       color: var(--color-primary, $info-color);
       text-decoration: none;
     }
+  }
+
+  // Contextual accent colors
+  .cv-section & {
+    border-left-color: var(--color-primary, $info-color);
+  }
+
+  .page__content[data-page="projects"] &,
+  .portfolio & {
+    border-left-color: #10b981; // emerald
   }
 }
 
@@ -413,5 +434,177 @@ li:has(.archive__item) {
         width: percentage(7 / 12); // ~58.333%
       }
     }
+  }
+}
+
+
+/*
+   Publication link pills
+   ========================================================================== */
+
+.publication-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+  position: relative;
+  z-index: 2;
+}
+
+.publication-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.2rem 0.6rem;
+  background: var(--gradient-subtle, linear-gradient(135deg, rgba(82, 173, 200, 0.08), rgba(139, 92, 246, 0.08)));
+  border-radius: 50px;
+  font-size: $type-size-7;
+  text-decoration: none;
+  color: var(--color-text, inherit);
+  transition: background 0.3s ease, color 0.3s ease;
+
+  &:hover {
+    background: var(--gradient-primary, linear-gradient(135deg, #52adc8, #8B5CF6));
+    color: #fff;
+  }
+}
+
+
+/*
+   Talk type badges
+   ========================================================================== */
+
+.talk-type-badge {
+  display: inline-block;
+  padding: 0.15rem 0.5rem;
+  border-radius: 50px;
+  font-size: $type-size-7;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+
+  &--talk {
+    background: rgba(82, 173, 200, 0.15);
+    color: var(--color-primary, $info-color);
+  }
+
+  &--workshop {
+    background: rgba(16, 185, 129, 0.15);
+    color: #10b981;
+  }
+
+  &--poster {
+    background: rgba(245, 158, 11, 0.15);
+    color: #f59e0b;
+  }
+
+  &--conference {
+    background: rgba(139, 92, 246, 0.15);
+    color: var(--color-accent, #8B5CF6);
+  }
+}
+
+
+/*
+   Gallery polish (Personal page)
+   ========================================================================== */
+
+figure.half,
+figure.third {
+  > a,
+  > img {
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: scale(1.03);
+      box-shadow: 0 8px 24px var(--color-shadow, rgba(0, 0, 0, 0.12));
+    }
+  }
+
+  > a img {
+    min-height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+
+  figcaption {
+    font-family: $display-font;
+    font-style: italic;
+  }
+}
+
+
+/*
+   Personal page visual cards
+   ========================================================================== */
+
+.personal-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.personal-card {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+  text-decoration: none;
+  box-shadow: 0 4px 20px var(--color-shadow, rgba(0, 0, 0, 0.1));
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px var(--color-shadow-strong, rgba(0, 0, 0, 0.18));
+
+    .personal-card__image img {
+      transform: scale(1.08);
+    }
+
+    .personal-card__overlay {
+      background: linear-gradient(to top, rgba(0,0,0,0.85), rgba(0,0,0,0.2));
+    }
+  }
+
+  &__image {
+    position: absolute;
+    inset: 0;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+
+  &__overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1.5rem;
+    background: linear-gradient(to top, rgba(0,0,0,0.7), transparent 60%);
+    transition: background 0.3s ease;
+  }
+
+  &__title {
+    color: #fff;
+    font-family: $display-font;
+    font-size: $type-size-3;
+    font-weight: 700;
+    margin: 0 0 0.25rem;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  }
+
+  &__excerpt {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: $type-size-6;
+    margin: 0;
+    line-height: 1.4;
   }
 }

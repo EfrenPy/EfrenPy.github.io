@@ -45,35 +45,37 @@
 
               <!-- description readme and  icon code -->
     {% if post.excerpt and site.read_more != 'enabled' %}
-    <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}         
+    <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
+    <div class="publication-links">
       {% if post.link %}
-        <a href="{{ post.link }}"><i class="fas fa-fw fa-link zoom" aria-hidden="true"></i></a>
+        <a href="{{ post.link }}" class="publication-link"><i class="fas fa-fw fa-link" aria-hidden="true"></i> Link</a>
       {% endif %}
       {% if post.paperurl %}
-        <a href="{{ post.paperurl }}"><i class="fas fa-fw fa-file-pdf zoom" aria-hidden="true"></i></a>
+        <a href="{{ post.paperurl }}" class="publication-link"><i class="fas fa-fw fa-file-pdf" aria-hidden="true"></i> PDF</a>
       {% endif %}
       {% if post.code %}
-        <a href="{{ post.code }}"><i class="fas fa-fw fa-code zoom" aria-hidden="true"></i></a>
+        <a href="{{ post.code }}" class="publication-link"><i class="fas fa-fw fa-code" aria-hidden="true"></i> Code</a>
       {% endif %}
       {% if post.github %}
-        <a href="{{ post.github }}"><i class="fab fa-fw fa-github zoom" aria-hidden="true"></i></a>
+        <a href="{{ post.github }}" class="publication-link"><i class="fab fa-fw fa-github" aria-hidden="true"></i> Code</a>
       {% endif %}
-    </p>
+    </div>
     {% elsif post.excerpt and site.read_more == 'enabled' %}
-    <p class="archive__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<a href="{{ base_path }}{{ post.url }}" rel="permalink"> <span class="lang-en" lang="en">Read more</span><span class="lang-es" lang="es">Leer más</span></a>       
+    <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }} <a href="{{ base_path }}{{ post.url }}" rel="permalink"><span class="lang-en" lang="en">Read more</span><span class="lang-es" lang="es">Leer más</span></a></p>
+    <div class="publication-links">
       {% if post.link %}
-        <a href="{{ post.link }}"><i class="fas fa-fw fa-link zoom" aria-hidden="true"></i></a>
+        <a href="{{ post.link }}" class="publication-link"><i class="fas fa-fw fa-link" aria-hidden="true"></i> Link</a>
       {% endif %}
       {% if post.paperurl %}
-        <a href="{{ post.paperurl }}"><i class="fas fa-fw fa-file-pdf zoom" aria-hidden="true"></i></a>
+        <a href="{{ post.paperurl }}" class="publication-link"><i class="fas fa-fw fa-file-pdf" aria-hidden="true"></i> PDF</a>
       {% endif %}
       {% if post.code %}
-        <a href="{{ post.code }}"><i class="fas fa-fw fa-code zoom" aria-hidden="true"></i></a>
+        <a href="{{ post.code }}" class="publication-link"><i class="fas fa-fw fa-code" aria-hidden="true"></i> Code</a>
       {% endif %}
       {% if post.github %}
-        <a href="{{ post.github }}"><i class="fab fa-fw fa-github zoom" aria-hidden="true"></i></a>
+        <a href="{{ post.github }}" class="publication-link"><i class="fab fa-fw fa-github" aria-hidden="true"></i> Code</a>
       {% endif %}
-  </p> </p>
+    </div>
     {% endif %}
     
   </article>

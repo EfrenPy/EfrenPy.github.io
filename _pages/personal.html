@@ -13,8 +13,23 @@ author_profile: true
 
 {% include t-block.html page="personal" key="intro" %}
 
-{% include gallery id="gallery1" caption=" " %}
-
+<div class="personal-grid">
 {% for post in site.personal %}
-  {% include archive-single.html %}
+  <a href="{{ base_path }}{{ post.url }}" class="personal-card" rel="permalink">
+    <div class="personal-card__image">
+      <img src="{{ base_path }}/images/{{ post.header.teaser }}"
+           alt="{{ post.title }}" loading="lazy" decoding="async">
+    </div>
+    <div class="personal-card__overlay">
+      <h2 class="personal-card__title">
+        <span class="lang-en" lang="en">{{ post.title_en }}</span>
+        <span class="lang-es" lang="es">{{ post.title_es }}</span>
+      </h2>
+      <p class="personal-card__excerpt">
+        <span class="lang-en" lang="en">{{ post.excerpt_en | truncate: 80 }}</span>
+        <span class="lang-es" lang="es">{{ post.excerpt_es | truncate: 80 }}</span>
+      </p>
+    </div>
+  </a>
 {% endfor %}
+</div>

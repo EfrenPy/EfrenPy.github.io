@@ -17,15 +17,15 @@
   .page__footer,
   .gradient-mesh,
   .scroll-to-top,
-  .color-picker,
-  .color-toggle,
   .lang-toggle,
   .theme-toggle,
   .nav-toggle,
   .scroll-progress,
   .skip-link,
   .floating-cta,
-  .author__urls-toggle {
+  .author__urls-toggle,
+  .nav-more__dropdown,
+  .nav-more-flat {
     display: none !important;
   }
 
@@ -72,7 +72,10 @@
   .contact-card,
   .archive__item,
   .cv-edu-card,
-  .cv-timeline-item {
+  .cv-timeline-item,
+  .key-results__card,
+  .value-prop,
+  .bio-section__callout {
     break-inside: avoid;
     page-break-inside: avoid;
   }
@@ -98,11 +101,99 @@
     color: #000 !important;
   }
 
+  /* Reset gradient text to black */
+  .gradient-text,
+  .cv-snapshot__number,
+  .key-results__number,
+  .bio-section__callout-number {
+    background: none !important;
+    -webkit-text-fill-color: #000 !important;
+    color: #000 !important;
+  }
+
+  /* Remove grayscale from logos */
+  .logo-strip__item {
+    filter: none !important;
+    opacity: 1 !important;
+  }
+
+  /* Compact sidebar hidden in print on inner pages */
+  body:not(.is-homepage) .sidebar {
+    display: none !important;
+  }
+
+  /* Homepage section backgrounds removed */
+  .homepage-section--alt {
+    background: none !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
   /* Remove transforms and animations */
   .reveal,
   .reveal--left,
-  .reveal--right {
+  .reveal--right,
+  .reveal--scale,
+  .reveal--slide-up {
     opacity: 1 !important;
     transform: none !important;
+  }
+
+  /* Hide reading/scroll progress bars */
+  .reading-progress,
+  .scroll-progress {
+    display: none !important;
+  }
+
+  /* Page title banner — keep text, remove gradient bg */
+  .page__title-banner {
+    background: none !important;
+    border-image: none !important;
+    border-bottom-color: #ccc !important;
+  }
+
+  /* Reset talk badges and publication links to plain text */
+  .talk-type-badge {
+    background: #eee !important;
+    color: #000 !important;
+  }
+
+  .publication-link {
+    background: none !important;
+    color: #000 !important;
+    padding: 0 !important;
+    border: none !important;
+  }
+
+  /* Footer prints with inherited colors */
+  .page__footer {
+    background: #f5f5f5 !important;
+    color: #333 !important;
+
+    a {
+      color: #333 !important;
+    }
+  }
+
+  /* Hero photo in print */
+  .homepage-hero__photo {
+    display: block !important;
+
+    img {
+      width: 120px !important;
+      height: 120px !important;
+    }
+  }
+
+  /* Personal page cards */
+  .personal-card {
+    break-inside: avoid;
+    box-shadow: none !important;
+
+    &__overlay {
+      background: rgba(0,0,0,0.5) !important;
+    }
   }
 }

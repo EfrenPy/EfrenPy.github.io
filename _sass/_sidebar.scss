@@ -15,6 +15,7 @@
     // CSS-only fallback; JS overrides dynamically for tall sidebars
     position: sticky;
     top: 2rem;
+    z-index: 10;
 
     // Glassmorphism card
     background: var(--color-card-bg, #fff);
@@ -380,6 +381,80 @@
 /*
    Pill-style social links
    ========================================================================== */
+
+/*
+   Compact sidebar on inner pages
+   ========================================================================== */
+
+@include breakpoint($large) {
+  body:not(.is-homepage) .sidebar {
+    width: 140px;
+    padding: 1rem 0.5rem;
+    text-align: center;
+    border-right: 1px solid var(--color-border, $border-color);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+
+    .author__avatar img {
+      max-width: 100px;
+      padding: 3px;
+    }
+
+    .author__avatar::before {
+      max-width: 108px;
+      max-height: 108px;
+    }
+
+    .author__name {
+      font-family: $display-font;
+      font-size: 0.85rem;
+    }
+
+    .author__bio {
+      display: none;
+    }
+
+    .author__urls {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.25rem;
+
+      li {
+        white-space: nowrap;
+      }
+    }
+
+    // Hide all social links except key ones
+    .author__urls li {
+      display: none;
+    }
+
+    .author__urls li:has(a[href*="mailto"]),
+    .author__urls li:has(a[href*="linkedin"]),
+    .author__urls li:has(a[href*="github"]) {
+      display: block;
+    }
+
+    .author__link-pill {
+      padding: 0.15rem 0.4rem;
+      font-size: 0.7rem;
+    }
+
+    .author__urls-wrapper {
+      border-top: none;
+      padding-top: 0.25rem;
+    }
+
+    .author__urls-divider {
+      display: none;
+    }
+
+    .author__info-item {
+      display: none;
+    }
+  }
+}
 
 .author__link-pill {
   display: inline-flex;

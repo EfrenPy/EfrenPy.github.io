@@ -5,6 +5,8 @@ title_es: "Aventuras de Senderismo"
 excerpt_en: "Embark on a journey through my hiking escapades! From serene forest trails to majestic mountain peaks, each trek has been a tale of discovery and awe."
 excerpt_es: "¡Embárcate en un viaje a través de mis aventuras de senderismo! Desde senderos forestales serenos hasta majestuosas cumbres, cada travesía ha sido una historia de descubrimiento y asombro."
 collection: personal
+header:
+  teaser: webp/shilthorn.webp
 gallery1:
   - url: webp/shilthorn.webp
     image_path: webp/shilthorn.webp

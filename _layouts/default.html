@@ -10,7 +10,7 @@
     {% include head/custom.html %}
   </head>
 
-  <body>
+  <body{% if page.url == "/" %} class="is-homepage"{% endif %}>
 
     <a class="skip-link screen-reader-shortcut" href="#main">
       <span class="lang-en" lang="en">Skip to main content</span>

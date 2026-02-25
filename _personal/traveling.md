@@ -5,6 +5,8 @@ title_es: "Andanzas Globales"
 excerpt_en: "Journey through my travel tales as I explore the mosaic of cultures, landscapes, and histories our world offers."
 excerpt_es: "Viaja a través de mis relatos de viaje mientras exploro el mosaico de culturas, paisajes e historias que nuestro mundo ofrece."
 collection: personal
+header:
+  teaser: webp/traveling.webp
 gallery1:
   - url: webp/traveling.webp
     image_path: webp/traveling.webp

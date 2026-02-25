@@ -14,7 +14,9 @@ layout: default
 
 <div class="archive">
   {% unless page.header.overlay_color or page.header.overlay_image %}
-    <h1 class="page__title">{% if page.title_en %}<span class="lang-en" lang="en">{{ page.title_en }}</span><span class="lang-es" lang="es">{{ page.title_es }}</span>{% else %}{{ page.title }}{% endif %}</h1>
+    <div class="page__title-banner">
+      <h1 class="page__title">{% if page.title_en %}<span class="lang-en" lang="en">{{ page.title_en }}</span><span class="lang-es" lang="es">{{ page.title_es }}</span>{% else %}{{ page.title }}{% endif %}</h1>
+    </div>
   {% endunless %}
   {{ content }}
 </div>

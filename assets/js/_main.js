@@ -3,10 +3,10 @@
    Entry point: imports all modules, bundled by esbuild
    ========================================================================== */
 
-import { initMobileNav, updateActiveNav } from './modules/nav.js';
-import { initDarkMode, initLanguage, initColorCustomization } from './modules/theme.js';
+import { initMobileNav, initMoreDropdown, updateActiveNav } from './modules/nav.js';
+import { initDarkMode, initLanguage } from './modules/theme.js';
 import { initLightbox } from './modules/lightbox.js';
-import { initScrollReveal, initScrollProgress, initScrollToTop, initFloatingCta } from './modules/animations.js';
+import { initScrollReveal, initScrollProgress, initScrollToTop, initFloatingCta, initCountUp } from './modules/animations.js';
 import { initSidebar } from './modules/sidebar.js';
 import { initSearch } from './modules/search.js';
 import { initOfflineIndicator } from './modules/offline.js';
@@ -17,9 +17,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Initialize global features (masthead-level, don't need reinit on navigation)
   initMobileNav();
+  initMoreDropdown();
   initDarkMode();
   initLanguage();
-  initColorCustomization();
+  // One-time cleanup of deprecated color customization
+  localStorage.removeItem('accent-colors');
   initOfflineIndicator();
   initSearch();
 
@@ -43,6 +45,12 @@ document.addEventListener('DOMContentLoaded', function() {
       if (p) { p.style.width = '100%'; setTimeout(function() { p.classList.remove('progress-bar--loading'); p.style.width = '0%'; }, 300); }
     });
     swup.hooks.on('page:view', function() {
+      // Toggle homepage body class for sidebar compaction
+      if (window.location.pathname === '/' || window.location.pathname === '/index.html') {
+        document.body.classList.add('is-homepage');
+      } else {
+        document.body.classList.remove('is-homepage');
+      }
       initPageFeatures();
       var m = document.getElementById('main');
       if (m) { m.setAttribute('tabindex', '-1'); m.focus({ preventScroll: true }); }
@@ -106,6 +114,9 @@ function initPageFeatures() {
 
   // Floating mobile CTA
   initFloatingCta();
+
+  // Count-up animation for stat numbers
+  initCountUp();
 
   // Scroll to top on new page
   window.scrollTo(0, 0);

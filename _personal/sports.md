@@ -5,6 +5,8 @@ title_es: "Aventuras Deportivas Llenas de Diversión"
 excerpt_en: "Embark on a lighthearted journey through my favorite sports, where fun reigns supreme! From casual volleyball matches to exhilarating wakeboard sessions."
 excerpt_es: "¡Embárcate en un viaje desenfadado a través de mis deportes favoritos, donde la diversión es lo primero! Desde partidos casuales de voleibol hasta emocionantes sesiones de wakeboard."
 collection: personal
+header:
+  teaser: webp/volleyball.webp
 gallery1:
   - url: webp/volleyball.webp
     image_path: webp/volleyball.webp

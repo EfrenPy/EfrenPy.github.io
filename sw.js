@@ -60,7 +60,10 @@ self.addEventListener('fetch', (event) => {
             caches.open(CACHE_NAME).then((cache) => cache.put(cleanRequest, clone));
           }
           return response;
-        }).catch(() => cached);
+        }).catch(() => {
+          if (cached) return cached;
+          return new Response('', { status: 503, statusText: 'Service Unavailable' });
+        });
         return cached || fetchPromise;
       })
     );
@@ -85,6 +88,7 @@ self.addEventListener('fetch', (event) => {
             if (accept && accept.includes('text/html')) {
               return caches.match(OFFLINE_URL);
             }
+            return new Response('', { status: 503, statusText: 'Service Unavailable' });
           });
       })
   );

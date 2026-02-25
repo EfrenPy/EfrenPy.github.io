@@ -46,6 +46,55 @@ export function initMobileNav() {
 }
 
 /* ==========================================================================
+   "More" Dropdown Navigation
+   ========================================================================== */
+
+export function initMoreDropdown() {
+  var toggle = document.querySelector('.nav-more__toggle');
+  var dropdown = document.querySelector('.nav-more__dropdown');
+  if (!toggle || !dropdown) return;
+
+  function openDropdown() {
+    dropdown.classList.add('is-open');
+    toggle.setAttribute('aria-expanded', 'true');
+  }
+
+  function closeDropdown() {
+    dropdown.classList.remove('is-open');
+    toggle.setAttribute('aria-expanded', 'false');
+  }
+
+  toggle.addEventListener('click', function(e) {
+    e.stopPropagation();
+    if (dropdown.classList.contains('is-open')) {
+      closeDropdown();
+    } else {
+      openDropdown();
+    }
+  });
+
+  // Close on outside click
+  document.addEventListener('click', function(e) {
+    if (!dropdown.contains(e.target) && e.target !== toggle) {
+      closeDropdown();
+    }
+  });
+
+  // Close on Escape
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && dropdown.classList.contains('is-open')) {
+      closeDropdown();
+      toggle.focus();
+    }
+  });
+
+  // Close on nav link click (for Swup)
+  dropdown.querySelectorAll('a').forEach(function(link) {
+    link.addEventListener('click', closeDropdown);
+  });
+}
+
+/* ==========================================================================
    Active Navigation Link
    ========================================================================== */
 

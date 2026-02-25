@@ -3,7 +3,7 @@
 <div class="page__footer-follow">
 
   <ul class="social-icons">
-    <li><strong><span class="lang-en" lang="en">Follow:</span><span class="lang-es" lang="es">Seguir:</span></strong></li>
+    <li><strong><span class="lang-en" lang="en">Let's connect:</span><span class="lang-es" lang="es">Conectemos:</span></strong></li>
     {% if site.facebook.username %}
       <li><a href="https://facebook.com/{{ site.facebook.username }}" rel="noopener"><i class="fab fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
     {% endif %}
@@ -24,6 +24,10 @@
 
   <div class="page__footer-copyright">
     &copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}
+    <p class="page__footer-tagline">
+      <span class="lang-en" lang="en">Building precision systems that perform.</span>
+      <span class="lang-es" lang="es">Construyendo sistemas de precisión que funcionan.</span>
+    </p>
   </div>
 
 </div>

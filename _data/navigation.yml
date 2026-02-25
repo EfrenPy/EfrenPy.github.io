@@ -15,15 +15,17 @@ main:
     title_es: "Contacto"
     url: /contact/
 
-  - title: "Publications"
-    title_en: "Publications"
-    title_es: "Publicaciones"
-    url: /publications/
-
   - title: "Blog"
     title_en: "Blog"
     title_es: "Blog"
     url: /year-archive/
+
+# "More" dropdown items
+more:
+  - title: "Publications"
+    title_en: "Publications"
+    title_es: "Publicaciones"
+    url: /publications/
 
   - title: "Talks"
     title_en: "Talks"

@@ -348,7 +348,6 @@
 
 /* Keep toolbar buttons visible in top row on mobile */
 .theme-toggle,
-.color-toggle,
 .lang-toggle {
   order: 2;
 
@@ -357,6 +356,115 @@
   }
 }
 
+
+/*
+   "More" Dropdown Navigation
+   ========================================================================== */
+
+// Hide the dropdown container on mobile, show flat items instead
+.nav-more {
+  display: none;
+
+  @include breakpoint($medium) {
+    display: block;
+    position: relative;
+  }
+}
+
+// Flat items visible on mobile, hidden on desktop
+.nav-more-flat {
+  display: block;
+
+  @include breakpoint($medium) {
+    display: none !important;
+  }
+}
+
+.nav-more__toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.25em;
+  min-height: 44px;
+  padding: 0.625rem 0.5rem;
+  background: transparent;
+  border: none;
+  color: var(--color-text-light, $masthead-link-color);
+  font-family: $sans-serif-narrow;
+  font-size: inherit;
+  cursor: pointer;
+  transition: color 0.2s ease;
+
+  &:hover,
+  &:focus-visible {
+    color: var(--color-primary, $info-color);
+  }
+
+  span.lang-en,
+  span.lang-es {
+    display: none;
+  }
+}
+
+[data-lang="en"] .nav-more__toggle span.lang-en { display: inline; }
+[data-lang="es"] .nav-more__toggle span.lang-es { display: inline; }
+
+.nav-more__chevron {
+  transition: transform 0.2s ease;
+
+  .nav-more__toggle[aria-expanded="true"] & {
+    transform: rotate(180deg);
+  }
+}
+
+.nav-more__dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  min-width: 160px;
+  list-style: none;
+  margin: 0;
+  padding: 0.5rem 0;
+  background: var(--color-card-bg, #fff);
+  border: 1px solid var(--color-border, $border-color);
+  border-radius: 8px;
+  box-shadow: 0 10px 30px var(--color-shadow-strong, rgba(0,0,0,0.12));
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4px);
+  transition: opacity 0.2s ease, visibility 0.2s ease, transform 0.2s ease;
+  z-index: 30;
+
+  &.is-open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  li {
+    margin: 0;
+  }
+
+  a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: var(--color-text-light, $masthead-link-color);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: background 0.15s ease, color 0.15s ease;
+    white-space: nowrap;
+
+    &:hover,
+    &:focus-visible {
+      background: var(--color-background-secondary, $lighter-gray);
+      color: var(--color-primary, $info-color);
+    }
+
+    // Override animated underline from .nav-links
+    &:before {
+      display: none;
+    }
+  }
+}
 
 /*
    Navigation list

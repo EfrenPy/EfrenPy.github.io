@@ -18,8 +18,6 @@ author_profile: true
   {% include t.html page="contact" key="response_time" %}
 </div>
 
----
-
 ### {% include t.html page="contact" key="reach_out_title" %}
 
 <div class="contact-methods">
@@ -31,7 +29,7 @@ author_profile: true
     </div>
   </a>
 
-  <a href="https://www.linkedin.com/in/{{ site.author.linkedin }}" class="contact-card" target="_blank" rel="noopener noreferrer">
+  <a href="https://www.linkedin.com/in/{{ site.author.linkedin }}" class="contact-card contact-card--linkedin" target="_blank" rel="noopener noreferrer">
     <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
     <div class="contact-info">
       <div class="contact-label">LinkedIn</div>
@@ -39,7 +37,7 @@ author_profile: true
     </div>
   </a>
 
-  <a href="https://github.com/{{ site.author.github }}" class="contact-card" target="_blank" rel="noopener noreferrer">
+  <a href="https://github.com/{{ site.author.github }}" class="contact-card contact-card--github" target="_blank" rel="noopener noreferrer">
     <div class="contact-icon"><i class="fab fa-github"></i></div>
     <div class="contact-info">
       <div class="contact-label">GitHub</div>
@@ -48,19 +46,13 @@ author_profile: true
   </a>
 </div>
 
----
-
 ### {% include t.html page="contact" key="interests_title" %}
 
 {% include t-block.html page="contact" key="interests_text" %}
 
----
-
 ### {% include t.html page="contact" key="location_title" %}
 
 {% include t.html page="contact" key="location_text" %}
-
----
 
 <a href="{{ site.baseurl }}/files/Efren_Rodriguez_CV.pdf" class="cv-download-btn" data-no-swup target="_blank" rel="noopener noreferrer">
   <i class="fas fa-download"></i> {% include t.html page="contact" key="download_cv" %}
