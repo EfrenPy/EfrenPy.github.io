@@ -47,8 +47,30 @@ self.addEventListener('fetch', (event) => {
 
   const url = new URL(event.request.url);
 
-  // Cache-first for static assets (CSS, JS, fonts, images)
-  if (url.pathname.match(/\.(css|js|woff2?|png|webp|jpg|jpeg|gif|svg)$/)) {
+  // Network-first for CSS & JS (ensures fresh styles/scripts on deploy)
+  if (url.pathname.match(/\.(css|js)$/)) {
+    const cleanUrl = new URL(event.request.url);
+    cleanUrl.search = '';
+    const cleanRequest = new Request(cleanUrl, { headers: event.request.headers });
+    event.respondWith(
+      fetch(event.request).then((response) => {
+        if (response.ok) {
+          const clone = response.clone();
+          caches.open(CACHE_NAME).then((cache) => cache.put(cleanRequest, clone));
+        }
+        return response;
+      }).catch(() => {
+        return caches.match(cleanRequest).then((cached) => {
+          if (cached) return cached;
+          return new Response('', { status: 503, statusText: 'Service Unavailable' });
+        });
+      })
+    );
+    return;
+  }
+
+  // Cache-first for fonts & images (rarely change, fast from cache)
+  if (url.pathname.match(/\.(woff2?|png|webp|jpg|jpeg|gif|svg)$/)) {
     const cleanUrl = new URL(event.request.url);
     cleanUrl.search = '';
     const cleanRequest = new Request(cleanUrl, { headers: event.request.headers });
