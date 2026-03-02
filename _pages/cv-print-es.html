@@ -17,7 +17,16 @@ sitemap: false
     <div class="cv-header__name">{% include t-print.html page="cv" key="print_name" %}</div>
     <div class="cv-header__title">{% include t-print.html page="cv" key="print_title" %}</div>
     <div class="cv-header__contact">
-      Ginebra, Suiza<span class="sep">|</span><a href="mailto:efren.rodriguez.rodriguez@cern.ch">efren.rodriguez.rodriguez@cern.ch</a><span class="sep">|</span><a href="https://linkedin.com/in/efrenrguezrguez">linkedin.com/in/efrenrguezrguez</a><span class="sep">|</span><a href="{{ site.url }}">{{ site.url | remove: "https://" }}</a>
+      <div class="cv-header__contact-row">
+        <span>Ginebra, Suiza</span>
+        <span class="sep"></span>
+        <span><a href="mailto:efren.rodriguez.rodriguez@cern.ch">efren.rodriguez.rodriguez@cern.ch</a></span>
+      </div>
+      <div class="cv-header__contact-row">
+        <span><a href="https://linkedin.com/in/efrenrguezrguez">linkedin.com/in/efrenrguezrguez</a></span>
+        <span class="sep"></span>
+        <span><a href="{{ site.url }}">{{ site.url | remove: "https://" }}</a></span>
+      </div>
     </div>
   </div>
 </header>
@@ -75,7 +84,7 @@ sitemap: false
     </div>
 
     <!-- Educacion -->
-    <div class="cv-section">
+    <div class="cv-section cv-page-break-before">
       <div class="cv-section__title">{% include t-print.html page="cv" key="print_education_title" %}</div>
 
       <div class="cv-edu-entry">

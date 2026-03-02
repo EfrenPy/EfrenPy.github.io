@@ -39,7 +39,7 @@
       display: flex;
       align-items: center;
       gap: 18pt;
-      padding: 22pt 28pt 18pt;
+      padding: 22pt 34pt 18pt;
       position: relative;
       z-index: 2;
       background: #fff;
@@ -78,7 +78,6 @@
     .cv-header__contact {
       font-size: 9pt;
       color: #4a5568;
-      line-height: 1.6;
     }
 
     .cv-header__contact a {
@@ -86,16 +85,26 @@
       text-decoration: none;
     }
 
-    .cv-header__contact .sep {
-      margin: 0 6pt;
-      color: #cbd5e0;
+    .cv-header__contact-row {
+      display: flex;
+      align-items: center;
+      line-height: 1.8;
+    }
+
+    .cv-header__contact-row .sep {
+      display: inline-block;
+      width: 1px;
+      height: 9pt;
+      background: #cbd5e0;
+      margin: 0 10pt;
+      flex-shrink: 0;
     }
 
     .cv-header__divider {
       border: none;
       height: 1.5px;
       background: linear-gradient(90deg, transparent, #cbd5e0 15%, #cbd5e0 85%, transparent);
-      margin: 0 28pt;
+      margin: 0 34pt;
       position: relative;
       z-index: 2;
     }
@@ -111,9 +120,9 @@
     .cv-sidebar-bg {
       position: fixed;
       top: 0;
+      bottom: -10mm;
       left: 0;
       width: 30%;
-      height: 100%;
       background: #f7f8fa;
       z-index: 0;
       border-right: 1px solid #edf2f7;
@@ -129,7 +138,7 @@
 
     .cv-main {
       overflow: hidden;
-      padding: 20pt 26pt 24pt 22pt;
+      padding: 20pt 34pt 24pt 22pt;
       position: relative;
       z-index: 1;
     }
@@ -398,6 +407,12 @@
 
     .cv-talk-entry__detail {
       color: #718096;
+    }
+
+    /* ── Force section to next page ── */
+    .cv-page-break-before {
+      break-before: page;
+      page-break-before: always;
     }
 
     /* ── Print overrides ── */
