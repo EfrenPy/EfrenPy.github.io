@@ -135,28 +135,28 @@ redirect_from:
   <div class="key-results">
     <div class="key-results__card">
       <span class="key-results__number" data-count="3">€3M+</span>
-      <span class="key-results__label"><span class="lang-en" lang="en">Budget Managed</span><span class="lang-es" lang="es">Presupuesto Gestionado</span></span>
-      <span class="key-results__desc"><span class="lang-en" lang="en">Multi-year R&D projects</span><span class="lang-es" lang="es">Proyectos I+D plurianuales</span></span>
+      <span class="key-results__label"><span class="lang-en" lang="en">Budget Delivered</span><span class="lang-es" lang="es">Presupuesto Ejecutado</span></span>
+      <span class="key-results__desc"><span class="lang-en" lang="en">3-year, 3-country R&D programme</span><span class="lang-es" lang="es">Programa I+D de 3 años en 3 países</span></span>
     </div>
     <div class="key-results__card">
       <span class="key-results__number" data-count="90">90ps</span>
-      <span class="key-results__label"><span class="lang-en" lang="en">Time Resolution</span><span class="lang-es" lang="es">Resolución Temporal</span></span>
-      <span class="key-results__desc"><span class="lang-en" lang="en">World-record precision</span><span class="lang-es" lang="es">Precisión récord mundial</span></span>
+      <span class="key-results__label"><span class="lang-en" lang="en">Timing Precision</span><span class="lang-es" lang="es">Precisión Temporal</span></span>
+      <span class="key-results__desc"><span class="lang-en" lang="en">World-record particle tracking — 4× gain over previous gen, 2 μm resolution</span><span class="lang-es" lang="es">Récord mundial en seguimiento de partículas — 4× frente al sistema anterior, 2 μm de resolución</span></span>
     </div>
     <div class="key-results__card">
       <span class="key-results__number" data-count="0">0</span>
-      <span class="key-results__label"><span class="lang-en" lang="en">Defects</span><span class="lang-es" lang="es">Defectos</span></span>
-      <span class="key-results__desc"><span class="lang-en" lang="en">Zero-defect delivery</span><span class="lang-es" lang="es">Entrega sin defectos</span></span>
+      <span class="key-results__label"><span class="lang-en" lang="en">Critical Defects</span><span class="lang-es" lang="es">Defectos Críticos</span></span>
+      <span class="key-results__desc"><span class="lang-en" lang="en">€20M+ detector system commissioning</span><span class="lang-es" lang="es">Puesta en marcha de detector de más de 20 M€</span></span>
     </div>
     <div class="key-results__card">
-      <span class="key-results__number" data-count="40">40Gbps</span>
-      <span class="key-results__label"><span class="lang-en" lang="en">Throughput</span><span class="lang-es" lang="es">Rendimiento</span></span>
-      <span class="key-results__desc"><span class="lang-en" lang="en">High-speed data systems</span><span class="lang-es" lang="es">Sistemas de datos de alta velocidad</span></span>
+      <span class="key-results__number" data-count="8">8×5Gbps</span>
+      <span class="key-results__label"><span class="lang-en" lang="en">Data Pipeline</span><span class="lang-es" lang="es">Pipeline de Datos</span></span>
+      <span class="key-results__desc"><span class="lang-en" lang="en">8 parallel channels, real-time processing</span><span class="lang-es" lang="es">8 canales paralelos, procesamiento en tiempo real</span></span>
     </div>
     <div class="key-results__card">
       <span class="key-results__number" data-count="15">15+</span>
-      <span class="key-results__label"><span class="lang-en" lang="en">Team Size</span><span class="lang-es" lang="es">Tamaño de Equipo</span></span>
-      <span class="key-results__desc"><span class="lang-en" lang="en">Cross-country coordination</span><span class="lang-es" lang="es">Coordinación internacional</span></span>
+      <span class="key-results__label"><span class="lang-en" lang="en">People Led</span><span class="lang-es" lang="es">Personas a Cargo</span></span>
+      <span class="key-results__desc"><span class="lang-en" lang="en">Engineers & physicists across 3 countries</span><span class="lang-es" lang="es">Ingenieros y físicos en 3 países</span></span>
     </div>
   </div>
 </section>

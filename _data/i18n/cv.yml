@@ -81,8 +81,8 @@ nikhef_item2:
   es: "Lideré el diseño y construcción de un telescopio basado en Timepix4 para campañas internacionales de haces de prueba, coordinando entre equipos de Nikhef y CERN"
 
 nikhef_item3:
-  en: "Delivered a **world-class 90 picosecond timing resolution**, exceeding project targets through systematic data analysis and iterative optimization"
-  es: "Logré una **resolución temporal de 90 picosegundos de nivel mundial**, superando los objetivos del proyecto mediante análisis de datos sistemático y optimización iterativa"
+  en: "Achieved **world-record 90 ps timing precision with 2 μm spatial resolution** for particle tracking — a 4× improvement over the previous system, exceeding the project target by 40%"
+  es: "Alcancé **récord mundial de precisión temporal (90 ps) con 2 μm de resolución espacial** en seguimiento de partículas — mejora 4× frente al sistema anterior, superando en un 40% el objetivo del proyecto"
 
 # CERN 2021 description
 cern2021_item1:
@@ -266,8 +266,8 @@ print_summary_title:
   es: "Resumen Profesional"
 
 print_summary:
-  en: "Technical project manager and R&D leader with 8+ years of experience delivering complex hardware-software systems across 3 countries (Spain, Netherlands, Switzerland). Currently leading a 20+ person cross-functional team at CERN, managing EUR 3M+ in project budgets. Proven track record in sensor development, system integration, and test campaign management. Achieved world-record 90 ps timing resolution (40% beyond target). Bridges the gap between hardware engineering and software-driven data analysis, combining hands-on technical expertise with strategic programme leadership."
-  es: "Director de proyectos técnicos y líder de I+D con más de 8 años de experiencia entregando sistemas complejos hardware-software en 3 países (España, Países Bajos, Suiza). Actualmente liderando un equipo multidisciplinar de más de 20 personas en el CERN, gestionando más de 3M EUR en presupuestos de proyectos. Trayectoria demostrada en desarrollo de sensores, integración de sistemas y gestión de campañas de prueba. Logré una resolución temporal récord mundial de 90 ps (40% por encima del objetivo). Conecto la ingeniería de hardware con el análisis de datos basado en software, combinando experiencia técnica práctica con liderazgo estratégico de programas."
+  en: "Technical project manager and R&D leader with 8+ years of experience delivering complex hardware-software systems across 3 countries (Spain, Netherlands, Switzerland). Currently leading a 20+ person cross-functional team at CERN, managing EUR 3M+ in project budgets. Proven track record in sensor development, system integration, and test campaign management. Achieved world-record 90 ps timing precision for particle tracking (4× improvement, 40% beyond target). Bridges the gap between hardware engineering and software-driven data analysis, combining hands-on technical expertise with strategic programme leadership."
+  es: "Director de proyectos técnicos y líder de I+D con más de 8 años de experiencia ejecutando sistemas complejos hardware-software en 3 países (España, Países Bajos, Suiza). Actualmente al frente de un equipo multidisciplinar de más de 20 personas en el CERN, gestionando más de 3 M EUR en presupuestos. Trayectoria demostrada en desarrollo de sensores, integración de sistemas y gestión de campañas de prueba. Récord mundial de precisión temporal (90 ps) en seguimiento de partículas (mejora 4×, 40% sobre el objetivo). Conecto la ingeniería de hardware con el análisis de datos, combinando experiencia técnica práctica con liderazgo estratégico de programas."
 
 print_competencies_title:
   en: "Core Competencies"
@@ -352,8 +352,8 @@ print_nikhef_bullet2:
   es: "Lideré el diseño y construcción de un telescopio de haz basado en Timepix4, coordinando la integración de hardware entre equipos de Nikhef y CERN"
 
 print_nikhef_bullet3:
-  en: "Achieved world-record 90 picosecond timing resolution, exceeding project target by 40% through systematic data analysis and iterative optimization"
-  es: "Logré una resolución temporal récord mundial de 90 picosegundos, superando el objetivo del proyecto en un 40% mediante análisis de datos sistemático y optimización iterativa"
+  en: "Achieved world-record 90 ps timing precision with 2 μm spatial resolution for particle tracking — a 4× improvement over the previous system, exceeding the project target by 40%"
+  es: "Alcancé récord mundial de precisión temporal (90 ps) con 2 μm de resolución espacial en seguimiento de partículas — mejora 4× frente al sistema anterior, superando en un 40% el objetivo del proyecto"
 
 # CERN 2021 (print)
 print_cern2021_role:
@@ -495,8 +495,8 @@ print_highlight_budget:
   es: "3M+ EUR en presupuestos de proyectos gestionados"
 
 print_highlight_record:
-  en: "World-record 90 ps timing resolution (40% beyond target)"
-  es: "Resolución temporal récord mundial de 90 ps (40% sobre objetivo)"
+  en: "World-record 90 ps timing precision (4× gain, 40% beyond target)"
+  es: "Récord mundial de precisión temporal: 90 ps (mejora 4×, 40% sobre objetivo)"
 
 # Selected Publications (print)
 print_publications_title:

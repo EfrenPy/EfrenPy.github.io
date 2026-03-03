@@ -2,13 +2,13 @@
 
 bio:
   en: |
-    With 8+ years in R&D and 4 years as a project leader, I've managed one of CERN's most demanding programmes: building a next-generation particle detector across three international labs with a multi-million EUR budget. That meant planning roadmaps months ahead, coordinating engineers and physicists across time zones, tracking dozens of parallel workstreams, and making technical trade-offs under real pressure, all while hitting our performance targets.
+    I've spent 4 years leading one of CERN's most complex programmes: a €3M+ detector upgrade delivered across 3 countries with 15+ engineers and physicists. That meant owning the roadmap, managing risk across dozens of parallel workstreams, coordinating teams across time zones, and making technical trade-offs under real constraints — all while exceeding our key performance targets by 40%.
 
-    Now I'm channelling that experience into industry. I'm looking for a role where I can lead technical teams, drive complex projects to delivery, and use my combination of hands-on engineering (electronics, FPGAs, Python, C++) and leadership to make a measurable impact. If your team needs someone who has already operated at scale in one of the world's most demanding technical environments, let's talk.
+    Now I'm channelling 8+ years of R&D experience into industry. I'm looking for a role where I can lead technical teams, drive complex projects to delivery, and use my combination of hands-on engineering (electronics, FPGAs, Python, C++) and leadership to make a measurable impact. If your team needs someone who has already operated at scale in one of the world's most demanding technical environments, let's talk.
   es: |
-    Con más de 8 años en I+D y 4 como líder de proyecto, he gestionado uno de los programas más exigentes del CERN: construir un detector de partículas de nueva generación en tres laboratorios internacionales con un presupuesto multimillonario. Eso significó planificar hojas de ruta con meses de antelación, coordinar ingenieros y físicos en distintas zonas horarias, seguir decenas de líneas de trabajo en paralelo y tomar decisiones técnicas bajo presión real, todo ello cumpliendo nuestros objetivos de rendimiento.
+    He dedicado 4 años a liderar uno de los programas más complejos del CERN: una actualización de detector de más de 3 M€ ejecutada en 3 países con más de 15 ingenieros y físicos. Eso implicó hacerme cargo de la hoja de ruta, gestionar riesgos en decenas de frentes de trabajo en paralelo, coordinar equipos en distintas zonas horarias y tomar decisiones técnicas bajo restricciones reales — superando en un 40% nuestros objetivos clave de rendimiento.
 
-    Ahora canalizo esa experiencia hacia la industria. Busco un rol donde pueda liderar equipos técnicos, impulsar proyectos complejos hasta su entrega y aplicar mi combinación de ingeniería práctica (electrónica, FPGAs, Python, C++) y liderazgo para generar un impacto medible. Si tu equipo necesita a alguien que ya ha operado a escala en uno de los entornos técnicos más exigentes del mundo, hablemos.
+    Ahora llevo más de 8 años de experiencia en I+D al sector industrial. Busco un puesto donde pueda liderar equipos técnicos, sacar adelante proyectos complejos y aplicar mi combinación de ingeniería práctica (electrónica, FPGAs, Python, C++) y liderazgo para generar un impacto medible. Si tu equipo necesita a alguien que ya ha trabajado a gran escala en uno de los entornos técnicos más exigentes del mundo, hablemos.
 
 # How I Can Help Your Team section
 help_team_title:
@@ -21,7 +21,7 @@ help_manage_title:
 
 help_manage_desc:
   en: "I've taken multi-million EUR programmes from blank-page planning through delivery across international labs. I know how to scope work, manage risk, track milestones, and keep stakeholders aligned, whether it's a detector upgrade or a product launch."
-  es: "He llevado programas multimillonarios desde la planificación inicial hasta la entrega en laboratorios internacionales. Sé cómo definir el alcance, gestionar riesgos, seguir hitos y mantener a las partes interesadas alineadas, ya sea una actualización de detector o el lanzamiento de un producto."
+  es: "He llevado programas multimillonarios desde la planificación inicial hasta la entrega en laboratorios internacionales. Sé definir alcance, gestionar riesgos, hacer seguimiento de hitos y mantener alineados a todos los implicados, ya sea en una actualización de detector o en el lanzamiento de un producto."
 
 help_teams_title:
   en: "Align Cross-Functional Teams"
@@ -37,7 +37,7 @@ help_bridge_title:
 
 help_bridge_desc:
   en: "I'm equally comfortable reviewing a circuit schematic and debugging a Python pipeline. This lets me have credible technical conversations with any team and catch integration issues before they become schedule problems."
-  es: "Me desenvuelvo igual revisando un esquema de circuito que depurando un pipeline en Python. Esto me permite tener conversaciones técnicas creíbles con cualquier equipo y detectar problemas de integración antes de que se conviertan en retrasos."
+  es: "Me desenvuelvo igual revisando un esquema de circuito que depurando un pipeline en Python. Esto me permite hablar con criterio técnico con cualquier equipo y detectar problemas de integración antes de que se conviertan en retrasos."
 
 help_data_title:
   en: "Drive Decisions with Data"
@@ -45,7 +45,7 @@ help_data_title:
 
 help_data_desc:
   en: "Years of analysing terabytes of physics data taught me to question assumptions and follow the evidence. I bring that same habit to KPIs, roadmaps, and resource planning."
-  es: "Años analizando terabytes de datos físicos me enseñaron a cuestionar suposiciones y seguir la evidencia. Traslado ese mismo hábito a KPIs, hojas de ruta y planificación de recursos."
+  es: "Años analizando terabytes de datos de física me enseñaron a cuestionar suposiciones y dejarme guiar por la evidencia. Aplico ese mismo rigor a KPIs, hojas de ruta y planificación de recursos."
 
 # Key achievements section
 achievements_title:
@@ -55,16 +55,16 @@ achievements_title:
 achievements:
   en: |
     - **Led a €3M+ international R&D programme** across CERN, Nikhef, and IGFAE, coordinating 15+ engineers and physicists and delivering on schedule over 3 years
-    - **Achieved breakthrough performance** (90 ps timing resolution) through systematic optimization and cross-functional coordination
-    - Managed the successful **launch of the LHCb VELO upgrade** with zero critical defects at commissioning, now operational at the world's largest particle accelerator
-    - Designed **high-speed data systems** processing 40 Gbps aggregate throughput (8 channels at 5 Gbps), balancing technical constraints with project deadlines
-    - **Published and presented** results at international conferences, translating complex technical work for diverse audiences
+    - **Delivered a 4× performance improvement** over the previous system, achieving world-record 90 ps timing precision and 2 μm spatial resolution for particle tracking at CERN — exceeding the project target by 40% across 12+ measurement campaigns
+    - Managed the successful **commissioning of the LHCb VELO upgrade** (€20M+ system, 41 million pixels) with zero critical defects, now operational at the world's largest particle accelerator
+    - **Designed and validated a real-time data pipeline** (8 parallel channels at 5 Gbps each) from prototype to production, balancing signal integrity against radiation and space constraints
+    - **Translated complex technical results** for audiences ranging from ASIC engineers to programme managers, through publications and international conference presentations
   es: |
-    - **Lideré un programa I+D internacional de más de 3 M€** en CERN, Nikhef e IGFAE, coordinando a más de 15 ingenieros y físicos y entregando en plazo a lo largo de 3 años
-    - **Logré resultados de vanguardia** (resolución temporal de 90 ps) mediante optimización sistemática y coordinación multidisciplinar
-    - Gestioné el exitoso **lanzamiento de la actualización del LHCb VELO** sin defectos críticos en la puesta en marcha, ahora operativo en el mayor acelerador de partículas del mundo
-    - Diseñé **sistemas de datos de alta velocidad** procesando 40 Gbps de rendimiento agregado (8 canales a 5 Gbps), equilibrando restricciones técnicas con plazos del proyecto
-    - **Publiqué y presenté** resultados en conferencias internacionales, traduciendo trabajo técnico complejo para audiencias diversas
+    - **Lideré un programa I+D internacional de más de 3 M€** en CERN, Nikhef e IGFAE, coordinando a más de 15 ingenieros y físicos con entrega en plazo a lo largo de 3 años
+    - **Logré una mejora de rendimiento 4×** frente al sistema anterior, alcanzando récord mundial de precisión temporal (90 ps) y 2 μm de resolución espacial en seguimiento de partículas en el CERN — superando en un 40% el objetivo del proyecto a lo largo de más de 12 campañas de medición
+    - Gestioné con éxito la **puesta en marcha de la actualización del LHCb VELO** (sistema de más de 20 M€, 41 millones de píxeles) sin defectos críticos, ahora operativo en el mayor acelerador de partículas del mundo
+    - **Diseñé y validé un pipeline de datos en tiempo real** (8 canales paralelos a 5 Gbps cada uno) desde prototipo hasta producción, equilibrando la integridad de señal con las restricciones de radiación y espacio
+    - **Comuniqué resultados técnicos complejos** tanto a ingenieros de ASICs como a directores de programa, mediante publicaciones y presentaciones en conferencias internacionales
 
 interests_title:
   en: "What I'm Looking For"
@@ -72,11 +72,11 @@ interests_title:
 
 interests_engaged:
   en: "Roles where I can lead technical teams, manage complex R&D projects, and drive results: project management, engineering management, or technical leadership positions."
-  es: "Roles donde pueda liderar equipos técnicos, gestionar proyectos I+D complejos e impulsar resultados: dirección de proyectos, gestión de ingeniería o puestos de liderazgo técnico."
+  es: "Puestos donde pueda liderar equipos técnicos, gestionar proyectos I+D complejos y conseguir resultados: dirección de proyectos, gestión de ingeniería o liderazgo técnico."
 
 interests_explore:
   en: "Also interested in: data-driven product development, R&D strategy, and any role that values a unique combination of hands-on technical skills and international project leadership."
-  es: "También interesado en: desarrollo de producto basado en datos, estrategia I+D y cualquier rol que valore una combinación única de habilidades técnicas prácticas y liderazgo de proyectos internacionales."
+  es: "También me interesa: desarrollo de producto basado en datos, estrategia I+D y cualquier puesto que valore la combinación de experiencia técnica práctica con liderazgo de proyectos internacionales."
 
 featured_post_title:
   en: "From the Blog"
@@ -88,7 +88,7 @@ featured_post_desc:
 
 featured_post_cta:
   en: "Read the Full Post"
-  es: "Leer el Post Completo"
+  es: "Leer el Artículo Completo"
 
 # Career timeline section
 career_timeline_title:
