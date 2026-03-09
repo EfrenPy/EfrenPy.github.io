@@ -1,9 +1,9 @@
 ---
-title: "Hiking Adventures"
-title_en: "Hiking Adventures"
-title_es: "Aventuras de Senderismo"
-excerpt_en: "Embark on a journey through my hiking escapades! From serene forest trails to majestic mountain peaks, each trek has been a tale of discovery and awe."
-excerpt_es: "¡Embárcate en un viaje a través de mis aventuras de senderismo! Desde senderos forestales serenos hasta majestuosas cumbres, cada travesía ha sido una historia de descubrimiento y asombro."
+title: "Hiking"
+title_en: "Hiking"
+title_es: "Senderismo"
+excerpt_en: "The Alps are two hours away by train. Here are the hikes I keep thinking about."
+excerpt_es: "Los Alpes están a dos horas en tren. Estas son las rutas que se me quedaron grabadas."
 collection: personal
 header:
   teaser: webp/shilthorn.webp

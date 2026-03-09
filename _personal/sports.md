@@ -1,9 +1,9 @@
 ---
-title: "Fun-Filled Sports Adventures"
-title_en: "Fun-Filled Sports Adventures"
-title_es: "Aventuras Deportivas Llenas de Diversión"
-excerpt_en: "Embark on a lighthearted journey through my favorite sports, where fun reigns supreme! From casual volleyball matches to exhilarating wakeboard sessions."
-excerpt_es: "¡Embárcate en un viaje desenfadado a través de mis deportes favoritos, donde la diversión es lo primero! Desde partidos casuales de voleibol hasta emocionantes sesiones de wakeboard."
+title: "Sports & Fun"
+title_en: "Sports & Fun"
+title_es: "Deportes y Ocio"
+excerpt_en: "Volleyball, wakeboarding, rollerblading -- none of it professional-level, all of it fun."
+excerpt_es: "Voleibol, wakeboard, patinaje -- nada a nivel profesional, todo divertido."
 collection: personal
 header:
   teaser: webp/volleyball.webp

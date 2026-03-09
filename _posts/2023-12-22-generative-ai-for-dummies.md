@@ -2,7 +2,7 @@
 title: 'Generative AI for Dummies'
 title_en: 'Generative AI for Dummies'
 title_es: 'IA Generativa para Principiantes'
-description: "Hosting an introductory Generative AI workshop at IGFAE, covering practical applications of large language models for academic researchers."
+description: "Hands-on Generative AI workshop at IGFAE with Víctor López Pardo — practical LLM exercises for PhD students and researchers, no hype."
 date: 2023-12-22
 permalink: /posts/2023/12/generative-ai-for-dummies/
 header:

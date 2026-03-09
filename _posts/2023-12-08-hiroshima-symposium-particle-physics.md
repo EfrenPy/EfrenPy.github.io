@@ -1,7 +1,7 @@
 ---
-title: 'Exploring the Frontiers of Particle Physics at the Hiroshima Symposium'
-title_en: 'Exploring the Frontiers of Particle Physics at the Hiroshima Symposium'
-title_es: 'Explorando las Fronteras de la Física de Partículas en el Simposio de Hiroshima'
+title: 'Presenting the VELO at HSTD13 in Vancouver'
+title_en: 'Presenting the VELO at HSTD13 in Vancouver'
+title_es: 'Presentando el VELO en el HSTD13 en Vancouver'
 description: "Presenting LHCb VELO detector results at the 13th Hiroshima Symposium (HSTD13) in Vancouver. Semiconductor tracking detectors and timing R&D."
 date: 2023-12-08
 permalink: /posts/2023/12/hiroshima-symposium-particle-physics/

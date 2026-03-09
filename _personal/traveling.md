@@ -1,9 +1,9 @@
 ---
-title: "Global Wanderings"
-title_en: "Global Wanderings"
-title_es: "Andanzas Globales"
-excerpt_en: "Journey through my travel tales as I explore the mosaic of cultures, landscapes, and histories our world offers."
-excerpt_es: "Viaja a través de mis relatos de viaje mientras exploro el mosaico de culturas, paisajes e historias que nuestro mundo ofrece."
+title: "Places I've Been"
+title_en: "Places I've Been"
+title_es: "Sitios que He Visitado"
+excerpt_en: "Conferences, secondments, and the occasional real holiday. The places that stuck."
+excerpt_es: "Conferencias, estancias y alguna que otra vacación de verdad. Los sitios que se quedaron."
 collection: personal
 header:
   teaser: webp/traveling.webp

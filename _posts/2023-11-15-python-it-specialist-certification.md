@@ -2,7 +2,7 @@
 title: 'Achievement Unlocked: INF-303 Python IT Specialist Certification'
 title_en: 'Achievement Unlocked: INF-303 Python IT Specialist Certification'
 title_es: 'Logro Desbloqueado: Certificación INF-303 Python IT Specialist'
-description: "Earning the INF-303 Python IT Specialist certification — why I pursued it alongside my physics research and what it covers."
+description: "Passed the INF-303 Python IT Specialist exam — filling in the gaps in years of self-taught Python from physics research."
 date: 2023-11-15
 permalink: /posts/2023/11/python-it-specialist-certification/
 header:

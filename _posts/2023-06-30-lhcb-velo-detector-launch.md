@@ -1,8 +1,8 @@
 ---
-title: "Journey to Unraveling the Universe's Mysteries: The LHCb VELO Detector Launch"
-title_en: "Journey to Unraveling the Universe's Mysteries: The LHCb VELO Detector Launch"
-title_es: "Viaje para Desentrañar los Misterios del Universo: El Lanzamiento del Detector LHCb VELO"
-description: "The upgraded LHCb VELO detector launches at CERN after years of international R&D. A look at the journey from development to commissioning."
+title: "The VELO Goes Live: Our Detector Joins LHC Run 3"
+title_en: "The VELO Goes Live: Our Detector Joins LHC Run 3"
+title_es: "El VELO Arranca: Nuestro Detector se Suma al Run 3 del LHC"
+description: "The upgraded LHCb VELO detector sees its first collisions in LHC Run 3. Our IGFAE team was at CERN for the installation and commissioning."
 date: 2023-06-30
 permalink: /posts/2023/06/lhcb-velo-detector-launch/
 header:

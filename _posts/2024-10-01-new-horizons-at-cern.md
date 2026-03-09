@@ -1,8 +1,8 @@
 ---
-title: 'New Horizons in Particle Physics: My Role at CERN with the VELO Group'
-title_en: 'New Horizons in Particle Physics: My Role at CERN with the VELO Group'
-title_es: 'Nuevos Horizontes en Física de Partículas: Mi Rol en el CERN con el Grupo VELO'
-description: "Starting a new chapter at CERN with the VELO group — leading silicon sensor R&D and Timepix4 beam telescope operations for the LHCb upgrade."
+title: 'Joining the VELO Group at CERN'
+title_en: 'Joining the VELO Group at CERN'
+title_es: 'Incorporación al Grupo VELO del CERN'
+description: "New role at CERN with the VELO group — running 3D sensor simulations, building the Timepix4 beam telescope, and leading test beam campaigns for the LHCb upgrade."
 date: 2024-10-14
 permalink: /posts/2024/10/new-horizons-at-cern/
 header:
