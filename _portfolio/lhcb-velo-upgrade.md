@@ -2,9 +2,9 @@
 title: "LHCb VELO Detector Upgrade"
 title_en: "LHCb VELO Detector Upgrade"
 title_es: "Actualización del Detector LHCb VELO"
-excerpt: "Delivered critical 5 Gbps electronics for a multi-million EUR detector upgrade, QA-testing 1000+ components across 3 international labs"
-excerpt_en: "Delivered critical 5 Gbps electronics for a multi-million EUR detector upgrade, QA-testing 1000+ components across 3 international labs"
-excerpt_es: "Entregué electrónica crítica de 5 Gbps para una actualización de detector multimillonaria, testando 1000+ componentes en 3 laboratorios internacionales"
+excerpt: "Delivered 40 Gbps data transmission and 1000V cabling for a €20M+ detector (52 modules, 41M pixels), QA-testing 1000+ components across 3 labs. Zero critical defects"
+excerpt_en: "Delivered 40 Gbps data transmission and 1000V cabling for a €20M+ detector (52 modules, 41M pixels), QA-testing 1000+ components across 3 labs. Zero critical defects"
+excerpt_es: "Entregué transmisión de datos de 40 Gbps y cableado de 1000V para un detector de más de 20 M€ (52 módulos, 41M píxeles), testando 1000+ componentes en 3 laboratorios. Cero defectos críticos"
 schema_type: ResearchProject
 collection: portfolio
 header:
@@ -22,15 +22,16 @@ tags:
 
 ### The Challenge
 
-Upgrade the LHCb vertex detector (VELO) to handle 5x higher data rates and operate in an extreme radiation environment, while maintaining precision tracking capabilities.
+Upgrade the LHCb vertex detector (VELO) to handle 5× higher data rates and operate in an extreme radiation environment. The full system: 52 modules, 624 VeloPix ASICs, 41 million pixels, approaching within 5.1 mm of the LHC beam.
 
 ### My Contribution
 
-- Designed and characterized high-speed data transmission lines (5 Gbps/channel)
-- Developed high-voltage flat cables rated for 1000V operation
-- Performed quality assurance testing on 1000+ electronic components
-- Participated in detector commissioning at CERN
-- Contributed to integration and installation procedures
+- Designed and characterized high-speed data transmission lines (8 channels at 5 Gbps each, 40 Gbps total throughput)
+- Developed high-voltage flat cables rated for 1000V operation, balancing signal integrity against radiation and space constraints
+- Performed quality assurance testing on 1000+ electronic components across 3 labs (CERN, Nikhef, IGFAE)
+- Planned and executed adhesive irradiation campaigns at up to 600 Mrad, achieving 5% dose uniformity
+- Developed GWT-based threshold equalization system, eliminating crosstalk and shutter-induced noise from pixel characterization
+- Participated in detector commissioning and installation in the LHCb cavern
 
 ![LHCb detector side view](/images/webp/lhcb_upgrade.webp){: .align-center}
 
@@ -40,10 +41,10 @@ Upgrade the LHCb vertex detector (VELO) to handle 5x higher data rates and opera
 
 ### Results
 
-- Detector successfully launched and operational since 2023
-- Data transmission reliability >99.9%
-- All components passed radiation hardness requirements
-- Contributing to LHCb's physics program studying matter-antimatter asymmetry
+- €20M+ detector system launched and operational since 2023 with zero critical defects
+- Data transmission reliability >99.9% across all 8 channels
+- All components passed radiation hardness requirements (tested up to 600 Mrad)
+- Now taking collision data at the world's largest particle accelerator, contributing to LHCb's flavour physics programme
 
 ### Industry Relevance
 

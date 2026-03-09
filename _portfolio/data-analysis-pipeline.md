@@ -23,16 +23,18 @@ tags:
 
 ### The Challenge
 
-Process and analyze TB-scale datasets from particle beam experiments with quick turnaround to guide ongoing data-taking decisions.
+Process and analyze TB-scale datasets from particle beam experiments with quick turnaround to guide ongoing data-taking decisions. Manual analysis took weeks; beam campaigns run on tight schedules with limited access.
 
 ### Solution
 
-Developed an automated analysis pipeline featuring:
+Developed the LGADUtils C++/ROOT analysis framework with modular architecture:
 
-- **Real-time monitoring:** Data quality checks during beam time
-- **Parallel processing:** Distributed computing on GRID infrastructure
-- **Automated reporting:** Daily summaries and visualizations
-- **Version control:** Reproducible analysis framework
+- **WaveformAnalysis:** Oscilloscope parsing, baseline subtraction, signal extraction
+- **TimingExtraction:** Configurable constant-fraction discriminator (CFD) algorithm with per-pixel timewalk correction
+- **TrackMatching:** Spatial and temporal correlation between telescope tracks and device-under-test hits
+- **CalibrationTools:** VCO frequency calibration, drift correction, charge calibration via test-pulse injection
+- **GRID processing:** 185,000+ HTCondor jobs for timing characterization across campaigns
+- **Real-time monitoring:** Data quality checks at ~50 MB/s TCP throughput, near-100% live-time during beam spills
 
 ![GRID computing usage statistics](/images/webp/grid_score_nikhef.webp){: .align-center}
 
@@ -42,10 +44,10 @@ Developed an automated analysis pipeline featuring:
 
 ### Results
 
-- Reduced analysis turnaround from weeks to days
-- Reproducible results across different test beam campaigns
-- Framework adopted by collaborating institutions
-- Enabled quick feedback for detector optimization
+- Reduced analysis turnaround from weeks to days across 12+ campaigns
+- 185,849 grid jobs processed for the Timepix4 timing characterization alone (3rd highest usage at Nikhef)
+- Framework adopted by collaborating institutions within the EP-R&D programme
+- Enabled same-day feedback during beam time, directly informing detector configuration decisions
 
 ### Industry Relevance
 

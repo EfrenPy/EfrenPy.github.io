@@ -22,14 +22,15 @@ tags:
 
 ### The Challenge
 
-Optimize 3D columnar silicon sensor geometry for extreme radiation environments (10^16 particles/cm²) while maximizing signal efficiency and minimizing power consumption.
+Optimize 3D columnar silicon sensor geometry for extreme radiation environments (10^16 particles/cm²) targeting the LHCb VELO Upgrade II. Sensors must deliver ~20 ps timing per track while surviving HL-LHC radiation levels.
 
 ### Technical Approach
 
-- Developed TCAD simulation framework for electric field modeling
-- Built Python-based parameter optimization pipeline
-- Automated analysis of charge collection efficiency
-- Created visualization tools for electric field distributions
+- Developed TCAD simulation framework for electric field modeling of 3D columnar electrode architectures
+- Built Python-based parameter optimization pipeline sweeping cell size, electrode depth, and doping profiles
+- Automated analysis of charge collection efficiency across geometry variants (baseline: CNM 50×50 μm² cells, 280 μm active thickness)
+- Validated simulation predictions against testbeam data from 3 SPS campaigns (180 GeV/c pions at H6/H8 beamlines)
+- Created visualization tools for electric field distributions and weighting potential maps
 
 ![3D Silicon Sensor cross-section](/images/webp/3d_sensor.webp){: .align-center}
 
@@ -39,8 +40,9 @@ Optimize 3D columnar silicon sensor geometry for extreme radiation environments 
 
 ### Current Progress
 
-- Framework operational and producing results
-- Multiple geometry configurations under evaluation
+- Framework operational and producing results for VELO Upgrade II sensor selection
+- Multiple geometry configurations under evaluation, feeding back into CNM fabrication runs
+- Simulation results cross-checked with EUDAQ telescope measurements (~5 μm pointing resolution at DUT)
 - Collaboration with sensor manufacturers for prototype fabrication
 
 ### Industry Relevance

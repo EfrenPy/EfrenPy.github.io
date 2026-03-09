@@ -15,7 +15,7 @@ new_horizons_text:
 
     My current work focuses on several projects, including the **simulation of 3D column silicon sensors** for the VELO, the **development of the Timepix4 telescope**, and creating **new testing techniques for high-energy physics sensors**. These projects combine particle physics, sensor technology, and data analysis, and they aim to advance our understanding of fundamental physics.
 
-    The Timepix4 telescope is one of the highlights of my work. This tool will provide high precision in detecting particles, improving sensor accuracy and performance. Leading test beam campaigns, ensuring smooth operations, and overseeing its construction are some of the responsibilities I'm taking on. I'm also working on refining **data analysis techniques** to improve the output of experiments at CERN.
+    The Timepix4 telescope is one of the highlights of my work. It uses an 8-plane configuration with Timepix4 ASICs (448×512 pixels, 55 μm pitch, 195 ps TDC binning) to achieve **92 ps track timing** and **2.3 μm pointing resolution**, the only beam telescope combining both capabilities at this level. Leading test beam campaigns at the SPS, overseeing construction, and coordinating teams across institutions are some of the responsibilities I'm taking on. I'm also working on refining **data analysis techniques** using the LGADUtils framework to improve the output of experiments at CERN.
 
     Joining the VELO group has been a big challenge. The work involves complex simulations, new ideas, and collaboration with researchers across CERN and the global physics community. I'm looking forward to what comes next, both in the physics results and the technology development.
   es: |
@@ -23,7 +23,7 @@ new_horizons_text:
 
     Mi trabajo actual se centra en varios proyectos, incluyendo la **simulación de sensores de silicio 3D columnares** para el VELO, el **desarrollo del telescopio Timepix4**, y la creación de **nuevas técnicas de prueba para sensores de física de altas energías**. Estos proyectos combinan la física de partículas, la tecnología de sensores y el análisis de datos, y buscan avanzar en nuestra comprensión de la física fundamental.
 
-    El telescopio Timepix4 es uno de los aspectos más destacados de mi trabajo. Esta herramienta proporcionará alta precisión en la detección de partículas, mejorando el rendimiento de los sensores. Liderar campañas de haces de prueba, garantizar un funcionamiento correcto y supervisar su construcción son algunas de las responsabilidades que asumo. También estoy refinando **técnicas de análisis de datos** para mejorar los resultados de los experimentos en el CERN.
+    El telescopio Timepix4 es uno de los aspectos más destacados de mi trabajo. Utiliza una configuración de 8 planos con ASICs Timepix4 (448×512 píxeles, 55 μm de paso, 195 ps de resolución TDC) para alcanzar **92 ps de resolución temporal en traza** y **2,3 μm de resolución de apuntado**, el único telescopio de haz que combina ambas capacidades a este nivel. Liderar campañas de haces de prueba en el SPS, supervisar la construcción y coordinar equipos entre instituciones son algunas de las responsabilidades que asumo. También estoy refinando **técnicas de análisis de datos** mediante el framework LGADUtils para mejorar los resultados de los experimentos en el CERN.
 
     Unirme al grupo VELO ha sido un gran reto. El trabajo implica simulaciones complejas, nuevas ideas y colaboración con investigadores del CERN y la comunidad física global. Con ganas de ver lo que viene, tanto en los resultados de física como en el desarrollo tecnológico.
 
@@ -40,19 +40,19 @@ velo_launch_text:
   en: |
     Working on some of the biggest open questions in physics, our researchers from the Instituto Galego de Física de Altas Enerxías (IGFAE), including Edgar Lemos Cid, Antonio Fernández Prieto, and Efrén Rodríguez Rodríguez, travelled to CERN. Their objective: to install and commission the new VELO detector for the LHCb experiment, a major step for the project.
 
-    This Tuesday, July 5th, the VELO detector goes live with the start of #LHCRun3 at the Large Hadron Collider (LHC) after years of upgrades. The VELO detector, a result of IGFAE's work since 2008, represents years of R&D in particle physics. Designed to measure b mesons with high precision, it is a key tool for exploring physics beyond the Standard Model.
+    This Tuesday, July 5th, the VELO detector goes live with the start of #LHCRun3 at the Large Hadron Collider (LHC) after years of upgrades. The detector comprises 52 modules with 624 VeloPix ASICs and 41 million pixels, approaching within 5.1 mm of the LHC beam. A result of IGFAE's work since 2008, it represents years of R&D in particle physics. Designed to measure b mesons with high precision, it is a key tool for exploring physics beyond the Standard Model.
 
     The IGFAE's involvement in the design and development of the VELO subdetector sensors reflects over a decade of work in the field. With the detector now taking collision data, the team's years of effort are paying off.
 
-    This is a major step forward for the experiment, and a testament to the international collaboration that made it possible.
+    This is a major step forward for the experiment, and for the international collaboration that made it possible.
   es: |
     Trabajando en algunas de las grandes preguntas abiertas de la física, nuestros investigadores del Instituto Galego de Física de Altas Enerxías (IGFAE), incluyendo a Edgar Lemos Cid, Antonio Fernández Prieto y Efrén Rodríguez Rodríguez, viajaron al CERN. Su objetivo: instalar y poner en marcha el nuevo detector VELO para el experimento LHCb, un paso importante para el proyecto.
 
-    Este martes 5 de julio el detector VELO entra en funcionamiento con el comienzo del #LHCRun3 en el Gran Colisionador de Hadrones (LHC) tras años de mejoras. El detector VELO, resultado del trabajo del IGFAE desde 2008, representa años de I+D en física de partículas. Diseñado para medir mesones b con alta precisión, es una herramienta clave para explorar la física más allá del Modelo Estándar.
+    Este martes 5 de julio el detector VELO entra en funcionamiento con el comienzo del #LHCRun3 en el Gran Colisionador de Hadrones (LHC) tras años de mejoras. El detector consta de 52 módulos con 624 ASICs VeloPix y 41 millones de píxeles, acercándose a 5,1 mm del haz del LHC. Resultado del trabajo del IGFAE desde 2008, representa años de I+D en física de partículas. Diseñado para medir mesones b con alta precisión, es una herramienta clave para explorar la física más allá del Modelo Estándar.
 
     La participación del IGFAE en el diseño y desarrollo de los sensores del subdetector VELO refleja más de una década de trabajo en el campo. Con el detector tomando ahora datos de colisiones, los años de esfuerzo del equipo están dando sus frutos.
 
-    Este es un paso importante para el experimento, y demuestra la colaboración internacional que lo hizo posible.
+    Este es un paso importante para el experimento y para la colaboración internacional que lo hizo posible.
 
 # Post: Python Certification (2023-11)
 python_cert_title:
@@ -92,9 +92,9 @@ hiroshima_text:
 
     I presented at the "Hiroshima" Symposium on the Development and Application of Semiconductor Tracking Detectors, held in Vancouver, Canada.
 
-    The focus of my presentation was the LHCb VELO detector, one of the most advanced pixel detectors in particle physics. The VELO detector delivers the impact parameter resolution and tracking performance needed for the high-luminosity conditions at the LHC.
+    The focus of my presentation was the LHCb VELO detector: 52 modules, 41 million pixels, operating just 5.1 mm from the LHC beam. The detector delivers the impact parameter resolution and tracking performance needed for the high-luminosity conditions at the LHC.
 
-    My talk covered the detector's design, commissioning results, and early tracking performance in Run 3.
+    My talk covered the detector's design, commissioning results (including threshold equalization, noise performance, and hit efficiency), and early tracking performance in Run 3.
 
     The symposium was a good opportunity to share our results and exchange ideas with other groups working on semiconductor tracking detectors.
   es: |
@@ -102,9 +102,9 @@ hiroshima_text:
 
     Presenté en el Simposio "Hiroshima" sobre Desarrollo y Aplicación de Detectores de Seguimiento de Semiconductores, celebrado en Vancouver, Canadá.
 
-    Mi presentación se centró en el detector LHCb VELO, uno de los detectores de píxeles más avanzados en física de partículas. El detector VELO ofrece la resolución de parámetro de impacto y la capacidad de seguimiento que exigen las condiciones de alta luminosidad del LHC.
+    Mi presentación se centró en el detector LHCb VELO: 52 módulos, 41 millones de píxeles, operando a solo 5,1 mm del haz del LHC. El detector VELO ofrece la resolución de parámetro de impacto y la capacidad de seguimiento que exigen las condiciones de alta luminosidad del LHC.
 
-    En mi charla presenté el diseño del detector, los resultados de puesta en marcha, y los primeros resultados de tracking del Run 3.
+    En mi charla presenté el diseño del detector, los resultados de puesta en marcha (incluyendo ecualización de umbrales, rendimiento de ruido y eficiencia de impacto), y los primeros resultados de tracking del Run 3.
 
     El simposio fue una buena oportunidad para compartir nuestros resultados e intercambiar ideas con otros grupos que trabajan en detectores de seguimiento de semiconductores.
 
@@ -119,7 +119,7 @@ grid_text:
 
     Guess who's been keeping the grid busy?
 
-    That's right, I managed to snag the 3rd place in grid usage at Nikhef for my timing analysis of the Timepix4 telescope!
+    That's right, I managed to snag the 3rd place in grid usage at Nikhef for my timing analysis of the Timepix4 telescope! All those jobs were processing data from multiple SPS test beam campaigns, running per-pixel calibrations, timewalk corrections, and track reconstruction to extract the telescope's 92 ps timing resolution.
 
     With over 185,849 jobs, I might have given the grid a bit of a workout. Maybe it's time to get it a gym membership?
 
@@ -129,7 +129,7 @@ grid_text:
 
     ¿Adivina quién ha mantenido el grid ocupado?
 
-    ¡Así es, conseguí el 3er puesto en uso del grid en Nikhef por mi análisis temporal del telescopio Timepix4!
+    ¡Así es, conseguí el 3er puesto en uso del grid en Nikhef por mi análisis temporal del telescopio Timepix4! Todos esos trabajos procesaban datos de múltiples campañas de haz en el SPS, ejecutando calibraciones píxel a píxel, correcciones de timewalk y reconstrucción de trazas para extraer la resolución temporal de 92 ps del telescopio.
 
     Con más de 185.849 trabajos, puede que le haya dado al grid un buen entrenamiento. ¿Quizás es hora de conseguirle una membresía de gimnasio?
 
@@ -148,7 +148,7 @@ pisa_text:
 
     The conference brought together experts in detectors and electronics for high-energy physics. It was a good opportunity to discuss the challenges and ongoing work shaping detector R&D.
 
-    The LHCb VELO upgrade aims to handle the high-luminosity conditions at the LHC while improving measurement precision. My work focuses on developing sensors and electronics that meet these demanding performance requirements.
+    The LHCb VELO upgrade aims to handle the high-luminosity conditions at the LHC while improving measurement precision. My work focused on the high-speed data transmission system (8 channels at 5 Gbps each, 40 Gbps total) and high-voltage cabling rated for 1000V, balancing signal integrity against the radiation and space constraints inside the detector.
 
     Talking with fellow researchers, sharing results, and getting feedback was one of the most valuable parts of the conference.
   es: |
@@ -158,7 +158,7 @@ pisa_text:
 
     La conferencia reunió a expertos en detectores y electrónica para física de altas energías. Fue una buena oportunidad para discutir los desafíos y el trabajo en curso en I+D de detectores.
 
-    La actualización del LHCb VELO busca hacer frente a las condiciones de alta luminosidad del LHC mientras mejora la precisión de las mediciones. Mi trabajo se centra en desarrollar sensores y electrónica que cumplan estos exigentes requisitos de rendimiento.
+    La actualización del LHCb VELO busca hacer frente a las condiciones de alta luminosidad del LHC mientras mejora la precisión de las mediciones. Mi trabajo se centró en el sistema de transmisión de datos de alta velocidad (8 canales a 5 Gbps cada uno, 40 Gbps en total) y cableado de alto voltaje de 1000V, equilibrando la integridad de señal frente a las restricciones de radiación y espacio dentro del detector.
 
     Hablar con otros investigadores, compartir resultados y recibir comentarios fue una de las partes más valiosas de la conferencia.
 
