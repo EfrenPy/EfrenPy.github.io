@@ -25,7 +25,7 @@ tags:
 
 ### The Challenge
 
-Give residents of Ames (Galicia, Spain) a digital tool to propose, track, and vote on community initiatives — replacing scattered WhatsApp groups and paper petitions with transparent, structured civic participation.
+Give residents of Ames (Galicia, Spain) a digital tool to propose, track, and vote on community initiatives, replacing scattered WhatsApp groups and paper petitions with transparent, structured civic participation.
 
 ### Solution
 
@@ -33,12 +33,12 @@ Give residents of Ames (Galicia, Spain) a digital tool to propose, track, and vo
 
 A progressive web app built around three participatory pillars:
 
-- **Citizen Listening** — Community assemblies and shared diagnosis: structured input from residents surfaced in a public feed
-- **Co-Design Workshops** — Collaborative sessions between residents and municipal staff, documented with progress tracking
-- **Open Metrics** — Transparent publication of participation data and budget allocations
-- **Active Projects** — Safe pedestrian route mapping (lighting audits + path proposals) and dog park improvement petitions with adhesion tracking
-- **Multilingual** — Spanish, Galician, and English interfaces
-- **Accessibility** — Dark mode, high-contrast toggle, PWA installable, responsive
+- **Citizen Listening:** Community assemblies and shared diagnosis: structured input from residents surfaced in a public feed
+- **Co-Design Workshops:** Collaborative sessions between residents and municipal staff, documented with progress tracking
+- **Open Metrics:** Transparent publication of participation data and budget allocations
+- **Active Projects:** Safe pedestrian route mapping (lighting audits + path proposals) and dog park improvement petitions with adhesion tracking
+- **Multilingual:** Spanish, Galician, and English interfaces
+- **Accessibility:** Dark mode, high-contrast toggle, PWA installable, responsive
 
 Additional features: contact form, FAQ, downloadable participation guide (PDF), social sharing (WhatsApp, X, Facebook), email newsletter, and Schema.org structured data.
 

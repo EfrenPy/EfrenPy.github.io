@@ -2,7 +2,7 @@
 title: "CERN Starter Pack"
 title_en: "CERN Starter Pack -Newcomer Onboarding Guide"
 title_es: "CERN Starter Pack -Guia de Acogida para Recien Llegados"
-description: "Multilingual onboarding guide for CERN newcomers in 4 languages with 40+ pages, search, cost calculator, and 355 Playwright tests — built with Eleventy."
+description: "Multilingual onboarding guide for CERN newcomers in 4 languages with 40+ pages, search, cost calculator, and 355 Playwright tests. Built with Eleventy."
 excerpt: "Multilingual onboarding guide for CERN newcomers in 4 languages with 40+ pages, search, and 355 Playwright tests"
 excerpt_en: "Multilingual onboarding guide for CERN newcomers in 4 languages with 40+ pages, search, and 355 Playwright tests"
 excerpt_es: "Guia de acogida multilingue para recien llegados al CERN en 4 idiomas con 40+ paginas, busqueda y 355 tests Playwright"
@@ -26,7 +26,7 @@ tags:
 
 ### The Challenge
 
-New CERN employees face a maze of legal, tax, housing, and technical setup requirements spread across dozens of disconnected sources — with no single, searchable, multilingual resource.
+New CERN employees face a maze of legal, tax, housing, and technical setup requirements spread across dozens of disconnected sources, with no single, searchable, multilingual resource.
 
 ### Solution
 
@@ -34,11 +34,11 @@ New CERN employees face a maze of legal, tax, housing, and technical setup requi
 
 A fully static knowledge base serving **40+ content pages in 4 languages** (Spanish, English, Italian, French):
 
-- **Legal & Tax Hub** — Contracts, work permits, health insurance, taxation, pension, social security, country-specific guides (French/Swiss taxes, Spain's Modelo 720)
-- **Daily Life Hub** — Housing, banking, transportation, childcare, language training, utilities
-- **Technical Hub** — CERN IT basics, Kerberos/SSH, LXPLUS, EOS storage, GitLab, SWAN/Jupyter, ROOT, VS Code Remote setup
-- **Interactive Tools** — Client-side search with accent-insensitive fuzzy matching (Fuse.js), onboarding checklist, and cost-of-living calculator
-- **Accessibility** — Dark mode with system preference detection, print-friendly layouts, offline support via service worker, responsive design
+- **Legal & Tax Hub:** Contracts, work permits, health insurance, taxation, pension, social security, country-specific guides (French/Swiss taxes, Spain's Modelo 720)
+- **Daily Life Hub:** Housing, banking, transportation, childcare, language training, utilities
+- **Technical Hub:** CERN IT basics, Kerberos/SSH, LXPLUS, EOS storage, GitLab, SWAN/Jupyter, ROOT, VS Code Remote setup
+- **Interactive Tools:** Client-side search with accent-insensitive fuzzy matching (Fuse.js), onboarding checklist, and cost-of-living calculator
+- **Accessibility:** Dark mode with system preference detection, print-friendly layouts, offline support via service worker, responsive design
 
 Architecture: Eleventy (11ty) v3 static generator with Nunjucks templating, search index built at compile time, and zero server-side dependencies.
 

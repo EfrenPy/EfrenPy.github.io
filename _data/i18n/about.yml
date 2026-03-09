@@ -2,11 +2,11 @@
 
 bio:
   en: |
-    I've spent 4 years leading one of CERN's most complex programmes: a €3M+ detector upgrade delivered across 3 countries with 15+ engineers and physicists. That meant owning the roadmap, managing risk across dozens of parallel workstreams, coordinating teams across time zones, and making technical trade-offs under real constraints — all while exceeding our key performance targets by 40%.
+    I've spent 4 years leading one of CERN's most complex programmes: a €3M+ detector upgrade delivered across 3 countries with 15+ engineers and physicists. That meant owning the roadmap, managing risk across dozens of parallel workstreams, coordinating teams across time zones, and making technical trade-offs under real constraints, all while exceeding our key performance targets by 40%.
 
     Now I'm channelling 8+ years of R&D experience into industry. I'm looking for a role where I can lead technical teams, drive complex projects to delivery, and use my combination of hands-on engineering (electronics, FPGAs, Python, C++) and leadership to make a measurable impact. If your team needs someone who has already operated at scale in one of the world's most demanding technical environments, let's talk.
   es: |
-    He dedicado 4 años a liderar uno de los programas más complejos del CERN: una actualización de detector de más de 3 M€ ejecutada en 3 países con más de 15 ingenieros y físicos. Eso implicó hacerme cargo de la hoja de ruta, gestionar riesgos en decenas de frentes de trabajo en paralelo, coordinar equipos en distintas zonas horarias y tomar decisiones técnicas bajo restricciones reales — superando en un 40% nuestros objetivos clave de rendimiento.
+    He dedicado 4 años a liderar uno de los programas más complejos del CERN: una actualización de detector de más de 3 M€ ejecutada en 3 países con más de 15 ingenieros y físicos. Eso implicó hacerme cargo de la hoja de ruta, gestionar riesgos en decenas de frentes de trabajo en paralelo, coordinar equipos en distintas zonas horarias y tomar decisiones técnicas bajo restricciones reales, superando en un 40% nuestros objetivos clave de rendimiento.
 
     Ahora llevo más de 8 años de experiencia en I+D al sector industrial. Busco un puesto donde pueda liderar equipos técnicos, sacar adelante proyectos complejos y aplicar mi combinación de ingeniería práctica (electrónica, FPGAs, Python, C++) y liderazgo para generar un impacto medible. Si tu equipo necesita a alguien que ya ha trabajado a gran escala en uno de los entornos técnicos más exigentes del mundo, hablemos.
 
@@ -55,13 +55,13 @@ achievements_title:
 achievements:
   en: |
     - **Led a €3M+ international R&D programme** across CERN, Nikhef, and IGFAE, coordinating 15+ engineers and physicists and delivering on schedule over 3 years
-    - **Delivered a 4× performance improvement** over the previous system, achieving world-record 90 ps timing precision and 2 μm spatial resolution for particle tracking at CERN — exceeding the project target by 40% across 12+ measurement campaigns
+    - **Delivered a 4× performance improvement** over the previous system, achieving world-record 90 ps timing precision and 2 μm spatial resolution for particle tracking at CERN, exceeding the project target by 40% across 12+ measurement campaigns
     - Managed the successful **commissioning of the LHCb VELO upgrade** (€20M+ system, 41 million pixels) with zero critical defects, now operational at the world's largest particle accelerator
     - **Designed and validated a real-time data pipeline** (8 parallel channels at 5 Gbps each) from prototype to production, balancing signal integrity against radiation and space constraints
     - **Translated complex technical results** for audiences ranging from ASIC engineers to programme managers, through publications and international conference presentations
   es: |
     - **Lideré un programa I+D internacional de más de 3 M€** en CERN, Nikhef e IGFAE, coordinando a más de 15 ingenieros y físicos con entrega en plazo a lo largo de 3 años
-    - **Logré una mejora de rendimiento 4×** frente al sistema anterior, alcanzando récord mundial de precisión temporal (90 ps) y 2 μm de resolución espacial en seguimiento de partículas en el CERN — superando en un 40% el objetivo del proyecto a lo largo de más de 12 campañas de medición
+    - **Logré una mejora de rendimiento 4×** frente al sistema anterior, alcanzando récord mundial de precisión temporal (90 ps) y 2 μm de resolución espacial en seguimiento de partículas en el CERN, superando en un 40% el objetivo del proyecto a lo largo de más de 12 campañas de medición
     - Gestioné con éxito la **puesta en marcha de la actualización del LHCb VELO** (sistema de más de 20 M€, 41 millones de píxeles) sin defectos críticos, ahora operativo en el mayor acelerador de partículas del mundo
     - **Diseñé y validé un pipeline de datos en tiempo real** (8 canales paralelos a 5 Gbps cada uno) desde prototipo hasta producción, equilibrando la integridad de señal con las restricciones de radiación y espacio
     - **Comuniqué resultados técnicos complejos** tanto a ingenieros de ASICs como a directores de programa, mediante publicaciones y presentaciones en conferencias internacionales

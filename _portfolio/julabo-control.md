@@ -34,12 +34,12 @@ Provide reliable, multi-interface control of precision laboratory cooling equipm
 
 Built a full-stack Python control suite with 6 interface layers:
 
-- **CLI** — Subcommands for status, setpoint, start/stop, and scheduled ramps
-- **Desktop GUI** — Tkinter dashboard with live Matplotlib temperature chart
-- **TCP JSON Server** — Remote control with optional TLS and token auth
-- **Web Dashboard** — Browser UI with Server-Sent Events and WebSocket support
-- **MQTT Bridge** — Publish telemetry to external brokers for fleet monitoring
-- **Prometheus Endpoint** — `/metrics` for Grafana dashboards and alerting
+- **CLI:** Subcommands for status, setpoint, start/stop, and scheduled ramps
+- **Desktop GUI:** Tkinter dashboard with live Matplotlib temperature chart
+- **TCP JSON Server:** Remote control with optional TLS and token auth
+- **Web Dashboard:** Browser UI with Server-Sent Events and WebSocket support
+- **MQTT Bridge:** Publish telemetry to external brokers for fleet monitoring
+- **Prometheus Endpoint:** `/metrics` for Grafana dashboards and alerting
 
 Additional capabilities: setpoint schedules with linear interpolation, alarm monitoring with desktop notifications, CSV/SQLite logging, Docker deployment with docker-compose + Grafana stack, and a hardware simulator for development without physical equipment.
 

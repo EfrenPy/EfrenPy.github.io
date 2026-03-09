@@ -81,8 +81,8 @@ nikhef_item2:
   es: "Lideré el diseño y construcción de un telescopio basado en Timepix4 para campañas internacionales de haces de prueba, coordinando entre equipos de Nikhef y CERN"
 
 nikhef_item3:
-  en: "Achieved **world-record 90 ps timing precision with 2 μm spatial resolution** for particle tracking — a 4× improvement over the previous system, exceeding the project target by 40%"
-  es: "Alcancé **récord mundial de precisión temporal (90 ps) con 2 μm de resolución espacial** en seguimiento de partículas — mejora 4× frente al sistema anterior, superando en un 40% el objetivo del proyecto"
+  en: "Achieved **world-record 90 ps timing precision with 2 μm spatial resolution** for particle tracking, a 4× improvement over the previous system, exceeding the project target by 40%"
+  es: "Alcancé **récord mundial de precisión temporal (90 ps) con 2 μm de resolución espacial** en seguimiento de partículas, mejora 4× frente al sistema anterior, superando en un 40% el objetivo del proyecto"
 
 # CERN 2021 description
 cern2021_item1:
@@ -352,8 +352,8 @@ print_nikhef_bullet2:
   es: "Lideré el diseño y construcción de un telescopio de haz basado en Timepix4, coordinando la integración de hardware entre equipos de Nikhef y CERN"
 
 print_nikhef_bullet3:
-  en: "Achieved world-record 90 ps timing precision with 2 μm spatial resolution for particle tracking — a 4× improvement over the previous system, exceeding the project target by 40%"
-  es: "Alcancé récord mundial de precisión temporal (90 ps) con 2 μm de resolución espacial en seguimiento de partículas — mejora 4× frente al sistema anterior, superando en un 40% el objetivo del proyecto"
+  en: "Achieved world-record 90 ps timing precision with 2 μm spatial resolution for particle tracking, a 4× improvement over the previous system, exceeding the project target by 40%"
+  es: "Alcancé récord mundial de precisión temporal (90 ps) con 2 μm de resolución espacial en seguimiento de partículas, mejora 4× frente al sistema anterior, superando en un 40% el objetivo del proyecto"
 
 # CERN 2021 (print)
 print_cern2021_role:

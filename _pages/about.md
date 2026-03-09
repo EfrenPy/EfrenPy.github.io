@@ -141,7 +141,7 @@ redirect_from:
     <div class="key-results__card">
       <span class="key-results__number" data-count="90">90ps</span>
       <span class="key-results__label"><span class="lang-en" lang="en">Timing Precision</span><span class="lang-es" lang="es">Precisión Temporal</span></span>
-      <span class="key-results__desc"><span class="lang-en" lang="en">World-record particle tracking — 4× gain over previous gen, 2 μm resolution</span><span class="lang-es" lang="es">Récord mundial en seguimiento de partículas — 4× frente al sistema anterior, 2 μm de resolución</span></span>
+      <span class="key-results__desc"><span class="lang-en" lang="en">World-record particle tracking, 4× gain over previous gen, 2 μm resolution</span><span class="lang-es" lang="es">Récord mundial en seguimiento de partículas, 4× frente al sistema anterior, 2 μm de resolución</span></span>
     </div>
     <div class="key-results__card">
       <span class="key-results__number" data-count="0">0</span>

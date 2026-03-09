@@ -2,7 +2,7 @@
 title: 'Joining the VELO Group at CERN'
 title_en: 'Joining the VELO Group at CERN'
 title_es: 'Incorporación al Grupo VELO del CERN'
-description: "New role at CERN with the VELO group — running 3D sensor simulations, building the Timepix4 beam telescope, and leading test beam campaigns for the LHCb upgrade."
+description: "New role at CERN with the VELO group: running 3D sensor simulations, building the Timepix4 beam telescope, and leading test beam campaigns for the LHCb upgrade."
 date: 2024-10-14
 permalink: /posts/2024/10/new-horizons-at-cern/
 header:

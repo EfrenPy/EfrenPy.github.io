@@ -25,7 +25,7 @@ tags:
 
 ### The Challenge
 
-Generate print-ready, publication-quality city map posters from code — with full control over style, typography, and output format — for any city in the world.
+Generate print-ready, publication-quality city map posters from code, with full control over style, typography, and output format, for any city in the world.
 
 ### Solution
 
@@ -33,11 +33,11 @@ Generate print-ready, publication-quality city map posters from code — with fu
 
 A Python CLI tool that fetches OpenStreetMap data via OSMnx and renders layered map artwork:
 
-- **17 built-in themes** — noir, blueprint, neon cyberpunk, japanese ink, terracotta, sunset, and more
-- **Multilingual typography** — Google Fonts integration for non-Latin scripts (Japanese, Korean, Arabic, Thai, Chinese)
-- **Print-ready output** — A0–A4 paper presets, up to 1200 DPI, in PNG/SVG/PDF formats
-- **Layered rendering** — Background, water, green areas, streets, buildings, and labels composed independently
-- **Batch mode** — Generate all 17 theme variants in one command
+- **17 built-in themes:** noir, blueprint, neon cyberpunk, japanese ink, terracotta, sunset, and more
+- **Multilingual typography:** Google Fonts integration for non-Latin scripts (Japanese, Korean, Arabic, Thai, Chinese)
+- **Print-ready output:** A0–A4 paper presets, up to 1200 DPI, in PNG/SVG/PDF formats
+- **Layered rendering:** Background, water, green areas, streets, buildings, and labels composed independently
+- **Batch mode:** Generate all 17 theme variants in one command
 
 Usage examples:
 
@@ -59,4 +59,4 @@ python create_map_poster.py -c "London" -C "UK" -p A2 --dpi 600
 
 ### Industry Relevance
 
-Demonstrates geospatial data processing, automated rendering pipelines, configurable output generation, and CLI design. The pattern — ingest external data, apply transformations, produce publication-ready output — applies directly to report generation, data visualization tools, and ETL pipelines.
+Demonstrates geospatial data processing, automated rendering pipelines, configurable output generation, and CLI design. The pattern (ingest external data, apply transformations, produce publication-ready output) applies directly to report generation, data visualization tools, and ETL pipelines.
