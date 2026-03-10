@@ -133,6 +133,9 @@ exclude:
   - fix_plan.md
   - CLAUDE.md
   - package-lock.json
+  - talkmap.ipynb
+  - talkmap.py
+  - claudekit-skills
   - docs
   - markdown_generator
 keep_files:
