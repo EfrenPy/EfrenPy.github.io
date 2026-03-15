@@ -26,7 +26,7 @@
           {% else %}
             "{{ teaser | prepend: "/images/" | prepend: base_path }}"
           {% endif %}
-          alt="{{ title | strip_html | strip_newlines | default: 'Publication thumbnail' }}">
+          alt="{{ title | strip_html | strip_newlines | default: 'Publication thumbnail' }}" loading="lazy" decoding="async">
       </div>
     {% endif %}
 
@@ -45,7 +45,7 @@
 
               <!-- description readme and  icon code -->
     {% if post.excerpt and site.read_more != 'enabled' %}
-    <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
+    <div class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</div>
     <div class="publication-links">
       {% if post.link %}
         <a href="{{ post.link }}" class="publication-link"><i class="fas fa-fw fa-link" aria-hidden="true"></i> Link</a>
@@ -61,7 +61,7 @@
       {% endif %}
     </div>
     {% elsif post.excerpt and site.read_more == 'enabled' %}
-    <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }} <a href="{{ base_path }}{{ post.url }}" rel="permalink"><span class="lang-en" lang="en">Read more</span><span class="lang-es" lang="es">Leer más</span></a></p>
+    <div class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }} <a href="{{ base_path }}{{ post.url }}" rel="permalink"><span class="lang-en" lang="en">Read more</span><span class="lang-es" lang="es">Leer más</span></a></div>
     <div class="publication-links">
       {% if post.link %}
         <a href="{{ post.link }}" class="publication-link"><i class="fas fa-fw fa-link" aria-hidden="true"></i> Link</a>

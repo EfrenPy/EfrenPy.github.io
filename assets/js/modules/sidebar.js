@@ -2,7 +2,11 @@
    Sidebar Visibility
    ========================================================================== */
 
+let sidebarAbortController = null;
+
 export function initSidebar() {
+  if (sidebarAbortController) sidebarAbortController.abort();
+  sidebarAbortController = new AbortController();
   const authorUrlsWrapper = document.querySelector('.author__urls-wrapper');
   const authorUrls = document.querySelector('.author__urls');
   const followButton = document.querySelector('.author__urls-wrapper button');
@@ -22,7 +26,7 @@ export function initSidebar() {
   };
 
   updateSidebarVisibility();
-  window.addEventListener('resize', updateSidebarVisibility);
+  window.addEventListener('resize', updateSidebarVisibility, { signal: sidebarAbortController.signal });
 
   // Follow menu dropdown toggle
   if (followButton && authorUrls) {
@@ -33,7 +37,7 @@ export function initSidebar() {
       authorUrls.style.display = isHidden ? 'block' : 'none';
       this.classList.toggle('open');
       this.setAttribute('aria-expanded', String(isHidden));
-    });
+    }, { signal: sidebarAbortController.signal });
   }
 
   initStickyScroll();
@@ -184,9 +188,11 @@ function initStickyScroll() {
 
   // After fonts load, re-adjust if currently stuck at bottom
   // (font loading can change sidebar height)
-  document.fonts.ready.then(() => {
-    if (state === STATE.STICK_BOTTOM) {
-      sidebar.style.top = stickBottomTop() + 'px';
-    }
-  });
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(() => {
+      if (state === STATE.STICK_BOTTOM) {
+        sidebar.style.top = stickBottomTop() + 'px';
+      }
+    });
+  }
 }

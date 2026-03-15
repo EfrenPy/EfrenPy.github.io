@@ -2,7 +2,12 @@
    Offline Indicator
    ========================================================================== */
 
+let offlineAbort = null;
+
 export function initOfflineIndicator() {
+  if (offlineAbort) offlineAbort.abort();
+  offlineAbort = new AbortController();
+
   var banner = document.querySelector('.offline-banner');
   if (!banner) return;
 
@@ -14,7 +19,7 @@ export function initOfflineIndicator() {
     }
   }
 
-  window.addEventListener('online', updateStatus);
-  window.addEventListener('offline', updateStatus);
+  window.addEventListener('online', updateStatus, { signal: offlineAbort.signal });
+  window.addEventListener('offline', updateStatus, { signal: offlineAbort.signal });
   updateStatus();
 }

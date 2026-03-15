@@ -35,32 +35,32 @@ gallery6:
 
 {% include t-block.html page="traveling" key="intro" %}
 
-### {% include t.html page="traveling" key="egypt_title" %}
+<h3 id="egypt">{% include t.html page="traveling" key="egypt_title" %}</h3>
 {% include t-block.html page="traveling" key="egypt_text" %}
 {% include gallery id="gallery1" caption=" " %}
 
-### {% include t.html page="traveling" key="switzerland_title" %}
+<h3 id="switzerland">{% include t.html page="traveling" key="switzerland_title" %}</h3>
 {% include t-block.html page="traveling" key="switzerland_text" %}
 <div style="max-width: 75%; margin: auto;">
 {% include gallery id="gallery2" caption=" " %}
 </div>
 
-### {% include t.html page="traveling" key="vancouver_title" %}
+<h3 id="vancouver">{% include t.html page="traveling" key="vancouver_title" %}</h3>
 {% include t-block.html page="traveling" key="vancouver_text" %}
 {% include gallery id="gallery3" caption=" " %}
 
-### {% include t.html page="traveling" key="italy_title" %}
+<h3 id="italy">{% include t.html page="traveling" key="italy_title" %}</h3>
 {% include t-block.html page="traveling" key="italy_text" %}
 <div style="max-width: 75%; margin: auto;">
 {% include gallery id="gallery4" caption=" " %}
 </div>
 
-### {% include t.html page="traveling" key="netherlands_title" %}
+<h3 id="netherlands">{% include t.html page="traveling" key="netherlands_title" %}</h3>
 {% include t-block.html page="traveling" key="netherlands_text" %}
 <div style="max-width: 75%; margin: auto;">
 {% include gallery id="gallery5" caption=" " %}
 </div>
 
-### {% include t.html page="traveling" key="paris_title" %}
+<h3 id="paris">{% include t.html page="traveling" key="paris_title" %}</h3>
 {% include t-block.html page="traveling" key="paris_text" %}
 {% include gallery id="gallery6" caption=" " %}

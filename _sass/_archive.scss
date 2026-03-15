@@ -104,7 +104,7 @@
     }
   }
 
-  @media (max-width: 400px) {
+  @include breakpoint(max-width $small - 1) {
     flex-direction: column;
 
     .archive__item-teaser {

@@ -2,7 +2,12 @@
    Mobile Navigation Toggle
    ========================================================================== */
 
+let mobileNavAbort = null;
+
 export function initMobileNav() {
+  if (mobileNavAbort) mobileNavAbort.abort();
+  mobileNavAbort = new AbortController();
+
   var toggle = document.querySelector('.nav-toggle');
   var siteNav = document.querySelector('.site-nav');
   if (!toggle || !siteNav) return;
@@ -12,7 +17,7 @@ export function initMobileNav() {
     toggle.setAttribute('aria-expanded', String(isOpen));
     toggle.classList.toggle('close', isOpen);
     document.body.classList.toggle('overflow--hidden', isOpen);
-  });
+  }, { signal: mobileNavAbort.signal });
 
   // Helper to close the mobile nav
   function closeMenu() {
@@ -25,16 +30,12 @@ export function initMobileNav() {
   // Close nav when a nav link is clicked
   var navLinks = siteNav.querySelectorAll('.nav-links a');
   navLinks.forEach(function(link) {
-    link.addEventListener('click', closeMenu);
+    link.addEventListener('click', closeMenu, { signal: mobileNavAbort.signal });
   });
 
   // Close nav when resizing to desktop
   var mql = window.matchMedia('(min-width: 925px)');
-  if (mql.addEventListener) {
-    mql.addEventListener('change', function() { if (mql.matches) closeMenu(); });
-  } else if (mql.addListener) {
-    mql.addListener(function() { if (mql.matches) closeMenu(); });
-  }
+  mql.addEventListener('change', function() { if (mql.matches) closeMenu(); }, { signal: mobileNavAbort.signal });
 
   // Close nav on Escape key
   document.addEventListener('keydown', function(e) {
@@ -42,14 +43,19 @@ export function initMobileNav() {
       closeMenu();
       toggle.focus();
     }
-  });
+  }, { signal: mobileNavAbort.signal });
 }
 
 /* ==========================================================================
    "More" Dropdown Navigation
    ========================================================================== */
 
+let moreDropdownAbort = null;
+
 export function initMoreDropdown() {
+  if (moreDropdownAbort) moreDropdownAbort.abort();
+  moreDropdownAbort = new AbortController();
+
   var toggle = document.querySelector('.nav-more__toggle');
   var dropdown = document.querySelector('.nav-more__dropdown');
   if (!toggle || !dropdown) return;
@@ -71,14 +77,14 @@ export function initMoreDropdown() {
     } else {
       openDropdown();
     }
-  });
+  }, { signal: moreDropdownAbort.signal });
 
   // Close on outside click
   document.addEventListener('click', function(e) {
     if (!dropdown.contains(e.target) && e.target !== toggle) {
       closeDropdown();
     }
-  });
+  }, { signal: moreDropdownAbort.signal });
 
   // Close on Escape
   document.addEventListener('keydown', function(e) {
@@ -86,11 +92,11 @@ export function initMoreDropdown() {
       closeDropdown();
       toggle.focus();
     }
-  });
+  }, { signal: moreDropdownAbort.signal });
 
   // Close on nav link click (for Swup)
   dropdown.querySelectorAll('a').forEach(function(link) {
-    link.addEventListener('click', closeDropdown);
+    link.addEventListener('click', closeDropdown, { signal: moreDropdownAbort.signal });
   });
 }
 

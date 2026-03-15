@@ -4,6 +4,7 @@
 
 #main {
   @include container;
+  flex: 1;
   margin-top: 2em;
   padding-left: 1em;
   padding-right: 1em;

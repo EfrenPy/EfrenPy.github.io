@@ -205,7 +205,7 @@
   }
 }
 
-@media (max-width: 360px) {
+@include breakpoint(max-width $small - 1) {
   .search-toggle,
   .theme-toggle,
   .lang-toggle {

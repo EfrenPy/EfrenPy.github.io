@@ -2,7 +2,12 @@
    Site Search
    ========================================================================== */
 
+let searchAbort = null;
+
 export function initSearch() {
+  if (searchAbort) searchAbort.abort();
+  searchAbort = new AbortController();
+
   var toggle = document.querySelector('.search-toggle');
   var overlay = document.querySelector('.search-overlay');
   if (!toggle || !overlay) return;
@@ -32,7 +37,7 @@ export function initSearch() {
     fetch('/search.json')
       .then(function(res) { return res.json(); })
       .then(function(data) { searchData = data; })
-      .catch(function() { searchData = []; });
+      .catch(function(err) { console.warn('Search data failed to load', err); searchData = []; });
   }
 
   function performSearch(query) {
@@ -96,5 +101,5 @@ export function initSearch() {
         closeSearch();
       }
     }
-  });
+  }, { signal: searchAbort.signal });
 }

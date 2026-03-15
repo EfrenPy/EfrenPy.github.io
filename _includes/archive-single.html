@@ -44,9 +44,9 @@
         <span class="lang-es" lang="es">{{ post.excerpt_es | markdownify | remove: '<p>' | remove: '</p>' }}</span>
       </p>
       {% elsif post.excerpt and site.read_more != 'enabled' %}
-      <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
+      <div class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</div>
       {% elsif post.excerpt and site.read_more == 'enabled' %}
-      <p class="archive__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> <span class="lang-en" lang="en">Read more</span><span class="lang-es" lang="es">Leer más</span></a></strong></p></p>
+      <div class="archive__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> <span class="lang-en" lang="en">Read more</span><span class="lang-es" lang="es">Leer más</span></a></strong></p></div>
       {% endif %}
 
       {% if post.tags.size > 0 %}
@@ -62,7 +62,7 @@
       {% elsif post.citation %}
         <p><span class="lang-en" lang="en">Recommended citation:</span><span class="lang-es" lang="es">Citación recomendada:</span> {{ post.citation }} </p>
       {% elsif post.paperurl %}
-        <p><span class="lang-en" lang="en">Download</span><span class="lang-es" lang="es">Descargar</span> <a href=" {{ post.paperurl }} "><u><span class="lang-en" lang="en">here</span><span class="lang-es" lang="es">aquí</span></u></a></p>
+        <p><span class="lang-en" lang="en">Download</span><span class="lang-es" lang="es">Descargar</span> <a href="{{ post.paperurl }}"><u><span class="lang-en" lang="en">here</span><span class="lang-es" lang="es">aquí</span></u></a></p>
       {% endif %}
     </div>
 

@@ -105,6 +105,9 @@
   <meta name="yandex-verification" content="{{ site.yandex_site_verification }}">
 {% endif %}
 {% if seo_url %}
-  <link rel="alternate" hreflang="x-default" href="{{ page.url | prepend: seo_url | replace: "/index.html", "/" }}">
+  {% assign seo_page_url = page.url | prepend: seo_url | replace: "/index.html", "/" %}
+  <link rel="alternate" hreflang="x-default" href="{{ seo_page_url }}">
+  <link rel="alternate" hreflang="en" href="{{ seo_page_url }}">
+  <link rel="alternate" hreflang="es" href="{{ seo_page_url }}">
 {% endif %}
 <!-- end SEO -->

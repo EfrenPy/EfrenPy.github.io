@@ -3,8 +3,12 @@
    ========================================================================== */
 
 var showPrev, showNext;
+let lightboxAbort = null;
 
 export function initLightbox() {
+  if (lightboxAbort) lightboxAbort.abort();
+  lightboxAbort = new AbortController();
+
   var imageLinks = document.querySelectorAll(
     'a[href$=".jpg"], a[href$=".jpeg"], a[href$=".JPG"], a[href$=".png"], a[href$=".gif"], a[href$=".webp"]'
   );
@@ -108,6 +112,6 @@ export function initLightbox() {
       e.preventDefault();
       showImage(index);
       dialog.showModal();
-    });
+    }, { signal: lightboxAbort.signal });
   });
 }

@@ -9,7 +9,7 @@ permalink: /contact/
 author_profile: true
 ---
 
-<h2 class="contact-headline">{% include t.html page="contact" key="headline" %}</h2>
+<h2 id="contact-headline" class="contact-headline">{% include t.html page="contact" key="headline" %}</h2>
 
 {% include t-block.html page="contact" key="intro" %}
 
@@ -18,7 +18,7 @@ author_profile: true
   {% include t.html page="contact" key="response_time" %}
 </div>
 
-### {% include t.html page="contact" key="reach_out_title" %}
+<h3 id="get-in-touch">{% include t.html page="contact" key="reach_out_title" %}</h3>
 
 <div class="contact-methods">
   <a href="mailto:{{ site.author.email }}" class="contact-card contact-card--primary">
@@ -46,11 +46,11 @@ author_profile: true
   </a>
 </div>
 
-### {% include t.html page="contact" key="interests_title" %}
+<h3 id="what-im-interested-in">{% include t.html page="contact" key="interests_title" %}</h3>
 
 {% include t-block.html page="contact" key="interests_text" %}
 
-### {% include t.html page="contact" key="location_title" %}
+<h3 id="location-and-availability">{% include t.html page="contact" key="location_title" %}</h3>
 
 {% include t.html page="contact" key="location_text" %}
 

@@ -26,8 +26,8 @@ author_profile: true
         <span class="lang-es" lang="es">{{ post.title_es }}</span>
       </h2>
       <p class="personal-card__excerpt">
-        <span class="lang-en" lang="en">{{ post.excerpt_en | truncate: 80 }}</span>
-        <span class="lang-es" lang="es">{{ post.excerpt_es | truncate: 80 }}</span>
+        <span class="lang-en" lang="en">{{ post.excerpt_en | default: '' | truncate: 80 }}</span>
+        <span class="lang-es" lang="es">{{ post.excerpt_es | default: '' | truncate: 80 }}</span>
       </p>
     </div>
   </a>

@@ -5,6 +5,8 @@
 var scrollRevealObserver = null;
 var floatingCtaObserver = null;
 var floatingCtaAbort = null;
+var scrollProgressAbort = null;
+var scrollToTopAbort = null;
 
 export function initScrollReveal() {
   // Clean up previous observer
@@ -106,6 +108,9 @@ export function initScrollReveal() {
    ========================================================================== */
 
 export function initScrollProgress() {
+  // Clean up previous listeners
+  if (scrollProgressAbort) { scrollProgressAbort.abort(); scrollProgressAbort = null; }
+
   const progressBar = document.querySelector('.scroll-progress');
   const masthead = document.querySelector('.masthead');
 
@@ -116,6 +121,9 @@ export function initScrollProgress() {
     progressBar.style.display = 'none';
     return;
   }
+
+  scrollProgressAbort = new AbortController();
+  var signal = scrollProgressAbort.signal;
 
   let ticking = false;
 
@@ -139,7 +147,7 @@ export function initScrollProgress() {
       requestAnimationFrame(updateProgress);
       ticking = true;
     }
-  }, { passive: true });
+  }, { passive: true, signal: signal });
 
   // Initial call
   updateProgress();
@@ -150,8 +158,14 @@ export function initScrollProgress() {
    ========================================================================== */
 
 export function initScrollToTop() {
+  // Clean up previous listeners
+  if (scrollToTopAbort) { scrollToTopAbort.abort(); scrollToTopAbort = null; }
+
   var btn = document.querySelector('.scroll-to-top');
   if (!btn) return;
+
+  scrollToTopAbort = new AbortController();
+  var signal = scrollToTopAbort.signal;
 
   var scrollThreshold = 300;
   var ticking = false;
@@ -170,7 +184,7 @@ export function initScrollToTop() {
       requestAnimationFrame(updateVisibility);
       ticking = true;
     }
-  }, { passive: true });
+  }, { passive: true, signal: signal });
 
   btn.addEventListener('click', function() {
     window.scrollTo({ top: 0, behavior: 'smooth' });

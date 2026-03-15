@@ -48,7 +48,7 @@ redirect_from:
 </div>
 
 <div class="cv-section">
-  <h2 class="cv-section-title"><i class="fas fa-briefcase"></i> {% include t.html page="cv" key="experience_title" %}</h2>
+  <h2 id="experience" class="cv-section-title"><i class="fas fa-briefcase"></i> {% include t.html page="cv" key="experience_title" %}</h2>
   <div class="cv-timeline">
     <div class="cv-timeline-item" data-institution="cern">
       <div class="cv-position">{% include t.html page="cv" key="postdoc_position" %}</div>
@@ -111,9 +111,9 @@ redirect_from:
 </div>
 
 <div class="cv-section">
-  <h2 class="cv-section-title"><i class="fas fa-code"></i> {% include t.html page="cv" key="skills_title" %}</h2>
+  <h2 id="skills" class="cv-section-title"><i class="fas fa-code"></i> {% include t.html page="cv" key="skills_title" %}</h2>
   <div class="cv-skill-category">
-    <h4>{% include t.html page="cv" key="programming_software" %}</h4>
+    <h4 id="programming-and-software">{% include t.html page="cv" key="programming_software" %}</h4>
     <div class="cv-skills">
       <span class="cv-skill-tag"><i class="fab fa-python"></i> Python</span>
       <span class="cv-skill-tag">C++</span>
@@ -127,7 +127,7 @@ redirect_from:
     </div>
   </div>
   <div class="cv-skill-category">
-    <h4>{% include t.html page="cv" key="hardware_research" %}</h4>
+    <h4 id="hardware-and-research">{% include t.html page="cv" key="hardware_research" %}</h4>
     <div class="cv-skills">
       <span class="cv-skill-tag cv-skill-tag--secondary">{% include t.html page="cv" key="silicon_sensors" %}</span>
       <span class="cv-skill-tag cv-skill-tag--secondary">{% include t.html page="cv" key="electronic_design" %}</span>
@@ -137,7 +137,7 @@ redirect_from:
     </div>
   </div>
   <div class="cv-skill-category">
-    <h4>{% include t.html page="cv" key="soft_skills" %}</h4>
+    <h4 id="leadership-and-management">{% include t.html page="cv" key="soft_skills" %}</h4>
     <div class="cv-skills">
       <span class="cv-skill-tag cv-skill-tag--secondary">{% include t.html page="cv" key="project_management" %}</span>
       <span class="cv-skill-tag cv-skill-tag--secondary">{% include t.html page="cv" key="team_leadership" %}</span>
@@ -151,7 +151,7 @@ redirect_from:
 </div>
 
 <div class="cv-section">
-  <h2 class="cv-section-title"><i class="fas fa-graduation-cap"></i> {% include t.html page="cv" key="education_title" %}</h2>
+  <h2 id="education" class="cv-section-title"><i class="fas fa-graduation-cap"></i> {% include t.html page="cv" key="education_title" %}</h2>
   <div class="cv-education">
     <div class="cv-edu-card">
       <div class="degree">{% include t.html page="cv" key="phd_degree" %}</div>
@@ -172,7 +172,7 @@ redirect_from:
 </div>
 
 <div class="cv-section">
-  <h2 class="cv-section-title"><i class="fas fa-certificate"></i> {% include t.html page="cv" key="certifications_title" %}</h2>
+  <h2 id="certifications" class="cv-section-title"><i class="fas fa-certificate"></i> {% include t.html page="cv" key="certifications_title" %}</h2>
   <div class="certifications-grid">
     <div class="cert-card">
       <div class="cert-icon"><i class="fab fa-python"></i></div>
@@ -192,7 +192,7 @@ redirect_from:
 </div>
 
 <div class="cv-section">
-  <h2 class="cv-section-title"><i class="fas fa-language"></i> {% include t.html page="cv" key="languages_title" %}</h2>
+  <h2 id="languages" class="cv-section-title"><i class="fas fa-language"></i> {% include t.html page="cv" key="languages_title" %}</h2>
   <div class="cv-skills">
     <span class="cv-skill-tag">🇪🇸 {% include t.html page="cv" key="lang_spanish" %}</span>
     <span class="cv-skill-tag">🇬🇧 {% include t.html page="cv" key="lang_english" %}</span>
@@ -201,7 +201,7 @@ redirect_from:
 </div>
 
 <div class="cv-section">
-  <h2 class="cv-section-title"><i class="fas fa-code"></i>
+  <h2 id="selected-projects" class="cv-section-title"><i class="fas fa-code"></i>
     <span class="lang-en" lang="en">Selected Projects</span>
     <span class="lang-es" lang="es">Proyectos Destacados</span>
   </h2>
@@ -217,14 +217,14 @@ redirect_from:
 </div>
 
 <div class="cv-section">
-  <h2 class="cv-section-title"><i class="fas fa-book"></i> {% include t.html page="cv" key="publications_title" %}</h2>
+  <h2 id="publications" class="cv-section-title"><i class="fas fa-book"></i> {% include t.html page="cv" key="publications_title" %}</h2>
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
 </div>
 
 <div class="cv-section">
-  <h2 class="cv-section-title"><i class="fas fa-chalkboard-teacher"></i> {% include t.html page="cv" key="talks_title" %}</h2>
+  <h2 id="talks" class="cv-section-title"><i class="fas fa-chalkboard-teacher"></i> {% include t.html page="cv" key="talks_title" %}</h2>
   <ul>{% for post in site.talks reversed %}
     {% include archive-single-talk-cv.html %}
   {% endfor %}</ul>

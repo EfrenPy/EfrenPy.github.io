@@ -23,16 +23,16 @@ gallery3:
 
 {% include t-block.html page="sports" key="intro" %}
 
-### {% include t.html page="sports" key="volleyball_title" %}
+<h3 id="volleyball">{% include t.html page="sports" key="volleyball_title" %}</h3>
 {% include t-block.html page="sports" key="volleyball_text" %}
 {% include gallery id="gallery1" caption=" " %}
 
-### {% include t.html page="sports" key="wakeboarding_title" %}
+<h3 id="wakeboarding">{% include t.html page="sports" key="wakeboarding_title" %}</h3>
 {% include t-block.html page="sports" key="wakeboarding_text" %}
 <div style="max-width: 50%; margin: auto;">
   {% include gallery id="gallery2" caption=" " %}
 </div>
 
-### {% include t.html page="sports" key="rollerblading_title" %}
+<h3 id="rollerblading">{% include t.html page="sports" key="rollerblading_title" %}</h3>
 {% include t-block.html page="sports" key="rollerblading_text" %}
 {% include gallery id="gallery3" caption=" " %}

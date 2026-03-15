@@ -26,7 +26,7 @@
           {% else %}
             "{{ teaser | prepend: "/images/" | prepend: base_path }}"
           {% endif %}
-          alt="{{ title | strip_html | strip_newlines | default: 'Talk thumbnail' }}">
+          alt="{{ title | strip_html | strip_newlines | default: 'Talk thumbnail' }}" loading="lazy" decoding="async">
       </div>
     {% endif %}
     <h2 class="archive__item-title" itemprop="headline">
@@ -41,6 +41,6 @@
     {% endif %}
     {% if post.date %}<p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> {{ post.date | date: '%B %d, %Y' }}</p>{% endif %}
     {% if post.venue %}<p class="archive__item-excerpt" itemprop="description">{% if post.type %}<span class="talk-type-badge talk-type-badge--{{ post.type | downcase }}">{{ post.type }}</span> {% endif %}{{ post.venue }}, {{post.location}}</p>{% endif %}
-    {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>{% endif %}
+    {% if post.excerpt %}<div class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</div>{% endif %}
   </article>
 </div>

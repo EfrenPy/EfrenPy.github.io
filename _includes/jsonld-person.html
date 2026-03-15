@@ -35,11 +35,11 @@
     "addressLocality": "Geneva",
     "addressCountry": "CH"
   },
-  "sameAs": [
-    {% if site.author.github %}"https://github.com/{{ site.author.github }}"{% endif %}
-    {% if site.author.linkedin %}, "https://www.linkedin.com/in/{{ site.author.linkedin }}"{% endif %}
-    {% if site.author.orcid %}, "{{ site.author.orcid }}"{% endif %}
-    {% if site.author.googlescholar %}, "{{ site.author.googlescholar }}"{% endif %}
+  "sameAs": [{% assign sep = "" %}
+    {% if site.author.github %}{{ sep }}"https://github.com/{{ site.author.github }}"{% assign sep = ", " %}{% endif %}
+    {% if site.author.linkedin %}{{ sep }}"https://www.linkedin.com/in/{{ site.author.linkedin }}"{% assign sep = ", " %}{% endif %}
+    {% if site.author.orcid %}{{ sep }}"{{ site.author.orcid }}"{% assign sep = ", " %}{% endif %}
+    {% if site.author.googlescholar %}{{ sep }}"{{ site.author.googlescholar }}"{% assign sep = ", " %}{% endif %}
   ]
 }
 </script>

@@ -62,7 +62,7 @@ self.addEventListener('fetch', (event) => {
       }).catch(() => {
         return caches.match(cleanRequest).then((cached) => {
           if (cached) return cached;
-          return new Response('', { status: 503, statusText: 'Service Unavailable' });
+          return new Response('Service Unavailable', { status: 503, statusText: 'Service Unavailable', headers: { 'Content-Type': 'text/plain' } });
         });
       })
     );
@@ -84,7 +84,7 @@ self.addEventListener('fetch', (event) => {
           return response;
         }).catch(() => {
           if (cached) return cached;
-          return new Response('', { status: 503, statusText: 'Service Unavailable' });
+          return new Response('Service Unavailable', { status: 503, statusText: 'Service Unavailable', headers: { 'Content-Type': 'text/plain' } });
         });
         return cached || fetchPromise;
       })
@@ -110,7 +110,7 @@ self.addEventListener('fetch', (event) => {
             if (accept && accept.includes('text/html')) {
               return caches.match(OFFLINE_URL);
             }
-            return new Response('', { status: 503, statusText: 'Service Unavailable' });
+            return new Response('Service Unavailable', { status: 503, statusText: 'Service Unavailable', headers: { 'Content-Type': 'text/plain' } });
           });
       })
   );

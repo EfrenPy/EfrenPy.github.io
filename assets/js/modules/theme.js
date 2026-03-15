@@ -59,6 +59,7 @@ export function initLanguage() {
       const text = el.getAttribute('data-i18n-' + lang);
       if (el.tagName === 'INPUT') el.placeholder = text;
       else if (el.hasAttribute('aria-label')) el.setAttribute('aria-label', text);
+      if (el.hasAttribute('title')) el.setAttribute('title', text);
     });
   };
 

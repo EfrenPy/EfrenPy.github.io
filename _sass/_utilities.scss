@@ -1441,7 +1441,7 @@ a.reversefootnote {
 
   // Move scroll-to-top above floating CTA on mobile
   @include breakpoint(max-width $large - 1) {
-    bottom: calc(3.5rem + env(safe-area-inset-bottom, 0px));
+    bottom: calc(4.5rem + env(safe-area-inset-bottom, 0px));
   }
   width: 36px;
   height: 36px;
@@ -1613,6 +1613,7 @@ a.reversefootnote {
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
   position: relative;
   max-height: 70vh;
+  max-height: 70dvh;
   display: flex;
   flex-direction: column;
 }
@@ -1628,6 +1629,7 @@ a.reversefootnote {
     width: 100%;
     max-width: none;
     max-height: 85vh;
+    max-height: 85dvh;
     border-radius: 16px 16px 0 0;
     padding: 1rem;
   }

@@ -27,7 +27,7 @@ layout: default
       {% unless page.header.overlay_color or page.header.overlay_image %}
         <div class="page__title-banner">
         <header>
-          {% if page.title %}<h1 class="page__title" itemprop="headline">{% if page.title_en %}<span class="lang-en" lang="en">{{ page.title_en | markdownify | remove: "<p>" | remove: "</p>" }}</span><span class="lang-es" lang="es">{{ page.title_es | markdownify | remove: "<p>" | remove: "</p>" }}</span>{% else %}{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}{% endif %}</h1>{% endif %}
+          {% if page.title %}<h1 id="{{ page.title | slugify }}" class="page__title" itemprop="headline">{% if page.title_en %}<span class="lang-en" lang="en">{{ page.title_en | markdownify | remove: "<p>" | remove: "</p>" }}</span><span class="lang-es" lang="es">{{ page.title_es | markdownify | remove: "<p>" | remove: "</p>" }}</span>{% else %}{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}{% endif %}</h1>{% endif %}
           {% if page.read_time %}
             <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
           {% endif %}
@@ -79,7 +79,7 @@ layout: default
   {% comment %}<!-- only show related on a post page when not disabled -->{% endcomment %}
   {% if page.id and page.related and site.related_posts.size > 0 %}
     <div class="page__related">
-      <h4 class="page__related-title"><span class="lang-en" lang="en">You May Also Enjoy</span><span class="lang-es" lang="es">También Te Puede Interesar</span></h4>
+      <h4 id="related-posts" class="page__related-title"><span class="lang-en" lang="en">You May Also Enjoy</span><span class="lang-es" lang="es">También Te Puede Interesar</span></h4>
       <div class="grid__wrapper">
         {% for post in site.related_posts limit:4 %}
           {% include archive-single.html type="grid" %}

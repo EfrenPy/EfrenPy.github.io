@@ -4,7 +4,7 @@
   "@context": "https://schema.org",
   "@type": "{{ page.schema_type | default: 'SoftwareSourceCode' }}",
   "name": {{ page.title | strip_html | jsonify }},
-  "description": {{ page.excerpt | strip_html | strip_newlines | truncate: 200 | jsonify }},
+  "description": {{ page.excerpt | default: '' | strip_html | strip_newlines | truncate: 200 | jsonify }},
   "author": {
     "@type": "Person",
     "name": "{{ site.author.name }}"

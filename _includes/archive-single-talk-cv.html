@@ -17,8 +17,8 @@
 {% endif %}
 
 <div class="{{ include.type | default: "list" }}__item">
+  <li>
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    <li>
     {% if include.type == "grid" and teaser %}
       <div class="archive__item-teaser">
         <img src=
@@ -27,7 +27,7 @@
           {% else %}
             "{{ teaser | prepend: "/images/" | prepend: base_path }}"
           {% endif %}
-          alt="{{ title | strip_html | strip_newlines | default: 'Talk thumbnail' }}">
+          alt="{{ title | strip_html | strip_newlines | default: 'Talk thumbnail' }}" loading="lazy" decoding="async">
       </div>
     {% endif %}
     <h3 class="archive__item-title" itemprop="headline">
@@ -39,7 +39,7 @@
     </h3>
     {% if post.date %}<p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> {{ post.date | date: '%B %d, %Y' }}</p>{% endif %}
     {% if post.venue%}<p class="archive__item-excerpt" itemprop="description">{{post.type}} <span class="lang-en" lang="en">at</span><span class="lang-es" lang="es">en</span> {{ post.venue }},  {{post.location}}</p>{% endif %}
-    </li>
   </article>
+  </li>
 </div>
 

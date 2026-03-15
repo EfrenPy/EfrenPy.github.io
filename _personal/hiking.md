@@ -31,22 +31,22 @@ gallery5:
 
 {% include t-block.html page="hiking" key="intro" %}
 
-### {% include t.html page="hiking" key="schilthorn_title" %}
+<h3 id="schilthorn">{% include t.html page="hiking" key="schilthorn_title" %}</h3>
 {% include t-block.html page="hiking" key="schilthorn_text" %}
 {% include gallery id="gallery1" caption=" " %}
 
-### {% include t.html page="hiking" key="oeschinen_title" %}
+<h3 id="oeschinen-lake">{% include t.html page="hiking" key="oeschinen_title" %}</h3>
 {% include t-block.html page="hiking" key="oeschinen_text" %}
 {% include gallery id="gallery2" caption=" " %}
 
-### {% include t.html page="hiking" key="brig_title" %}
+<h3 id="brig">{% include t.html page="hiking" key="brig_title" %}</h3>
 {% include t-block.html page="hiking" key="brig_text" %}
 {% include gallery id="gallery3" caption=" " %}
 
-### {% include t.html page="hiking" key="saleve_title" %}
+<h3 id="saleve">{% include t.html page="hiking" key="saleve_title" %}</h3>
 {% include t-block.html page="hiking" key="saleve_text" %}
 {% include gallery id="gallery4" caption=" " %}
 
-### {% include t.html page="hiking" key="eiger_title" %}
+<h3 id="eiger">{% include t.html page="hiking" key="eiger_title" %}</h3>
 {% include t-block.html page="hiking" key="eiger_text" %}
 {% include gallery id="gallery5" caption=" " %}

@@ -48,7 +48,7 @@ redirect_from:
 </section>
 
 <section class="logo-strip" aria-label="Institutions">
-  <h3 class="logo-strip__title">
+  <h3 id="where-ive-made-an-impact" class="logo-strip__title">
     <span class="lang-en" lang="en">Where I've Made an Impact</span>
     <span class="lang-es" lang="es">Donde He Dejado Huella</span>
   </h3>
@@ -95,34 +95,34 @@ redirect_from:
 </section>
 
 <section class="homepage-section homepage-section--alt" aria-label="How I can help">
-  <h3>{% include t.html page="about" key="help_team_title" %}</h3>
+  <h3 id="how-i-can-help-your-team">{% include t.html page="about" key="help_team_title" %}</h3>
 
   <div class="value-props">
     <div class="value-prop">
       <div class="value-prop__icon"><i class="fas fa-tasks"></i></div>
       <div class="value-prop__content">
-        <h4>{% include t.html page="about" key="help_manage_title" %}</h4>
+        <h4 id="run-complex-projects">{% include t.html page="about" key="help_manage_title" %}</h4>
         <p>{% include t.html page="about" key="help_manage_desc" %}</p>
       </div>
     </div>
     <div class="value-prop">
       <div class="value-prop__icon"><i class="fas fa-users-cog"></i></div>
       <div class="value-prop__content">
-        <h4>{% include t.html page="about" key="help_teams_title" %}</h4>
+        <h4 id="align-cross-functional-teams">{% include t.html page="about" key="help_teams_title" %}</h4>
         <p>{% include t.html page="about" key="help_teams_desc" %}</p>
       </div>
     </div>
     <div class="value-prop">
       <div class="value-prop__icon"><i class="fas fa-code-branch"></i></div>
       <div class="value-prop__content">
-        <h4>{% include t.html page="about" key="help_bridge_title" %}</h4>
+        <h4 id="bridge-hardware-and-software">{% include t.html page="about" key="help_bridge_title" %}</h4>
         <p>{% include t.html page="about" key="help_bridge_desc" %}</p>
       </div>
     </div>
     <div class="value-prop">
       <div class="value-prop__icon"><i class="fas fa-chart-bar"></i></div>
       <div class="value-prop__content">
-        <h4>{% include t.html page="about" key="help_data_title" %}</h4>
+        <h4 id="drive-decisions-with-data">{% include t.html page="about" key="help_data_title" %}</h4>
         <p>{% include t.html page="about" key="help_data_desc" %}</p>
       </div>
     </div>
@@ -130,7 +130,7 @@ redirect_from:
 </section>
 
 <section class="homepage-section" aria-label="Key results">
-  <h3>{% include t.html page="about" key="achievements_title" %}</h3>
+  <h3 id="key-results">{% include t.html page="about" key="achievements_title" %}</h3>
 
   <div class="key-results">
     <div class="key-results__card">
@@ -163,7 +163,7 @@ redirect_from:
 
 <section class="homepage-section homepage-section--alt" aria-label="What I'm looking for">
   <div class="looking-for-section">
-    <h3>{% include t.html page="about" key="interests_title" %}</h3>
+    <h3 id="what-im-looking-for">{% include t.html page="about" key="interests_title" %}</h3>
     <div class="looking-for-section__primary">
       <i class="fas fa-compass"></i>
       {% include t-block.html page="about" key="interests_engaged" %}
@@ -184,7 +184,7 @@ redirect_from:
 </section>
 
 <section class="homepage-section" aria-label="Career timeline">
-  <h3>{% include t.html page="about" key="career_timeline_title" %}</h3>
+  <h3 id="career-journey">{% include t.html page="about" key="career_timeline_title" %}</h3>
 
   <div class="career-timeline">
     <div class="career-timeline__milestones">
@@ -250,7 +250,7 @@ redirect_from:
   <div class="featured-post-card">
     <div class="featured-post-card__icon"><i class="fas fa-newspaper"></i></div>
     <div class="featured-post-card__content">
-      <h4>{% include t.html page="about" key="featured_post_title" %}</h4>
+      <h4 id="from-the-blog">{% include t.html page="about" key="featured_post_title" %}</h4>
       {% if featured %}
       <div class="featured-post-card__meta">
         <time datetime="{{ featured.date | date_to_xmlschema }}">{{ featured.date | date: "%B %d, %Y" }}</time>

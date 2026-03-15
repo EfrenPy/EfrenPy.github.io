@@ -36,7 +36,7 @@ author_profile: true
 
 <hr>
 
-<h2>{% include t.html page="portfolio" key="projects_title" %}</h2>
+<h2 id="project-highlights">{% include t.html page="portfolio" key="projects_title" %}</h2>
 
 {% for post in site.portfolio %}
   {% unless post.category == "personal" %}
@@ -46,7 +46,7 @@ author_profile: true
 
 <hr>
 
-<h2>{% include t.html page="portfolio" key="personal_title" %}</h2>
+<h2 id="personal-projects">{% include t.html page="portfolio" key="personal_title" %}</h2>
 
 {% for post in site.portfolio %}
   {% if post.category == "personal" %}
@@ -56,7 +56,7 @@ author_profile: true
 
 <hr>
 
-<h2>{% include t.html page="portfolio" key="github_title" %}</h2>
+<h2 id="github-activity">{% include t.html page="portfolio" key="github_title" %}</h2>
 
 <div class="github-note">
   <i class="fas fa-info-circle"></i>

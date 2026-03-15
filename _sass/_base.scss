@@ -15,14 +15,15 @@
 
 html {
   /* sticky footer fix */
-  position: relative;
   min-height: 100%;
 }
 
 body {
   margin: 0;
   padding: 0;
-  padding-bottom: 9em;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   color: var(--color-text, $text-color);
   background-color: var(--color-background, #fff);
   font-family: $global-font-family;
@@ -270,8 +271,8 @@ figcaption {
     transition: $global-transition;
 
     &:hover {
-      color: #000;
-      border-bottom-color: #000;
+      color: var(--color-text, #000);
+      border-bottom-color: var(--color-text, #000);
     }
   }
 }
