@@ -188,7 +188,7 @@ export function initScrollToTop() {
 
   btn.addEventListener('click', function() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
-  });
+  }, { signal: signal });
 
   // Initial check
   updateVisibility();

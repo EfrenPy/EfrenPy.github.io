@@ -23,6 +23,11 @@
   --gradient-subtle: linear-gradient(135deg, rgba(82, 173, 200, 0.08), rgba(139, 92, 246, 0.08));
   --color-primary-rgb: 82, 173, 200;
   --color-accent-rgb: 139, 92, 246;
+  --color-bg-card: #f2f3f3;
+  --color-surface: #f8f9fa;
+  --color-text-muted: #64748b;
+  --color-warning-bg: #fef3cd;
+  --color-warning-text: #856404;
 }
 
 [data-theme="dark"] {
@@ -42,6 +47,11 @@
   --gradient-subtle: linear-gradient(135deg, rgba(103, 212, 241, 0.06), rgba(167, 139, 250, 0.06));
   --color-primary-rgb: 103, 212, 241;
   --color-accent-rgb: 167, 139, 250;
+  --color-bg-card: #1e293b;
+  --color-surface: #1e293b;
+  --color-text-muted: #94a3b8;
+  --color-warning-bg: #422006;
+  --color-warning-text: #fbbf24;
 }
 
 /*

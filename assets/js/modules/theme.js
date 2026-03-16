@@ -4,7 +4,12 @@ import { announce } from './announce.js';
    Dark Mode Toggle
    ========================================================================== */
 
+let darkModeAbort = null;
+
 export function initDarkMode() {
+  if (darkModeAbort) darkModeAbort.abort();
+  darkModeAbort = new AbortController();
+
   const toggle = document.querySelector('.theme-toggle');
   if (!toggle) return;
 
@@ -25,14 +30,14 @@ export function initDarkMode() {
     const next = current === 'dark' ? 'light' : 'dark';
     setTheme(next);
     announce(next === 'dark' ? 'Dark mode enabled' : 'Light mode enabled');
-  });
+  }, { signal: darkModeAbort.signal });
 
   // Listen for system preference changes
   window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
     if (!localStorage.getItem('theme')) {
       setTheme(e.matches ? 'dark' : 'light');
     }
-  });
+  }, { signal: darkModeAbort.signal });
 
   // Set correct images for current theme on page load
   const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
@@ -43,7 +48,12 @@ export function initDarkMode() {
    Language Toggle
    ========================================================================== */
 
+let langAbort = null;
+
 export function initLanguage() {
+  if (langAbort) langAbort.abort();
+  langAbort = new AbortController();
+
   const toggle = document.querySelector('.lang-toggle');
   if (!toggle) return;
 
@@ -72,6 +82,6 @@ export function initLanguage() {
     setLang(next);
     updateI18n(next);
     announce(next === 'es' ? 'Idioma cambiado a español' : 'Language changed to English');
-  });
+  }, { signal: langAbort.signal });
 }
 

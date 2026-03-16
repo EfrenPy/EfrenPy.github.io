@@ -3,7 +3,7 @@ layout: null
 ---
 [
   {% assign pages = site.pages | where_exp: "page", "page.title" %}
-  {% assign collections = site.posts | concat: site.publications | concat: site.talks | concat: site.portfolio | concat: site.personal | concat: site.teaching %}
+  {% assign collections = site.posts | concat: site.publications | concat: site.talks | concat: site.portfolio | concat: site.personal %}
   {% assign all_pages = pages | concat: collections %}
   {% for page in all_pages %}
   {

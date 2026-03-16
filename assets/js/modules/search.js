@@ -15,6 +15,7 @@ export function initSearch() {
   var input = overlay.querySelector('.search-overlay__input');
   var resultsContainer = overlay.querySelector('.search-overlay__results');
   var closeBtn = overlay.querySelector('.search-overlay__close');
+  if (!input || !resultsContainer || !closeBtn) return;
   var searchData = null;
 
   function openSearch() {
@@ -79,14 +80,14 @@ export function initSearch() {
     clearTimeout(debounceTimer);
     var query = input.value.trim();
     debounceTimer = setTimeout(function() { performSearch(query); }, 200);
-  });
+  }, { signal: searchAbort.signal });
 
-  toggle.addEventListener('click', openSearch);
-  closeBtn.addEventListener('click', closeSearch);
+  toggle.addEventListener('click', openSearch, { signal: searchAbort.signal });
+  closeBtn.addEventListener('click', closeSearch, { signal: searchAbort.signal });
 
   overlay.addEventListener('click', function(e) {
     if (e.target === overlay) closeSearch();
-  });
+  }, { signal: searchAbort.signal });
 
   document.addEventListener('keydown', function(e) {
     if (e.key === 'Escape' && !overlay.hidden) {
