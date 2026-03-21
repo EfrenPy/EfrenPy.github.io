@@ -621,7 +621,10 @@ a.reversefootnote {
 }
 
 .homepage-hero__photo {
-  display: none;
+  display: flex;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 1rem;
 
   @include breakpoint($medium) {
     display: flex;
@@ -629,6 +632,8 @@ a.reversefootnote {
     justify-content: center;
     flex-shrink: 0;
     width: 220px;
+    height: auto;
+    margin: 0;
   }
 
   @include breakpoint($large) {
@@ -721,6 +726,14 @@ a.reversefootnote {
 [data-lang="es"] .homepage-hero__tagline .lang-es,
 [data-lang="es"] .homepage-hero__subtitle .lang-es {
   display: block;
+}
+
+.homepage-hero__availability {
+  font-size: 0.85rem;
+  color: var(--color-primary);
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
 }
 
 .homepage-hero__cta {

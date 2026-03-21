@@ -1,9 +1,9 @@
 ---
 permalink: /
-title: "Efrén Rodríguez - Technical Project Manager - CERN R&D Leader"
+title: "Efrén Rodríguez – Technical PM at CERN"
 title_en: "Efrén Rodríguez - Technical Project Manager - CERN R&D Leader"
 title_es: "Efrén Rodríguez - Director de Proyectos Técnicos - Líder I+D en el CERN"
-description: "Technical project manager who led multi-million EUR detector projects at CERN. Coordinating international teams across 3 countries, bridging hardware and software. Open to PM, engineering management, and R&D leadership roles."
+description: "Technical project manager with 8+ years at CERN. Led €3M+ R&D programmes across 3 countries. Open to PM, engineering management, and technical leadership roles."
 excerpt: "Technical project manager who led multi-million EUR international R&D projects at CERN. Seeking PM, engineering management, and R&D leadership roles."
 keywords: "technical project manager, R&D engineer, CERN, engineering manager, technical program manager, hardware software integration, team leadership, systems engineering"
 author_profile: true
@@ -16,7 +16,7 @@ redirect_from:
 <section class="homepage-hero" aria-label="Introduction">
   <div class="homepage-hero__content">
     <div class="homepage-hero__text">
-      <h1 class="homepage-hero__name gradient-text">Efrén Rodríguez</h1>
+      <h2 class="homepage-hero__name gradient-text">Efrén Rodríguez</h2>
       <p class="homepage-hero__tagline">
         <span class="lang-en" lang="en">I deliver complex technical projects, from CERN to your team</span>
         <span class="lang-es" lang="es">Lidero proyectos técnicos complejos, del CERN a tu equipo</span>
@@ -25,6 +25,10 @@ redirect_from:
         <span class="lang-en" lang="en">R&D engineer and project manager with 8+ years in technical R&D and 4 years leading multi-million EUR international projects. Seeking my next challenge in technical leadership.</span>
         <span class="lang-es" lang="es">Ingeniero I+D y director de proyectos con más de 8 años en I+D técnico y 4 años liderando proyectos internacionales multimillonarios. Busco mi próximo reto en liderazgo técnico.</span>
       </p>
+      <div class="homepage-hero__availability">
+        <span class="lang-en" lang="en">✦ Open to opportunities · Immediately available</span>
+        <span class="lang-es" lang="es">✦ Abierto a oportunidades · Disponibilidad inmediata</span>
+      </div>
       <div class="homepage-hero__cta">
         <a href="{{ site.baseurl }}/contact/" class="btn btn--large">
           <i class="fas fa-envelope"></i> <span class="lang-en" lang="en">Get in Touch</span><span class="lang-es" lang="es">Contactar</span>
@@ -33,7 +37,7 @@ redirect_from:
           <i class="fas fa-download"></i> <span class="lang-en" lang="en">Download CV</span><span class="lang-es" lang="es">Descargar CV</span>
         </a>
         <a href="https://www.linkedin.com/in/efrenrguezrguez" class="btn btn--large btn--outline" target="_blank" rel="noopener noreferrer">
-          <i class="fab fa-linkedin"></i> LinkedIn
+          <i class="fab fa-linkedin"></i> <span class="lang-en" lang="en">LinkedIn</span><span class="lang-es" lang="es">LinkedIn</span>
         </a>
       </div>
     </div>

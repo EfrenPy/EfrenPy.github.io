@@ -3,7 +3,7 @@ layout: archive
 title: "Curriculum Vitae"
 title_en: "Curriculum Vitae"
 title_es: "Currículum Vitae"
-description: "Efrén Rodríguez. R&D engineer and project manager with 8+ years in technical R&D and 4 years leading multi-million EUR international projects at CERN. Python, C++, FPGA, cross-functional team leadership. Open to PM, engineering management, and technical leadership roles."
+description: "CV of Efrén Rodríguez: 8+ years in technical R&D at CERN, leading €3M+ international projects. Skills in project management, Python, C++, and team leadership."
 keywords: "CV, resume, project manager, R&D engineer, CERN, LHCb, VELO, FPGA, Python, sensor development, team leadership, budget management"
 permalink: /cv/
 author_profile: true

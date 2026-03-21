@@ -14,14 +14,12 @@ export function initSidebar() {
   const updateSidebarVisibility = () => {
     if (!authorUrls) return;
 
-    const hasButton = followButton !== null;
-    const buttonVisible = hasButton && followButton.offsetParent !== null;
-    const show = !hasButton || (hasButton && !buttonVisible);
+    // Default to expanded (visible)
+    authorUrls.style.display = 'block';
 
-    if (show) {
-      authorUrls.style.display = '';
-    } else {
-      authorUrls.style.display = 'none';
+    if (followButton) {
+      followButton.classList.add('open');
+      followButton.setAttribute('aria-expanded', 'true');
     }
   };
 
