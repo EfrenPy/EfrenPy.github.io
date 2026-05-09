@@ -47,8 +47,10 @@ jobs:
         run: cp files/Efren_Rodriguez_CV*.pdf _site/files/
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
         if: github.ref == 'refs/heads/master'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          retention-days: 1
 
   deploy:
     if: github.ref == 'refs/heads/master'
@@ -57,6 +59,7 @@ jobs:
     permissions:
       pages: write
       id-token: write
+      actions: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -64,3 +67,10 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: Delete pages artifact after deploy
+        if: always()
+        uses: geekyeggo/delete-artifact@v5
+        with:
+          name: github-pages
+          failOnError: false
