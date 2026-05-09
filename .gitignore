@@ -1,8 +1,8 @@
 _site/
 Gemfile.lock
 node_modules/
-.bundle/
-vendor/
+/.bundle/
+/vendor/
 package-lock.json
 babel.config.js
 jest.config.js
